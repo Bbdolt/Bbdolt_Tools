@@ -95,7 +95,7 @@ python main.py
 ![](./img/AI接口分析结果.png)
 
 ### 提取接口信息
-1. 输入网址，会利用 packerfuzzer 这款工具（https://github.com/rtcatc/Packer-Fuzzer?tab=readme-ov-file）
+1. 输入网址，会利用 packerfuzzer 这款工具（https://github.com/rtcatc/Packer-Fuzzer)
    进行分析爬取 js 文件，最后对 js 文件经过正则匹配获取敏感信息、接口路径
 2. 输入的也可以是一个 js 文件或一个存放 js 文件的文件夹
 3. 提取接口信息-主动 模块
