@@ -65,6 +65,7 @@ pip install -r requirements.txt
 - API_TOKEN: 使用硅基流动的API_TOKEN
 - MODEL_NAME: 使用模型推荐 Qwen/Qwen2.5-Coder-32B-Instruct（收费推荐）、deepseek-ai/DeepSeek-V3（收费推荐）、Qwen/Qwen2.5-Coder-7B-Instruct（免费默认）
 - deepseek-ai/DeepSeek-V3（效果好） > Qwen/Qwen2.5-Coder-32B-Instruct（性价比） > deepseek-ai/DeepSeek-R1（收费高，速度慢） > deepseek-ai/DeepSeek-R1-0528-Qwen3-8B（免费速度慢） > Qwen/Qwen2.5-Coder-7B-Instruct
+- 硅基流动（邀请链接，注册赠送 14 元）: https://cloud.siliconflow.cn/i/Dtutqr93
 ```
 
 4. 启动程序
