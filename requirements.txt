@@ -1,0 +1,7 @@
+requests
+pyfiglet
+urllib3
+tqdm
+PyYAML
+colorama
+beautifulsoup4

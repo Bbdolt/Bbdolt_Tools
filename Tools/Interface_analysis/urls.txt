@@ -1,0 +1,9 @@
+排序后的URI列表：
+/admin/institutions/college?orgId=3755&lang=zh
+/admin/course/spoc?orgId=3755&collegeId=-1&state=-1&year=-1&keyword=&pn=1&ps=15&lang=zh
+/users/menu/userMenuList?_=1753635078804&lang=zh
+/users/login/refresh10Session?uaToken=3E834D0346DBE05F4E6BF2AE739E65B0
+/users/menu/userMenuList?_=1753635078804&lang=zh
+/mp/collect?measurement_id=G-MKMD9LWFTR&api_secret=sitc4WmvShWYwfU0dANM3Q
+/mp/collect?measurement_id=G-V5H2F5MJFJ&api_secret=UBjpGOLISEaY5LVXNj3WvQ
+/collect

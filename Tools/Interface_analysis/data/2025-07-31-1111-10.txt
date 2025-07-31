@@ -1,0 +1,65 @@
+AI分析结果：
+9.0（CRITICAL） /v3/log/init [229] 可能存在['框架漏洞']，原因为框架路径可能暴露漏洞
+7.5（HIGH） /api/deleteUser [-1] 可能存在['未授权访问', '潜在越权']，原因为敏感API路径，删除操作无鉴权
+7.5（HIGH） /api/createUser [-1] 可能存在['未授权访问', '潜在越权']，原因为敏感API路径，创建操作无鉴权
+7.5（HIGH） /api/updatePassword [-1] 可能存在['未授权访问', '潜在越权']，原因为敏感API路径，密码操作无鉴权
+7.5（HIGH） /manage/gateway/:gatewayId [-1] 可能存在['未授权访问', '潜在越权']，原因为管理路径带ID，无校验风险
+7.5（HIGH） /api/logout [-1] 可能存在['未授权访问']，原因为API路径无鉴权控制
+7.5（HIGH） /manage/sensorData [-1] 可能存在['未授权访问']，原因为管理路径无安全限制
+7.5（HIGH） /manage/gateway [-1] 可能存在['未授权访问']，原因为管理接口无鉴权
+7.5（HIGH） /api/getUserList [-1] 可能存在['潜在越权访问']，原因为用户列表无身份校验
+7.5（HIGH） /manage/sensorData/:gateway?/:node?/:sensor? [-1] 可能存在['未授权访问', '潜在路径注入']，原因为带参数管理路径无防护
+7.5（HIGH） /api/getCurrentUserInfo [-1] 可能存在['潜在越权']，原因为用户信息接口无校验
+7.5（HIGH） /api/getUserInfo [-1] 可能存在['潜在越权']，原因为获取用户信息无控制
+7.5（HIGH） /api/updateUser [-1] 可能存在['潜在越权更新']，原因为用户更新接口无防护
+3.0（LOW） /api/login [64] 可能存在['潜在无效端点']，原因为小响应体可能无效接口
+2.0（LOW） /login?from=/dataview [694] 可能存在['反射XSS']，原因为登录页面参数无害，响应体小
+2.0（LOW） /andmuApi [-1] 可能存在['潜在框架漏洞']，原因为自定义API路径，风险低
+1.0（LOW） /intro [-1] 可能存在['无风险']，原因为静态介绍页面，无参数
+1.0（LOW） /dataview [-1] 可能存在['无风险']，原因为数据视图页面，无参数
+1.0（LOW） /page [-1] 可能存在['无风险']，原因为通用页面，无风险
+1.0（LOW） /? [-1] 可能存在['无风险']，原因为根路径或无效URI，风险低
+
+排序后的URI列表：
+/v3/log/init
+/api/deleteUser
+/api/createUser
+/api/updatePassword
+/manage/gateway/:gatewayId
+/api/logout
+/manage/sensorData
+/manage/gateway
+/api/getUserList
+/manage/sensorData/:gateway?/:node?/:sensor?
+/api/getCurrentUserInfo
+/api/getUserInfo
+/api/updateUser
+/api/login
+/login?from=/dataview
+/andmuApi
+/intro
+/dataview
+/page
+/?
+
+URL拼接后结果:
+https://restapi.amap.com/v3/log/init
+https://zhigu.bsnc.cn/api/deleteUser
+https://zhigu.bsnc.cn/api/createUser
+https://zhigu.bsnc.cn/api/updatePassword
+https://zhigu.bsnc.cn/manage/gateway/:gatewayId
+https://zhigu.bsnc.cn/api/logout
+https://zhigu.bsnc.cn/manage/sensorData
+https://zhigu.bsnc.cn/manage/gateway
+https://zhigu.bsnc.cn/api/getUserList
+https://zhigu.bsnc.cn/manage/sensorData/:gateway?/:node?/:sensor?
+https://zhigu.bsnc.cn/api/getCurrentUserInfo
+https://zhigu.bsnc.cn/api/getUserInfo
+https://zhigu.bsnc.cn/api/updateUser
+https://zhigu.bsnc.cn/api/login
+https://zhigu.bsnc.cn/login?from=/dataview
+https://zhigu.bsnc.cn/andmuApi
+https://zhigu.bsnc.cn/intro
+https://zhigu.bsnc.cn/dataview
+https://zhigu.bsnc.cn/page
+https://zhigu.bsnc.cn/
