@@ -102,7 +102,7 @@ python main.py
 ![](./img/提取接口信息-主动.png)
 
 ### 工具箱
-1. TomcatScanPro（https://github.com/lizhianyuguangming/TomcatScanPro）
+1. TomcatScanPro（https://github.com/lizhianyuguangming/TomcatScanPro)
 2. AI接口分析模块，导入 urls 会打开一个 txt 文件，只需将 uri 一行一行写入即可自动分析
 3. 工具箱模块 展示
 ![](./img/工具箱模块.png)
