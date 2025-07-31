@@ -19,7 +19,7 @@ class QuickStart(ttk.Frame):
 
         # 获取当前主题
         self.current_theme = main_app.config.get('theme', '默认')
-        self.current_directory = main_app.bbdolt_tools_filepath
+        self.current_directory = main_app.config.get('current_directory', '默认')
 
         # 初始化变量
         self.init_variables()

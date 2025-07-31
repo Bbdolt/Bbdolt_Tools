@@ -27,6 +27,8 @@ class MainApplication:
         self.bbdolt_tools_filepath = os.path.dirname(os.path.abspath(__file__))
         self.icon_path = os.path.join(self.bbdolt_tools_filepath, 'ico/icon32_32x32.ico')
         self.config_path = os.path.join(self.bbdolt_tools_filepath, 'config.json')
+        # self.icon_path = "ico/icon32_32x32.ico"
+        # self.config_path = "config.json"
         self.root = root
         self.root.title("Bbdolt_Tools v1.0")
         self.root.geometry("1280x800")

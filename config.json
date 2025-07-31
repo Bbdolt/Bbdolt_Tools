@@ -1,12 +1,13 @@
 {
     "theme": "浅蓝",
+    "current_directory": "E:/Github_Project/Bbdolt_Tools",
     "http_port": 9015,
-    "packerfuzzer": "E:/Github_Project/Bbdolt_Tools/Tools/webpackscan",
+    "packerfuzzer": "E:/Github_Project/deploy/Bbdolt_Tools_history/Bbdolt_Tools_v1.0/Tools/webpackscan",
     "deep_scan_packerfuzzer": true,
     "python": "E:/anaconda3/envs/python311/python.exe",
-    "TomcatScanPro": "E:/Github_Project/Bbdolt_Tools/Tools/TomcatScanPro",
+    "TomcatScanPro": "E:/Github_Project/deploy/Bbdolt_Tools_history/Bbdolt_Tools_v1.0/Tools/TomcatScanPro",
     "Venom-JWT": "",
-    "notepad": "notepad++",
+    "notepad": "notepad",
     "deep_scan": [
         "-f",
         "1",
