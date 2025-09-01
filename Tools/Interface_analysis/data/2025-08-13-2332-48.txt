@@ -1,0 +1,74 @@
+AI分析结果：
+7.5（HIGH） /b/message_center/api/miniappuser/v1/delete [31] 可能存在['未授权操作']，原因为高危操作路径(delete)无鉴权证据
+7.0（HIGH） /b/message_center/api/miniappuser/v1/login [1848] 可能存在['未授权访问风险']，原因为登录接口无防护措施
+6.2（MEDIUM） /b/common/api/sysSchoolConfig/v1/query [34957] 可能存在['配置信息泄露']，原因为系统配置接口+34KB响应体
+5.8（MEDIUM） /b/common/api/user/v1/getUser?userId=a1f4196b3fe740bb8e82a202a535dc63 [972] 可能存在['潜在越权访问']，原因为高危参数(userId)无访问控制
+5.8（MEDIUM） /b/dms/api/OpenInfoArticle/v1/get?articleCode=10002&schoolCode=2201023001 [3041] 可能存在['潜在信息泄露', '参数暴露']，原因为含标识参数且响应体较大
+5.5（MEDIUM） /b/message_center/api/miniappuser/v1/getUserMsgList [4793] 可能存在['用户数据泄露']，原因为用户消息列表+4.7KB响应体
+5.0（MEDIUM） /b/common/api/infoSchoolfriend/v1/query [9454] 可能存在['潜在信息泄露']，原因为非高危路径名，响应体>5KB触发检测
+5.0（MEDIUM） /b/new_common/api/sysconfig/v1/querySysConfig [6070] 可能存在['系统配置泄露']，原因为sysconfig路径+>5KB响应体
+4.5（MEDIUM） /b/common/api/user/v1/getUserForLoginName [3169] 可能存在['潜在信息泄露']，原因为用户身份相关接口+3KB响应体
+4.5（LOW） /b/smartmanagement/api/visitorauthdevices/v1/query [1256] 可能存在['设备信息泄露']，原因为含敏感路径但响应体不足5KB
+4.5（MEDIUM） /b/common/api/user/v1/save_visitor [410] 可能存在['潜在未授权访问']，原因为用户相关API路径，响应体适中
+4.0（MEDIUM） /b/common/inner/sysglobalparameter/v1/getbyschoolcode?schoolCode=2201023001 [1368] 可能存在['潜在信息泄露']，原因为系统参数接口含敏感参数
+4.0（LOW） /b/common/api/sysconfig/v1/querySysConfig [2315] 可能存在['配置信息泄露']，原因为sysconfig路径但响应体中等
+4.0（LOW） /b/message_center/api/wechatuser/v1/getUserMsgList [41] 可能存在['用户消息列表访问']，原因为敏感路径但响应体极小
+4.0（LOW） /b/new_common/api/treeviewuser/v1/getTreeviewByUserId [49] 可能存在['用户数据访问']，原因为含用户数据路径但响应体极小
+3.5（LOW） /b/message_center/api/miniapptemplate/v1/query?appId=wxc791eddee1953a23 [41] 可能存在['应用ID暴露']，原因为含敏感参数但响应体极小
+3.2（LOW） /b/common/inner/user/v1/getTokenInfo [409] 可能存在['潜在信息泄露']，原因为敏感路径(token相关)但响应体较小
+3.0（LOW） /b/dms/api/CInfoArticle/v1/query?lsSystem=03&status=1 [3450] 可能存在[]，原因为非高危参数+中等响应体
+3.0（LOW） /b/common/api/infoSchoolfriend/v1/get?id=008f49689d9043439608d32bf4a49e70 [941] 可能存在['潜在ID暴露']，原因为含用户标识参数但响应体较小
+3.0（LOW） /b/smartmanagement/api/param/v1/query [423] 可能存在['低危参数查询']，原因为普通参数接口无异常特征
+2.0（LOW） /b/message_center/api/miniappuser/v1/save [31] 可能存在['低风险端点']，原因为极小响应体且无高危特征
+1.5（LOW） /b/message_center/inner/tm/v2/categoryGetUnread [41] 可能存在[]，原因为内部消息接口但响应体极小
+1.0（LOW） /b/smartmanagement/api/rreservepeople/v1/visitor_reserve_count [41] 可能存在[]，原因为无高危参数且响应体极小
+
+排序后的URI列表：
+/b/message_center/api/miniappuser/v1/delete
+/b/message_center/api/miniappuser/v1/login
+/b/common/api/sysSchoolConfig/v1/query
+/b/common/api/user/v1/getUser?userId=a1f4196b3fe740bb8e82a202a535dc63
+/b/dms/api/OpenInfoArticle/v1/get?articleCode=10002&schoolCode=2201023001
+/b/message_center/api/miniappuser/v1/getUserMsgList
+/b/common/api/infoSchoolfriend/v1/query
+/b/new_common/api/sysconfig/v1/querySysConfig
+/b/common/api/user/v1/getUserForLoginName
+/b/smartmanagement/api/visitorauthdevices/v1/query
+/b/common/api/user/v1/save_visitor
+/b/common/inner/sysglobalparameter/v1/getbyschoolcode?schoolCode=2201023001
+/b/common/api/sysconfig/v1/querySysConfig
+/b/message_center/api/wechatuser/v1/getUserMsgList
+/b/new_common/api/treeviewuser/v1/getTreeviewByUserId
+/b/message_center/api/miniapptemplate/v1/query?appId=wxc791eddee1953a23
+/b/common/inner/user/v1/getTokenInfo
+/b/dms/api/CInfoArticle/v1/query?lsSystem=03&status=1
+/b/common/api/infoSchoolfriend/v1/get?id=008f49689d9043439608d32bf4a49e70
+/b/smartmanagement/api/param/v1/query
+/b/message_center/api/miniappuser/v1/save
+/b/message_center/inner/tm/v2/categoryGetUnread
+/b/smartmanagement/api/rreservepeople/v1/visitor_reserve_count
+
+URL拼接后结果:
+https://service.do-ok.com/b/message_center/api/miniappuser/v1/delete
+https://service.do-ok.com/b/message_center/api/miniappuser/v1/login
+https://service.do-ok.com/b/common/api/sysSchoolConfig/v1/query
+https://service.do-ok.com/b/common/api/user/v1/getUser?userId=a1f4196b3fe740bb8e82a202a535dc63
+https://service.do-ok.com/b/dms/api/OpenInfoArticle/v1/get?articleCode=10002&schoolCode=2201023001
+https://service.do-ok.com/b/message_center/api/miniappuser/v1/getUserMsgList
+https://service.do-ok.com/b/common/api/infoSchoolfriend/v1/query
+https://service.do-ok.com/b/new_common/api/sysconfig/v1/querySysConfig
+https://service.do-ok.com/b/common/api/user/v1/getUserForLoginName
+https://service.do-ok.com/b/smartmanagement/api/visitorauthdevices/v1/query
+https://service.do-ok.com/b/common/api/user/v1/save_visitor
+https://service.do-ok.com/b/common/inner/sysglobalparameter/v1/getbyschoolcode?schoolCode=2201023001
+https://service.do-ok.com/b/common/api/sysconfig/v1/querySysConfig
+https://service.do-ok.com/b/message_center/api/wechatuser/v1/getUserMsgList
+https://service.do-ok.com/b/new_common/api/treeviewuser/v1/getTreeviewByUserId
+https://service.do-ok.com/b/message_center/api/miniapptemplate/v1/query?appId=wxc791eddee1953a23
+https://service.do-ok.com/b/common/inner/user/v1/getTokenInfo
+https://service.do-ok.com/b/dms/api/CInfoArticle/v1/query?lsSystem=03&status=1
+https://service.do-ok.com/b/common/api/infoSchoolfriend/v1/get?id=008f49689d9043439608d32bf4a49e70
+https://service.do-ok.com/b/smartmanagement/api/param/v1/query
+https://service.do-ok.com/b/message_center/api/miniappuser/v1/save
+https://service.do-ok.com/b/message_center/inner/tm/v2/categoryGetUnread
+https://service.do-ok.com/b/smartmanagement/api/rreservepeople/v1/visitor_reserve_count

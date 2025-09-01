@@ -1,0 +1,1047 @@
+AI分析结果：
+9.5（CRITICAL） /xman/admin/login/get-permission-code [-1] 可能存在['权限码泄露']，原因为权限码获取接口暴露
+9.5（CRITICAL） /xman/admin/order/payment-complete [-1] 可能存在['未授权操作', '支付状态篡改']，原因为管理接口含支付完成高危操作
+9.5（CRITICAL） /xman/admin/batorder/import-popup-order [-1] 可能存在['未授权数据导入']，原因为管理端订单导入功能高危
+9.5（CRITICAL） /sqlExportUpdate [-1] 可能存在['SQL操作风险']，原因为直接SQL操作接口高危
+9.2（CRITICAL） /xman/admin/order/change-canceled-to-paid [-1] 可能存在['未授权操作', '订单状态篡改']，原因为管理接口含高危操作(订单状态变更)
+9.0（CRITICAL） /xman/admin/order/batch-cancel [-1] 可能存在['未授权访问', '批量操作漏洞']，原因为高危批量操作接口(batch-cancel)
+9.0（CRITICAL） /xman/admin/order/batch-unhold [-1] 可能存在['未授权操作', '批量订单操作']，原因为高危管理接口路径含批量操作功能
+9.0（CRITICAL） /xman/admin/batorder/upload [-1] 可能存在['未授权文件上传']，原因为管理端批量订单上传接口
+9.0（CRITICAL） /xman/admin/order/bat-export [-1] 可能存在['未授权批量导出']，原因为管理端批量导出功能无防护
+9.0（CRITICAL） /modifyPassword [-1] 可能存在['未授权密码修改']，原因为关键操作路径无防护措施
+9.0（CRITICAL） /sqlExport [-1] 可能存在['SQL注入风险']，原因为高危操作接口(sqlExport)无防护
+8.9（CRITICAL） /xman/admin/order/hold-or-unhold [-1] 可能存在['未授权订单操作']，原因为订单状态控制接口暴露
+8.8（HIGH） /xman/admin/batorder/record [-1] 可能存在['未授权访问', '批量记录泄露']，原因为高危管理接口(batorder/record)
+8.8（CRITICAL） /xman/admin/order/approve [-1] 可能存在['未授权审批']，原因为订单审批接口无权限控制
+8.8（HIGH） /xman/admin/order/info [-1] 可能存在['未授权访问', '管理接口暴露']，原因为检测到高危管理路径(xman/admin)
+8.8（HIGH） /xman/admin/login/check-login [-1] 可能存在['认证绕过风险']，原因为登录校验接口可能被滥用
+8.8（HIGH） /xman/admin/order/update-status [-1] 可能存在['未授权状态修改']，原因为订单状态修改接口无鉴权
+8.5（HIGH） /xman/admin/order/add-history [-1] 可能存在['未授权访问', '越权操作']，原因为高危管理接口(add-history)无防护
+8.5（HIGH） /xman/admin/order/send-invoice-email [-1] 可能存在['未授权访问', '管理接口暴露']，原因为管理路径无鉴权且涉及敏感操作
+8.5（HIGH） /dataDictionary [-1] 可能存在['未授权系统配置访问']，原因为系统字典接口无权限控制
+8.2（HIGH） /xman/admin/order/list [-1] 可能存在['未授权访问', '数据泄露']，原因为高危管理接口(order/list)无防护
+8.1（HIGH） /user/batchResetUserName [-1] 可能存在['批量操作风险', '潜在未授权']，原因为高危批量操作接口
+8.0（HIGH） /list/export [-1] 可能存在['未授权数据导出']，原因为数据导出接口无访问控制
+8.0（HIGH） /xman/admin/usercenter/create [-1] 可能存在['未授权用户创建']，原因为高危管理功能无防护
+8.0（HIGH） /sqlExportAdd [-1] 可能存在['潜在SQL注入', '高危数据操作']，原因为含SQL操作关键词无过滤
+8.0（HIGH） /database [-1] 可能存在['潜在未授权访问', '数据库操作']，原因为高危路径名(database)无防护
+8.0（HIGH） /paymentOfflineRefundDetail?refundSheetId [-1] 可能存在['敏感数据泄露']，原因为支付参数(refundSheetId)高危
+8.0（HIGH） /deliveryOutboundReturn?stockSheetId&step [-1] 可能存在['越权操作']，原因为含高危参数(stockSheetId)无校验
+7.8（HIGH） /xman/admin/login/logout [-1] 可能存在['未授权访问']，原因为管理路径无鉴权(admin/login)
+7.8（HIGH） /xman/admin/batorder/download-popup-tpl [-1] 可能存在['潜在文件下载漏洞']，原因为管理端下载功能需校验
+7.8（HIGH） /reset [-1] 可能存在['账户重置漏洞']，原因为高危系统级重置端点
+7.8（HIGH） /orderList?userId&pageSize&currentPage [-1] 可能存在['越权访问', '批量订单泄露']，原因为用户订单接口含分页参数无校验
+7.8（HIGH） /rmaDetail?rmaSheetId [-1] 可能存在['潜在越权访问']，原因为含高危参数(rmaSheetId)且无校验
+7.8（HIGH） /rmaScrapAdd [-1] 可能存在['资产销毁风险']，原因为物资报废接口无审计
+7.5（HIGH） /xman/api/order/get-order-info [-1] 可能存在['潜在未授权访问', '订单信息泄露']，原因为订单接口含高危路径特征(xman)
+7.5（HIGH） /edit [-1] 可能存在['潜在未授权访问']，原因为疑似管理功能路径无鉴权
+7.5（HIGH） /user/address/update [-1] 可能存在['潜在越权操作']，原因为用户地址修改接口无鉴权特征
+7.5（HIGH） /xman/admin/order/batch-Hold [-1] 可能存在['潜在未授权访问']，原因为管理接口路径(admin)无鉴权特征
+7.5（HIGH） /xman/admin/page/preview-page [-1] 可能存在['潜在未授权访问']，原因为管理接口路径(admin)无鉴权特征
+7.5（HIGH） /xman/admin/batorder/get-popup-merchants [-1] 可能存在['潜在未授权访问']，原因为管理接口路径(admin)无鉴权特征
+7.5（HIGH） /xman/admin/order/cancel [-1] 可能存在['潜在未授权访问']，原因为管理路径(xman/admin)无鉴权风险
+7.5（HIGH） /gsp/member/use/record/list [-1] 可能存在['潜在越权访问']，原因为会员使用记录接口，缺乏权限控制
+7.5（HIGH） /user/status/update [-1] 可能存在['越权操作']，原因为用户状态修改功能无校验
+7.5（HIGH） /getReviewLog [-1] 可能存在['潜在未授权访问']，原因为管理类路径无鉴权特征
+7.5（HIGH） /viewEdit/?id&action [-1] 可能存在['潜在越权访问', '未验证操作权限']，原因为高危参数(id+action)组合无防护
+7.5（HIGH） /emailRuleAdd [-1] 可能存在['未授权操作']，原因为疑似管理功能接口(emailRuleAdd)
+7.5（HIGH） /authProduct/?id&action [-1] 可能存在['未授权访问', '潜在越权操作']，原因为高危参数(id/action)无校验
+7.5（HIGH） /app_bom_replace [-1] 可能存在['潜在未授权访问']，原因为管理类路径(app_bom)无鉴权特征
+7.5（HIGH） /userList [-1] 可能存在['潜在未授权访问', '用户信息泄露']，原因为高危路径名(userList)无防护
+7.5（HIGH） /faultcodeAdd [-1] 可能存在['潜在越权操作']，原因为系统配置接口无校验
+7.5（HIGH） /userManager [-1] 可能存在['未授权访问', '潜在越权']，原因为管理类路径无权限标识
+7.5（HIGH） /loginUsers [-1] 可能存在['未授权访问']，原因为路径名(loginUsers)暗示用户数据暴露
+7.5（HIGH） /admin [-1] 可能存在['未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /create?rmaSheetId&orderNo&userEmail&userMobile&storeViewCode [-1] 可能存在['潜在越权操作', '敏感参数暴露']，原因为含用户标识参数(userEmail)且无校验
+7.5（HIGH） /lma [-1] 可能存在['未授权访问']，原因为疑似管理接口(lma)无鉴权
+7.2（HIGH） /user/personalInfo/update [-1] 可能存在['潜在越权修改']，原因为用户信息修改接口无校验
+7.2（HIGH） /sender/sms/resend [-1] 可能存在['短信轰炸漏洞']，原因为短信重发功能无频率限制
+7.2（HIGH） /sender/email/resend [-1] 可能存在['潜在未授权操作']，原因为敏感功能接口无防护
+7.2（HIGH） /consignmentSellAdd [-1] 可能存在['潜在未授权操作']，原因为交易类接口无防护特征
+7.0（HIGH） /user/query [-1] 可能存在['用户信息泄露']，原因为用户查询接口无权限控制
+7.0（HIGH） /set/cancelRecommended [-1] 可能存在['潜在越权操作']，原因为推荐设置接口无用户标识校验
+7.0（HIGH） /xman/admin/login [-1] 可能存在['潜在框架漏洞']，原因为管理登录接口需验证防护
+7.0（HIGH） /user/optlog/get [-1] 可能存在['日志信息泄露']，原因为用户操作日志接口无权限控制
+7.0（HIGH） /popup/import [-1] 可能存在['潜在未授权导入']，原因为文件导入功能无安全校验
+7.0（HIGH） /useRecord?userId&currentPage&pageSize [-1] 可能存在['潜在越权访问']，原因为含高危参数(userId)及分页参数
+7.0（HIGH） /selfServiceSureType?tokenNo [-1] 可能存在['未授权访问', '会话控制缺陷']，原因为含身份控制参数(tokenNo)无校验
+7.0（HIGH） /report [-1] 可能存在['报表数据泄露']，原因为报表类接口(report)无访问控制
+7.0（HIGH） /rmaCreateNew [-1] 可能存在['潜在未授权访问']，原因为管理路径(rma)无鉴权特征
+7.0（HIGH） /doaPrint?rmaSheetId [-1] 可能存在['未授权打印', 'IDOR风险']，原因为含高危参数(rmaSheetId)无校验
+7.0（HIGH） /emailTemplateList [-1] 可能存在['未授权访问']，原因为路径名(emailTemplateList)含敏感资源
+7.0（HIGH） /emailLookup [-1] 可能存在['未授权访问']，原因为敏感信息查询接口无鉴权
+6.9（HIGH） /sendEmail [-1] 可能存在['邮件滥发风险']，原因为无限制邮件发送接口
+6.8（MEDIUM） /user/authType/get [-1] 可能存在['敏感信息泄露']，原因为用户认证类型接口暴露
+6.8（HIGH） /user/auth/product/query [-1] 可能存在['潜在越权访问']，原因为用户标识类接口无校验特征
+6.8（MEDIUM） /inTransitReport [-1] 可能存在['潜在批量泄露']，原因为报表类接口无访问控制
+6.5（MEDIUM） /user/address/get [-1] 可能存在['潜在越权访问']，原因为用户数据接口(address)无ID校验
+6.5（MEDIUM） /sender/email/searchEmail [-1] 可能存在['敏感数据泄露']，原因为邮件搜索接口含高危参数特征
+6.5（MEDIUM） /user/accountInfo/update [-1] 可能存在['潜在越权操作']，原因为账户更新接口需严格鉴权
+6.5（MEDIUM） /user/pinCode/query [-1] 可能存在['敏感信息泄露']，原因为验证码类敏感接口
+6.5（MEDIUM） /growthValue?userId&currentPage&pageSize [-1] 可能存在['潜在批量泄露', '越权访问']，原因为含用户标识(userId)和分页参数
+6.5（MEDIUM） /defectiveReturnList [-1] 可能存在['批量数据泄露']，原因为列表类接口(defectiveReturnList)
+6.5（MEDIUM） /POPrint?applySheetId [-1] 可能存在['敏感单据泄露']，原因为打印类接口含单据ID(applySheetId)
+6.5（MEDIUM） /imei [-1] 可能存在['IMEI信息泄露']，原因为敏感设备标识接口无防护
+6.5（MEDIUM） /coupon [-1] 可能存在['潜在越权操作']，原因为优惠券操作接口无归属校验
+6.5（MEDIUM） /emergencyOrder [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+6.5（MEDIUM） /integrationLogQuery [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+6.5（MEDIUM） /consignmentSellDetail?id [-1] 可能存在['潜在越权访问']，原因为含高危参数(id)无校验
+6.5（MEDIUM） /queryWarningRma [-1] 可能存在['敏感数据泄露']，原因为告警查询路径需访问控制
+6.5（MEDIUM） /selfServiceCustomerRating?rmaSheetId [-1] 可能存在['潜在越权访问']，原因为含业务ID参数(rmaSheetId)无校验
+6.5（MEDIUM） /applyDetail?id [-1] 可能存在['潜在越权访问']，原因为含高危参数(id)无校验
+6.5（MEDIUM） /selfServicefaultDescribe?imei [-1] 可能存在['潜在越权访问']，原因为含高危参数(imei)无校验
+6.5（MEDIUM） /searchRmaTat [-1] 可能存在['潜在越权访问']，原因为业务敏感路径(rma)无校验
+6.2（MEDIUM） /sender/sms/searchSms [-1] 可能存在['敏感数据泄露']，原因为短信搜索接口含高危参数特征
+6.2（MEDIUM） /gsp/l10n/en_US.json [90065] 可能存在['敏感信息泄露']，原因为本地化文件超50KB中危阈值
+6.0（MEDIUM） /#/app/modifyPassword [-1] 可能存在['敏感功能暴露']，原因为密码修改页面需强制鉴权
+6.0（MEDIUM） /hidden [-1] 可能存在['隐藏接口暴露']，原因为疑似隐藏功能路径
+6.0（MEDIUM） /sender/gateway/listGateway [-1] 可能存在['潜在信息泄露']，原因为网关列表接口含敏感路径特征
+6.0（MEDIUM） /user/auth/product/count [-1] 可能存在['潜在越权访问']，原因为用户权限类接口需校验
+6.0（MEDIUM） /user/get [-1] 可能存在['潜在越权访问']，原因为用户信息接口，缺乏标识校验
+6.0（MEDIUM） /gsp/member/device/list [-1] 可能存在['设备信息泄露']，原因为成员设备列表接口敏感
+6.0（MEDIUM） /emailHistoryDetail?emailHistoryId [-1] 可能存在['邮件记录泄露']，原因为敏感参数(emailHistoryId)
+6.0（MEDIUM） /quotationDetail?id [-1] 可能存在['潜在越权访问']，原因为业务ID参数无访问控制
+6.0（MEDIUM） /scrapDetail?id [-1] 可能存在['潜在越权访问']，原因为含高危参数名(id)
+6.0（MEDIUM） /tcRefundAdd [-1] 可能存在['潜在未授权操作']，原因为退款操作接口，无鉴权
+6.0（MEDIUM） /tcRefundAddCn [-1] 可能存在['潜在未授权操作']，原因为退款操作接口，无鉴权
+6.0（MEDIUM） /address/?id&type&action [-1] 可能存在['潜在越权访问', '参数未校验']，原因为含高危参数(id)且无安全限制
+6.0（MEDIUM） /deviceDetail?userId&pageSize&currentPage [-1] 可能存在['潜在越权访问', '批量数据泄露']，原因为含用户标识参数(userId)且无校验
+6.0（MEDIUM） /warrantyLog [-1] 可能存在['日志信息泄露']，原因为日志类接口(warrantyLog)
+6.0（MEDIUM） /deliveryInboundReturn?stockSheetId&step [-1] 可能存在['潜在越权访问']，原因为含业务控制参数(stockSheetId)无校验
+6.0（MEDIUM） /attachment [-1] 可能存在['未验证文件访问']，原因为附件接口无访问控制
+6.0（MEDIUM） /payment [-1] 可能存在['潜在支付漏洞']，原因为支付接口无敏感参数防护
+6.0（MEDIUM） /user [-1] 可能存在['潜在越权访问']，原因为用户相关路径无身份校验
+6.0（MEDIUM） /warrantyList [-1] 可能存在['潜在信息泄露']，原因为数据类接口无访问控制
+6.0（MEDIUM） /confi [-1] 可能存在['潜在未授权访问']，原因为疑似配置管理路径(confi)
+6.0（MEDIUM） /causecodeDetail?id [-1] 可能存在['SQL注入风险', '越权访问']，原因为高危参数(id)直接暴露
+6.0（MEDIUM） /receiptProcess?receiptNo [-1] 可能存在['潜在越权访问']，原因为含业务ID参数无校验
+6.0（MEDIUM） /okDoaReturnAdd?type [-1] 可能存在['潜在参数注入']，原因为含类型控制参数(type)
+6.0（MEDIUM） /access [-1] 可能存在['潜在权限控制缺失']，原因为路径名涉及系统访问控制
+6.0（MEDIUM） /emailTemplateAdd [-1] 可能存在['潜在存储XSS']，原因为模板编辑功能需输入过滤
+6.0（MEDIUM） /list/:param/:value [-1] 可能存在['潜在越权访问']，原因为动态路径可能绕过访问控制
+6.0（MEDIUM） /claimRecord?userId&currentPage&pageSize [-1] 可能存在['潜在批量泄露']，原因为含用户标识和分页参数
+6.0（MEDIUM） /refundDetail?refundSheetId [-1] 可能存在['潜在越权访问']，原因为含高危参数(refundSheetId)
+6.0（MEDIUM） /faultcodeDetail?id [-1] 可能存在['潜在SQL注入', 'ID参数未过滤']，原因为含高危参数(id)且无防护
+6.0（MEDIUM） /unAllocatedRma [-1] 可能存在['潜在越权访问']，原因为含业务操作路径(rma)无校验
+5.5（MEDIUM） /cs/gsp/access/getAuthLoginStatus.json [182] 可能存在['潜在鉴权绕过']，原因为认证状态接口需验证鉴权逻辑
+5.5（MEDIUM） /user/statusList/get [-1] 可能存在['潜在批量信息泄露']，原因为用户状态列表接口无分页限制
+5.5（MEDIUM） /set/setRecommended [-1] 可能存在['潜在未授权操作']，原因为系统设置类接口需验证
+5.5（MEDIUM） /user/address/count [-1] 可能存在['潜在信息泄露']，原因为用户地址统计接口，可能泄露数据
+5.5（MEDIUM） /inventoryReport [-1] 可能存在['潜在信息泄露']，原因为报表类接口无访问限制
+5.5（MEDIUM） /deliveryOutbound?stockSheetId&step [-1] 可能存在['潜在越权访问']，原因为含业务ID参数(stockSheetId)
+5.5（MEDIUM） /siteRmaInvoice?rmaSheetId [-1] 可能存在['潜在信息泄露', '潜在越权']，原因为含业务ID参数，无校验
+5.5（MEDIUM） /rmaRecordPrint?rmaSheetId [-1] 可能存在['潜在信息泄露', '潜在越权']，原因为含业务ID参数，无校验
+5.5（MEDIUM） /takeMachineReport?rmaSheetId [-1] 可能存在['潜在信息泄露']，原因为含业务敏感参数(rmaSheetId)
+5.5（MEDIUM） /apply [-1] 可能存在['未授权提交']，原因为功能类接口(apply)无鉴权标识
+5.5（MEDIUM） /deliveryInbound?stockSheetId&step [-1] 可能存在['潜在越权访问']，原因为含业务控制参数(stockSheetId)无校验
+5.5（MEDIUM） /crma [-1] 可能存在['潜在管理接口']，原因为疑似CRM管理路径无鉴权
+5.5（MEDIUM） /reportDownload [-1] 可能存在['潜在文件下载漏洞']，原因为报告下载接口无路径限制
+5.5（MEDIUM） /lmaDetail?lmaSheetId&step [-1] 可能存在['潜在越权访问', '信息泄露']，原因为多参数含业务标识且无校验
+5.5（MEDIUM） /tradeIn [-1] 可能存在['潜在业务逻辑漏洞']，原因为交易接口无安全校验
+5.5（MEDIUM） /applyList [-1] 可能存在['潜在批量数据泄露']，原因为申请列表接口无访问限制
+5.5（MEDIUM） /pointHistory?userId&pageSize&currentPage [-1] 可能存在['潜在批量泄露']，原因为含用户标识(userId)和分页参数
+5.5（MEDIUM） /rmaProposalPrint?rmaSheetId [-1] 可能存在['潜在越权访问']，原因为业务单据参数无校验
+5.5（MEDIUM） /lmaCreate [-1] 可能存在['潜在未授权访问']，原因为创建类接口无防护
+5.5（MEDIUM） /storeDetail?serviceNodeId [-1] 可能存在['潜在信息泄露']，原因为含数据查询参数(serviceNodeId)
+5.5（MEDIUM） /order [-1] 可能存在['潜在业务逻辑漏洞']，原因为业务核心路径需强化校验
+5.5（MEDIUM） /receiveList [-1] 可能存在['潜在批量数据泄露']，原因为列表类接口可能暴露多数据
+5.5（MEDIUM） /consumptionReport [-1] 可能存在['潜在信息泄露']，原因为报表类接口无访问控制
+5.3（MEDIUM） /privilege.html#/access/forgotpwd [-1] 可能存在['密码重置风险']，原因为密码重置功能页面
+5.2（MEDIUM） /taxInvoicePrint?stockSheetId [-1] 可能存在['潜在越权访问']，原因为含业务ID参数但无校验
+5.0（MEDIUM） /approve [-1] 可能存在['潜在越权操作']，原因为敏感操作路径(approve)无校验
+5.0（MEDIUM） /user/auth/product/type/get [-1] 可能存在['潜在信息泄露']，原因为权限类数据接口需防护
+5.0（MEDIUM） /rmaQueryNew?customerId [-1] 可能存在['潜在信息泄露']，原因为含用户标识参数(customerId)无校验
+5.0（MEDIUM） /rmaDetailNew?rmaSheetId [-1] 可能存在['潜在信息泄露']，原因为含业务ID参数(rmaSheetId)
+5.0（MEDIUM） /userInfo [-1] 可能存在['潜在信息泄露', '潜在越权']，原因为用户信息接口，无身份校验
+5.0（MEDIUM） /myDistributedRma [-1] 可能存在['潜在信息泄露']，原因为RMA相关接口，无高危参数
+5.0（MEDIUM） /proformaInvoicePrint?applySheetId [-1] 可能存在['潜在信息泄露']，原因为含业务敏感参数(applySheetId)
+5.0（MEDIUM） /storeView?serviceNodeId [-1] 可能存在['潜在信息泄露']，原因为含业务敏感参数(serviceNodeId)
+5.0（MEDIUM） /invoiceDetail?orderNo [-1] 可能存在['订单信息泄露']，原因为含订单标识参数(orderNo)
+5.0（MEDIUM） /rmaReturnAdd [-1] 可能存在['潜在越权操作']，原因为退货添加接口无用户校验
+5.0（MEDIUM） /serviceorder [-1] 可能存在['潜在越权访问']，原因为服务订单接口无身份校验
+5.0（MEDIUM） /sobot [-1] 可能存在['潜在框架漏洞']，原因为路径名疑似第三方组件(sobot)
+5.0（MEDIUM） /couponList [-1] 可能存在['潜在批量泄露']，原因为数据列表接口无分页限制
+5.0（MEDIUM） /rmaQuery?customerId [-1] 可能存在['潜在信息泄露']，原因为含用户标识参数(customerId)
+5.0（MEDIUM） /tcRefundDetail?refundNo [-1] 可能存在['潜在信息泄露']，原因为含敏感业务参数(refundNo)
+5.0（MEDIUM） /sparePrintDelivery [-1] 可能存在['潜在未授权访问']，原因为业务接口无鉴权
+5.0（MEDIUM） /spareparts [-1] 可能存在['潜在未授权访问']，原因为业务接口无鉴权
+5.0（MEDIUM） /tcRefundListCn [-1] 可能存在['潜在未授权访问']，原因为业务接口无鉴权
+5.0（MEDIUM） /emailHistoryList [-1] 可能存在['潜在信息泄露']，原因为路径名暗示数据访问功能
+5.0（MEDIUM） /emailRuleDetail?emailRuleId [-1] 可能存在['潜在信息泄露']，原因为参数名(emailRuleId)可能涉及敏感数据
+5.0（MEDIUM） /doaList [-1] 可能存在['潜在信息泄露']，原因为列表类接口可能暴露敏感数据
+5.0（MEDIUM） /queryEmail [-1] 可能存在['潜在信息泄露']，原因为敏感功能路径
+5.0（MEDIUM） /rmaCreate [-1] 可能存在['潜在未授权访问']，原因为管理类路径(rmaCreate)无鉴权特征
+5.0（MEDIUM） /inventoryValueReport [-1] 可能存在['潜在信息泄露']，原因为数据报表类路径无访问控制
+5.0（MEDIUM） /invoiceList [-1] 可能存在['潜在信息泄露']，原因为数据列表接口无防护措施
+5.0（MEDIUM） /poReport [-1] 可能存在['潜在信息泄露']，原因为报表类接口无访问限制
+5.0（MEDIUM） /refundList [-1] 可能存在['潜在信息泄露']，原因为财务数据接口无防护
+5.0（MEDIUM） /tcRefundList [-1] 可能存在['潜在信息泄露']，原因为财务数据接口无访问控制
+5.0（MEDIUM） /view/:orderNo [-1] 可能存在['潜在信息泄露']，原因为路径含订单号参数，无防护措施
+4.8（MEDIUM） /detail?serviceOrderNo [-1] 可能存在['潜在越权访问']，原因为订单号参数无访问控制
+4.5（MEDIUM） /address/list [-1] 可能存在['潜在数据泄露']，原因为地址列表接口需验证权限
+4.5（MEDIUM） /index.php?r=serviceNode/AjaxSearch [-1] 可能存在['潜在未授权访问']，原因为动态参数(r)指向服务节点接口
+4.5（MEDIUM） /user/regTypes/get [-1] 可能存在['潜在信息泄露']，原因为用户注册类型接口，可能泄露业务逻辑
+4.5（MEDIUM） /storeAdd [-1] 可能存在['潜在未授权操作']，原因为数据修改类接口无鉴权
+4.5（LOW） /compensateRefund [-1] 可能存在['潜在未授权访问']，原因为财务操作类路径名
+4.5（MEDIUM） /inventoryBatch [-1] 可能存在['潜在批量操作']，原因为疑似数据操作接口(inventoryBatch)
+4.5（MEDIUM） /newinvoiceList [-1] 可能存在['潜在批量泄露']，原因为发票列表接口可能暴露敏感数据
+4.5（MEDIUM） /deliveryList [-1] 可能存在['潜在批量泄露']，原因为交付列表接口可能暴露敏感数据
+4.5（MEDIUM） /receiptList [-1] 可能存在['潜在批量泄露']，原因为收据列表接口可能暴露敏感数据
+4.5（MEDIUM） /defectivePendingReport [-1] 可能存在['潜在信息泄露']，原因为缺陷报告接口无敏感参数
+4.5（MEDIUM） /printDetectionReport?rmaSheetId [-1] 可能存在['潜在信息泄露']，原因为参数名(rmaSheetId)含业务标识
+4.5（MEDIUM） /refundAdd?orderNo&sourceId&sourceType&type [-1] 可能存在['潜在越权']，原因为含业务操作参数(orderNo)但无校验
+4.5（MEDIUM） /process?orderNo&imei&type&rmaSheetId [-1] 可能存在['潜在信息泄露', '参数未验证']，原因为含多个业务参数但无安全限制
+4.5（LOW） /receiveConfirm [-1] 可能存在['低风险操作接口']，原因为无高危特征但需确认权限
+4.5（MEDIUM） /skuList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径无防护
+4.5（MEDIUM） /reviewList [-1] 可能存在['潜在信息泄露']，原因为疑似审核数据接口无防护
+4.5（MEDIUM） /mockjsdata/ [-1] 可能存在['测试数据泄露']，原因为模拟数据接口无防护
+4.0（MEDIUM） /cs/gsp/common/config/findServiceDataDictionary.json [182] 可能存在['潜在信息泄露']，原因为数据字典接口可能暴露敏感配置
+4.0（MEDIUM） /score/display/set [-1] 可能存在['潜在越权操作']，原因为分数显示设置接口权限模糊
+4.0（LOW） /get [-1] 可能存在['模糊端点']，原因为通用端点需进一步验证
+4.0（MEDIUM） /engineerList [-1] 可能存在['潜在信息泄露']，原因为数据类路径无访问控制
+4.0（MEDIUM） /inventory [-1] 可能存在['潜在信息泄露']，原因为数据类路径无防护措施
+4.0（LOW） /scrapAdd [-1] 可能存在['潜在未授权访问']，原因为操作类路径名(scrapAdd)
+4.0（LOW） /causecodeAdd [-1] 可能存在['潜在未授权访问']，原因为配置类操作路径名
+4.0（MEDIUM） /troubleShooting [-1] 可能存在['潜在信息泄露']，原因为故障排查接口，无高危参数
+4.0（MEDIUM） /scrapList [-1] 可能存在['潜在信息泄露']，原因为报废清单接口，无高危参数
+4.0（LOW） /crm [-1] 可能存在['潜在管理接口暴露']，原因为疑似管理路径(crm)
+4.0（LOW） /cloud [-1] 可能存在['潜在信息泄露']，原因为通用路径名(cloud)需进一步验证
+4.0（MEDIUM） /tcRefundDetailCn?refundNo [-1] 可能存在['潜在信息泄露']，原因为含业务参数(refundNo)但无防护特征
+4.0（MEDIUM） /bizLogRules [-1] 可能存在['潜在信息泄露']，原因为疑似日志管理接口无鉴权
+4.0（MEDIUM） /template [-1] 可能存在['潜在模板注入']，原因为模板接口无输入过滤
+4.0（MEDIUM） /tradeInList [-1] 可能存在['潜在信息泄露']，原因为交易列表接口无鉴权
+4.0（LOW） /sendMessage [-1] 可能存在['潜在未授权访问']，原因为功能路径无鉴权标识
+4.0（LOW） /insuranceList [-1] 可能存在['潜在信息泄露']，原因为路径含敏感业务词(insurance)
+4.0（LOW） /myPendingRma [-1] 可能存在['潜在信息泄露']，原因为个人数据接口风险较低
+4.0（MEDIUM） /emailTemplateDetail?templateId [-1] 可能存在['潜在信息泄露']，原因为含配置标识参数(templateId)
+4.0（LOW） /supportSystem [-1] 可能存在['低危系统接口']，原因为无高危特征路径
+4.0（LOW） /applyAdd [-1] 可能存在['潜在CSRF']，原因为数据提交类路径需防护
+4.0（LOW） /galleryOrderQuery [-1] 可能存在['低风险查询接口']，原因为无高危参数或路径特征
+4.0（MEDIUM） /checkMachineReport?rmaSheetId [-1] 可能存在['潜在信息泄露']，原因为含业务标识参数
+4.0（MEDIUM） /smsLookup [-1] 可能存在['潜在信息泄露']，原因为敏感功能路径但无参数
+4.0（MEDIUM） /sparePartsPrintBox [-1] 可能存在['潜在信息泄露']，原因为疑似数据导出接口无限制
+3.5（LOW） /cs/gsp/setAreaCode.json [182] 可能存在['潜在配置泄露']，原因为区域设置接口，响应体较小
+3.5（LOW） /type/get [-1] 可能存在['潜在信息泄露']，原因为普通数据接口(type)无高危参数
+3.5（LOW） /operatingStatus/get [-1] 可能存在['信息泄露']，原因为运营状态查询接口
+3.5（LOW） /user/regChannels/get [-1] 可能存在['潜在信息泄露']，原因为用户数据接口，无防护特征
+3.5（LOW） /user/unionTypes/get [-1] 可能存在['潜在信息泄露']，原因为用户数据接口，无防护特征
+3.5（LOW） /score/display/query [-1] 可能存在['潜在信息泄露']，原因为数据查询接口，无防护特征
+3.5（LOW） /recommended/get [-1] 可能存在['潜在信息泄露']，原因为推荐数据接口，无高危参数
+3.5（LOW） /integration [-1] 可能存在['潜在接口滥用']，原因为路径含系统集成关键词
+3.5（LOW） /storeQuery [-1] 可能存在['潜在信息泄露']，原因为存储查询接口无高危参数
+3.5（MEDIUM） /selfService [-1] 可能存在['潜在信息泄露']，原因为自助服务接口无防护
+3.5（LOW） /findNotifyPartnerFail [-1] 可能存在['潜在信息泄露']，原因为路径含业务敏感词(Notify)
+3.5（LOW） /invoice [-1] 可能存在['潜在信息泄露']，原因为敏感功能路径无防护
+3.5（LOW） /rma [-1] 可能存在['潜在信息泄露']，原因为疑似管理接口但无参数
+3.5（LOW） /lmaQuery [-1] 可能存在['潜在信息泄露']，原因为疑似管理接口但无参数
+3.2（LOW） /userManuals [-1] 可能存在['低危信息泄露']，原因为普通文档访问路径
+3.0（LOW） /0?item=12_1_3 [-1] 可能存在['无风险']，原因为数字路径无敏感参数
+3.0（LOW） /1?item=12_0_1 [-1] 可能存在['无风险']，原因为数字路径无敏感参数
+3.0（LOW） /xman/ [-1] 可能存在['潜在信息泄露']，原因为路径包含框架标识(xman)，无高危参数
+3.0（LOW） /status/get [-1] 可能存在['信息泄露']，原因为普通状态查询接口
+3.0（LOW） /user/randomName/get [-1] 可能存在[]，原因为低风险随机名称接口
+3.0（LOW） /unHide [-1] 可能存在['潜在信息泄露']，原因为路径名暗示隐藏功能，但无高危参数
+3.0（LOW） /store [-1] 可能存在[]，原因为普通功能路径无风险特征
+3.0（LOW） /account [-1] 可能存在['潜在信息泄露']，原因为通用路径名，无高危参数
+3.0（LOW） /selfServiceConcactWay [-1] 可能存在['潜在信息泄露']，原因为非标准路径名，无高危参数
+3.0（LOW） /unDistributed [-1] 可能存在['潜在信息泄露']，原因为非标准路径名，无高危参数
+3.0（LOW） /lookup [-1] 可能存在['潜在信息泄露']，原因为通用路径名，无高危参数
+3.0（LOW） /app/index [-1] 可能存在['潜在信息泄露']，原因为通用路径名，无高危参数
+3.0（LOW） /generalReturnAdd?type [-1] 可能存在['潜在信息泄露']，原因为非高危参数名(type)
+3.0（LOW） /emailRuleList [-1] 可能存在['潜在配置泄露']，原因为路径含敏感词(email)但无参数
+3.0（LOW） /salesOrderNetherlandsPrint?orderNo [-1] 可能存在['潜在信息泄露']，原因为订单号参数无敏感操作
+3.0（LOW） /DCPrint?stockSheetId [-1] 可能存在['潜在信息泄露']，原因为参数名(stockSheetId)无高危特征
+3.0（LOW） /email [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+3.0（LOW） /generalConsignmentSellChinaAdd [-1] 可能存在['潜在未授权访问']，原因为疑似管理接口但无鉴权特征
+3.0（LOW） /selfServiceSelectSite [-1] 可能存在[]，原因为功能性路径无高危特征
+3.0（LOW） /checkItem [-1] 可能存在['低风险端点']，原因为无高危特征路径或参数
+3.0（LOW） /messageHistoryList [-1] 可能存在['潜在信息泄露']，原因为普通功能路径，无高危参数
+3.0（LOW） /message [-1] 可能存在['潜在信息泄露']，原因为普通功能路径
+3.0（LOW） /review [-1] 可能存在['潜在信息泄露']，原因为普通功能路径
+3.0（LOW） /treatmentOrder [-1] 可能存在['潜在信息泄露']，原因为普通功能路径
+3.0（LOW） /quotationAdd [-1] 可能存在['潜在信息泄露']，原因为普通功能路径
+3.0（LOW） /workspace [-1] 可能存在['潜在信息泄露']，原因为疑似工作台接口但无参数
+3.0（LOW） /list [-1] 可能存在['通用路径风险']，原因为通用路径但无高危特征
+3.0（LOW） /campaign [-1] 可能存在['通用路径风险']，原因为营销路径无高危参数
+3.0（LOW） /signin [-1] 可能存在['潜在未授权访问']，原因为登录路径无鉴权特征
+3.0（LOW） /gsp/tpl/access/signin.html?v=1752722343059 [6170] 可能存在['登录页面暴露']，原因为含时间戳但响应体未超标
+2.5（LOW） /selfServiceChooseProduct [-1] 可能存在[]，原因为无参数且路径为业务功能
+2.5（LOW） /siteRma [-1] 可能存在[]，原因为无参数且路径无敏感特征
+2.5（LOW） /websiteWorkingTime [-1] 可能存在['配置信息泄露']，原因为疑似系统配置接口
+2.5（LOW） /consignmentSellList [-1] 可能存在['无风险或已防护']，原因为业务路径无敏感特征
+2.0（LOW） /gsp/tpl/blocks/area_select.html?v=1752722343059 [574] 可能存在['无风险']，原因为普通模板文件请求，无高危特征
+2.0（LOW） /user/address/region [-1] 可能存在['无风险或已防护']，原因为普通用户路径，无高危参数
+2.0（LOW） /query [-1] 可能存在['无风险']，原因为无敏感参数或路径
+2.0（LOW） /star/query [-1] 可能存在['无风险']，原因为无敏感参数或路径
+2.0（LOW） /insurance [-1] 可能存在['无风险']，原因为无参数路径
+2.0（LOW） /erma [-1] 可能存在[]，原因为无参数且路径无敏感特征
+2.0（LOW） /generalConsignmentSellGlobalAdd [-1] 可能存在[]，原因为无参数且路径为业务功能
+2.0（LOW） /rcc [-1] 可能存在[]，原因为无参数且路径无敏感特征
+2.0（LOW） /gsp [-1] 可能存在[]，原因为无参数且路径无敏感特征
+2.0（LOW） /selfServiceSaveSuccess?successType [-1] 可能存在[]，原因为无高危参数特征
+2.0（LOW） /selfServiceIndex [-1] 可能存在[]，原因为自助服务入口无高危特征
+2.0（LOW） /skuPrice [-1] 可能存在[]，原因为无参数且路径无敏感特征
+2.0（LOW） /causecode [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /transactionList [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /skuRepairPrice [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /campaignFormList [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /app [-1] 可能存在['无明确风险']，原因为无参数静态路径
+2.0（LOW） /faultcode [-1] 可能存在['无风险或已防护']，原因为路径无敏感特征
+2.0（LOW） /quotation [-1] 可能存在['无风险或已防护']，原因为业务路径无敏感特征
+2.0（LOW） /js/libs/codeMirror/mode/ [-1] 可能存在['目录枚举风险']，原因为静态资源目录暴露
+2.0（LOW） /js/libs/codeMirror/theme/ [-1] 可能存在['目录枚举风险']，原因为静态资源目录暴露
+2.0（LOW） /angucomplete-alt/index.html [-1] 可能存在['静态文件暴露']，原因为第三方组件页面暴露
+1.5（LOW） /gsp/tpl/app.html?v=1752722343059 [1455] 可能存在['版本参数暴露']，原因为含时间戳参数但响应体安全
+1.5（LOW） /gsp/tpl/app_index.html?v=1752722343059 [3290] 可能存在['版本参数暴露']，原因为含时间戳参数但响应体安全
+1.0（LOW） /a [-1] 可能存在['无效端点']，原因为无意义短路径
+1.0（LOW） /reply [-1] 可能存在['无风险或已防护']，原因为普通功能路径，无敏感特征
+1.0（LOW） /have/checked [-1] 可能存在['无风险或已防护']，原因为普通功能路径，无敏感特征
+1.0（LOW） /checked/get [-1] 可能存在['无风险或已防护']，原因为普通功能路径，无敏感特征
+1.0（LOW） /index [-1] 可能存在[]，原因为常规首页路径无特殊风险
+1.0（LOW） /gsp/tpl/access/page_footer.html?v=1752722343059 [113] 可能存在['低风险页面']，原因为小响应体无异常特征
+
+排序后的URI列表：
+/xman/admin/login/get-permission-code
+/xman/admin/order/payment-complete
+/xman/admin/batorder/import-popup-order
+/sqlExportUpdate
+/xman/admin/order/change-canceled-to-paid
+/xman/admin/order/batch-cancel
+/xman/admin/order/batch-unhold
+/xman/admin/batorder/upload
+/xman/admin/order/bat-export
+/modifyPassword
+/sqlExport
+/xman/admin/order/hold-or-unhold
+/xman/admin/batorder/record
+/xman/admin/order/approve
+/xman/admin/order/info
+/xman/admin/login/check-login
+/xman/admin/order/update-status
+/xman/admin/order/add-history
+/xman/admin/order/send-invoice-email
+/dataDictionary
+/xman/admin/order/list
+/user/batchResetUserName
+/list/export
+/xman/admin/usercenter/create
+/sqlExportAdd
+/database
+/paymentOfflineRefundDetail?refundSheetId
+/deliveryOutboundReturn?stockSheetId&step
+/xman/admin/login/logout
+/xman/admin/batorder/download-popup-tpl
+/reset
+/orderList?userId&pageSize&currentPage
+/rmaDetail?rmaSheetId
+/rmaScrapAdd
+/xman/api/order/get-order-info
+/edit
+/user/address/update
+/xman/admin/order/batch-Hold
+/xman/admin/page/preview-page
+/xman/admin/batorder/get-popup-merchants
+/xman/admin/order/cancel
+/gsp/member/use/record/list
+/user/status/update
+/getReviewLog
+/viewEdit/?id&action
+/emailRuleAdd
+/authProduct/?id&action
+/app_bom_replace
+/userList
+/faultcodeAdd
+/userManager
+/loginUsers
+/admin
+/create?rmaSheetId&orderNo&userEmail&userMobile&storeViewCode
+/lma
+/user/personalInfo/update
+/sender/sms/resend
+/sender/email/resend
+/consignmentSellAdd
+/user/query
+/set/cancelRecommended
+/xman/admin/login
+/user/optlog/get
+/popup/import
+/useRecord?userId&currentPage&pageSize
+/selfServiceSureType?tokenNo
+/report
+/rmaCreateNew
+/doaPrint?rmaSheetId
+/emailTemplateList
+/emailLookup
+/sendEmail
+/user/authType/get
+/user/auth/product/query
+/inTransitReport
+/user/address/get
+/sender/email/searchEmail
+/user/accountInfo/update
+/user/pinCode/query
+/growthValue?userId&currentPage&pageSize
+/defectiveReturnList
+/POPrint?applySheetId
+/imei
+/coupon
+/emergencyOrder
+/integrationLogQuery
+/consignmentSellDetail?id
+/queryWarningRma
+/selfServiceCustomerRating?rmaSheetId
+/applyDetail?id
+/selfServicefaultDescribe?imei
+/searchRmaTat
+/sender/sms/searchSms
+/gsp/l10n/en_US.json
+/#/app/modifyPassword
+/hidden
+/sender/gateway/listGateway
+/user/auth/product/count
+/user/get
+/gsp/member/device/list
+/emailHistoryDetail?emailHistoryId
+/quotationDetail?id
+/scrapDetail?id
+/tcRefundAdd
+/tcRefundAddCn
+/address/?id&type&action
+/deviceDetail?userId&pageSize&currentPage
+/warrantyLog
+/deliveryInboundReturn?stockSheetId&step
+/attachment
+/payment
+/user
+/warrantyList
+/confi
+/causecodeDetail?id
+/receiptProcess?receiptNo
+/okDoaReturnAdd?type
+/access
+/emailTemplateAdd
+/list/:param/:value
+/claimRecord?userId&currentPage&pageSize
+/refundDetail?refundSheetId
+/faultcodeDetail?id
+/unAllocatedRma
+/cs/gsp/access/getAuthLoginStatus.json
+/user/statusList/get
+/set/setRecommended
+/user/address/count
+/inventoryReport
+/deliveryOutbound?stockSheetId&step
+/siteRmaInvoice?rmaSheetId
+/rmaRecordPrint?rmaSheetId
+/takeMachineReport?rmaSheetId
+/apply
+/deliveryInbound?stockSheetId&step
+/crma
+/reportDownload
+/lmaDetail?lmaSheetId&step
+/tradeIn
+/applyList
+/pointHistory?userId&pageSize&currentPage
+/rmaProposalPrint?rmaSheetId
+/lmaCreate
+/storeDetail?serviceNodeId
+/order
+/receiveList
+/consumptionReport
+/privilege.html#/access/forgotpwd
+/taxInvoicePrint?stockSheetId
+/approve
+/user/auth/product/type/get
+/rmaQueryNew?customerId
+/rmaDetailNew?rmaSheetId
+/userInfo
+/myDistributedRma
+/proformaInvoicePrint?applySheetId
+/storeView?serviceNodeId
+/invoiceDetail?orderNo
+/rmaReturnAdd
+/serviceorder
+/sobot
+/couponList
+/rmaQuery?customerId
+/tcRefundDetail?refundNo
+/sparePrintDelivery
+/spareparts
+/tcRefundListCn
+/emailHistoryList
+/emailRuleDetail?emailRuleId
+/doaList
+/queryEmail
+/rmaCreate
+/inventoryValueReport
+/invoiceList
+/poReport
+/refundList
+/tcRefundList
+/view/:orderNo
+/detail?serviceOrderNo
+/address/list
+/index.php?r=serviceNode/AjaxSearch
+/user/regTypes/get
+/storeAdd
+/compensateRefund
+/inventoryBatch
+/newinvoiceList
+/deliveryList
+/receiptList
+/defectivePendingReport
+/printDetectionReport?rmaSheetId
+/refundAdd?orderNo&sourceId&sourceType&type
+/process?orderNo&imei&type&rmaSheetId
+/receiveConfirm
+/skuList
+/reviewList
+/mockjsdata/
+/cs/gsp/common/config/findServiceDataDictionary.json
+/score/display/set
+/get
+/engineerList
+/inventory
+/scrapAdd
+/causecodeAdd
+/troubleShooting
+/scrapList
+/crm
+/cloud
+/tcRefundDetailCn?refundNo
+/bizLogRules
+/template
+/tradeInList
+/sendMessage
+/insuranceList
+/myPendingRma
+/emailTemplateDetail?templateId
+/supportSystem
+/applyAdd
+/galleryOrderQuery
+/checkMachineReport?rmaSheetId
+/smsLookup
+/sparePartsPrintBox
+/cs/gsp/setAreaCode.json
+/type/get
+/operatingStatus/get
+/user/regChannels/get
+/user/unionTypes/get
+/score/display/query
+/recommended/get
+/integration
+/storeQuery
+/selfService
+/findNotifyPartnerFail
+/invoice
+/rma
+/lmaQuery
+/userManuals
+/0?item=12_1_3
+/1?item=12_0_1
+/xman/
+/status/get
+/user/randomName/get
+/unHide
+/store
+/account
+/selfServiceConcactWay
+/unDistributed
+/lookup
+/app/index
+/generalReturnAdd?type
+/emailRuleList
+/salesOrderNetherlandsPrint?orderNo
+/DCPrint?stockSheetId
+/email
+/generalConsignmentSellChinaAdd
+/selfServiceSelectSite
+/checkItem
+/messageHistoryList
+/message
+/review
+/treatmentOrder
+/quotationAdd
+/workspace
+/list
+/campaign
+/signin
+/gsp/tpl/access/signin.html?v=1752722343059
+/selfServiceChooseProduct
+/siteRma
+/websiteWorkingTime
+/consignmentSellList
+/gsp/tpl/blocks/area_select.html?v=1752722343059
+/user/address/region
+/query
+/star/query
+/insurance
+/erma
+/generalConsignmentSellGlobalAdd
+/rcc
+/gsp
+/selfServiceSaveSuccess?successType
+/selfServiceIndex
+/skuPrice
+/causecode
+/transactionList
+/skuRepairPrice
+/campaignFormList
+/app
+/faultcode
+/quotation
+/js/libs/codeMirror/mode/
+/js/libs/codeMirror/theme/
+/angucomplete-alt/index.html
+/gsp/tpl/app.html?v=1752722343059
+/gsp/tpl/app_index.html?v=1752722343059
+/a
+/reply
+/have/checked
+/checked/get
+/index
+/gsp/tpl/access/page_footer.html?v=1752722343059
+
+URL拼接后结果:
+https://opsg-gspapi-eu.oppo.com/xman/admin/login/get-permission-code
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/payment-complete
+https://opsg-gspapi-eu.oppo.com/xman/admin/batorder/import-popup-order
+https://opsg-gspapi-eu.oppo.com/cs/gsp/sqlExportUpdate
+https://opsg-gsp-eu.oppo.com/gsp/sqlExportUpdate
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/change-canceled-to-paid
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/batch-cancel
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/batch-unhold
+https://opsg-gspapi-eu.oppo.com/xman/admin/batorder/upload
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/bat-export
+https://opsg-gspapi-eu.oppo.com/cs/gsp/modifyPassword
+https://opsg-gsp-eu.oppo.com/gsp/modifyPassword
+https://opsg-gspapi-eu.oppo.com/cs/gsp/sqlExport
+https://opsg-gsp-eu.oppo.com/gsp/sqlExport
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/hold-or-unhold
+https://opsg-gspapi-eu.oppo.com/xman/admin/batorder/record
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/approve
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/info
+https://opsg-gspapi-eu.oppo.com/xman/admin/login/check-login
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/update-status
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/add-history
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/send-invoice-email
+https://opsg-gspapi-eu.oppo.com/cs/gsp/common/config/dataDictionary
+https://opsg-gspapi-eu.oppo.com/cs/gsp/dataDictionary
+https://opsg-gspapi-eu.oppo.com/xman/admin/order/list
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/batchResetUserName
+https://opsg-gspapi-eu.oppo.com/cs/gsp/list/export
+https://opsg-gspapi-eu.oppo.com/xman/admin/usercenter/create
+https://opsg-gspapi-eu.oppo.com/cs/gsp/sqlExportAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/database
+https://opsg-gspapi-eu.oppo.com/cs/gsp/paymentOfflineRefundDetail?refundSheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/deliveryOutboundReturn?stockSheetId&step
+https://opsg-gspapi-eu.oppo.com/xman/admin/login/logout
+https://opsg-gspapi-eu.oppo.com/xman/admin/batorder/download-popup-tpl
+https://opsg-gspapi-eu.oppo.com/reset
+https://opsg-gsp-eu.oppo.com/reset
+https://opsg-gspapi-eu.oppo.com/cs/gsp/orderList?userId&pageSize&currentPage
+https://opsg-gsp-eu.oppo.com/gsp/orderList?userId&pageSize&currentPage
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rmaDetail?rmaSheetId
+https://opsg-gsp-eu.oppo.com/gsp/rmaDetail?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rmaScrapAdd
+https://opsg-gsp-eu.oppo.com/gsp/rmaScrapAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/api/order/get-order-info
+https://opsg-gsp-eu.oppo.com/gsp/xman/api/order/get-order-info
+https://opsg-gspapi-eu.oppo.com/cs/gsp/edit
+https://opsg-gsp-eu.oppo.com/gsp/edit
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/address/update
+https://opsg-gsp-eu.oppo.com/gsp/user/address/update
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/admin/order/batch-Hold
+https://opsg-gsp-eu.oppo.com/gsp/xman/admin/order/batch-Hold
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/admin/page/preview-page
+https://opsg-gsp-eu.oppo.com/gsp/xman/admin/page/preview-page
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/admin/batorder/get-popup-merchants
+https://opsg-gsp-eu.oppo.com/gsp/xman/admin/batorder/get-popup-merchants
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/admin/order/cancel
+https://opsg-gsp-eu.oppo.com/gsp/xman/admin/order/cancel
+https://opsg-gspapi-eu.oppo.com/cs/gsp/gsp/member/use/record/list
+https://opsg-gsp-eu.oppo.com/gsp/member/use/record/list
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/status/update
+https://opsg-gsp-eu.oppo.com/gsp/user/status/update
+https://opsg-gspapi-eu.oppo.com/cs/gsp/getReviewLog
+https://opsg-gsp-eu.oppo.com/gsp/getReviewLog
+https://opsg-gspapi-eu.oppo.com/cs/gsp/viewEdit/?id&action
+https://opsg-gsp-eu.oppo.com/gsp/viewEdit/?id&action
+https://opsg-gspapi-eu.oppo.com/emailRuleAdd
+https://opsg-gspapi-eu.oppo.com/authProduct/?id&action
+https://opsg-gspapi-eu.oppo.com/app_bom_replace
+https://opsg-gspapi-eu.oppo.com/userList
+https://opsg-gspapi-eu.oppo.com/faultcodeAdd
+https://opsg-gspapi-eu.oppo.com/userManager
+https://opsg-gspapi-eu.oppo.com/loginUsers
+https://opsg-gspapi-eu.oppo.com/admin
+https://opsg-gspapi-eu.oppo.com/create?rmaSheetId&orderNo&userEmail&userMobile&storeViewCode
+https://opsg-gspapi-eu.oppo.com/lma
+https://opsg-gspapi-eu.oppo.com/user/personalInfo/update
+https://opsg-gspapi-eu.oppo.com/sender/sms/resend
+https://opsg-gspapi-eu.oppo.com/sender/email/resend
+https://opsg-gspapi-eu.oppo.com/consignmentSellAdd
+https://opsg-gspapi-eu.oppo.com/user/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/set/cancelRecommended
+https://opsg-gspapi-eu.oppo.com/cs/gsp/xman/admin/login
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/optlog/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/popup/import
+https://opsg-gspapi-eu.oppo.com/cs/gsp/useRecord?userId&currentPage&pageSize
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfServiceSureType?tokenNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/report
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rmaCreateNew
+https://opsg-gspapi-eu.oppo.com/cs/gsp/doaPrint?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailTemplateList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailLookup
+https://opsg-gspapi-eu.oppo.com/cs/gsp/sendEmail
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/authType/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/auth/product/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/inTransitReport
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/address/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/sender/email/searchEmail
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/accountInfo/update
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/pinCode/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/growthValue?userId&currentPage&pageSize
+https://opsg-gspapi-eu.oppo.com/cs/gsp/defectiveReturnList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/POPrint?applySheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/imei
+https://opsg-gspapi-eu.oppo.com/cs/gsp/coupon
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emergencyOrder
+https://opsg-gspapi-eu.oppo.com/cs/gsp/integrationLogQuery
+https://opsg-gspapi-eu.oppo.com/cs/gsp/consignmentSellDetail?id
+https://opsg-gspapi-eu.oppo.com/cs/gsp/queryWarningRma
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfServiceCustomerRating?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/applyDetail?id
+https://opsg-gspapi-eu.oppo.com/selfServicefaultDescribe?imei
+https://opsg-gsp-eu.oppo.com/selfServicefaultDescribe?imei
+https://opsg-gspapi-eu.oppo.com/searchRmaTat
+https://opsg-gsp-eu.oppo.com/searchRmaTat
+https://opsg-gspapi-eu.oppo.com/sender/sms/searchSms
+https://opsg-gsp-eu.oppo.com/sender/sms/searchSms
+https://opsg-gsp-eu.oppo.com/gsp/l10n/en_US.json
+https://opsg-gsp-eu.oppo.com/#/app/modifyPassword
+https://opsg-gspapi-eu.oppo.com/hidden
+https://opsg-gsp-eu.oppo.com/hidden
+https://opsg-gspapi-eu.oppo.com/sender/gateway/listGateway
+https://opsg-gsp-eu.oppo.com/sender/gateway/listGateway
+https://opsg-gspapi-eu.oppo.com/user/auth/product/count
+https://opsg-gsp-eu.oppo.com/user/auth/product/count
+https://opsg-gspapi-eu.oppo.com/user/get
+https://opsg-gsp-eu.oppo.com/user/get
+https://opsg-gsp-eu.oppo.com/gsp/member/device/list
+https://opsg-gspapi-eu.oppo.com/emailHistoryDetail?emailHistoryId
+https://opsg-gsp-eu.oppo.com/emailHistoryDetail?emailHistoryId
+https://opsg-gspapi-eu.oppo.com/quotationDetail?id
+https://opsg-gsp-eu.oppo.com/quotationDetail?id
+https://opsg-gspapi-eu.oppo.com/scrapDetail?id
+https://opsg-gsp-eu.oppo.com/scrapDetail?id
+https://opsg-gspapi-eu.oppo.com/tcRefundAdd
+https://opsg-gsp-eu.oppo.com/tcRefundAdd
+https://opsg-gspapi-eu.oppo.com/tcRefundAddCn
+https://opsg-gsp-eu.oppo.com/tcRefundAddCn
+https://opsg-gspapi-eu.oppo.com/cs/gsp/address/?id&type&action
+https://opsg-gsp-eu.oppo.com/gsp/address/?id&type&action
+https://opsg-gspapi-eu.oppo.com/cs/gsp/deviceDetail?userId&pageSize&currentPage
+https://opsg-gsp-eu.oppo.com/gsp/deviceDetail?userId&pageSize&currentPage
+https://opsg-gspapi-eu.oppo.com/cs/gsp/warrantyLog
+https://opsg-gsp-eu.oppo.com/gsp/warrantyLog
+https://opsg-gspapi-eu.oppo.com/cs/gsp/deliveryInboundReturn?stockSheetId&step
+https://opsg-gsp-eu.oppo.com/gsp/deliveryInboundReturn?stockSheetId&step
+https://opsg-gspapi-eu.oppo.com/cs/gsp/attachment
+https://opsg-gsp-eu.oppo.com/gsp/attachment
+https://opsg-gspapi-eu.oppo.com/cs/gsp/payment
+https://opsg-gsp-eu.oppo.com/gsp/payment
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user
+https://opsg-gsp-eu.oppo.com/gsp/user
+https://opsg-gspapi-eu.oppo.com/cs/gsp/warrantyList
+https://opsg-gsp-eu.oppo.com/gsp/warrantyList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/confi
+https://opsg-gsp-eu.oppo.com/gsp/confi
+https://opsg-gspapi-eu.oppo.com/cs/gsp/causecodeDetail?id
+https://opsg-gsp-eu.oppo.com/gsp/causecodeDetail?id
+https://opsg-gspapi-eu.oppo.com/cs/gsp/receiptProcess?receiptNo
+https://opsg-gsp-eu.oppo.com/gsp/receiptProcess?receiptNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/okDoaReturnAdd?type
+https://opsg-gsp-eu.oppo.com/gsp/okDoaReturnAdd?type
+https://opsg-gspapi-eu.oppo.com/cs/gsp/access
+https://opsg-gsp-eu.oppo.com/gsp/access
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailTemplateAdd
+https://opsg-gsp-eu.oppo.com/gsp/emailTemplateAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/list/:param/:value
+https://opsg-gsp-eu.oppo.com/gsp/list/:param/:value
+https://opsg-gspapi-eu.oppo.com/claimRecord?userId&currentPage&pageSize
+https://opsg-gsp-eu.oppo.com/claimRecord?userId&currentPage&pageSize
+https://opsg-gspapi-eu.oppo.com/refundDetail?refundSheetId
+https://opsg-gsp-eu.oppo.com/refundDetail?refundSheetId
+https://opsg-gspapi-eu.oppo.com/faultcodeDetail?id
+https://opsg-gsp-eu.oppo.com/faultcodeDetail?id
+https://opsg-gspapi-eu.oppo.com/unAllocatedRma
+https://opsg-gsp-eu.oppo.com/unAllocatedRma
+https://opsg-gspapi-eu.oppo.com/cs/gsp/access/getAuthLoginStatus.json
+https://opsg-gspapi-eu.oppo.com/user/statusList/get
+https://opsg-gsp-eu.oppo.com/user/statusList/get
+https://opsg-gspapi-eu.oppo.com/set/setRecommended
+https://opsg-gsp-eu.oppo.com/set/setRecommended
+https://opsg-gspapi-eu.oppo.com/user/address/count
+https://opsg-gsp-eu.oppo.com/user/address/count
+https://opsg-gspapi-eu.oppo.com/inventoryReport
+https://opsg-gsp-eu.oppo.com/inventoryReport
+https://opsg-gspapi-eu.oppo.com/deliveryOutbound?stockSheetId&step
+https://opsg-gsp-eu.oppo.com/deliveryOutbound?stockSheetId&step
+https://opsg-gspapi-eu.oppo.com/siteRmaInvoice?rmaSheetId
+https://opsg-gsp-eu.oppo.com/siteRmaInvoice?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/rmaRecordPrint?rmaSheetId
+https://opsg-gsp-eu.oppo.com/rmaRecordPrint?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/takeMachineReport?rmaSheetId
+https://opsg-gsp-eu.oppo.com/takeMachineReport?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/apply
+https://opsg-gsp-eu.oppo.com/apply
+https://opsg-gspapi-eu.oppo.com/deliveryInbound?stockSheetId&step
+https://opsg-gsp-eu.oppo.com/deliveryInbound?stockSheetId&step
+https://opsg-gspapi-eu.oppo.com/crma
+https://opsg-gsp-eu.oppo.com/crma
+https://opsg-gspapi-eu.oppo.com/reportDownload
+https://opsg-gsp-eu.oppo.com/reportDownload
+https://opsg-gspapi-eu.oppo.com/lmaDetail?lmaSheetId&step
+https://opsg-gsp-eu.oppo.com/lmaDetail?lmaSheetId&step
+https://opsg-gspapi-eu.oppo.com/tradeIn
+https://opsg-gsp-eu.oppo.com/tradeIn
+https://opsg-gspapi-eu.oppo.com/applyList
+https://opsg-gsp-eu.oppo.com/applyList
+https://opsg-gspapi-eu.oppo.com/pointHistory?userId&pageSize&currentPage
+https://opsg-gsp-eu.oppo.com/pointHistory?userId&pageSize&currentPage
+https://opsg-gspapi-eu.oppo.com/rmaProposalPrint?rmaSheetId
+https://opsg-gsp-eu.oppo.com/rmaProposalPrint?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/lmaCreate
+https://opsg-gsp-eu.oppo.com/lmaCreate
+https://opsg-gspapi-eu.oppo.com/storeDetail?serviceNodeId
+https://opsg-gsp-eu.oppo.com/storeDetail?serviceNodeId
+https://opsg-gspapi-eu.oppo.com/order
+https://opsg-gsp-eu.oppo.com/order
+https://opsg-gspapi-eu.oppo.com/receiveList
+https://opsg-gsp-eu.oppo.com/receiveList
+https://opsg-gspapi-eu.oppo.com/consumptionReport
+https://opsg-gsp-eu.oppo.com/consumptionReport
+https://opsg-gsp-eu.oppo.com/privilege.html#/access/forgotpwd
+https://opsg-gspapi-eu.oppo.com/taxInvoicePrint?stockSheetId
+https://opsg-gsp-eu.oppo.com/taxInvoicePrint?stockSheetId
+https://opsg-gspapi-eu.oppo.com/approve
+https://opsg-gsp-eu.oppo.com/approve
+https://opsg-gspapi-eu.oppo.com/user/auth/product/type/get
+https://opsg-gspapi-eu.oppo.com/rmaQueryNew?customerId
+https://opsg-gspapi-eu.oppo.com/rmaDetailNew?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/userInfo
+https://opsg-gspapi-eu.oppo.com/myDistributedRma
+https://opsg-gspapi-eu.oppo.com/proformaInvoicePrint?applySheetId
+https://opsg-gspapi-eu.oppo.com/storeView?serviceNodeId
+https://opsg-gspapi-eu.oppo.com/invoiceDetail?orderNo
+https://opsg-gspapi-eu.oppo.com/rmaReturnAdd
+https://opsg-gspapi-eu.oppo.com/serviceorder
+https://opsg-gspapi-eu.oppo.com/sobot
+https://opsg-gspapi-eu.oppo.com/couponList
+https://opsg-gspapi-eu.oppo.com/rmaQuery?customerId
+https://opsg-gspapi-eu.oppo.com/tcRefundDetail?refundNo
+https://opsg-gspapi-eu.oppo.com/sparePrintDelivery
+https://opsg-gspapi-eu.oppo.com/spareparts
+https://opsg-gsp-eu.oppo.com/gsp/spareparts
+https://opsg-gspapi-eu.oppo.com/cs/gsp/tcRefundListCn
+https://opsg-gsp-eu.oppo.com/gsp/tcRefundListCn
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailHistoryList
+https://opsg-gsp-eu.oppo.com/gsp/emailHistoryList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailRuleDetail?emailRuleId
+https://opsg-gsp-eu.oppo.com/gsp/emailRuleDetail?emailRuleId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/doaList
+https://opsg-gsp-eu.oppo.com/gsp/doaList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/queryEmail
+https://opsg-gsp-eu.oppo.com/gsp/queryEmail
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rmaCreate
+https://opsg-gsp-eu.oppo.com/gsp/rmaCreate
+https://opsg-gspapi-eu.oppo.com/cs/gsp/inventoryValueReport
+https://opsg-gsp-eu.oppo.com/gsp/inventoryValueReport
+https://opsg-gspapi-eu.oppo.com/cs/gsp/invoiceList
+https://opsg-gsp-eu.oppo.com/gsp/invoiceList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/poReport
+https://opsg-gsp-eu.oppo.com/gsp/poReport
+https://opsg-gspapi-eu.oppo.com/cs/gsp/refundList
+https://opsg-gsp-eu.oppo.com/gsp/refundList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/tcRefundList
+https://opsg-gsp-eu.oppo.com/gsp/tcRefundList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/view/:orderNo
+https://opsg-gsp-eu.oppo.com/gsp/view/:orderNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/detail?serviceOrderNo
+https://opsg-gsp-eu.oppo.com/gsp/detail?serviceOrderNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/address/list
+https://opsg-gsp-eu.oppo.com/gsp/address/list
+https://opsg-gspapi-eu.oppo.com/index.php?r=serviceNode/AjaxSearch
+https://opsg-gspapi-eu.oppo.com/user/regTypes/get
+https://opsg-gspapi-eu.oppo.com/storeAdd
+https://opsg-gspapi-eu.oppo.com/compensateRefund
+https://opsg-gspapi-eu.oppo.com/inventoryBatch
+https://opsg-gspapi-eu.oppo.com/newinvoiceList
+https://opsg-gspapi-eu.oppo.com/deliveryList
+https://opsg-gspapi-eu.oppo.com/receiptList
+https://opsg-gspapi-eu.oppo.com/defectivePendingReport
+https://opsg-gspapi-eu.oppo.com/printDetectionReport?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/refundAdd?orderNo&sourceId&sourceType&type
+https://opsg-gspapi-eu.oppo.com/process?orderNo&imei&type&rmaSheetId
+https://opsg-gspapi-eu.oppo.com/receiveConfirm
+https://opsg-gspapi-eu.oppo.com/skuList
+https://opsg-gspapi-eu.oppo.com/reviewList
+https://opsg-gspapi-eu.oppo.com/mockjsdata/
+https://opsg-gspapi-eu.oppo.com/cs/gsp/common/config/findServiceDataDictionary.json
+https://opsg-gspapi-eu.oppo.com/cs/gsp/score/display/set
+https://opsg-gsp-eu.oppo.com/gsp/score/display/set
+https://opsg-gspapi-eu.oppo.com/cs/gsp/get
+https://opsg-gsp-eu.oppo.com/gsp/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/engineerList
+https://opsg-gsp-eu.oppo.com/gsp/engineerList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/inventory
+https://opsg-gsp-eu.oppo.com/gsp/inventory
+https://opsg-gspapi-eu.oppo.com/cs/gsp/scrapAdd
+https://opsg-gsp-eu.oppo.com/gsp/scrapAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/causecodeAdd
+https://opsg-gsp-eu.oppo.com/gsp/causecodeAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/troubleShooting
+https://opsg-gsp-eu.oppo.com/gsp/troubleShooting
+https://opsg-gspapi-eu.oppo.com/cs/gsp/scrapList
+https://opsg-gsp-eu.oppo.com/gsp/scrapList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/crm
+https://opsg-gsp-eu.oppo.com/gsp/crm
+https://opsg-gspapi-eu.oppo.com/cs/gsp/cloud
+https://opsg-gsp-eu.oppo.com/gsp/cloud
+https://opsg-gspapi-eu.oppo.com/cs/gsp/tcRefundDetailCn?refundNo
+https://opsg-gsp-eu.oppo.com/gsp/tcRefundDetailCn?refundNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/bizLogRules
+https://opsg-gsp-eu.oppo.com/gsp/bizLogRules
+https://opsg-gspapi-eu.oppo.com/cs/gsp/template
+https://opsg-gsp-eu.oppo.com/gsp/template
+https://opsg-gspapi-eu.oppo.com/tradeInList
+https://opsg-gsp-eu.oppo.com/gsp/tradeInList
+https://opsg-gspapi-eu.oppo.com/sendMessage
+https://opsg-gsp-eu.oppo.com/gsp/sendMessage
+https://opsg-gspapi-eu.oppo.com/insuranceList
+https://opsg-gsp-eu.oppo.com/gsp/insuranceList
+https://opsg-gspapi-eu.oppo.com/myPendingRma
+https://opsg-gsp-eu.oppo.com/gsp/myPendingRma
+https://opsg-gspapi-eu.oppo.com/emailTemplateDetail?templateId
+https://opsg-gsp-eu.oppo.com/gsp/emailTemplateDetail?templateId
+https://opsg-gspapi-eu.oppo.com/supportSystem
+https://opsg-gsp-eu.oppo.com/gsp/supportSystem
+https://opsg-gspapi-eu.oppo.com/applyAdd
+https://opsg-gsp-eu.oppo.com/gsp/applyAdd
+https://opsg-gspapi-eu.oppo.com/galleryOrderQuery
+https://opsg-gsp-eu.oppo.com/gsp/galleryOrderQuery
+https://opsg-gspapi-eu.oppo.com/checkMachineReport?rmaSheetId
+https://opsg-gsp-eu.oppo.com/gsp/checkMachineReport?rmaSheetId
+https://opsg-gspapi-eu.oppo.com/smsLookup
+https://opsg-gsp-eu.oppo.com/gsp/smsLookup
+https://opsg-gspapi-eu.oppo.com/sparePartsPrintBox
+https://opsg-gsp-eu.oppo.com/gsp/sparePartsPrintBox
+https://opsg-gspapi-eu.oppo.com/cs/gsp/setAreaCode.json
+https://opsg-gspapi-eu.oppo.com/type/get
+https://opsg-gsp-eu.oppo.com/gsp/type/get
+https://opsg-gspapi-eu.oppo.com/operatingStatus/get
+https://opsg-gsp-eu.oppo.com/gsp/operatingStatus/get
+https://opsg-gspapi-eu.oppo.com/user/regChannels/get
+https://opsg-gsp-eu.oppo.com/gsp/user/regChannels/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/unionTypes/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/score/display/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/recommended/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/integration
+https://opsg-gspapi-eu.oppo.com/cs/gsp/storeQuery
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfService
+https://opsg-gspapi-eu.oppo.com/cs/gsp/findNotifyPartnerFail
+https://opsg-gspapi-eu.oppo.com/cs/gsp/invoice
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rma
+https://opsg-gspapi-eu.oppo.com/cs/gsp/lmaQuery
+https://opsg-gspapi-eu.oppo.com/cs/gsp/userManuals
+https://opsg-gsp-eu.oppo.com/gsp/0?item=12_1_3
+https://opsg-gsp-eu.oppo.com/gsp/1?item=12_0_1
+https://opsg-gsp-eu.oppo.com/gsp/xman/
+https://opsg-gspapi-eu.oppo.com/cs/gsp/status/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/randomName/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/unHide
+https://opsg-gspapi-eu.oppo.com/cs/gsp/store
+https://opsg-gspapi-eu.oppo.com/cs/gsp/account
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfServiceConcactWay
+https://opsg-gspapi-eu.oppo.com/cs/gsp/unDistributed
+https://opsg-gspapi-eu.oppo.com/cs/gsp/lookup
+https://opsg-gsp-eu.oppo.com/gsp/app/index
+https://opsg-gspapi-eu.oppo.com/cs/gsp/generalReturnAdd?type
+https://opsg-gspapi-eu.oppo.com/cs/gsp/emailRuleList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/salesOrderNetherlandsPrint?orderNo
+https://opsg-gspapi-eu.oppo.com/cs/gsp/DCPrint?stockSheetId
+https://opsg-gspapi-eu.oppo.com/cs/gsp/email
+https://opsg-gspapi-eu.oppo.com/cs/gsp/generalConsignmentSellChinaAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfServiceSelectSite
+https://opsg-gspapi-eu.oppo.com/cs/gsp/checkItem
+https://opsg-gsp-eu.oppo.com/gsp/checkItem
+https://opsg-gspapi-eu.oppo.com/cs/gsp/messageHistoryList
+https://opsg-gsp-eu.oppo.com/gsp/messageHistoryList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/message
+https://opsg-gsp-eu.oppo.com/gsp/message
+https://opsg-gspapi-eu.oppo.com/cs/gsp/review
+https://opsg-gsp-eu.oppo.com/gsp/review
+https://opsg-gspapi-eu.oppo.com/cs/gsp/treatmentOrder
+https://opsg-gsp-eu.oppo.com/gsp/treatmentOrder
+https://opsg-gspapi-eu.oppo.com/cs/gsp/quotationAdd
+https://opsg-gsp-eu.oppo.com/gsp/quotationAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/workspace
+https://opsg-gsp-eu.oppo.com/gsp/workspace
+https://opsg-gspapi-eu.oppo.com/cs/gsp/list
+https://opsg-gsp-eu.oppo.com/gsp/list
+https://opsg-gspapi-eu.oppo.com/cs/gsp/campaign
+https://opsg-gsp-eu.oppo.com/gsp/campaign
+https://opsg-gspapi-eu.oppo.com/cs/gsp/signin
+https://opsg-gsp-eu.oppo.com/gsp/signin
+https://opsg-gsp-eu.oppo.com/gsp/tpl/access/signin.html?v=1752722343059
+https://opsg-gspapi-eu.oppo.com/cs/gsp/selfServiceChooseProduct
+https://opsg-gsp-eu.oppo.com/gsp/selfServiceChooseProduct
+https://opsg-gspapi-eu.oppo.com/cs/gsp/siteRma
+https://opsg-gsp-eu.oppo.com/gsp/siteRma
+https://opsg-gspapi-eu.oppo.com/cs/gsp/websiteWorkingTime
+https://opsg-gsp-eu.oppo.com/gsp/websiteWorkingTime
+https://opsg-gspapi-eu.oppo.com/cs/gsp/consignmentSellList
+https://opsg-gsp-eu.oppo.com/gsp/consignmentSellList
+https://opsg-gsp-eu.oppo.com/gsp/tpl/blocks/area_select.html?v=1752722343059
+https://opsg-gspapi-eu.oppo.com/cs/gsp/user/address/region
+https://opsg-gspapi-eu.oppo.com/cs/gsp/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/star/query
+https://opsg-gspapi-eu.oppo.com/cs/gsp/insurance
+https://opsg-gspapi-eu.oppo.com/cs/gsp/erma
+https://opsg-gspapi-eu.oppo.com/cs/gsp/generalConsignmentSellGlobalAdd
+https://opsg-gspapi-eu.oppo.com/cs/gsp/rcc
+https://opsg-gsp-eu.oppo.com/gsp
+https://opsg-gsp-eu.oppo.com/gsp/selfServiceSaveSuccess?successType
+https://opsg-gsp-eu.oppo.com/gsp/selfServiceIndex
+https://opsg-gspapi-eu.oppo.com/cs/gsp/skuPrice
+https://opsg-gspapi-eu.oppo.com/cs/gsp/causecode
+https://opsg-gspapi-eu.oppo.com/cs/gsp/transactionList
+https://opsg-gspapi-eu.oppo.com/cs/gsp/skuRepairPrice
+https://opsg-gspapi-eu.oppo.com/cs/gsp/campaignFormList
+https://opsg-gsp-eu.oppo.com/gsp/campaignFormList
+https://opsg-gsp-eu.oppo.com/gsp/app
+https://opsg-gsp-eu.oppo.com/gsp/tpl/app.html?v=1752722343059
+https://opsg-gspapi-eu.oppo.com/cs/gsp/faultcode
+https://opsg-gsp-eu.oppo.com/gsp/faultcode
+https://opsg-gspapi-eu.oppo.com/cs/gsp/quotation
+https://opsg-gsp-eu.oppo.com/gsp/quotation
+https://opsg-gsp-eu.oppo.com/framework/js/libs/codeMirror/mode/
+https://opsg-gsp-eu.oppo.com/gsp/js/libs/codeMirror/mode/
+https://opsg-gsp-eu.oppo.com/framework/js/libs/codeMirror/theme/
+https://opsg-gsp-eu.oppo.com/gsp/js/libs/codeMirror/theme/
+https://opsg-gsp-eu.oppo.com/framework/js/modules/angucomplete-alt/index.html
+https://opsg-gsp-eu.oppo.com/gsp/angucomplete-alt/index.html
+https://opsg-gsp-eu.oppo.com/gsp/tpl/app.html?v=1752722343059
+https://opsg-gsp-eu.oppo.com/gsp/tpl/app_index.html?v=1752722343059
+https://opsg-gspapi-eu.oppo.com/cs/gsp/a
+https://opsg-gsp-eu.oppo.com/gsp/a
+https://opsg-gspapi-eu.oppo.com/cs/gsp/reply
+https://opsg-gsp-eu.oppo.com/gsp/reply
+https://opsg-gspapi-eu.oppo.com/cs/gsp/have/checked
+https://opsg-gsp-eu.oppo.com/gsp/have/checked
+https://opsg-gspapi-eu.oppo.com/cs/gsp/checked/get
+https://opsg-gsp-eu.oppo.com/gsp/checked/get
+https://opsg-gspapi-eu.oppo.com/cs/gsp/index
+https://opsg-gsp-eu.oppo.com/gsp/index
+https://opsg-gsp-eu.oppo.com/gsp/tpl/access/page_footer.html?v=1752722343059

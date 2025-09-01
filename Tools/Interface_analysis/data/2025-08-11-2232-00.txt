@@ -1,0 +1,287 @@
+AI分析结果：
+8.0（HIGH） /learun/adms/annexes/upload [80] 可能存在['未授权文件上传']，原因为高危上传接口无防护
+7.8（HIGH） /learun/adms/department/map [48927] 可能存在['未授权访问', '潜在信息泄露']，原因为管理接口路径(adms)且响应体>50KB
+7.8（HIGH） /learun/adms/dataitem/map [101129] 可能存在['数据泄露']，原因为管理路径返回超100KB数据
+7.5（HIGH） /learun/adms/ZK_BaseModule/MessageApi/updateReceive [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /learun/adms/user/VisitLog [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /learun/adms/ZK_BaseModule/MessageApi/msgReceive [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /learun/adms/ZK_BaseModule/VASApi/authResult [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+7.2（HIGH） /learun/adms/user/modifypw [65] 可能存在['未授权访问', '密码修改接口']，原因为高危管理接口无鉴权
+6.8（MEDIUM） //learun/adms/user/VisitLog [34] 可能存在['潜在越权访问']，原因为日志接口但响应体小
+6.5（MEDIUM） /learun/adms/ZK_BaseModule/TeacherApi/tchinfo [2523] 可能存在['信息泄露', '教师数据接口']，原因为敏感数据接口响应体较大
+6.2（MEDIUM） /learun/adms/user/ValidateAccount?data=edusrc_test&_=1754918431341 [47] 可能存在['账号枚举风险']，原因为账号验证接口暴露测试账号
+6.0（HIGH） /logo?data=applogo&v=Mon Aug 11 2025 21:18:02 GMT+0800 (中国标准时间) [103359] 可能存在['潜在信息泄露']，原因为超大响应体触发检测
+6.0（HIGH） /learun/adms/company/map [84087] 可能存在['潜在信息泄露']，原因为管理路径无鉴权，超大响应体
+6.0（MEDIUM） /learun/adms/user/GetBindsByAccount?data=123&_=1754918431366 [448] 可能存在['潜在越权访问']，原因为用户数据接口含账号参数
+6.0（MEDIUM） /learun/adms/user/login [2052] 可能存在['潜在暴力破解']，原因为关键认证接口无防护措施
+6.0（MEDIUM） /learun/adms/ZK_BaseModule/TeacherApi/grades [928] 可能存在['潜在成绩数据泄露']，原因为教师API含敏感数据(grades)
+5.8（MEDIUM） /learun/adms/ZK_PhoneModule/AddressBook/GetTeacherAddressBook [19586] 可能存在['批量信息泄露']，原因为通讯录接口返回近20KB数据
+5.5（MEDIUM） /learun/adms/function/list [9026] 可能存在['潜在信息泄露']，原因为管理路径无鉴权，响应体较大
+5.5（MEDIUM） /learun/adms/user/GetInviteCode [44] 可能存在['未授权访问']，原因为管理接口无鉴权但响应小
+5.5（MEDIUM） /learun/adms/user/ClearWXBind [44] 可能存在['潜在越权操作']，原因为关键功能接口无权限校验
+5.5（MEDIUM） //learun/adms/ZK_BaseModule/MessageApi/updateReceive [44] 可能存在['潜在未授权操作']，原因为消息接口无校验
+5.0（MEDIUM） /learun/adms/ZK_WechatModule/HomeWorkNew/pagelist [84] 可能存在['潜在信息泄露']，原因为数据列表接口但响应体小
+5.0（MEDIUM） //learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList [3606] 可能存在['潜在信息泄露']，原因为异常路径格式+管理接口
+4.5（MEDIUM） /learun/adms/ZK_WechatModule/WechatConfig/GetWechatConfig [277] 可能存在['潜在配置泄露']，原因为微信配置接口但响应体较小
+4.5（LOW） /learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList [-1] 可能存在['潜在未授权访问']，原因为管理接口无响应体数据
+4.5（LOW） /learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetEmergencyBriefList [44] 可能存在['潜在未授权访问']，原因为应急数据接口响应异常
+4.0（LOW） //learun/adms/ZK_BaseModule/MessageApi/msgReceive [44] 可能存在['潜在框架漏洞']，原因为双斜杠路径可能引发解析问题
+4.0（MEDIUM） /pages/my/modifypassword/modifypassword.html?_=1754918431383 [943] 可能存在['潜在信息泄露']，原因为密码修改页面但无高危参数
+4.0（MEDIUM） /learun/adms/eclass/GetWeChatTicket [130] 可能存在['潜在票据泄露']，原因为微信票据接口但响应体小
+4.0（MEDIUM） /learun/adms/ZK_AttendanceModule/ParentAttendance/GetEAttDetail [84] 可能存在['潜在考勤数据泄露']，原因为考勤数据接口但响应体小
+4.0（LOW） /learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetExchangeWeekOrder [44] 可能存在['潜在未授权访问']，原因为管理接口但响应体极小
+4.0（LOW） /learun/adms/ZK_WechatModule/Notice/pagelist [84] 可能存在['潜在未授权访问']，原因为管理接口但响应体极小
+4.0（MEDIUM） /learun/adms/eclass/GetOpenIDWebToken [204] 可能存在['潜在身份验证问题']，原因为涉及身份令牌的敏感接口
+3.5（MEDIUM） /learun/adms/user/imgEx [2727] 可能存在['潜在信息泄露']，原因为管理路径无鉴权，响应体中等
+3.5（LOW） /font/ [4966] 可能存在['非密泄露']，原因为静态资源目录，无高危参数
+3.5（LOW） /learun/adms/user/ValidateInviteCode?data=95329ad3&_=1754918431345 [392] 可能存在['潜在反射XSS']，原因为含动态参数但响应体较小
+3.5（LOW） /learun/adms/user/wechatBinds [155] 可能存在['潜在信息泄露']，原因为管理接口但响应体小
+3.5（LOW） /pages/ZK_AttendanceModule/ParentEntranceAttendance/ParentEntranceAttendance.html [1509] 可能存在[]，原因为非高危路径且响应体中等
+3.5（LOW） /pages/ZK_ClassScheduleModule/SearchTeacherSchedule/SearchTeacherSchedule.html [2791] 可能存在[]，原因为非高危路径且响应体中等
+3.5（LOW） /learun/adms/ZK_PhoneModule/AddressBook/GetTeacherPhone [1897] 可能存在['潜在信息泄露']，原因为通讯录接口但数据量较小
+3.5（LOW） /learun/adms/ZK_BaseModule/TeacherApi/bzrs [1335] 可能存在['潜在信息泄露']，原因为管理路径但响应体较小
+3.5（LOW） /learun/adms/ZK_AttendanceModule/AttendanceStatistics/GetTimeIntervalList [44] 可能存在['潜在未授权访问']，原因为管理接口但响应体极小
+3.5（LOW） /learun/adms/ZK_AttendanceModule/ClassAttendance/GetSemesterInfo [313] 可能存在['潜在信息泄露']，原因为管理接口但数据量较小
+3.5（LOW） /learun/adms/ZK_AttendanceModule/ClassAttendance/GetTeacherClassList [162] 可能存在['潜在信息泄露']，原因为管理接口但响应体极小
+3.5（LOW） /learun/adms/ZK_AttendanceModule/SchoolAttendance/GetPlaceList [44] 可能存在['潜在未授权访问']，原因为管理接口但响应体极小
+3.0（LOW） /learun/adms/newwf/mytask [84] 可能存在['潜在管理路径']，原因为管理路径无鉴权特征但响应体小
+3.0（LOW） /learun/adms/newwf/mytaskmaked [113] 可能存在['潜在管理路径']，原因为管理路径无鉴权特征但响应体小
+3.0（LOW） /pages/nworkflow/studentleave/studentleave.html?_=1754921014028 [3444] 可能存在[]，原因为无高危参数且响应体中等
+3.0（LOW） /learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetWeekOrder [1805] 可能存在['非密泄露']，原因为管理路径但响应体较小
+3.0（LOW） /learun/adms/ZK_PhoneModule/AddressBook/GetTeacherClassList [638] 可能存在['非密泄露']，原因为班级列表接口数据量小
+3.0（LOW） /learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetGradeClassList [430] 可能存在['潜在信息泄露']，原因为管理路径但响应体较小
+2.5（LOW） /pages/resetpassword/resetpassword.html?_=1754918431330 [1464] 可能存在[]，原因为密码重置页面无异常
+2.5（LOW） /getdtimg?_=1754918431356 [769] 可能存在[]，原因为无敏感参数且响应正常
+2.5（LOW） /pages/my/userInfo/userInfo.html?_=1754918431376 [1657] 可能存在[]，原因为含时间戳但无敏感操作
+2.5（LOW） /pages/ZK_ExamModule/StudentScoreStatistics/StudentScoreStatistics.html [1265] 可能存在['无风险']，原因为静态页面无高危参数
+2.5（LOW） /pages/ZK_OAModule/Question/Question.html?_=1754918431404 [1519] 可能存在['无风险']，原因为静态页面无高危参数
+2.5（LOW） /pages/ZK_QuestionnaireModule/InvestigationQuestion/InvestigationQuestionList/InvestigationQuestionList.html [1408] 可能存在['无风险']，原因为静态页面无高危参数
+2.5（LOW） /pages/nworkflow/myflow/myflow.html?_=1754918431414 [602] 可能存在['无风险']，原因为静态页面无高危参数
+2.5（LOW） /pages/ZK_WechatModule/Notice/Notice.html?_=1754921014076 [1045] 可能存在[]，原因为带时间戳但无敏感参数
+2.5（LOW） /pages/ZK_EmergencyBrief/ZK_EmergencyBrief.html?_=1754921014083 [1844] 可能存在[]，原因为带时间戳但无敏感参数
+2.3（LOW） /pages/login/login.html?_=1754918419514 [2838] 可能存在[]，原因为登录页面无敏感参数
+2.0（LOW） /pages/workspace/modulelist/modulelist.html?_=1754918286663 [457] 可能存在['无风险']，原因为响应体小且无高危参数
+2.0（LOW） /pages/my/my.html?_=1754918419510 [1777] 可能存在[]，原因为普通页面带时间戳参数
+2.0（LOW） /pages/register/register.html?_=1754918431338 [2113] 可能存在[]，原因为注册页面无风险特征
+2.0（LOW） /learun/adms/user/register [47] 可能存在[]，原因为无风险特征且响应体极小
+2.0（LOW） /pages/my/contactInfo/contactInfo.html?_=1754918431373 [732] 可能存在[]，原因为静态页面无动态参数
+2.0（LOW） /pages/my/wechatbind/wechatbind.html?_=1754918431379 [339] 可能存在['无风险']，原因为普通页面请求，无高危参数
+2.0（LOW） /learun/adms/ZK_WechatModule/HomeWorkNew/pagechecklist [84] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /learun/adms/ZK_ExamModule/StudentScoreQuery/GetStudentScoreStatistics [44] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /learun/adms/ZK_ExamModule/StudentScoreQuery/GetExamList [44] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /learun/adms/ZK_OAModule/Question/pageList [84] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /learun/adms/ZK_QuestionnaireModule/Questionnaire/GetInvestigationQuestionList [84] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /learun/adms/newwf/mylist [84] 可能存在['无风险']，原因为响应体过小且无高危参数
+2.0（LOW） /pages/search/search.html?_=1754918431422 [127] 可能存在[]，原因为无高危参数且响应体小
+2.0（LOW） /pages/ZK_PhoneModule/TeacherPhone/TeacherPhone.html?_=1754921014037 [1474] 可能存在['反射XSS']，原因为含动态参数但无敏感操作
+2.0（LOW） /pages/ZK_PhoneModule/TeacherAddressBook/TeacherAddressBook.html [1712] 可能存在[]，原因为静态页面无风险参数
+2.0（LOW） /pages/ZK_EClassModule/AlbumManage/AlbumManage.html?_=1754921014052 [1499] 可能存在['反射XSS']，原因为含时间戳参数无敏感操作
+2.0（LOW） /pages/ZK_BaseModule/BZRList/BZRList.html?_=1754921014059 [1983] 可能存在['反射XSS']，原因为含动态参数但无高危特征
+2.0（LOW） /pages/ZK_ClassScheduleModule/ExchangeClassSchedule/ExchangeClassSchedule.html [1782] 可能存在[]，原因为静态页面无风险参数
+2.0（LOW） /pages/ZK_ClassScheduleModule/SearchWeeksClassSchedule/SearchWeeksClassSchedule.html [2653] 可能存在[]，原因为静态页面无风险参数
+2.0（LOW） /pages/ZK_AttendanceModule/AttendanceStatistics/SchoolStatistics/SchoolStatistics.html [1119] 可能存在[]，原因为静态页面无敏感参数
+2.0（LOW） /pages/ZK_AttendanceModule/AttendanceNavigation/AttendanceNavigation.html [422] 可能存在[]，原因为静态页面无风险特征
+2.0（LOW） /pages/ZK_AttendanceModule/SchoolAttendance/SchoolAttendance.html [1415] 可能存在[]，原因为静态页面无敏感操作
+2.0（LOW） /pages/ZK_AttendanceModule/ClassAttendance/ClassAttendance.html [959] 可能存在[]，原因为静态页面无风险特征
+2.0（LOW） /pages/ZK_AttendanceModule/ClassAttendance/ClassAttendanceView/ClassAttendanceView.html [1624] 可能存在['无风险或已防护']，原因为静态页面路径，无高危参数
+1.5（LOW） /learun/adms/ZK_AttendanceModule/ClassAttendance/GetClassTimeSet [46] 可能存在['无风险或已防护']，原因为管理接口但响应体极小
+1.0（LOW） /dtimg [0] 可能存在['无风险']，原因为响应体为空
+1.0（LOW） /index.html [3823] 可能存在[]，原因为首页静态文件
+1.0（LOW） /pages/my/bindInfo/bindInfo.html?_=1754918431370 [0] 可能存在[]，原因为空响应无风险特征
+1.0（LOW） /pages/ZK_WechatModule/HomeWorkNew/HomeWorkNew.html?_=1754918431387 [25] 可能存在['无风险']，原因为普通页面请求
+1.0（LOW） /learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetTeacerTeachingList [44] 可能存在['无效端点']，原因为极小响应体且无高危特征
+1.0（LOW） /learun/adms/ZK_EClassModule/AlbumManage/GetGradeClassList [44] 可能存在['无效端点']，原因为极小响应体无业务数据
+
+排序后的URI列表：
+/learun/adms/annexes/upload
+/learun/adms/department/map
+/learun/adms/dataitem/map
+/learun/adms/ZK_BaseModule/MessageApi/updateReceive
+/learun/adms/user/VisitLog
+/learun/adms/ZK_BaseModule/MessageApi/msgReceive
+/learun/adms/ZK_BaseModule/VASApi/authResult
+/learun/adms/user/modifypw
+//learun/adms/user/VisitLog
+/learun/adms/ZK_BaseModule/TeacherApi/tchinfo
+/learun/adms/user/ValidateAccount?data=edusrc_test&_=1754918431341
+/logo?data=applogo&v=Mon Aug 11 2025 21:18:02 GMT+0800 (中国标准时间)
+/learun/adms/company/map
+/learun/adms/user/GetBindsByAccount?data=123&_=1754918431366
+/learun/adms/user/login
+/learun/adms/ZK_BaseModule/TeacherApi/grades
+/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherAddressBook
+/learun/adms/function/list
+/learun/adms/user/GetInviteCode
+/learun/adms/user/ClearWXBind
+//learun/adms/ZK_BaseModule/MessageApi/updateReceive
+/learun/adms/ZK_WechatModule/HomeWorkNew/pagelist
+//learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList
+/learun/adms/ZK_WechatModule/WechatConfig/GetWechatConfig
+/learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList
+/learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetEmergencyBriefList
+//learun/adms/ZK_BaseModule/MessageApi/msgReceive
+/pages/my/modifypassword/modifypassword.html?_=1754918431383
+/learun/adms/eclass/GetWeChatTicket
+/learun/adms/ZK_AttendanceModule/ParentAttendance/GetEAttDetail
+/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetExchangeWeekOrder
+/learun/adms/ZK_WechatModule/Notice/pagelist
+/learun/adms/eclass/GetOpenIDWebToken
+/learun/adms/user/imgEx
+/font/
+/learun/adms/user/ValidateInviteCode?data=95329ad3&_=1754918431345
+/learun/adms/user/wechatBinds
+/pages/ZK_AttendanceModule/ParentEntranceAttendance/ParentEntranceAttendance.html
+/pages/ZK_ClassScheduleModule/SearchTeacherSchedule/SearchTeacherSchedule.html
+/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherPhone
+/learun/adms/ZK_BaseModule/TeacherApi/bzrs
+/learun/adms/ZK_AttendanceModule/AttendanceStatistics/GetTimeIntervalList
+/learun/adms/ZK_AttendanceModule/ClassAttendance/GetSemesterInfo
+/learun/adms/ZK_AttendanceModule/ClassAttendance/GetTeacherClassList
+/learun/adms/ZK_AttendanceModule/SchoolAttendance/GetPlaceList
+/learun/adms/newwf/mytask
+/learun/adms/newwf/mytaskmaked
+/pages/nworkflow/studentleave/studentleave.html?_=1754921014028
+/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetWeekOrder
+/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherClassList
+/learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetGradeClassList
+/pages/resetpassword/resetpassword.html?_=1754918431330
+/getdtimg?_=1754918431356
+/pages/my/userInfo/userInfo.html?_=1754918431376
+/pages/ZK_ExamModule/StudentScoreStatistics/StudentScoreStatistics.html
+/pages/ZK_OAModule/Question/Question.html?_=1754918431404
+/pages/ZK_QuestionnaireModule/InvestigationQuestion/InvestigationQuestionList/InvestigationQuestionList.html
+/pages/nworkflow/myflow/myflow.html?_=1754918431414
+/pages/ZK_WechatModule/Notice/Notice.html?_=1754921014076
+/pages/ZK_EmergencyBrief/ZK_EmergencyBrief.html?_=1754921014083
+/pages/login/login.html?_=1754918419514
+/pages/workspace/modulelist/modulelist.html?_=1754918286663
+/pages/my/my.html?_=1754918419510
+/pages/register/register.html?_=1754918431338
+/learun/adms/user/register
+/pages/my/contactInfo/contactInfo.html?_=1754918431373
+/pages/my/wechatbind/wechatbind.html?_=1754918431379
+/learun/adms/ZK_WechatModule/HomeWorkNew/pagechecklist
+/learun/adms/ZK_ExamModule/StudentScoreQuery/GetStudentScoreStatistics
+/learun/adms/ZK_ExamModule/StudentScoreQuery/GetExamList
+/learun/adms/ZK_OAModule/Question/pageList
+/learun/adms/ZK_QuestionnaireModule/Questionnaire/GetInvestigationQuestionList
+/learun/adms/newwf/mylist
+/pages/search/search.html?_=1754918431422
+/pages/ZK_PhoneModule/TeacherPhone/TeacherPhone.html?_=1754921014037
+/pages/ZK_PhoneModule/TeacherAddressBook/TeacherAddressBook.html
+/pages/ZK_EClassModule/AlbumManage/AlbumManage.html?_=1754921014052
+/pages/ZK_BaseModule/BZRList/BZRList.html?_=1754921014059
+/pages/ZK_ClassScheduleModule/ExchangeClassSchedule/ExchangeClassSchedule.html
+/pages/ZK_ClassScheduleModule/SearchWeeksClassSchedule/SearchWeeksClassSchedule.html
+/pages/ZK_AttendanceModule/AttendanceStatistics/SchoolStatistics/SchoolStatistics.html
+/pages/ZK_AttendanceModule/AttendanceNavigation/AttendanceNavigation.html
+/pages/ZK_AttendanceModule/SchoolAttendance/SchoolAttendance.html
+/pages/ZK_AttendanceModule/ClassAttendance/ClassAttendance.html
+/pages/ZK_AttendanceModule/ClassAttendance/ClassAttendanceView/ClassAttendanceView.html
+/learun/adms/ZK_AttendanceModule/ClassAttendance/GetClassTimeSet
+/dtimg
+/index.html
+/pages/my/bindInfo/bindInfo.html?_=1754918431370
+/pages/ZK_WechatModule/HomeWorkNew/HomeWorkNew.html?_=1754918431387
+/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetTeacerTeachingList
+/learun/adms/ZK_EClassModule/AlbumManage/GetGradeClassList
+
+URL拼接后结果:
+http://jingyun.zenkore.com:10005/learun/adms/annexes/upload
+http://jingyun.zenkore.com:10005/learun/adms/department/map
+http://jingyun.zenkore.com:10005/learun/adms/dataitem/map
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/MessageApi/updateReceive
+http://jingyun.zenkore.com:10005/learun/adms/user/VisitLog
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/MessageApi/msgReceive
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/VASApi/authResult
+http://jingyun.zenkore.com:10005/learun/adms/user/modifypw
+http://jingyun.zenkore.com:10005/learun/adms/user/VisitLog
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/TeacherApi/tchinfo
+http://jingyun.zenkore.com:10005/learun/adms/user/ValidateAccount?data=edusrc_test&_=1754918431341
+http://jingyun.zenkore.com:10005/logo?data=applogo&v=Mon Aug 11 2025 21:18:02 GMT+0800 (中国标准时间)
+http://jingyun.zenkore.com:10005/learun/adms/company/map
+http://jingyun.zenkore.com:10005/learun/adms/user/GetBindsByAccount?data=123&_=1754918431366
+http://jingyun.zenkore.com:10005/learun/adms/user/login
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/TeacherApi/grades
+http://jingyun.zenkore.com:10005/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherAddressBook
+http://jingyun.zenkore.com:10005/learun/adms/function/list
+http://jingyun.zenkore.com:10005/learun/adms/user/GetInviteCode
+http://jingyun.zenkore.com:10005/learun/adms/user/ClearWXBind
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/MessageApi/updateReceive
+http://jingyun.zenkore.com:10005/learun/adms/ZK_WechatModule/HomeWorkNew/pagelist
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_WechatModule/WechatConfig/GetWechatConfig
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ClassScheduleModule/SearchWeeksClassSchedule/GetGradeClassList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetEmergencyBriefList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/MessageApi/msgReceive
+http://zzkj.zenkore.com/pages/my/modifypassword/modifypassword.html?_=1754918431383
+http://jingyun.zenkore.com:10005/learun/adms/eclass/GetWeChatTicket
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/ParentAttendance/GetEAttDetail
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetExchangeWeekOrder
+http://jingyun.zenkore.com:10005/learun/adms/ZK_WechatModule/Notice/pagelist
+http://jingyun.zenkore.com:10005/learun/adms/eclass/GetOpenIDWebToken
+http://jingyun.zenkore.com:10005/learun/adms/user/imgEx
+http://jingyun.zenkore.com:10005/font/
+http://zzkj.zenkore.com/font/
+http://jingyun.zenkore.com:10005/learun/adms/user/ValidateInviteCode?data=95329ad3&_=1754918431345
+http://jingyun.zenkore.com:10005/learun/adms/user/wechatBinds
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/ParentEntranceAttendance/ParentEntranceAttendance.html
+http://zzkj.zenkore.com/pages/ZK_ClassScheduleModule/SearchTeacherSchedule/SearchTeacherSchedule.html
+http://jingyun.zenkore.com:10005/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherPhone
+http://jingyun.zenkore.com:10005/learun/adms/ZK_BaseModule/TeacherApi/bzrs
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/AttendanceStatistics/GetTimeIntervalList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/ClassAttendance/GetSemesterInfo
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/ClassAttendance/GetTeacherClassList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/SchoolAttendance/GetPlaceList
+http://jingyun.zenkore.com:10005/learun/adms/newwf/mytask
+http://zzkj.zenkore.com/learun/adms/newwf/mytask
+http://jingyun.zenkore.com:10005/learun/adms/newwf/mytaskmaked
+http://zzkj.zenkore.com/learun/adms/newwf/mytaskmaked
+http://zzkj.zenkore.com/pages/nworkflow/studentleave/studentleave.html?_=1754921014028
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetWeekOrder
+http://zzkj.zenkore.com/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetWeekOrder
+http://jingyun.zenkore.com:10005/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherClassList
+http://zzkj.zenkore.com/learun/adms/ZK_PhoneModule/AddressBook/GetTeacherClassList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetGradeClassList
+http://zzkj.zenkore.com/learun/adms/ZK_EmergencyBriefModule/EmergencyBrief/GetGradeClassList
+http://zzkj.zenkore.com/pages/resetpassword/resetpassword.html?_=1754918431330
+http://jingyun.zenkore.com:10005/getdtimg?_=1754918431356
+http://zzkj.zenkore.com/pages/my/userInfo/userInfo.html?_=1754918431376
+http://zzkj.zenkore.com/pages/ZK_ExamModule/StudentScoreStatistics/StudentScoreStatistics.html
+http://zzkj.zenkore.com/pages/ZK_OAModule/Question/Question.html?_=1754918431404
+http://zzkj.zenkore.com/pages/ZK_QuestionnaireModule/InvestigationQuestion/InvestigationQuestionList/InvestigationQuestionList.html
+http://zzkj.zenkore.com/pages/nworkflow/myflow/myflow.html?_=1754918431414
+http://zzkj.zenkore.com/pages/ZK_WechatModule/Notice/Notice.html?_=1754921014076
+http://zzkj.zenkore.com/pages/ZK_EmergencyBrief/ZK_EmergencyBrief.html?_=1754921014083
+http://zzkj.zenkore.com/pages/login/login.html?_=1754918419514
+http://zzkj.zenkore.com/pages/workspace/modulelist/modulelist.html?_=1754918286663
+http://zzkj.zenkore.com/pages/my/my.html?_=1754918419510
+http://zzkj.zenkore.com/pages/register/register.html?_=1754918431338
+http://jingyun.zenkore.com:10005/learun/adms/user/register
+http://zzkj.zenkore.com/pages/my/contactInfo/contactInfo.html?_=1754918431373
+http://zzkj.zenkore.com/pages/my/wechatbind/wechatbind.html?_=1754918431379
+http://jingyun.zenkore.com:10005/learun/adms/ZK_WechatModule/HomeWorkNew/pagechecklist
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ExamModule/StudentScoreQuery/GetStudentScoreStatistics
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ExamModule/StudentScoreQuery/GetExamList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_OAModule/Question/pageList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_QuestionnaireModule/Questionnaire/GetInvestigationQuestionList
+http://jingyun.zenkore.com:10005/learun/adms/newwf/mylist
+http://zzkj.zenkore.com/pages/search/search.html?_=1754918431422
+http://zzkj.zenkore.com/pages/ZK_PhoneModule/TeacherPhone/TeacherPhone.html?_=1754921014037
+http://zzkj.zenkore.com/pages/ZK_PhoneModule/TeacherAddressBook/TeacherAddressBook.html
+http://zzkj.zenkore.com/pages/ZK_EClassModule/AlbumManage/AlbumManage.html?_=1754921014052
+http://zzkj.zenkore.com/pages/ZK_BaseModule/BZRList/BZRList.html?_=1754921014059
+http://zzkj.zenkore.com/pages/ZK_ClassScheduleModule/ExchangeClassSchedule/ExchangeClassSchedule.html
+http://zzkj.zenkore.com/pages/ZK_ClassScheduleModule/SearchWeeksClassSchedule/SearchWeeksClassSchedule.html
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/AttendanceStatistics/SchoolStatistics/SchoolStatistics.html
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/AttendanceNavigation/AttendanceNavigation.html
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/SchoolAttendance/SchoolAttendance.html
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/ClassAttendance/ClassAttendance.html
+http://zzkj.zenkore.com/pages/ZK_AttendanceModule/ClassAttendance/ClassAttendanceView/ClassAttendanceView.html
+http://jingyun.zenkore.com:10005/learun/adms/ZK_AttendanceModule/ClassAttendance/GetClassTimeSet
+http://jingyun.zenkore.com:10005/dtimg
+http://zzkj.zenkore.com/index.html
+http://zzkj.zenkore.com/pages/my/bindInfo/bindInfo.html?_=1754918431370
+http://zzkj.zenkore.com/pages/ZK_WechatModule/HomeWorkNew/HomeWorkNew.html?_=1754918431387
+http://jingyun.zenkore.com:10005/learun/adms/ZK_ClassScheduleModule/SearchTeacherSchedule/GetTeacerTeachingList
+http://jingyun.zenkore.com:10005/learun/adms/ZK_EClassModule/AlbumManage/GetGradeClassList

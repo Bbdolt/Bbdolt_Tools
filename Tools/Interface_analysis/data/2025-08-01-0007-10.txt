@@ -1,0 +1,14 @@
+AI分析结果：
+5.6（MEDIUM） /render/ [14458] 可能存在['潜在反射型漏洞', '潜在存储型漏洞']，原因为中等响应体+无高危参数
+2.0（LOW） /mp/collect [0] 可能存在['无效端点']，原因为无效端点
+2.0（LOW） /collect [2] 可能存在['无效端点']，原因为无效端点
+
+排序后的URI列表：
+/render/
+/mp/collect
+/collect
+
+URL拼接后结果:
+http://cw.bsnc.cn/render/
+https://www.google-analytics.com/mp/collect/mp/collect
+https://analytics.immersivetranslate.com/collect

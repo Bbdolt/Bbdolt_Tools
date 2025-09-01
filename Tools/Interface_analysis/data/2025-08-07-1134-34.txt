@@ -1,0 +1,443 @@
+AI分析结果：
+9.5（CRITICAL） /!DataSpaces/DataSpaceMap [-1] 可能存在['框架漏洞']，原因为特殊路径(!DataSpaces)疑似框架暴露
+9.2（CRITICAL） /_VBA_PROJECT_CUR/VBA/dir [-1] 可能存在['VBA项目泄露', '源码暴露风险']，原因为VBA开发路径暴露项目目录结构
+9.0（CRITICAL） /dps/agency/saleBalance/deleteBatch? [-1] 可能存在['批量删除漏洞']，原因为高危参数(deleteBatch)无防护措施
+9.0（CRITICAL） /dps/agency/trade/upload/uploadFile [-1] 可能存在['未授权文件上传']，原因为文件上传接口(uploadFile)无安全限制
+8.8（CRITICAL） /_VBA_PROJECT_CUR/ [-1] 可能存在['VBA项目根目录暴露']，原因为开发环境根路径可直接访问
+8.5（HIGH） /dps/agency/sys/role/getAll [-1] 可能存在['未授权访问', '权限泄露']，原因为角色获取接口无鉴权风险
+8.5（HIGH） /dps/agency/tenantImel/detail/download? [-1] 可能存在['未授权下载', '越权访问']，原因为租户详情下载接口无安全控制
+8.5（HIGH） /dps/agency/order/sign [-1] 可能存在['未授权操作', '签名风险']，原因为关键业务接口(sign)无权限校验
+8.0（HIGH） /dps/agency/sys/menu/agencyMenu [-1] 可能存在['未授权访问']，原因为系统菜单路径(sys/menu)无鉴权
+8.0（HIGH） /systemSetting [-1] 可能存在['潜在未授权访问']，原因为高危系统路径(systemSetting)无鉴权
+8.0（HIGH） /!DataSpaces/DataSpaceInfo/StrongEncryptionDataSpace [-1] 可能存在['加密数据空间操作']，原因为高敏感加密数据接口
+8.0（HIGH） /!DataSpaces/TransformInfo/StrongEncryptionTransform/!Primary [-1] 可能存在['潜在未授权访问', '加密配置暴露']，原因为路径含加密相关关键词且无鉴权标识
+8.0（HIGH） /dps/agency/order/delete? [-1] 可能存在['未授权操作', '数据删除风险']，原因为高危操作接口(delete)无权限控制
+8.0（HIGH） /dps/agency/tenantImel/detail/delete? [-1] 可能存在['未授权删除操作']，原因为删除功能接口缺乏权限控制
+8.0（HIGH） /dps/agency/user [-1] 可能存在['未授权访问', '潜在用户数据泄露']，原因为用户管理路径无鉴权控制
+7.8（HIGH） /dps/agency/sys/menu/permissions [-1] 可能存在['未授权访问', '权限泄露']，原因为系统权限接口无鉴权特征
+7.8（HIGH） /financialManage [-1] 可能存在['未授权访问', '越权操作']，原因为财务管理接口无鉴权风险
+7.8（HIGH） /dps/agency/imei/page [-1] 可能存在['IMEI数据泄露']，原因为设备标识查询接口无保护
+7.8（HIGH） /dps/agency/begin/stock/export [-1] 可能存在['未授权导出']，原因为数据导出接口(export)无防护
+7.8（HIGH） /dps/agency/trade/upload/pageTemplate [-1] 可能存在['未授权文件上传', '模板注入风险']，原因为上传功能路径含高危操作
+7.5（HIGH） /dps/agency/paymentCheck/download/ [-1] 可能存在['未验证文件下载']，原因为下载接口含高危路径特征
+7.5（HIGH） /systemSetting/noticeManage/detail/:id? [-1] 可能存在['越权访问']，原因为系统设置路径含高危参数(id)
+7.5（HIGH） /dps/agency/odps/discount/cancel? [-1] 可能存在['潜在未授权访问']，原因为管理路径(dps/agency)无鉴权参数
+7.5（HIGH） /dps/agency/dict/list? [-1] 可能存在['潜在未授权访问']，原因为管理路径(dps/agency)无鉴权参数
+7.5（HIGH） /dps/agency/order/return/getInfo? [-1] 可能存在['潜在未授权访问']，原因为管理路径(dps/agency)无鉴权参数
+7.5（HIGH） /dps/agency/order/return/status? [-1] 可能存在['潜在未授权访问']，原因为管理路径(dps/agency)无鉴权参数
+7.5（HIGH） /dps/agency/order/return/getPage [-1] 可能存在['未授权数据访问']，原因为代理订单接口暴露分页查询
+7.5（HIGH） /dps/agency/order/return/download [-1] 可能存在['潜在未授权下载']，原因为高危路径含下载功能
+7.5（HIGH） /dps/agency/sys/auth/login [-1] 可能存在['未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /dps/agency/tenant/getAll? [-1] 可能存在['未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /dps/agency/odps/discount/add [-1] 可能存在['未授权访问', '越权操作']，原因为折扣管理接口无鉴权风险
+7.5（HIGH） /dps/agency/tenantImel/delete? [-1] 可能存在['未授权删除操作']，原因为删除接口无权限控制
+7.5（HIGH） /dps/agency/tenantImel/pageQuery? [-1] 可能存在['潜在越权访问']，原因为含租户查询接口但无身份校验特征
+7.5（HIGH） /dps/agency/beginInventory/updateBeginInventory [-1] 可能存在['潜在未授权访问']，原因为管理类路径(updateBeginInventory)无鉴权标识
+7.5（HIGH） /dps/agency/tenantImel/download? [-1] 可能存在['未授权文件下载']，原因为下载接口含高危参数(imei)
+7.5（HIGH） /EncryptionInfo [-1] 可能存在['潜在信息泄露', '未授权访问']，原因为路径名涉及加密信息且无鉴权
+7.3（HIGH） /dps/agency/paymentCheck/confirm/ [-1] 可能存在['未授权访问', '越权操作']，原因为支付确认接口无鉴权风险
+7.2（HIGH） /salesManagement/traderUploadTemplate [-1] 可能存在['未授权上传']，原因为高危路径(salesManagement)含上传功能
+7.2（HIGH） /dps/agency/payment/advanceRecharge [-1] 可能存在['未授权访问', '越权操作']，原因为支付类接口无鉴权风险
+7.2（HIGH） /dps/agency/imei/export [-1] 可能存在['未授权数据导出']，原因为高危操作接口(export)无防护特征
+7.2（HIGH） /dps/agency/order/batch/sns/download? [-1] 可能存在['未授权下载', '批量数据泄露']，原因为批量下载功能无访问控制
+7.1（HIGH） /dps/agency/api/ouxiang_loan/redirect_url? [-1] 可能存在['潜在重定向漏洞']，原因为贷款重定向接口高危参数
+7.0（HIGH） /salesManagement/traderUploadTemplate/detail/:id? [-1] 可能存在['越权访问']，原因为含高危参数(id)且无校验
+7.0（HIGH） /salesManagement/salesUpload [-1] 可能存在['潜在未授权访问']，原因为管理路径(salesManagement)无鉴权
+7.0（HIGH） /productManage [-1] 可能存在['潜在未授权访问']，原因为管理路径(productManage)无鉴权
+7.0（HIGH） /financialManage/funds [-1] 可能存在['潜在未授权访问']，原因为管理路径(financialManage)无鉴权
+7.0（HIGH） /Invoicing/report [-1] 可能存在['潜在未授权访问']，原因为财务路径(Invoicing)无鉴权
+7.0（HIGH） /dps/agency/channel/getAll? [-1] 可能存在['潜在数据泄露']，原因为敏感接口暴露全部数据
+7.0（HIGH） /dps/agency/order/return/create/erpCodeOrder [-1] 可能存在['潜在越权']，原因为敏感路径无校验
+7.0（HIGH） /dps/agency/order/return/create/accessory [-1] 可能存在['潜在越权']，原因为敏感路径无校验
+7.0（HIGH） /systemSetting/noticeManage [-1] 可能存在['未授权访问', '越权操作']，原因为系统通知管理接口无鉴权
+7.0（HIGH） /!DataSpaces/Version [-1] 可能存在['框架信息泄露']，原因为数据空间版本信息接口
+7.0（HIGH） /encryption [-1] 可能存在['加密模块暴露']，原因为关键安全模块路径未隐藏
+7.0（HIGH） /dps/agency/order/download? [-1] 可能存在['未授权下载']，原因为订单下载接口无安全限制
+6.8（HIGH） /dps/agency/excel/exportTemplate? [-1] 可能存在['潜在信息泄露', '未授权访问']，原因为导出模板接口可能泄露数据
+6.8（MEDIUM） /dps/agency/trade/upload/queryUploadFile? [-1] 可能存在['潜在文件遍历']，原因为上传查询接口可能泄露文件信息
+6.5（MEDIUM） /login [-1] 可能存在['暴力破解风险']，原因为认证端点需防护爆破攻击
+6.5（MEDIUM） /financialManage/fundReconciliation [-1] 可能存在['潜在信息泄露']，原因为敏感路径(financialManage)无防护
+6.5（MEDIUM） /financialManage/replenishment/viewDetail/:id? [-1] 可能存在['潜在IDOR漏洞']，原因为含ID参数无校验
+6.5（MEDIUM） /Invoicing/beginningManage [-1] 可能存在['潜在未授权访问']，原因为财务系统管理路径
+6.5（HIGH） /salesManagement/sells [-1] 可能存在['潜在信息泄露', '越权操作']，原因为销售数据接口可能泄露信息
+6.5（MEDIUM） /EncryptedPackage [-1] 可能存在['加密包操作']，原因为敏感加密操作端点
+6.5（MEDIUM） /dps/agency/odps/uploadSale/getPage? [-1] 可能存在['潜在信息泄露']，原因为数据接口路径暴露业务逻辑
+6.3（MEDIUM） /dps/agency/payment/export [-1] 可能存在['潜在数据泄露']，原因为支付导出接口高危操作
+6.0（MEDIUM） /dps/agency/paymentCheck/feedback [-1] 可能存在['潜在越权操作']，原因为支付反馈接口需校验身份
+6.0（MEDIUM） /productManage/DealerFeedback/historyData/:batchTime [-1] 可能存在['批量数据泄露']，原因为路径含历史数据接口(historyData)
+6.0（MEDIUM） /financialManage/replenishment [-1] 可能存在['潜在越权操作']，原因为财务操作接口无权限校验
+6.0（MEDIUM） /salesManagement/imeiSearch [-1] 可能存在['潜在信息泄露']，原因为敏感路径无防护
+6.0（MEDIUM） /dps/agency/order/return/getVendor [-1] 可能存在['潜在信息泄露']，原因为供应链数据接口无防护
+6.0（MEDIUM） /dps/agency/sys/auth/logout? [-1] 可能存在['潜在认证缺陷']，原因为认证路径(auth)应防CSRF攻击
+6.0（MEDIUM） /@@CANCEL_EFFECTS [-1] 可能存在['框架特征路径']，原因为含特殊字符(@@)的框架级路径
+6.0（MEDIUM） /ordePage/returnOrder/detail/:data? [-1] 可能存在['潜在批量泄露']，原因为含用户标识参数
+6.0（MEDIUM） /dps/agency/payment/detail? [-1] 可能存在['潜在批量泄露']，原因为含用户标识参数
+6.0（MEDIUM） /dps/agency/odps/uploadSale/export? [-1] 可能存在['数据导出漏洞']，原因为销售数据导出接口
+6.0（MEDIUM） /dps/agency/notice/detail? [-1] 可能存在['潜在信息泄露']，原因为公告详情接口可能暴露敏感信息
+6.0（MEDIUM） /dps/agency/user/checkPingTai? [-1] 可能存在['潜在越权访问']，原因为用户校验接口(checkPingTai)无防护
+6.0（MEDIUM） /ordePage/sign [-1] 可能存在['潜在签名绕过']，原因为签名功能路径存在拼写错误
+5.8（MEDIUM） /personalCenter [-1] 可能存在['潜在信息泄露']，原因为用户数据接口无访问控制
+5.5（MEDIUM） /script [-1] 可能存在['潜在框架漏洞']，原因为通用路径名可能暴露脚本接口
+5.5（MEDIUM） /ordePage/sign/:data? [-1] 可能存在['潜在参数篡改']，原因为敏感操作参数暴露
+5.5（MEDIUM） /dps/agency/order/return/cancel? [-1] 可能存在['潜在越权操作']，原因为订单取消接口需严格权限控制
+5.5（MEDIUM） /loanCenter/loanLogin [-1] 可能存在['潜在未授权访问']，原因为金融敏感路径(loanLogin)
+5.5（MEDIUM） /dps/agency/tenantImel/download/template [-1] 可能存在['模板下载漏洞']，原因为下载接口无安全限制
+5.5（MEDIUM） /dps/agency/order/sign/detail? [-1] 可能存在['潜在未授权访问']，原因为订单详情接口可能缺乏鉴权
+5.2（MEDIUM） /dps/agency/order/deliveryDetail? [-1] 可能存在['潜在信息泄露']，原因为订单详情接口无参数校验
+5.2（MEDIUM） /dps/agency/payment/prepayAndReturn? [-1] 可能存在['潜在越权操作']，原因为支付相关路径(prepay)需强制鉴权
+5.0（MEDIUM） /ordePage/placeorder/:routerCode? [-1] 可能存在['潜在参数注入']，原因为动态路由需校验routerCode
+5.0（MEDIUM） /productManage/DealerFeedback/channelingManage [-1] 可能存在['潜在信息泄露']，原因为经销商管理路径敏感
+5.0（MEDIUM） /dps/agency/paymentCheck/preview/ [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(paymentCheck)
+5.0（MEDIUM） /dps/agency/payment/lastRecharge? [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(payment)
+5.0（MEDIUM） /dps/agency/payment/page [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(payment)
+5.0（MEDIUM） /dps/agency/order/return/checkPartCode? [-1] 可能存在['潜在信息泄露']，原因为路径含订单敏感接口(order)
+5.0（MEDIUM） /dps/agency/saleBalance/export/phones [-1] 可能存在['潜在信息泄露']，原因为导出接口无参数校验
+5.0（MEDIUM） /dps/agency/tenantImel/detail/pageQuery? [-1] 可能存在['潜在信息泄露']，原因为详情分页查询接口
+5.0（MEDIUM） /dps/agency/begin/stock/page? [-1] 可能存在['潜在批量数据泄露']，原因为分页库存接口可能暴露敏感数据
+4.8（MEDIUM） /salesManagement [-1] 可能存在['潜在未授权访问']，原因为管理类路径无鉴权标识
+4.8（LOW） /dps/agency/order/return/create/phone [-1] 可能存在['潜在业务逻辑漏洞']，原因为订单操作路径(return/create)需校验
+4.5（LOW） /ordePage [-1] 可能存在['潜在信息泄露']，原因为订单页面路径但无参数
+4.5（MEDIUM） /financialManage/salesDiscount [-1] 可能存在['潜在信息泄露']，原因为管理类路径无鉴权风险
+4.5（LOW） /personalCenter/infoManage [-1] 可能存在['潜在个人信息泄露']，原因为个人中心路径需强制登录
+4.5（MEDIUM） /dps/agency/paymentCheck/page [-1] 可能存在['潜在未授权访问']，原因为路径含支付敏感操作(paymentCheck)
+4.5（MEDIUM） /dps/agency/sys/auth/imageCode?6041302 [3062] 可能存在['潜在信息泄露']，原因为非高危参数名，中等响应体
+4.5（MEDIUM） /dps/agency/order/getPage? [-1] 可能存在['潜在信息泄露']，原因为订单分页查询接口
+4.3（LOW） /dps/agency/saleBalance/phones [-1] 可能存在['潜在信息泄露']，原因为敏感数据路径(phones)需加密
+4.2（MEDIUM） /ordePage/returnOrder/createReturnOrder [-1] 可能存在['潜在未授权操作']，原因为退货创建接口无校验
+4.0（LOW） /dps/agency/dict/returnType? [-1] 可能存在['潜在信息泄露']，原因为字典接口但无敏感参数名
+4.0（MEDIUM） /dps/agency/dict/returnStatus? [-1] 可能存在['潜在信息泄露']，原因为路径含系统字典接口(dict)
+4.0（MEDIUM） /ordePage/returnOrder [-1] 可能存在['潜在越权访问']，原因为订单操作接口无用户标识校验
+4.0（MEDIUM） /ordePage/takeorder [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+4.0（LOW） /dps/agency/sku/getAll? [-1] 可能存在['潜在批量泄露']，原因为路径含高危操作(getAll)，无参数保护
+4.0（MEDIUM） /dps/agency/order/return/erpCode/list? [-1] 可能存在['潜在信息泄露']，原因为路径含订单敏感数据(order/erpCode)
+4.0（MEDIUM） /ordePage/orderdetail/:data [-1] 可能存在['潜在越权访问']，原因为动态路径无权限控制
+4.0（MEDIUM） /dps/agency/notice/page? [-1] 可能存在['潜在信息泄露']，原因为分页接口可能暴露敏感信息
+4.0（LOW） /dps/agency/dict/normalOrderPayType [-1] 可能存在['潜在信息泄露']，原因为支付类型字典接口暴露业务逻辑
+3.5（LOW） /personalCenter/shipAddress [-1] 可能存在['潜在越权访问']，原因为个人中心地址管理接口
+3.5（LOW） /dps/agency/saleBalance/list [-1] 可能存在['潜在信息泄露']，原因为路径含敏感词(saleBalance)，但无高危参数
+3.5（LOW） /dps/agency/spu/getAll? [-1] 可能存在['潜在信息泄露']，原因为路径含数据获取操作(getAll)
+3.5（MEDIUM） /dps/agency/dict/ [-1] 可能存在['潜在信息泄露']，原因为字典数据接口可能泄露敏感信息
+3.0（LOW） /dps/agency/odps/discount/page? [-1] 可能存在['潜在信息泄露']，原因为路径含业务参数但无高危特征
+3.0（LOW） /Qhy [-1] 可能存在['无明确风险']，原因为无敏感路径特征
+3.0（LOW） /Mfd [-1] 可能存在['框架探测']，原因为短路径可能为框架默认
+3.0（LOW） /dps/agency/dict/saleDiscountStatus? [-1] 可能存在['潜在配置泄露']，原因为字典接口(dict)应限制访问
+3.0（LOW） /dps/agency/address/list? [-1] 可能存在['潜在信息泄露']，原因为路径含敏感词(address)，但无高危参数
+3.0（LOW） /Invoicing [-1] 可能存在[]，原因为无风险或已防护
+3.0（LOW） /loanCenter [-1] 可能存在[]，原因为无风险或已防护
+3.0（LOW） /home [-1] 可能存在[]，原因为无风险或已防护
+3.0（LOW） /Workbook [-1] 可能存在['潜在信息泄露']，原因为路径名可能暴露内部结构
+2.5（LOW） /ordePage/shoppongcart [-1] 可能存在['潜在信息泄露']，原因为路径含拼写错误购物车特征
+2.0（LOW） /mWb [-1] 可能存在['无明确风险']，原因为短路径无业务语义特征
+2.0（LOW） /xke [-1] 可能存在['无效端点']，原因为无意义短路径
+2.0（LOW） /qDX [-1] 可能存在[]，原因为无意义短路径无风险特征
+2.0（LOW） /zsF [-1] 可能存在['无效端点']，原因为短随机路径可能为测试接口
+1.5（LOW） /kpp [-1] 可能存在[]，原因为短路径无敏感关键词
+1.0（LOW） /9aa [-1] 可能存在['无风险']，原因为无意义路径无风险
+1.0（LOW） /MKj [-1] 可能存在['无风险']，原因为随机字符串无风险
+1.0（LOW） /a/b [-1] 可能存在['无风险']，原因为无敏感特征
+1.0（LOW） /yFD [-1] 可能存在['无风险']，原因为无敏感路径或参数
+1.0（LOW） /FJh [-1] 可能存在['无风险']，原因为无敏感路径或参数
+1.0（LOW） /gYn [-1] 可能存在['无风险']，原因为无敏感路径或参数
+1.0（LOW） /sWw [-1] 可能存在['无效端点']，原因为无意义路径需禁用访问
+1.0（LOW） /dDc [-1] 可能存在['无明确风险']，原因为短路径无敏感特征
+1.0（LOW） /dRK [-1] 可能存在['无明确风险']，原因为短路径无敏感特征
+1.0（LOW） /OgF [-1] 可能存在['无明确风险']，原因为短路径无敏感特征
+1.0（LOW） /eQG [-1] 可能存在['无风险']，原因为无敏感路径或参数
+1.0（LOW） /Book [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+1.0（LOW） /lCS [-1] 可能存在['无风险']，原因为短路径无敏感特征
+
+排序后的URI列表：
+/!DataSpaces/DataSpaceMap
+/_VBA_PROJECT_CUR/VBA/dir
+/dps/agency/saleBalance/deleteBatch?
+/dps/agency/trade/upload/uploadFile
+/_VBA_PROJECT_CUR/
+/dps/agency/sys/role/getAll
+/dps/agency/tenantImel/detail/download?
+/dps/agency/order/sign
+/dps/agency/sys/menu/agencyMenu
+/systemSetting
+/!DataSpaces/DataSpaceInfo/StrongEncryptionDataSpace
+/!DataSpaces/TransformInfo/StrongEncryptionTransform/!Primary
+/dps/agency/order/delete?
+/dps/agency/tenantImel/detail/delete?
+/dps/agency/user
+/dps/agency/sys/menu/permissions
+/financialManage
+/dps/agency/imei/page
+/dps/agency/begin/stock/export
+/dps/agency/trade/upload/pageTemplate
+/dps/agency/paymentCheck/download/
+/systemSetting/noticeManage/detail/:id?
+/dps/agency/odps/discount/cancel?
+/dps/agency/dict/list?
+/dps/agency/order/return/getInfo?
+/dps/agency/order/return/status?
+/dps/agency/order/return/getPage
+/dps/agency/order/return/download
+/dps/agency/sys/auth/login
+/dps/agency/tenant/getAll?
+/dps/agency/odps/discount/add
+/dps/agency/tenantImel/delete?
+/dps/agency/tenantImel/pageQuery?
+/dps/agency/beginInventory/updateBeginInventory
+/dps/agency/tenantImel/download?
+/EncryptionInfo
+/dps/agency/paymentCheck/confirm/
+/salesManagement/traderUploadTemplate
+/dps/agency/payment/advanceRecharge
+/dps/agency/imei/export
+/dps/agency/order/batch/sns/download?
+/dps/agency/api/ouxiang_loan/redirect_url?
+/salesManagement/traderUploadTemplate/detail/:id?
+/salesManagement/salesUpload
+/productManage
+/financialManage/funds
+/Invoicing/report
+/dps/agency/channel/getAll?
+/dps/agency/order/return/create/erpCodeOrder
+/dps/agency/order/return/create/accessory
+/systemSetting/noticeManage
+/!DataSpaces/Version
+/encryption
+/dps/agency/order/download?
+/dps/agency/excel/exportTemplate?
+/dps/agency/trade/upload/queryUploadFile?
+/login
+/financialManage/fundReconciliation
+/financialManage/replenishment/viewDetail/:id?
+/Invoicing/beginningManage
+/salesManagement/sells
+/EncryptedPackage
+/dps/agency/odps/uploadSale/getPage?
+/dps/agency/payment/export
+/dps/agency/paymentCheck/feedback
+/productManage/DealerFeedback/historyData/:batchTime
+/financialManage/replenishment
+/salesManagement/imeiSearch
+/dps/agency/order/return/getVendor
+/dps/agency/sys/auth/logout?
+/@@CANCEL_EFFECTS
+/ordePage/returnOrder/detail/:data?
+/dps/agency/payment/detail?
+/dps/agency/odps/uploadSale/export?
+/dps/agency/notice/detail?
+/dps/agency/user/checkPingTai?
+/ordePage/sign
+/personalCenter
+/script
+/ordePage/sign/:data?
+/dps/agency/order/return/cancel?
+/loanCenter/loanLogin
+/dps/agency/tenantImel/download/template
+/dps/agency/order/sign/detail?
+/dps/agency/order/deliveryDetail?
+/dps/agency/payment/prepayAndReturn?
+/ordePage/placeorder/:routerCode?
+/productManage/DealerFeedback/channelingManage
+/dps/agency/paymentCheck/preview/
+/dps/agency/payment/lastRecharge?
+/dps/agency/payment/page
+/dps/agency/order/return/checkPartCode?
+/dps/agency/saleBalance/export/phones
+/dps/agency/tenantImel/detail/pageQuery?
+/dps/agency/begin/stock/page?
+/salesManagement
+/dps/agency/order/return/create/phone
+/ordePage
+/financialManage/salesDiscount
+/personalCenter/infoManage
+/dps/agency/paymentCheck/page
+/dps/agency/sys/auth/imageCode?6041302
+/dps/agency/order/getPage?
+/dps/agency/saleBalance/phones
+/ordePage/returnOrder/createReturnOrder
+/dps/agency/dict/returnType?
+/dps/agency/dict/returnStatus?
+/ordePage/returnOrder
+/ordePage/takeorder
+/dps/agency/sku/getAll?
+/dps/agency/order/return/erpCode/list?
+/ordePage/orderdetail/:data
+/dps/agency/notice/page?
+/dps/agency/dict/normalOrderPayType
+/personalCenter/shipAddress
+/dps/agency/saleBalance/list
+/dps/agency/spu/getAll?
+/dps/agency/dict/
+/dps/agency/odps/discount/page?
+/Qhy
+/Mfd
+/dps/agency/dict/saleDiscountStatus?
+/dps/agency/address/list?
+/Invoicing
+/loanCenter
+/home
+/Workbook
+/ordePage/shoppongcart
+/mWb
+/xke
+/qDX
+/zsF
+/kpp
+/9aa
+/MKj
+/a/b
+/yFD
+/FJh
+/gYn
+/sWw
+/dDc
+/dRK
+/OgF
+/eQG
+/Book
+/lCS
+
+URL拼接后结果:
+https://dps-agency.myoppo.com/!DataSpaces/DataSpaceMap
+https://dps-agency.myoppo.com/_VBA_PROJECT_CUR/VBA/dir
+https://dps-agency.myoppo.com/dps/agency/saleBalance/deleteBatch?
+https://dps-agency.myoppo.com/dps/agency/trade/upload/uploadFile
+https://dps-agency.myoppo.com/_VBA_PROJECT_CUR/
+https://dps-agency.myoppo.com/dps/agency/sys/role/getAll
+https://dps-agency.myoppo.com/dps/agency/tenantImel/detail/download?
+https://dps-agency.myoppo.com/dps/agency/order/sign
+https://dps-agency.myoppo.com/dps/agency/sys/menu/agencyMenu
+https://dps-agency.myoppo.com/systemSetting
+https://dps-agency.myoppo.com/!DataSpaces/DataSpaceInfo/StrongEncryptionDataSpace
+https://dps-agency.myoppo.com/!DataSpaces/TransformInfo/StrongEncryptionTransform/!Primary
+https://dps-agency.myoppo.com/dps/agency/order/delete?
+https://dps-agency.myoppo.com/dps/agency/tenantImel/detail/delete?
+https://dps-agency.myoppo.com/dps/agency/user
+https://dps-agency.myoppo.com/dps/agency/sys/menu/permissions
+https://dps-agency.myoppo.com/dps/agency/financialManage
+https://dps-agency.myoppo.com/dps/agency/imei/page
+https://dps-agency.myoppo.com/dps/agency/begin/stock/export
+https://dps-agency.myoppo.com/dps/agency/trade/upload/pageTemplate
+https://dps-agency.myoppo.com/dps/agency/paymentCheck/download/
+https://dps-agency.myoppo.com/dps/agency/systemSetting/noticeManage/detail/:id?
+https://dps-agency.myoppo.com/dps/agency/odps/discount/cancel?
+https://dps-agency.myoppo.com/dps/agency/dict/list?
+https://dps-agency.myoppo.com/dps/agency/order/return/getInfo?
+https://dps-agency.myoppo.com/dps/agency/order/return/status?
+https://dps-agency.myoppo.com/dps/agency/order/return/getPage
+https://dps-agency.myoppo.com/dps/agency/order/return/download
+https://dps-agency.myoppo.com/dps/agency/sys/auth/login
+https://dps-agency.myoppo.com/dps/agency/tenant/getAll?
+https://dps-agency.myoppo.com/dps/agency/odps/discount/add
+https://dps-agency.myoppo.com/dps/agency/tenantImel/delete?
+https://dps-agency.myoppo.com/dps/agency/tenantImel/pageQuery?
+https://dps-agency.myoppo.com/dps/agency/beginInventory/updateBeginInventory
+https://dps-agency.myoppo.com/dps/agency/tenantImel/download?
+https://dps-agency.myoppo.com/EncryptionInfo
+https://dps-agency.myoppo.com/dps/agency/paymentCheck/confirm/
+https://dps-agency.myoppo.com/salesManagement/traderUploadTemplate
+https://dps-agency.myoppo.com/dps/agency/payment/advanceRecharge
+https://dps-agency.myoppo.com/dps/agency/imei/export
+https://dps-agency.myoppo.com/dps/agency/order/batch/sns/download?
+https://dps-agency.myoppo.com/dps/agency/api/ouxiang_loan/redirect_url?
+https://dps-agency.myoppo.com/salesManagement/traderUploadTemplate/detail/:id?
+https://dps-agency.myoppo.com/salesManagement/salesUpload
+https://dps-agency.myoppo.com/productManage
+https://dps-agency.myoppo.com/financialManage/funds
+https://dps-agency.myoppo.com/Invoicing/report
+https://dps-agency.myoppo.com/dps/agency/channel/getAll?
+https://dps-agency.myoppo.com/dps/agency/order/return/create/erpCodeOrder
+https://dps-agency.myoppo.com/dps/agency/order/return/create/accessory
+https://dps-agency.myoppo.com/systemSetting/noticeManage
+https://dps-agency.myoppo.com/!DataSpaces/Version
+https://dps-agency.myoppo.com/encryption
+https://dps-agency.myoppo.com/dps/agency/order/download?
+https://dps-agency.myoppo.com/dps/agency/excel/exportTemplate?
+https://dps-agency.myoppo.com/dps/agency/trade/upload/queryUploadFile?
+https://dps-agency.myoppo.com/login
+https://dps-agency.myoppo.com/financialManage/fundReconciliation
+https://dps-agency.myoppo.com/financialManage/replenishment/viewDetail/:id?
+https://dps-agency.myoppo.com/Invoicing/beginningManage
+https://dps-agency.myoppo.com/salesManagement/sells
+https://dps-agency.myoppo.com/EncryptedPackage
+https://dps-agency.myoppo.com/dps/agency/odps/uploadSale/getPage?
+https://dps-agency.myoppo.com/dps/agency/payment/export
+https://dps-agency.myoppo.com/dps/agency/paymentCheck/feedback
+https://dps-agency.myoppo.com/productManage/DealerFeedback/historyData/:batchTime
+https://dps-agency.myoppo.com/financialManage/replenishment
+https://dps-agency.myoppo.com/salesManagement/imeiSearch
+https://dps-agency.myoppo.com/dps/agency/order/return/getVendor
+https://dps-agency.myoppo.com/dps/agency/sys/auth/logout?
+https://dps-agency.myoppo.com/@@CANCEL_EFFECTS
+https://dps-agency.myoppo.com/ordePage/returnOrder/detail/:data?
+https://dps-agency.myoppo.com/dps/agency/payment/detail?
+https://dps-agency.myoppo.com/dps/agency/odps/uploadSale/export?
+https://dps-agency.myoppo.com/dps/agency/notice/detail?
+https://dps-agency.myoppo.com/dps/agency/user/checkPingTai?
+https://dps-agency.myoppo.com/dps/agency/ordePage/sign
+https://dps-agency.myoppo.com/dps/agency/personalCenter
+https://dps-agency.myoppo.com/script
+https://dps-agency.myoppo.com/dps/agency/ordePage/sign/:data?
+https://dps-agency.myoppo.com/dps/agency/order/return/cancel?
+https://dps-agency.myoppo.com/dps/agency/loanCenter/loanLogin
+https://dps-agency.myoppo.com/dps/agency/tenantImel/download/template
+https://dps-agency.myoppo.com/dps/agency/order/sign/detail?
+https://dps-agency.myoppo.com/dps/agency/order/deliveryDetail?
+https://dps-agency.myoppo.com/dps/agency/payment/prepayAndReturn?
+https://dps-agency.myoppo.com/dps/agency/ordePage/placeorder/:routerCode?
+https://dps-agency.myoppo.com/dps/agency/productManage/DealerFeedback/channelingManage
+https://dps-agency.myoppo.com/dps/agency/paymentCheck/preview/
+https://dps-agency.myoppo.com/dps/agency/payment/lastRecharge?
+https://dps-agency.myoppo.com/dps/agency/payment/page
+https://dps-agency.myoppo.com/dps/agency/order/return/checkPartCode?
+https://dps-agency.myoppo.com/dps/agency/saleBalance/export/phones
+https://dps-agency.myoppo.com/dps/agency/tenantImel/detail/pageQuery?
+https://dps-agency.myoppo.com/dps/agency/begin/stock/page?
+https://dps-agency.myoppo.com/dps/agency/salesManagement
+https://dps-agency.myoppo.com/dps/agency/order/return/create/phone
+https://dps-agency.myoppo.com/dps/agency/ordePage
+https://dps-agency.myoppo.com/dps/agency/financialManage/salesDiscount
+https://dps-agency.myoppo.com/dps/agency/personalCenter/infoManage
+https://dps-agency.myoppo.com/dps/agency/paymentCheck/page
+https://dps-agency.myoppo.com/dps/agency/sys/auth/imageCode?6041302
+https://dps-agency.myoppo.com/dps/agency/order/getPage?
+https://dps-agency.myoppo.com/dps/agency/saleBalance/phones
+https://dps-agency.myoppo.com/dps/agency/ordePage/returnOrder/createReturnOrder
+https://dps-agency.myoppo.com/dps/agency/dict/returnType?
+https://dps-agency.myoppo.com/dps/agency/dict/returnStatus?
+https://dps-agency.myoppo.com/dps/agency/ordePage/returnOrder
+https://dps-agency.myoppo.com/dps/agency/ordePage/takeorder
+https://dps-agency.myoppo.com/dps/agency/sku/getAll?
+https://dps-agency.myoppo.com/dps/agency/order/return/erpCode/list?
+https://dps-agency.myoppo.com/dps/agency/ordePage/orderdetail/:data
+https://dps-agency.myoppo.com/dps/agency/notice/page?
+https://dps-agency.myoppo.com/dps/agency/dict/normalOrderPayType
+https://dps-agency.myoppo.com/dps/agency/personalCenter/shipAddress
+https://dps-agency.myoppo.com/dps/agency/saleBalance/list
+https://dps-agency.myoppo.com/dps/agency/spu/getAll?
+https://dps-agency.myoppo.com/dps/agency/dict/
+https://dps-agency.myoppo.com/dps/agency/odps/discount/page?
+https://dps-agency.myoppo.com/dps/agency/Qhy
+https://dps-agency.myoppo.com/Mfd
+https://dps-agency.myoppo.com/dps/agency/dict/saleDiscountStatus?
+https://dps-agency.myoppo.com/dps/agency/address/list?
+https://dps-agency.myoppo.com/Invoicing
+https://dps-agency.myoppo.com/loanCenter
+https://dps-agency.myoppo.com/home
+https://dps-agency.myoppo.com/Workbook
+https://dps-agency.myoppo.com/ordePage/shoppongcart
+https://dps-agency.myoppo.com/mWb
+https://dps-agency.myoppo.com/xke
+https://dps-agency.myoppo.com/qDX
+https://dps-agency.myoppo.com/zsF
+https://dps-agency.myoppo.com/kpp
+https://dps-agency.myoppo.com/9aa
+https://dps-agency.myoppo.com/MKj
+https://dps-agency.myoppo.com/a/b
+https://dps-agency.myoppo.com/yFD
+https://dps-agency.myoppo.com/FJh
+https://dps-agency.myoppo.com/gYn
+https://dps-agency.myoppo.com/sWw
+https://dps-agency.myoppo.com/dDc
+https://dps-agency.myoppo.com/dRK
+https://dps-agency.myoppo.com/OgF
+https://dps-agency.myoppo.com/eQG
+https://dps-agency.myoppo.com/Book
+https://dps-agency.myoppo.com/lCS

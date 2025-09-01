@@ -1,0 +1,68 @@
+AI分析结果：
+8.0（HIGH） /api/deleteUser [-1] 可能存在['未授权用户操作']，原因为高危API操作无权限校验
+8.0（HIGH） /api/createUser [-1] 可能存在['未授权用户操作']，原因为高危API操作无权限校验
+8.0（HIGH） /api/updatePassword [-1] 可能存在['未授权用户操作']，原因为高危API操作无权限校验
+8.0（HIGH） /manage/sensorData/:gateway?/:node?/:sensor? [-1] 可能存在['潜在未授权访问', '参数注入风险']，原因为管理路径含动态参数
+7.5（HIGH） /manage/sensorData [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+7.5（HIGH） /manage/gateway [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+7.5（HIGH） /api/updateUser [-1] 可能存在['潜在越权操作']，原因为用户更新功能无权限控制
+7.0（HIGH） /manage/gateway/:gatewayId [-1] 可能存在['潜在越权访问']，原因为管理接口含动态ID参数
+7.0（HIGH） /api/getUserList [-1] 可能存在['潜在信息泄露']，原因为敏感功能端点(userList)
+7.0（HIGH） /api/getUserInfo [-1] 可能存在['潜在越权访问']，原因为用户信息查询端点无ID校验
+5.0（MEDIUM） /andmuApi [-1] 可能存在['潜在未授权访问']，原因为疑似API端点但无鉴权标识
+5.0（MEDIUM） /dataview [-1] 可能存在['潜在信息泄露']，原因为数据类路径无访问控制
+5.0（MEDIUM） /api/getCurrentUserInfo [-1] 可能存在['潜在信息泄露']，原因为用户信息查询端点
+4.0（MEDIUM） /v3/log/init [229] 可能存在['潜在日志泄露']，原因为框架路径含敏感操作(init)
+3.0（LOW） /login?from=/dataview [694] 可能存在['潜在开放重定向']，原因为检测到from参数但响应体无异常
+3.0（LOW） /api/logout [-1] 可能存在['无风险或已防护']，原因为标准API端点，无高危参数
+3.0（LOW） /api/login [64] 可能存在['无风险或已防护']，原因为标准API端点，响应体极小
+0.0（LOW） /intro [-1] 可能存在[]，原因为无风险特征
+0.0（LOW） /page [-1] 可能存在[]，原因为无风险特征
+0.0（LOW） /? [-1] 可能存在[]，原因为无风险特征
+
+排序后的URI列表：
+/api/deleteUser
+/api/createUser
+/api/updatePassword
+/manage/sensorData/:gateway?/:node?/:sensor?
+/manage/sensorData
+/manage/gateway
+/api/updateUser
+/manage/gateway/:gatewayId
+/api/getUserList
+/api/getUserInfo
+/andmuApi
+/dataview
+/api/getCurrentUserInfo
+/v3/log/init
+/login?from=/dataview
+/api/logout
+/api/login
+/intro
+/page
+/?
+
+URL拼接后结果:
+https://zhigu.bsnc.cn/api/deleteUser
+https://zhigu.bsnc.cn/api/createUser
+https://zhigu.bsnc.cn/api/updatePassword
+https://zhigu.bsnc.cn/manage/sensorData/:gateway?/:node?/:sensor?
+https://zhigu.bsnc.cn/manage/sensorData
+https://zhigu.bsnc.cn/manage/gateway
+https://zhigu.bsnc.cn/api/updateUser
+https://zhigu.bsnc.cn/manage/gateway/:gatewayId
+https://zhigu.bsnc.cn/api/getUserList
+https://zhigu.bsnc.cn/api/getUserInfo
+https://zhigu.bsnc.cn/andmuApi
+https://zhigu.bsnc.cn/dataview
+https://zhigu.bsnc.cn/api/getCurrentUserInfo
+https://restapi.amap.com/v3/log/init
+https://zhigu.bsnc.cn/login?from=/dataview
+https://zhigu.bsnc.cn/api/logout
+https://zhigu.bsnc.cn/api/login
+https://zhigu.bsnc.cn/intro
+https://zhigu.bsnc.cn/login/intro
+https://zhigu.bsnc.cn/page
+https://zhigu.bsnc.cn/login/page
+https://zhigu.bsnc.cn/?
+https://zhigu.bsnc.cn/login/?

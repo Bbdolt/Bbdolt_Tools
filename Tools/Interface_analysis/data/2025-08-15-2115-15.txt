@@ -1,0 +1,341 @@
+AI分析结果：
+9.0（CRITICAL） /archives/batchDelete [-1] 可能存在['未授权批量删除', '数据破坏风险']，原因为高危操作路径含batchDelete
+9.0（CRITICAL） /system [-1] 可能存在['系统管理端点暴露']，原因为根级系统路径高危
+8.5（HIGH） /screening_report/update/report [-1] 可能存在['未授权修改']，原因为数据更新接口无校验
+8.0（HIGH） /screening_report/delete/ [-1] 可能存在['未授权删除']，原因为高危操作接口无权限校验
+8.0（HIGH） /archives/batch/update/department [-1] 可能存在['批量越权操作', '部门数据篡改']，原因为高危批量更新接口无权限控制
+8.0（HIGH） /sys-physical-examination/updateImageReport [-1] 可能存在['未授权上传', '系统接口暴露']，原因为系统级路径含高危动作(update)
+8.0（HIGH） /sys-physical-examination/add [-1] 可能存在['未授权操作', '数据篡改风险']，原因为高危路径含sys和add操作
+8.0（HIGH） /setting/index [-1] 可能存在['未授权配置访问']，原因为设置接口通常需鉴权
+7.8（HIGH） /system/index [-1] 可能存在['系统配置泄露']，原因为系统管理路径无防护
+7.8（HIGH） /train-plan/delete_template/ [-1] 可能存在['未授权操作', '潜在越权']，原因为路径含高危动作(delete)且无鉴权标识
+7.8（HIGH） /doctor/updatePassword [-1] 可能存在['未授权密码修改']，原因为高危操作路径(updatePassword)
+7.8（HIGH） /archives/update [-1] 可能存在['未授权档案修改']，原因为档案更新接口无防护措施
+7.5（HIGH） /brain-admin [6749] 可能存在['未授权访问']，原因为管理路径无鉴权且响应体>5KB
+7.5（HIGH） /archives/syncSave [-1] 可能存在['潜在未授权访问', '数据同步风险']，原因为管理路径无鉴权，涉及数据同步操作
+7.5（HIGH） /setting [-1] 可能存在['未授权访问', '系统配置泄露']，原因为敏感路径setting，无鉴权标识
+7.5（HIGH） /sys-dict-data/list [-1] 可能存在['系统数据泄露']，原因为系统字典接口可能暴露配置
+7.5（HIGH） /system/screening/doctor/verificationPassword [-1] 可能存在['未授权访问', '密码验证接口暴露']，原因为系统级路径含密码验证功能
+7.5（HIGH） /bh-intel-report/status/update [-1] 可能存在['未授权访问', '潜在越权']，原因为情报报告状态更新接口无鉴权
+7.3（HIGH） /common/download?fileName= [6749] 可能存在['文件下载漏洞']，原因为高危参数(fileName)且无过滤
+7.2（HIGH） /system/screening/paper/ [-1] 可能存在['越权访问']，原因为系统级路径无身份校验
+7.2（HIGH） /train-plan/save [-1] 可能存在['未授权数据写入']，原因为计划保存接口无鉴权特征
+7.0（HIGH） /plus-paper-report/report [-1] 可能存在['报表数据未授权访问']，原因为报表接口无访问控制措施
+7.0（HIGH） /operator/search/list?name= [-1] 可能存在['SQL注入风险']，原因为操作员搜索含空参数
+7.0（HIGH） /sys-physical-examination/update [-1] 可能存在['未授权数据修改']，原因为系统级路径含数据更新操作
+7.0（HIGH） /archives/oneById/ [-1] 可能存在['潜在越权访问']，原因为档案ID查询接口需校验用户权限
+6.8（MEDIUM） /screening_report/report/ [-1] 可能存在['批量数据泄露']，原因为报告数据接口暴露
+6.5（MEDIUM） /examination/pkg/all [-1] 可能存在['批量数据泄露']，原因为数据接口暴露全部记录
+6.5（MEDIUM） /train-history-report/page [-1] 可能存在['历史记录泄露']，原因为训练历史接口需分页鉴权
+6.5（MEDIUM） /archives/getOneByPhone/ [-1] 可能存在['批量信息泄露']，原因为路径含敏感数据接口(archives+phone)
+6.5（MEDIUM） /files [-1] 可能存在['未授权文件访问']，原因为根级文件路径无访问控制
+6.5（MEDIUM） /login [-1] 可能存在['潜在暴力破解']，原因为认证接口但无防护特征
+6.0（MEDIUM） /bh-intel-report/info/ [-1] 可能存在['潜在信息泄露']，原因为数据类路径无访问控制
+6.0（MEDIUM） /bh-screening-report/info/ [-1] 可能存在['信息泄露']，原因为报告类接口无访问控制
+6.0（MEDIUM） /vr_game_record/by/dsq/ [-1] 可能存在['用户数据越权访问']，原因为含用户标识(dsq)但无校验机制
+6.0（MEDIUM） /archives/getBaseById/ [-1] 可能存在['潜在越权']，原因为含高危参数特征(id)但无校验
+6.0（MEDIUM） /login/accessLogin [-1] 可能存在['认证绕过风险']，原因为登录接口无防护标识
+6.0（MEDIUM） /files/list [-1] 可能存在['目录遍历风险']，原因为文件列表接口可能暴露敏感数据
+6.0（MEDIUM） /doctor/info [-1] 可能存在['潜在越权访问']，原因为医生信息接口无身份校验
+6.0（MEDIUM） /screening_report/printList/ [-1] 可能存在['潜在批量泄露']，原因为打印列表接口无访问控制
+6.0（MEDIUM） /archives/add [-1] 可能存在['潜在未授权操作']，原因为档案新增接口需严格鉴权
+5.5（MEDIUM） /analysis [-1] 可能存在['分析数据泄露']，原因为分析接口可能暴露敏感信息
+5.5（MEDIUM） /archives/department/list [-1] 可能存在['批量数据泄露']，原因为路径含list且涉及部门数据
+5.5（MEDIUM） /bh-eye-movement-report-details/info/ [-1] 可能存在['报告信息泄露']，原因为详细报告接口需防护
+5.5（MEDIUM） /screening_report/list [-1] 可能存在['潜在批量泄露']，原因为筛查报告列表接口暴露
+5.5（MEDIUM） /bh-screening-report/list [-1] 可能存在['潜在信息泄露']，原因为筛查报告列表接口需验证权限
+5.1（MEDIUM） /bh-screening-report/last_five_data/ [-1] 可能存在['潜在数据泄露']，原因为敏感数据路径(last_five_data)
+5.0（MEDIUM） /results/list [-1] 可能存在['批量数据泄露']，原因为路径含list操作，可能暴露结果
+5.0（MEDIUM） /party-report/download_image_data [-1] 可能存在['潜在信息泄露']，原因为路径含download操作，可能未授权访问
+5.0（MEDIUM） /party-report/addReportQuery [-1] 可能存在['潜在批量泄露']，原因为报告查询接口无访问限制
+4.5（MEDIUM） /paper/types/list [-1] 可能存在['类型信息泄露']，原因为列表接口应限制敏感字段
+4.5（LOW） /examinations/dementia [-1] 可能存在['敏感数据暴露']，原因为医疗数据接口需验证
+4.2（MEDIUM） /party-report/list [-1] 可能存在['潜在批量泄露']，原因为报告类接口(list)无分页限制
+4.0（MEDIUM） /login/toLogin [-1] 可能存在['认证缺陷']，原因为登录接口无防护措施
+4.0（MEDIUM） /projections [-1] 可能存在['潜在数据泄露']，原因为数据投影接口需验证权限
+4.0（LOW） /device [-1] 可能存在['潜在信息泄露']，原因为设备管理类路径但无高危参数
+4.0（MEDIUM） /home/screen/data [-1] 可能存在['潜在信息泄露']，原因为路径含screen/data，可能暴露数据
+4.0（LOW） /brain-assess/get_init_eye_assess/ [-1] 可能存在['潜在越权访问']，原因为评估接口路径含敏感操作
+4.0（MEDIUM） /sys-physical-examination/list [-1] 可能存在['潜在信息泄露']，原因为管理类路径(sys-)但无鉴权特征
+4.0（MEDIUM） /archives/list [-1] 可能存在['潜在信息泄露']，原因为档案列表接口需验证权限
+3.5（LOW） /paper/types/getPagerItems/ [-1] 可能存在['潜在信息泄露']，原因为路径包含敏感关键词(types)，但无高危参数
+3.5（MEDIUM） /brain-assess/statistics/by/ [-1] 可能存在['潜在信息泄露']，原因为数据统计路径但无敏感参数
+3.5（LOW） /device/list [-1] 可能存在['潜在信息泄露']，原因为设备列表接口可能暴露敏感信息
+3.5（LOW） /train-plan/template/list [-1] 可能存在['潜在信息泄露']，原因为训练计划模板接口需验证权限
+3.0（LOW） /results [-1] 可能存在['潜在信息泄露']，原因为通用路径但无高危参数
+3.0（LOW） /paper/types/ [-1] 可能存在['潜在信息泄露']，原因为敏感路径(types)但无高危动作
+3.0（LOW） /home/screen/statistics [-1] 可能存在['潜在信息泄露']，原因为路径含screen/statistics，可能涉及数据统计
+3.0（LOW） /paper/types/getRecentlyTypes [-1] 可能存在[]，原因为普通数据接口无敏感特征
+3.0（LOW） /plus-paper-report/plus [-1] 可能存在['潜在信息泄露']，原因为报告类路径但无高危参数
+3.0（LOW） /examinations [-1] 可能存在['潜在信息泄露']，原因为考试数据接口需验证权限
+2.5（LOW） /answer [-1] 可能存在['低风险端点']，原因为普通功能接口无敏感特征
+2.5（LOW） /answeryffs [-1] 可能存在[]，原因为无敏感特征的模糊路径
+2.0（LOW） /openvr [-1] 可能存在[]，原因为无敏感特征的标准路径
+2.0（LOW） /X5v [-1] 可能存在['无效端点']，原因为随机路径名，无明确语义
+2.0（LOW） /vJW [-1] 可能存在['无效端点']，原因为随机路径名，无明确语义
+2.0（LOW） /home/info/statistics [-1] 可能存在[]，原因为普通信息接口无风险特征
+2.0（LOW） /vr_game_record/by/pp/ [-1] 可能存在['无风险或已防护']，原因为路径无敏感特征且无高危参数
+2.0（LOW） /brain-assess/info/by/ [-1] 可能存在['无风险或已防护']，原因为路径无敏感特征且无高危参数
+2.0（LOW） /vr_game_record/by/ff/ [-1] 可能存在['无风险']，原因为路径无敏感特征
+2.0（LOW） /dist/ [-1] 可能存在['无风险']，原因为静态资源目录无敏感操作
+1.0（LOW） /404 [-1] 可能存在[]，原因为标准错误页面路径
+0.0（LOW） /# [-1] 可能存在['无风险']，原因为URI无参数且无敏感路径
+0.0（LOW） /F7N [-1] 可能存在['无风险']，原因为URI无参数且无敏感路径
+0.0（LOW） /tXR [-1] 可能存在['无风险']，原因为URI无参数且无敏感路径
+0.0（LOW） /NTb [-1] 可能存在['无风险']，原因为URI无参数且无敏感路径
+
+排序后的URI列表：
+/archives/batchDelete
+/system
+/screening_report/update/report
+/screening_report/delete/
+/archives/batch/update/department
+/sys-physical-examination/updateImageReport
+/sys-physical-examination/add
+/setting/index
+/system/index
+/train-plan/delete_template/
+/doctor/updatePassword
+/archives/update
+/brain-admin
+/archives/syncSave
+/setting
+/sys-dict-data/list
+/system/screening/doctor/verificationPassword
+/bh-intel-report/status/update
+/common/download?fileName=
+/system/screening/paper/
+/train-plan/save
+/plus-paper-report/report
+/operator/search/list?name=
+/sys-physical-examination/update
+/archives/oneById/
+/screening_report/report/
+/examination/pkg/all
+/train-history-report/page
+/archives/getOneByPhone/
+/files
+/login
+/bh-intel-report/info/
+/bh-screening-report/info/
+/vr_game_record/by/dsq/
+/archives/getBaseById/
+/login/accessLogin
+/files/list
+/doctor/info
+/screening_report/printList/
+/archives/add
+/analysis
+/archives/department/list
+/bh-eye-movement-report-details/info/
+/screening_report/list
+/bh-screening-report/list
+/bh-screening-report/last_five_data/
+/results/list
+/party-report/download_image_data
+/party-report/addReportQuery
+/paper/types/list
+/examinations/dementia
+/party-report/list
+/login/toLogin
+/projections
+/device
+/home/screen/data
+/brain-assess/get_init_eye_assess/
+/sys-physical-examination/list
+/archives/list
+/paper/types/getPagerItems/
+/brain-assess/statistics/by/
+/device/list
+/train-plan/template/list
+/results
+/paper/types/
+/home/screen/statistics
+/paper/types/getRecentlyTypes
+/plus-paper-report/plus
+/examinations
+/answer
+/answeryffs
+/openvr
+/X5v
+/vJW
+/home/info/statistics
+/vr_game_record/by/pp/
+/brain-assess/info/by/
+/vr_game_record/by/ff/
+/dist/
+/404
+/#
+/F7N
+/tXR
+/NTb
+
+URL拼接后结果:
+https://vr-test.66nao.com/archives/batchDelete
+http://vr-test.66nao.com/archives/batchDelete
+https://vr-test.66nao.com/system
+http://vr-test.66nao.com/system
+https://vr-test.66nao.com/screening_report/update/report
+http://vr-test.66nao.com/screening_report/update/report
+https://vr-test.66nao.com/screening_report/delete/
+http://vr-test.66nao.com/screening_report/delete/
+https://vr-test.66nao.com/archives/batch/update/department
+http://vr-test.66nao.com/archives/batch/update/department
+https://vr-test.66nao.com/sys-physical-examination/updateImageReport
+http://vr-test.66nao.com/sys-physical-examination/updateImageReport
+https://vr-test.66nao.com/sys-physical-examination/add
+http://vr-test.66nao.com/sys-physical-examination/add
+https://vr-test.66nao.com/setting/index
+http://vr-test.66nao.com/setting/index
+https://vr-test.66nao.com/system/index
+http://vr-test.66nao.com/system/index
+https://vr-test.66nao.com/train-plan/delete_template/
+http://vr-test.66nao.com/train-plan/delete_template/
+https://vr-test.66nao.com/doctor/updatePassword
+http://vr-test.66nao.com/doctor/updatePassword
+https://vr-test.66nao.com/archives/update
+http://vr-test.66nao.com/archives/update
+https://vr-test.66nao.com/brain-admin
+http://vr-test.66nao.com/brain-admin
+https://vr-test.66nao.com/archives/syncSave
+http://vr-test.66nao.com/archives/syncSave
+https://vr-test.66nao.com/setting
+http://vr-test.66nao.com/setting
+https://vr-test.66nao.com/sys-dict-data/list
+http://vr-test.66nao.com/sys-dict-data/list
+https://vr-test.66nao.com/system/screening/doctor/verificationPassword
+http://vr-test.66nao.com/system/screening/doctor/verificationPassword
+https://vr-test.66nao.com/bh-intel-report/status/update
+http://vr-test.66nao.com/bh-intel-report/status/update
+https://vr-test.66nao.com/common/download?fileName=
+http://vr-test.66nao.com/common/download?fileName=
+https://vr-test.66nao.com/system/screening/paper/
+http://vr-test.66nao.com/system/screening/paper/
+https://vr-test.66nao.com/train-plan/save
+http://vr-test.66nao.com/train-plan/save
+https://vr-test.66nao.com/plus-paper-report/report
+http://vr-test.66nao.com/plus-paper-report/report
+https://vr-test.66nao.com/operator/search/list?name=
+http://vr-test.66nao.com/operator/search/list?name=
+https://vr-test.66nao.com/sys-physical-examination/update
+http://vr-test.66nao.com/sys-physical-examination/update
+https://vr-test.66nao.com/archives/oneById/
+http://vr-test.66nao.com/archives/oneById/
+https://vr-test.66nao.com/screening_report/report/
+http://vr-test.66nao.com/screening_report/report/
+https://vr-test.66nao.com/examination/pkg/all
+http://vr-test.66nao.com/examination/pkg/all
+https://vr-test.66nao.com/train-history-report/page
+http://vr-test.66nao.com/train-history-report/page
+https://vr-test.66nao.com/archives/getOneByPhone/
+http://vr-test.66nao.com/archives/getOneByPhone/
+https://vr-test.66nao.com/files
+http://vr-test.66nao.com/files
+https://vr-test.66nao.com/login
+http://vr-test.66nao.com/login
+https://vr-test.66nao.com/bh-intel-report/info/
+http://vr-test.66nao.com/bh-intel-report/info/
+https://vr-test.66nao.com/bh-screening-report/info/
+http://vr-test.66nao.com/bh-screening-report/info/
+https://vr-test.66nao.com/vr_game_record/by/dsq/
+http://vr-test.66nao.com/vr_game_record/by/dsq/
+https://vr-test.66nao.com/archives/getBaseById/
+http://vr-test.66nao.com/archives/getBaseById/
+https://vr-test.66nao.com/login/accessLogin
+http://vr-test.66nao.com/login/accessLogin
+https://vr-test.66nao.com/files/list
+http://vr-test.66nao.com/files/list
+https://vr-test.66nao.com/doctor/info
+http://vr-test.66nao.com/doctor/info
+https://vr-test.66nao.com/screening_report/printList/
+http://vr-test.66nao.com/screening_report/printList/
+https://vr-test.66nao.com/archives/add
+http://vr-test.66nao.com/archives/add
+https://vr-test.66nao.com/analysis
+http://vr-test.66nao.com/analysis
+https://vr-test.66nao.com/archives/department/list
+http://vr-test.66nao.com/archives/department/list
+https://vr-test.66nao.com/bh-eye-movement-report-details/info/
+http://vr-test.66nao.com/bh-eye-movement-report-details/info/
+https://vr-test.66nao.com/screening_report/list
+http://vr-test.66nao.com/screening_report/list
+https://vr-test.66nao.com/bh-screening-report/list
+http://vr-test.66nao.com/bh-screening-report/list
+https://vr-test.66nao.com/bh-screening-report/last_five_data/
+http://vr-test.66nao.com/bh-screening-report/last_five_data/
+https://vr-test.66nao.com/results/list
+http://vr-test.66nao.com/results/list
+https://vr-test.66nao.com/party-report/download_image_data
+http://vr-test.66nao.com/party-report/download_image_data
+https://vr-test.66nao.com/party-report/addReportQuery
+http://vr-test.66nao.com/party-report/addReportQuery
+https://vr-test.66nao.com/paper/types/list
+http://vr-test.66nao.com/paper/types/list
+https://vr-test.66nao.com/examinations/dementia
+http://vr-test.66nao.com/examinations/dementia
+https://vr-test.66nao.com/party-report/list
+http://vr-test.66nao.com/party-report/list
+https://vr-test.66nao.com/login/toLogin
+http://vr-test.66nao.com/login/toLogin
+https://vr-test.66nao.com/projections
+http://vr-test.66nao.com/projections
+https://vr-test.66nao.com/device
+http://vr-test.66nao.com/device
+https://vr-test.66nao.com/home/screen/data
+http://vr-test.66nao.com/home/screen/data
+https://vr-test.66nao.com/brain-assess/get_init_eye_assess/
+http://vr-test.66nao.com/brain-assess/get_init_eye_assess/
+https://vr-test.66nao.com/sys-physical-examination/list
+http://vr-test.66nao.com/sys-physical-examination/list
+https://vr-test.66nao.com/archives/list
+http://vr-test.66nao.com/archives/list
+https://vr-test.66nao.com/paper/types/getPagerItems/
+http://vr-test.66nao.com/paper/types/getPagerItems/
+https://vr-test.66nao.com/brain-assess/statistics/by/
+http://vr-test.66nao.com/brain-assess/statistics/by/
+https://vr-test.66nao.com/device/list
+http://vr-test.66nao.com/device/list
+https://vr-test.66nao.com/train-plan/template/list
+http://vr-test.66nao.com/train-plan/template/list
+https://vr-test.66nao.com/results
+http://vr-test.66nao.com/results
+https://vr-test.66nao.com/paper/types/
+http://vr-test.66nao.com/paper/types/
+https://vr-test.66nao.com/home/screen/statistics
+http://vr-test.66nao.com/home/screen/statistics
+https://vr-test.66nao.com/paper/types/getRecentlyTypes
+http://vr-test.66nao.com/paper/types/getRecentlyTypes
+https://vr-test.66nao.com/plus-paper-report/plus
+http://vr-test.66nao.com/plus-paper-report/plus
+https://vr-test.66nao.com/examinations
+http://vr-test.66nao.com/examinations
+https://vr-test.66nao.com/answer
+http://vr-test.66nao.com/answer
+https://vr-test.66nao.com/answeryffs
+http://vr-test.66nao.com/answeryffs
+https://vr-test.66nao.com/openvr
+http://vr-test.66nao.com/openvr
+https://vr-test.66nao.com/X5v
+http://vr-test.66nao.com/X5v
+https://vr-test.66nao.com/vJW
+http://vr-test.66nao.com/vJW
+https://vr-test.66nao.com/home/info/statistics
+http://vr-test.66nao.com/home/info/statistics
+https://vr-test.66nao.com/vr_game_record/by/pp/
+http://vr-test.66nao.com/vr_game_record/by/pp/
+https://vr-test.66nao.com/brain-assess/info/by/
+http://vr-test.66nao.com/brain-assess/info/by/
+https://vr-test.66nao.com/vr_game_record/by/ff/
+http://vr-test.66nao.com/vr_game_record/by/ff/
+https://vr-test.66nao.com/dist/
+http://vr-test.66nao.com/dist/
+https://vr-test.66nao.com/404
+http://vr-test.66nao.com/404
+https://vr-test.66nao.com/#
+http://vr-test.66nao.com/#
+https://vr-test.66nao.com/F7N
+http://vr-test.66nao.com/F7N
+https://vr-test.66nao.com/tXR
+http://vr-test.66nao.com/tXR
+https://vr-test.66nao.com/NTb
+http://vr-test.66nao.com/NTb

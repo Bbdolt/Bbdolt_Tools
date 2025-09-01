@@ -1,0 +1,175 @@
+AI分析结果：
+8.5（HIGH） /api/user/v1/changePassword [-1] 可能存在['未授权密码修改']，原因为高危路径含敏感操作(changePassword)
+8.0（HIGH） /api/wechatuser/v1/delete [-1] 可能存在['未授权访问', '数据删除风险']，原因为高危路径含高危操作(delete)
+7.8（HIGH） /api/wechatuser/v1/save [-1] 可能存在['未授权访问', '数据篡改风险']，原因为高危路径(api/wechatuser)含写操作(save)
+7.5（HIGH） /api/user/v1/login [-1] 可能存在['暴力破解风险', '凭证泄露']，原因为认证接口无防护特征(login)
+6.5（MEDIUM） /api/user/v1/getSchoolAndUserByWxAndUser [-1] 可能存在['潜在信息泄露', '批量数据查询']，原因为高危路径(api/user)含敏感操作(getSchoolAndUser)
+6.0（MEDIUM） /pages/auto-oracleheaven-login/auto-oracleheaven-login [-1] 可能存在['自动登录漏洞']，原因为自动登录机制含敏感关键词
+5.5（MEDIUM） /api/wechatuser/v1/isFirst [-1] 可能存在['潜在信息泄露']，原因为高危路径含状态查询操作(isFirst)
+5.0（MEDIUM） /pages/userlogin/userlogin [-1] 可能存在['登录绕过风险']，原因为用户登录页面需强化防护
+4.8（MEDIUM） /pages/chooseRole/chooseRole [-1] 可能存在['潜在权限提升']，原因为角色选择页面需权限校验
+4.7（MEDIUM） /b/new_common/api/captcha/v1/getSpecCaptcha [2862] 可能存在['验证码复用风险', '信息泄露']，原因为验证码接口响应体2.8KB触发检测
+4.5（MEDIUM） /pages/oauthLogin/oauthLogin [-1] 可能存在['潜在OAuth配置问题']，原因为登录页面路径含oauth关键词
+4.5（MEDIUM） /pages/third-party-docking/third-party-docking [-1] 可能存在['潜在信息泄露']，原因为第三方对接页面，需注意数据保护
+4.0（MEDIUM） /b/new_common [-1] 可能存在['框架路径暴露']，原因为短路径可能暴露框架结构
+4.0（MEDIUM） /open-location [-1] 可能存在['潜在未授权访问']，原因为开放路径，需验证权限控制
+4.0（MEDIUM） /api/captcha/v1/getSpecCaptcha [-1] 可能存在['验证码复用风险']，原因为验证码接口无防重放特征
+3.5（LOW） /pages/chooseentrance/chooseentrance [-1] 可能存在['潜在入口劫持']，原因为入口选择页面需验证权限
+3.5（LOW） /pages/login/login [-1] 可能存在['潜在反射XSS']，原因为登录页面路径，需注意XSS防护
+3.0（LOW） /api/wechatuser/v1/bindOauth [0] 可能存在['潜在未授权访问']，原因为API路径可能涉及用户绑定操作
+3.0（LOW） /pages/loginthird/loginthird [-1] 可能存在['潜在认证绕过']，原因为含login关键词但无参数
+2.5（LOW） /choose-location [-1] 可能存在['潜在参数注入']，原因为可能包含位置选择参数
+2.5（LOW） /b/message_center [-1] 可能存在['潜在信息泄露']，原因为短路径可能暴露功能模块
+2.5（LOW） /b/common [-1] 可能存在['潜在信息泄露']，原因为短路径可能暴露功能模块
+2.3（LOW） /b/common/api/user/v1/getSchoolAndUserByWxAndUser [67] 可能存在['无风险或已防护']，原因为无高危参数且响应体较小
+2.0（LOW） /pages/daojishi/daojishi [-1] 可能存在[]，原因为普通功能页面无敏感特征
+2.0（LOW） /pages/startBanner/startBanner [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /pages/daojishithird/daojishithird [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /pages/switchPages/about [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /pages/agricultural-bank-list/agricultural-bank-list [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /b/abc [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /pages/the-bedroom/bedroom-approval/bedroom-approval [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /pages/chooseRolethird/chooseRolethird [-1] 可能存在['无风险']，原因为普通页面路径，无高危参数
+2.0（LOW） /a/b [-1] 可能存在['潜在信息泄露']，原因为短路径可能暴露目录结构
+2.0（LOW） /a/i [-1] 可能存在['潜在信息泄露']，原因为短路径可能暴露目录结构
+2.0（LOW） /canvas [-1] 可能存在['无风险或已防护']，原因为普通路径无敏感特征
+2.0（LOW） /static/ [-1] 可能存在['无风险或已防护']，原因为静态资源目录无敏感特征
+1.0（LOW） /pages/text/text [-1] 可能存在[]，原因为静态内容页面无风险
+1.0（LOW） /pages/textthird/textthird [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+1.0（LOW） /pages/rural-commercial-transfer/rural-commercial-transfer [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+1.0（LOW） /pages/the-bedroom/no-bedroom-agree/no-bedroom-agree [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+1.0（LOW） /pages/switchPages/index [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+0.0（LOW） /# [-1] 可能存在['无风险']，原因为无效URI片段
+
+排序后的URI列表：
+/api/user/v1/changePassword
+/api/wechatuser/v1/delete
+/api/wechatuser/v1/save
+/api/user/v1/login
+/api/user/v1/getSchoolAndUserByWxAndUser
+/pages/auto-oracleheaven-login/auto-oracleheaven-login
+/api/wechatuser/v1/isFirst
+/pages/userlogin/userlogin
+/pages/chooseRole/chooseRole
+/b/new_common/api/captcha/v1/getSpecCaptcha
+/pages/oauthLogin/oauthLogin
+/pages/third-party-docking/third-party-docking
+/b/new_common
+/open-location
+/api/captcha/v1/getSpecCaptcha
+/pages/chooseentrance/chooseentrance
+/pages/login/login
+/api/wechatuser/v1/bindOauth
+/pages/loginthird/loginthird
+/choose-location
+/b/message_center
+/b/common
+/b/common/api/user/v1/getSchoolAndUserByWxAndUser
+/pages/daojishi/daojishi
+/pages/startBanner/startBanner
+/pages/daojishithird/daojishithird
+/pages/switchPages/about
+/pages/agricultural-bank-list/agricultural-bank-list
+/b/abc
+/pages/the-bedroom/bedroom-approval/bedroom-approval
+/pages/chooseRolethird/chooseRolethird
+/a/b
+/a/i
+/canvas
+/static/
+/pages/text/text
+/pages/textthird/textthird
+/pages/rural-commercial-transfer/rural-commercial-transfer
+/pages/the-bedroom/no-bedroom-agree/no-bedroom-agree
+/pages/switchPages/index
+/#
+
+URL拼接后结果:
+http://ms.do-ok.com/api/user/v1/changePassword
+https://service.do-ok.com/api/user/v1/changePassword
+http://ms.do-ok.com/api/wechatuser/v1/delete
+https://service.do-ok.com/api/wechatuser/v1/delete
+http://ms.do-ok.com/api/wechatuser/v1/save
+https://service.do-ok.com/api/wechatuser/v1/save
+http://ms.do-ok.com/api/user/v1/login
+https://service.do-ok.com/api/user/v1/login
+http://ms.do-ok.com/api/user/v1/getSchoolAndUserByWxAndUser
+https://service.do-ok.com/api/user/v1/getSchoolAndUserByWxAndUser
+https://9003.do-ok.com/pages/auto-oracleheaven-login/auto-oracleheaven-login
+http://ms.do-ok.com/api/wechatuser/v1/isFirst
+https://service.do-ok.com/api/wechatuser/v1/isFirst
+https://9003.do-ok.com/pages/userlogin/userlogin
+https://9003.do-ok.com/pages/chooseRole/chooseRole
+https://service.do-ok.com/b/new_common/api/captcha/v1/getSpecCaptcha
+https://9003.do-ok.com/pages/oauthLogin/oauthLogin
+https://9003.do-ok.com/pages/third-party-docking/third-party-docking
+https://service.do-ok.com/b/new_common
+https://9003.do-ok.com/open-location
+https://service.do-ok.com/api/captcha/v1/getSpecCaptcha
+http://ms.do-ok.com/pages/chooseentrance/chooseentrance
+https://9003.do-ok.com/pages/chooseentrance/chooseentrance
+https://service.do-ok.com/pages/chooseentrance/chooseentrance
+http://ms.do-ok.com/pages/login/login
+https://9003.do-ok.com/pages/login/login
+https://service.do-ok.com/pages/login/login
+http://ms.do-ok.com/api/wechatuser/v1/bindOauth
+https://service.do-ok.com/api/wechatuser/v1/bindOauth
+http://ms.do-ok.com/pages/loginthird/loginthird
+https://9003.do-ok.com/pages/loginthird/loginthird
+https://service.do-ok.com/pages/loginthird/loginthird
+http://ms.do-ok.com/choose-location
+https://9003.do-ok.com/choose-location
+https://service.do-ok.com/choose-location
+https://service.do-ok.com/b/message_center
+https://service.do-ok.com/b/common
+https://service.do-ok.com/b/common/api/user/v1/getSchoolAndUserByWxAndUser
+http://ms.do-ok.com/pages/daojishi/daojishi
+https://9003.do-ok.com/pages/daojishi/daojishi
+https://service.do-ok.com/pages/daojishi/daojishi
+http://ms.do-ok.com/pages/startBanner/startBanner
+https://9003.do-ok.com/pages/startBanner/startBanner
+https://service.do-ok.com/pages/startBanner/startBanner
+http://ms.do-ok.com/pages/daojishithird/daojishithird
+https://9003.do-ok.com/pages/daojishithird/daojishithird
+https://service.do-ok.com/pages/daojishithird/daojishithird
+http://ms.do-ok.com/pages/switchPages/about
+https://9003.do-ok.com/pages/switchPages/about
+https://service.do-ok.com/pages/switchPages/about
+http://ms.do-ok.com/pages/agricultural-bank-list/agricultural-bank-list
+https://9003.do-ok.com/pages/agricultural-bank-list/agricultural-bank-list
+https://service.do-ok.com/pages/agricultural-bank-list/agricultural-bank-list
+https://service.do-ok.com/b/abc
+http://ms.do-ok.com/pages/the-bedroom/bedroom-approval/bedroom-approval
+https://9003.do-ok.com/pages/the-bedroom/bedroom-approval/bedroom-approval
+https://service.do-ok.com/pages/the-bedroom/bedroom-approval/bedroom-approval
+http://ms.do-ok.com/pages/chooseRolethird/chooseRolethird
+https://9003.do-ok.com/pages/chooseRolethird/chooseRolethird
+https://service.do-ok.com/pages/chooseRolethird/chooseRolethird
+http://ms.do-ok.com/a/b
+https://9003.do-ok.com/a/b
+https://service.do-ok.com/a/b
+http://ms.do-ok.com/a/i
+https://9003.do-ok.com/a/i
+https://service.do-ok.com/a/i
+http://ms.do-ok.com/canvas
+https://9003.do-ok.com/canvas
+https://service.do-ok.com/canvas
+https://9003.do-ok.com/static/
+http://ms.do-ok.com/pages/text/text
+https://9003.do-ok.com/pages/text/text
+https://service.do-ok.com/pages/text/text
+http://ms.do-ok.com/pages/textthird/textthird
+https://9003.do-ok.com/pages/textthird/textthird
+https://service.do-ok.com/pages/textthird/textthird
+http://ms.do-ok.com/pages/rural-commercial-transfer/rural-commercial-transfer
+https://9003.do-ok.com/pages/rural-commercial-transfer/rural-commercial-transfer
+https://service.do-ok.com/pages/rural-commercial-transfer/rural-commercial-transfer
+http://ms.do-ok.com/pages/the-bedroom/no-bedroom-agree/no-bedroom-agree
+https://9003.do-ok.com/pages/the-bedroom/no-bedroom-agree/no-bedroom-agree
+https://service.do-ok.com/pages/the-bedroom/no-bedroom-agree/no-bedroom-agree
+http://ms.do-ok.com/pages/switchPages/index
+https://9003.do-ok.com/pages/switchPages/index
+https://service.do-ok.com/pages/switchPages/index
+http://ms.do-ok.com/#
+https://9003.do-ok.com/#
+https://service.do-ok.com/#

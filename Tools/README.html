@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小工具模块使用手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            min-height: 100vh;
+            padding: 20px;
+            color: #1a237e;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            color: #1565c0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #0d47a1;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(33, 150, 243, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(33, 150, 243, 0.3);
+        }
+        
+        .card-header {
+            background: linear-gradient(120deg, #4fc3f7, #0288d1);
+            padding: 18px 25px;
+            color: white;
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-title i {
+            margin-right: 12px;
+            font-size: 1.5rem;
+        }
+        
+        .card-content {
+            padding: 25px;
+        }
+        
+        .card-content h3 {
+            color: #0288d1;
+            margin: 15px 0 8px;
+            font-size: 1.4rem;
+            border-bottom: 2px solid #e1f5fe;
+            padding-bottom: 8px;
+        }
+        
+        .card-content p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #01579b;
+        }
+        
+        .card-content ul {
+            padding-left: 25px;
+            margin: 15px 0;
+        }
+        
+        .card-content li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .code-block {
+            background: #e1f5fe;
+            border-left: 4px solid #0288d1;
+            padding: 15px;
+            border-radius: 0 5px 5px 0;
+            margin: 20px 0;
+            font-family: monospace;
+            line-height: 1.5;
+            color: #01579b;
+            overflow-x: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(120deg, #4fc3f7, #0288d1);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(33, 150, 243, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(33, 150, 243, 0.3);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #01579b;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 12px;
+            border: 2px solid #81d4fa;
+            border-radius: 8px;
+            background: #e1f5fe;
+            font-size: 1rem;
+            resize: vertical;
+        }
+        
+        .url-display {
+            background: #e1f5fe;
+            border: 2px dashed #4fc3f7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        
+        .url-display p {
+            font-weight: 600;
+            color: #0288d1;
+            margin-bottom: 10px;
+        }
+        
+        .url-item {
+            background: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 5px 0;
+            font-family: monospace;
+            display: flex;
+            align-items: center;
+        }
+        
+        .url-item::before {
+            content: "•";
+            color: #4fc3f7;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .success-box {
+            background: #e8f5e9;
+            border: 2px solid #66bb6a;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .success-box.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .loading.active {
+            display: block;
+        }
+        
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid #0288d1;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 20px;
+            color: #0288d1;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>小工具模块使用手册</h1>
+        </header>
+        
+        <div class="cards-container">
+            <!-- TomcatScanPro 卡片 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">TomcatScanPro 使用手册</h2>
+                </div>
+                <div class="card-content">
+                    <p>项目地址: <a href="https://github.com/lizhianyuguangming/TomcatScanPro" target="_blank">https://github.com/lizhianyuguangming/TomcatScanPro</a></p>
+                    
+                    <h3>准备工作</h3>
+                    <ul>
+                        <li>准备包含URL、用户名和密码的文本文件</li>
+                        <li>分别命名为：
+                            <ul>
+                                <li><strong>urls.txt</strong>（需自定义）</li>
+                                <li><strong>user.txt</strong>（已存在可自定义）</li>
+                                <li><strong>passwd.txt</strong>（已存在可自定义）</li>
+                            </ul>
+                        </li>
+                        <li><strong>urls.txt</strong> 保存格式：<br>
+                            https://127.0.0.1/ 或者 https://127.0.0.1/manager/html<br>脚本会自行判断检测</li>
+                    </ul>
+                    
+                    <h3>配置文件设置</h3>
+                    <p>在 config.yaml 中配置文件路径和其他设置。</p>
+                    <div class="code-block">
+# config.yaml 示例<br>
+uris_file: "urls.txt"<br>
+users_file: "user.txt"<br>
+passwords_file: "passwd.txt"<br>
+threads: 10<br>
+timeout: 10<br>
+                    </div>
+                    
+                    <h3>执行扫描</h3>
+                    <p>运行脚本：</p>
+                    <div class="code-block">
+python TomcatScanPro.py
+                    </div>
+                    <p>脚本执行后，成功利用的漏洞信息将会记录在 <strong>success.txt</strong> 文件中。</p>
+                </div>
+            </div>
+            
+            <!-- AI接口分析模块 卡片 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">AI接口分析模块 使用手册</h2>
+                </div>
+                <div class="card-content">
+                    <p>通过AI技术分析接口风险，提升系统安全性</p>
+                    
+                    <h3>接口信息导入</h3>
+                    <div class="form-group">
+                        <button id="importBtn" class="btn">
+                            导入 URLs
+                        </button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apiEndpoints">输入接口信息 (每行一个接口):</label>
+                        <textarea id="apiEndpoints" placeholder="输入接口路径，每行一个，例如：&#10;/andmuApi&#10;/dataview&#10;/api/deleteUser&#10;/api/createUser&#10;/api/updatePassword">/andmuApi
+/dataview
+/api/deleteUser
+/api/createUser
+/api/updatePassword</textarea>
+                    </div>
+                    
+                    <h3>接口预览</h3>
+                    <div class="url-display" id="urlPreview">
+                        <p>已添加的接口：</p>
+                        <div class="url-item">/andmuApi</div>
+                        <div class="url-item">/dataview</div>
+                        <div class="url-item">/api/deleteUser</div>
+                        <div class="url-item">/api/createUser</div>
+                        <div class="url-item">/api/updatePassword</div>
+                    </div>
+                    
+                    <h3>开始分析</h3>
+                    <button id="analyzeBtn" class="btn">
+                        开始分析
+                    </button>
+                    
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>正在分析接口风险，请稍候...</p>
+                    </div>
+                    
+                    <div class="success-box" id="resultBox">
+                        <h3>分析结果</h3>
+                        <p>已完成对 5 个接口的深度安全分析：</p>
+                        <ul>
+                            <li><strong>/api/deleteUser</strong> - 可能存在['未授权访问', '删除操作风险']，原因为API端点无鉴权，可能导致未授权删除</li>
+                            <li><strong>/api/createUser</strong> - 可能存在['未授权访问', '创建用户风险']，原因为API端点无鉴权，可能导致未授权创建</li>
+                            <li><strong>/api/updatePassword</strong> - 可能存在['未授权访问', '密码更新风险']，原因为API端点无鉴权，可能导致未授权密码更新</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© Bbdolt_Tools 1.0</p>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const analyzeBtn = document.getElementById('analyzeBtn');
+            const loading = document.getElementById('loading');
+            const resultBox = document.getElementById('resultBox');
+            const importBtn = document.getElementById('importBtn');
+            const apiEndpoints = document.getElementById('apiEndpoints');
+            const urlPreview = document.getElementById('urlPreview');
+            
+            // 模拟导入按钮点击
+            importBtn.addEventListener('click', function() {
+                alert('URLs导入功能已触发，这里用于演示');
+                apiEndpoints.value = "/andmuApi\n/dataview\n/api/deleteUser\n/api/createUser\n/api/updatePassword";
+            });
+            
+            // 分析按钮点击事件
+            analyzeBtn.addEventListener('click', function() {
+                loading.classList.add('active');
+                resultBox.classList.remove('active');
+                
+                // 模拟分析过程
+                setTimeout(function() {
+                    loading.classList.remove('active');
+                    resultBox.classList.add('active');
+                }, 2000);
+            });
+            
+            // 更新预览
+            apiEndpoints.addEventListener('input', function() {
+                const endpoints = apiEndpoints.value.split('\n').filter(line => line.trim() !== '');
+                let previewHtml = '<p>已添加的接口：</p>';
+                
+                if (endpoints.length === 0) {
+                    previewHtml += '<p>暂无接口</p>';
+                } else {
+                    endpoints.forEach(endpoint => {
+                        previewHtml += `<div class="url-item">${endpoint.trim()}</div>`;
+                    });
+                }
+                
+                urlPreview.innerHTML = previewHtml;
+            });
+        });
+    </script>
+</body>
+</html>

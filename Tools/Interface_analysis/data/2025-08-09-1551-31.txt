@@ -1,0 +1,443 @@
+AI分析结果：
+9.0（CRITICAL） /BankCard/jymm.html [-1] 可能存在['银行卡密码操作风险']，原因为敏感路径含密码操作(jymm)且无防护
+8.7（HIGH） /zuhao/?is_ajax=1 [225239] 可能存在['敏感信息泄露', '未授权API']，原因为AJAX接口返回220KB数据(超高危阈值)
+8.5（HIGH） /Member/Index/saveBaseinfo.html [-1] 可能存在['未授权信息篡改']，原因为基础信息保存路径(saveBaseinfo)无权限控制
+8.0（HIGH） /Account/handleSysRentGive.html [-1] 可能存在['系统级越权']，原因为系统操作路径含高危关键词(handleSys)
+8.0（HIGH） /Member/User/hidePassword.html [-1] 可能存在['潜在敏感操作']，原因为密码隐藏路径，无响应体数据
+8.0（HIGH） /Member/FundSupervision/bankCard [-1] 可能存在['未授权资金操作', '银行卡信息访问']，原因为资金监管路径含敏感参数(bankCard)无防护
+7.8（HIGH） /member/index/rent.html [82617] 可能存在['信息泄露', '潜在越权']，原因为会员路径+80KB响应体(超50KB阈值)
+7.8（HIGH） /member/user/dellolrunnum.html [-1] 可能存在['越权数据删除风险']，原因为含删除操作(del)且涉及用户数据(lolrunnum)
+7.5（HIGH） /Member/User/changeUserPopUp.html [-1] 可能存在['潜在越权漏洞']，原因为用户相关操作路径无明确权限控制
+7.5（HIGH） /system/renterBlack [-1] 可能存在['潜在未授权访问']，原因为系统路径无鉴权特征
+7.5（HIGH） /member/user/identityauth.html [-1] 可能存在['未授权访问']，原因为身份认证接口无鉴权特征
+7.5（HIGH） /Member/Index/saveMessageInfo.html [-1] 可能存在['潜在未授权访问', '数据修改风险']，原因为管理路径(Member)含数据保存操作(save)无鉴权
+7.5（HIGH） /member/user/setpaypwd.html [-1] 可能存在['潜在支付密码篡改']，原因为支付密码设置页面，高危功能
+7.2（HIGH） /member/user/authname.html [-1] 可能存在['实名认证绕过风险']，原因为身份认证操作(authname)无权限控制
+7.2（HIGH） /member/user/hidepassword.html [-1] 可能存在['潜在密码重置漏洞']，原因为密码相关功能，需强制鉴权
+7.0（HIGH） /login/findpassword.html [-1] 可能存在['密码找回漏洞']，原因为关键功能路径需强化防护
+7.0（HIGH） /Funds/index.html [-1] 可能存在['未授权访问']，原因为资金相关页面无防护特征
+7.0（HIGH） /Member/FundSupervision/index [-1] 可能存在['潜在未授权访问']，原因为资金监管路径，无响应体数据
+7.0（HIGH） /Member/User/buySms.html [-1] 可能存在['潜在未授权访问']，原因为短信购买路径，无响应体数据
+7.0（HIGH） /member/user/altermail.html [-1] 可能存在['邮箱篡改越权']，原因为用户邮箱修改路径(altermail)无校验
+6.8（MEDIUM） /Login/doLogin.html [-1] 可能存在['认证接口暴露']，原因为关键登录接口未隐藏路径
+6.8（MEDIUM） /AjaxReq/indexGameColumn?cover_image=wide [26865] 可能存在['信息泄露']，原因为高危参数(cover_image)且超大响应体
+6.8（MEDIUM） /hezu/applyRecord [-1] 可能存在['潜在越权访问']，原因为申请记录接口无用户标识校验
+6.5（MEDIUM） /login/wechatlogin.html [-1] 可能存在['第三方登录风险']，原因为社交登录接口需检查OAuth配置
+6.5（MEDIUM） /login/qqlogin.html [-1] 可能存在['第三方登录风险']，原因为社交登录接口需检查OAuth配置
+6.5（MEDIUM） /account/timelimitBuy/source/1.html [-1] 可能存在['IDOR漏洞']，原因为带ID参数(source/1)无资源归属校验
+6.5（MEDIUM） /member/index/baseinfo.html [100845] 可能存在['潜在信息泄露']，原因为会员信息页面，响应体超50KB
+6.0（MEDIUM） /Login/doRegister.html [729] 可能存在['注册接口暴露']，原因为响应体较小但涉及关键功能
+6.0（MEDIUM） /account/haoadd.html [-1] 可能存在['潜在越权访问']，原因为账户操作路径，无校验
+6.0（MEDIUM） /ConsoleGame/orderlist.html [-1] 可能存在['潜在批量泄露']，原因为订单列表可能暴露多用户数据
+6.0（MEDIUM） /funds/withdraw.html [-1] 可能存在['潜在越权操作']，原因为涉及资金操作路径但无鉴权特征
+6.0（MEDIUM） /member/user/updaterentverify.html [-1] 可能存在['潜在越权操作']，原因为用户验证更新路径，无响应体数据
+6.0（MEDIUM） /member/user/antiAddiction.html [-1] 可能存在['用户信息修改风险']，原因为用户控制路径(antiAddiction)无校验
+6.0（MEDIUM） /BankCard/bindAlipay.html [-1] 可能存在['潜在越权操作']，原因为支付绑定页面，需校验用户权限
+5.8（MEDIUM） /Common/getSearchFilter?screen_type=hot_gid_recommend&game_id=0 [8430] 可能存在['潜在信息泄露']，原因为数据接口响应体达中危阈值
+5.8（MEDIUM） /Common/gameList [597542] 可能存在['信息泄露']，原因为超大响应体(>500KB)触发检测
+5.5（MEDIUM） /Index/imtoken [849] 可能存在['令牌泄露']，原因为疑似令牌接口无防护措施
+5.5（MEDIUM） /UserClub/Index/vip.html [-1] 可能存在['潜在信息泄露']，原因为VIP页面可能包含敏感信息
+5.5（MEDIUM） /rent/rentorder.html [-1] 可能存在['潜在订单越权']，原因为订单相关路径未检测防护措施
+5.5（MEDIUM） /Member/User/identityAuth.html [-1] 可能存在['潜在身份伪造']，原因为身份认证页面，需严格校验流程
+5.4（MEDIUM） /Coupon/featuredShophb [16884] 可能存在['潜在信息泄露']，原因为响应体大小超过15KB但无高危参数
+5.2（MEDIUM） /Login/verifyGenerate.html?t=1 [2671] 可能存在['验证码生成风险']，原因为验证码接口需防爆破设计
+5.2（MEDIUM） /Coupon/index.html [23974] 可能存在['潜在信息泄露']，原因为响应体较大(23KB)
+5.0（MEDIUM） /Common/naviTopV3/tiYanLogin/tiYanLogin.html [-1] 可能存在['潜在未授权访问']，原因为登录相关路径，无鉴权
+5.0（MEDIUM） /sale/saleorder.html [-1] 可能存在['潜在信息泄露']，原因为销售订单路径，无高危参数
+5.0（MEDIUM） /Member/DofunBox/buyList.html [-1] 可能存在['潜在批量泄露']，原因为会员购买列表接口无分页限制
+5.0（MEDIUM） /member/zuke/evaluate.html [-1] 可能存在['潜在评价篡改']，原因为用户评价接口无防CSRF特征
+5.0（MEDIUM） /member/index/modifyphone.html [-1] 可能存在['潜在越权访问']，原因为敏感功能页面，需校验用户权限
+5.0（MEDIUM） /member/Cotenancy/myApplyInfo.html [-1] 可能存在['潜在信息泄露']，原因为会员申请信息页面
+5.0（MEDIUM） /download.html [-1] 可能存在['潜在文件下载漏洞']，原因为下载功能需确认路径限制
+5.0（MEDIUM） /SysMsg/msgList.html [-1] 可能存在['潜在信息泄露']，原因为系统消息列表路径，无响应体数据
+5.0（MEDIUM） /Member/Index/cardStatus [-1] 可能存在['潜在信息泄露']，原因为卡片状态接口，需限制访问
+4.9（MEDIUM） /Coupon/personalCenter [8749] 可能存在['潜在信息泄露']，原因为响应体大小超过5KB但无高危参数
+4.8（MEDIUM） /Member/User/loginCue.html [-1] 可能存在['潜在未授权访问']，原因为登录相关页面需强化防护
+4.5（MEDIUM） /common/comd [1189] 可能存在['未授权访问']，原因为通用接口无鉴权且响应体较大
+4.5（MEDIUM） /funds/depositList.html [-1] 可能存在['潜在信息泄露']，原因为资金相关路径需重点检查
+4.5（MEDIUM） /login/wechatband.html [-1] 可能存在['潜在未授权访问']，原因为微信绑定页面，需验证鉴权机制
+4.5（MEDIUM） /Member/User/alterPwd.html [-1] 可能存在['潜在越权操作']，原因为密码修改功能路径
+4.2（LOW） /member/haozhu/evaluate.html [-1] 可能存在['潜在存储XSS']，原因为评价页面可能存在XSS漏洞
+4.2（MEDIUM） /message/getNum?im_token= [-1] 可能存在['潜在未授权访问']，原因为含身份令牌参数需验证鉴权
+4.0（MEDIUM） /cap_union_prehandle [1847] 可能存在['验证码相关接口']，原因为安全相关接口需强化防护
+4.0（MEDIUM） /Index/getConf?app_id=100100000 [579] 可能存在['配置信息泄露']，原因为配置接口含ID参数但响应体中等
+4.0（MEDIUM） /AjaxReq/commonShow [863] 可能存在['未授权访问']，原因为Ajax接口无鉴权且响应体中等
+4.0（LOW） /index/imtoken [849] 可能存在['潜在信息泄露']，原因为涉及token但响应体较小
+4.0（LOW） /increment/haoCotenancy/qualify [-1] 可能存在['潜在信息泄露']，原因为业务接口路径需验证权限
+4.0（LOW） /funds/index.html [-1] 可能存在['潜在信息泄露']，原因为资金相关路径，无高危参数
+4.0（LOW） /serviceInterface/product/myList.html [-1] 可能存在['潜在信息泄露']，原因为产品列表路径，无高危参数
+4.0（LOW） /member/user/adSense.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+4.0（LOW） /Member/User/bugList.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+4.0（LOW） /recommend/inviteAward.html [-1] 可能存在['潜在反射XSS']，原因为奖励页面可能存在XSS入口
+4.0（LOW） /member/zuke/index.html [-1] 可能存在['低危信息展示']，原因为常规会员页面无高危操作特征
+4.0（MEDIUM） /account/accountcollect.html [-1] 可能存在['潜在信息泄露']，原因为账户相关页面，需验证访问控制
+4.0（MEDIUM） /member/video/videoCenter.html [-1] 可能存在['潜在信息泄露']，原因为会员视频中心页面
+4.0（MEDIUM） /member/user/salemessage.html [-1] 可能存在['潜在信息泄露']，原因为会员销售信息页面
+4.0（MEDIUM） /member/index/baseinfo/tab/2.html [-1] 可能存在['潜在信息泄露']，原因为用户信息相关路径，无响应体数据
+4.0（MEDIUM） /login/qqlogin/type/10.html [-1] 可能存在['第三方登录配置泄露']，原因为含第三方登录路径但无敏感参数
+4.0（MEDIUM） /login/alipaylogin/type/10.html [-1] 可能存在['第三方认证配置泄露']，原因为支付登录路径但参数类型固定
+4.0（MEDIUM） /Member/Index/syncBirthday [-1] 可能存在['潜在数据篡改']，原因为生日同步接口，需校验输入
+4.0（MEDIUM） /BankCard/bindcard.html [-1] 可能存在['潜在敏感操作']，原因为银行卡绑定功能路径
+4.0（MEDIUM） /Coupon/claimCoupon [1383] 可能存在['潜在业务逻辑漏洞']，原因为优惠券领取功能
+3.5（LOW） /Huodong/OrderRebate/getPopInfo?user_init=0&app_id=100100000 [55] 可能存在['潜在越权访问']，原因为含用户初始化参数但响应体小
+3.5（LOW） /huodong/tejia/getTargetUser?app_id=100100000 [77] 可能存在['潜在越权访问']，原因为用户数据接口含ID参数但响应体小
+3.5（LOW） /shangHu/ordermanagement.html [-1] 可能存在['潜在信息泄露']，原因为涉及订单管理但无响应体数据
+3.5（LOW） /Member/User/jumpToZhuanzu [-1] 可能存在['潜在信息泄露']，原因为涉及用户跳转但无响应体数据
+3.5（LOW） /huodong/IntegralBean/index?source=Web个人中心 [-1] 可能存在['潜在信息泄露']，原因为含参数但无高危特征
+3.5（LOW） /member/user/hongbao.html [-1] 可能存在[]，原因为用户红包页面无高危参数
+3.5（LOW） /account/accountsalelist.html [-1] 可能存在['潜在信息泄露']，原因为账户相关页面需确认权限控制
+3.5（LOW） /account/accountrentlist.html [-1] 可能存在['潜在信息泄露']，原因为账户相关页面需确认权限控制
+3.5（LOW） /m/User/rentList.html [-1] 可能存在['潜在信息泄露']，原因为租赁列表页面，无高危参数
+3.5（LOW） /Member/User/jiebangWeiXin.html [-1] 可能存在['潜在信息泄露']，原因为含用户相关路径但无参数
+3.5（LOW） /Coupon/preminumGameList [1526] 可能存在['无风险']，原因为普通数据接口
+3.2（LOW） /member/index/baseinfo/tab/3.html [-1] 可能存在[]，原因为普通用户路径无敏感参数
+3.0（LOW） /zuhao [-1] 可能存在['路径含义不明']，原因为无敏感参数或明确功能指向
+3.0（LOW） /huodong/actPop/randHbSwitch?app_id=100100000 [74] 可能存在['潜在IDOR']，原因为含应用ID参数但无校验证据
+3.0（LOW） /cap_union_new_getcapbysig [-1] 可能存在['潜在信息泄露']，原因为未知响应体大小，路径无高危特征
+3.0（LOW） /funds/recharge.html [-1] 可能存在['潜在信息泄露']，原因为涉及资金操作但无响应体数据
+3.0（LOW） /ShareCard/vipLottery [-1] 可能存在['潜在信息泄露']，原因为涉及VIP抽奖但无响应体数据
+3.0（LOW） /Member/User/credit.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /member/index/sale.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /member/haozhu/index.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /member/user/message.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /huodong/share/index.html [-1] 可能存在['潜在信息泄露']，原因为活动相关路径，无高危参数
+3.0（LOW） /member/user/visitList.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /member/experience/index.html [-1] 可能存在['潜在信息泄露']，原因为用户相关路径，无高危参数
+3.0（LOW） /freeplay/hao.html [-1] 可能存在['潜在信息泄露']，原因为无高危参数
+3.0（LOW） /dianpu/ [-1] 可能存在['无风险或已防护']，原因为店铺目录页面
+3.0（LOW） /member/zuke/beanRecord [-1] 可能存在['潜在信息泄露']，原因为用户数据接口需确认权限
+3.0（LOW） /logout/ [-1] 可能存在['潜在会话管理问题']，原因为登出功能路径，无响应体数据
+3.0（LOW） /member/index/ [0] 可能存在['潜在信息泄露']，原因为用户主页路径，无响应体
+3.0（LOW） /user/cannelNotice.html [-1] 可能存在['潜在信息泄露']，原因为普通用户功能页面，无高危参数
+3.0（LOW） /AntiIndulgeAll/realNameActivitySwitchByUid [49] 可能存在['潜在用户标识操作']，原因为含UID参数但响应体小
+3.0（LOW） /Coupon/premiumShopHbList [3396] 可能存在['无风险或已防护']，原因为响应体大小适中且无高危参数
+2.5（LOW） /Login/getTencentCaptchaSwitch?event_type=1 [98] 可能存在['潜在反射XSS']，原因为含动态参数但响应体小
+2.5（LOW） /Login/sendRegPhoneSms.html [88] 可能存在['潜在短信轰炸']，原因为短信接口无频率限制特征
+2.5（LOW） /member/user/antiIndulgeYoung.html [-1] 可能存在['无风险']，原因为普通功能路径
+2.0（LOW） /m/ [-1] 可能存在['移动端入口']，原因为无具体风险特征
+2.0（LOW） /AjaxReq/loginNeckOrTopV4 [307] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /AntiIndulgeYoung/checkUserAllowMessage [55] 可能存在['无风险']，原因为功能接口但无敏感操作
+2.0（LOW） /Login/checkUserName.html [27] 可能存在['无效端点']，原因为极小响应体且无高危参数
+2.0（LOW） /search/guide_word?styp=guess [72] 可能存在['低危参数']，原因为搜索参数无敏感特征
+2.0（LOW） /AntiIndulgeAll/antiIndulgeMessage [97] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /Common/popHongbaoList?app_id=100100000 [37] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /huodong/newcomerPrivilegeHb/popupWindow?app_id=100100000 [107] 可能存在['无风险或已防护']，原因为响应体略大于100B但无高危参数
+2.0（LOW） /huodong/A20241220/userRewards [89] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /huodong/T1001/getActInfo?app_id=100100000 [37] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /Hongbao/getPopoutHb [43] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /member/anli/winter.html [-1] 可能存在[]，原因为静态页面无动态参数
+2.0（LOW） /Common/naviTopV3.html [2936] 可能存在['无风险或已防护']，原因为普通静态页面，无敏感参数
+2.0（LOW） /guestbook.html [-1] 可能存在['无风险或已防护']，原因为公开留言板页面
+2.0（LOW） /rent/leaseorder.html [-1] 可能存在['无风险或已防护']，原因为普通业务页面，无高危特征
+2.0（LOW） /recommend/recommendlist.html [-1] 可能存在['无风险或已防护']，原因为普通业务页面，无高危特征
+2.0（LOW） /rent/complainlist.html [-1] 可能存在['无风险或已防护']，原因为普通业务页面，无高危特征
+2.0（LOW） /sale/buyorder.html [-1] 可能存在['无风险或已防护']，原因为普通业务页面，无高危特征
+2.0（LOW） /Common/noticeRoll.html [14] 可能存在['无风险']，原因为公共通知路径，响应体极小
+2.0（LOW） /Index/loudinfo [2] 可能存在['无风险']，原因为首页信息路径，响应体极小
+2.0（LOW） /AntiIndulgeAll/checkUserIsAntiIndulge [167] 可能存在['无效端点']，原因为响应体过小且无错误信息
+2.0（LOW） /Member/Index/avatarList.html [-1] 可能存在['无风险']，原因为普通用户数据路径
+2.0（LOW） /Coupon/openCouponSysNotice [104] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /Coupon/receiveCouponSysHb [177] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+2.0（LOW） /Coupon/receiveHb [239] 可能存在['无风险或已防护']，原因为响应体小于100B且无高危参数
+1.5（LOW） /Common/addCountWin [55] 可能存在['无风险']，原因为响应体过小且无高危特征
+1.5（LOW） /huodong/actHb/popTips [65] 可能存在['无风险']，原因为响应体过小且无高危特征
+1.0（LOW） /Login/popupLoginData.html [46] 可能存在['无风险']，原因为静态页面无交互参数
+1.0（LOW） /member/index/index.html [0] 可能存在['无效端点']，原因为响应体为空
+1.0（LOW） /Index/loudinfo.html?t=8255 [2] 可能存在['无风险或已防护']，原因为极小响应体且无错误
+1.0（LOW） /AntiIndulgeYoung/checkIsShowAntiIndulgeYoung [55] 可能存在['无风险']，原因为响应体小且无高危参数
+
+排序后的URI列表：
+/BankCard/jymm.html
+/zuhao/?is_ajax=1
+/Member/Index/saveBaseinfo.html
+/Account/handleSysRentGive.html
+/Member/User/hidePassword.html
+/Member/FundSupervision/bankCard
+/member/index/rent.html
+/member/user/dellolrunnum.html
+/Member/User/changeUserPopUp.html
+/system/renterBlack
+/member/user/identityauth.html
+/Member/Index/saveMessageInfo.html
+/member/user/setpaypwd.html
+/member/user/authname.html
+/member/user/hidepassword.html
+/login/findpassword.html
+/Funds/index.html
+/Member/FundSupervision/index
+/Member/User/buySms.html
+/member/user/altermail.html
+/Login/doLogin.html
+/AjaxReq/indexGameColumn?cover_image=wide
+/hezu/applyRecord
+/login/wechatlogin.html
+/login/qqlogin.html
+/account/timelimitBuy/source/1.html
+/member/index/baseinfo.html
+/Login/doRegister.html
+/account/haoadd.html
+/ConsoleGame/orderlist.html
+/funds/withdraw.html
+/member/user/updaterentverify.html
+/member/user/antiAddiction.html
+/BankCard/bindAlipay.html
+/Common/getSearchFilter?screen_type=hot_gid_recommend&game_id=0
+/Common/gameList
+/Index/imtoken
+/UserClub/Index/vip.html
+/rent/rentorder.html
+/Member/User/identityAuth.html
+/Coupon/featuredShophb
+/Login/verifyGenerate.html?t=1
+/Coupon/index.html
+/Common/naviTopV3/tiYanLogin/tiYanLogin.html
+/sale/saleorder.html
+/Member/DofunBox/buyList.html
+/member/zuke/evaluate.html
+/member/index/modifyphone.html
+/member/Cotenancy/myApplyInfo.html
+/download.html
+/SysMsg/msgList.html
+/Member/Index/cardStatus
+/Coupon/personalCenter
+/Member/User/loginCue.html
+/common/comd
+/funds/depositList.html
+/login/wechatband.html
+/Member/User/alterPwd.html
+/member/haozhu/evaluate.html
+/message/getNum?im_token=
+/cap_union_prehandle
+/Index/getConf?app_id=100100000
+/AjaxReq/commonShow
+/index/imtoken
+/increment/haoCotenancy/qualify
+/funds/index.html
+/serviceInterface/product/myList.html
+/member/user/adSense.html
+/Member/User/bugList.html
+/recommend/inviteAward.html
+/member/zuke/index.html
+/account/accountcollect.html
+/member/video/videoCenter.html
+/member/user/salemessage.html
+/member/index/baseinfo/tab/2.html
+/login/qqlogin/type/10.html
+/login/alipaylogin/type/10.html
+/Member/Index/syncBirthday
+/BankCard/bindcard.html
+/Coupon/claimCoupon
+/Huodong/OrderRebate/getPopInfo?user_init=0&app_id=100100000
+/huodong/tejia/getTargetUser?app_id=100100000
+/shangHu/ordermanagement.html
+/Member/User/jumpToZhuanzu
+/huodong/IntegralBean/index?source=Web个人中心
+/member/user/hongbao.html
+/account/accountsalelist.html
+/account/accountrentlist.html
+/m/User/rentList.html
+/Member/User/jiebangWeiXin.html
+/Coupon/preminumGameList
+/member/index/baseinfo/tab/3.html
+/zuhao
+/huodong/actPop/randHbSwitch?app_id=100100000
+/cap_union_new_getcapbysig
+/funds/recharge.html
+/ShareCard/vipLottery
+/Member/User/credit.html
+/member/index/sale.html
+/member/haozhu/index.html
+/member/user/message.html
+/huodong/share/index.html
+/member/user/visitList.html
+/member/experience/index.html
+/freeplay/hao.html
+/dianpu/
+/member/zuke/beanRecord
+/logout/
+/member/index/
+/user/cannelNotice.html
+/AntiIndulgeAll/realNameActivitySwitchByUid
+/Coupon/premiumShopHbList
+/Login/getTencentCaptchaSwitch?event_type=1
+/Login/sendRegPhoneSms.html
+/member/user/antiIndulgeYoung.html
+/m/
+/AjaxReq/loginNeckOrTopV4
+/AntiIndulgeYoung/checkUserAllowMessage
+/Login/checkUserName.html
+/search/guide_word?styp=guess
+/AntiIndulgeAll/antiIndulgeMessage
+/Common/popHongbaoList?app_id=100100000
+/huodong/newcomerPrivilegeHb/popupWindow?app_id=100100000
+/huodong/A20241220/userRewards
+/huodong/T1001/getActInfo?app_id=100100000
+/Hongbao/getPopoutHb
+/member/anli/winter.html
+/Common/naviTopV3.html
+/guestbook.html
+/rent/leaseorder.html
+/recommend/recommendlist.html
+/rent/complainlist.html
+/sale/buyorder.html
+/Common/noticeRoll.html
+/Index/loudinfo
+/AntiIndulgeAll/checkUserIsAntiIndulge
+/Member/Index/avatarList.html
+/Coupon/openCouponSysNotice
+/Coupon/receiveCouponSysHb
+/Coupon/receiveHb
+/Common/addCountWin
+/huodong/actHb/popTips
+/Login/popupLoginData.html
+/member/index/index.html
+/Index/loudinfo.html?t=8255
+/AntiIndulgeYoung/checkIsShowAntiIndulgeYoung
+
+URL拼接后结果:
+https://www.zuhaowan.com/BankCard/jymm.html
+https://www.zuhaowan.com/zuhao/?is_ajax=1
+https://www.zuhaowan.com/Member/Index/saveBaseinfo.html
+https://www.zuhaowan.com/Account/handleSysRentGive.html
+https://www.zuhaowan.com/Member/User/hidePassword.html
+https://www.zuhaowan.com/Member/FundSupervision/bankCard
+https://www.zuhaowan.com/member/index/rent.html
+https://www.zuhaowan.com/member/user/dellolrunnum.html
+https://www.zuhaowan.com/Member/User/changeUserPopUp.html
+https://www.zuhaowan.com/system/renterBlack
+https://www.zuhaowan.com/member/user/identityauth.html
+https://www.zuhaowan.com/Member/Index/saveMessageInfo.html
+https://www.zuhaowan.com/member/user/setpaypwd.html
+https://www.zuhaowan.com/member/user/authname.html
+https://www.zuhaowan.com/member/user/hidepassword.html
+https://www.zuhaowan.com/login/findpassword.html
+https://www.zuhaowan.com/Funds/index.html
+https://www.zuhaowan.com/Member/FundSupervision/index
+https://www.zuhaowan.com/Member/User/buySms.html
+https://www.zuhaowan.com/member/user/altermail.html
+https://www.zuhaowan.com/Login/doLogin.html
+https://www.zuhaowan.com/AjaxReq/indexGameColumn?cover_image=wide
+https://www.zuhaowan.com/hezu/applyRecord
+https://www.zuhaowan.com/login/wechatlogin.html
+https://www.zuhaowan.com/login/qqlogin.html
+https://www.zuhaowan.com/account/timelimitBuy/source/1.html
+https://www.zuhaowan.com/member/index/baseinfo.html
+https://www.zuhaowan.com/Login/doRegister.html
+https://www.zuhaowan.com/account/haoadd.html
+https://www.zuhaowan.com/ConsoleGame/orderlist.html
+https://www.zuhaowan.com/funds/withdraw.html
+https://www.zuhaowan.com/member/user/updaterentverify.html
+https://www.zuhaowan.com/member/user/antiAddiction.html
+https://www.zuhaowan.com/BankCard/bindAlipay.html
+https://www.zuhaowan.com/Common/getSearchFilter?screen_type=hot_gid_recommend&game_id=0
+https://www.zuhaowan.com/Common/gameList
+https://www.zuhaowan.com/Index/imtoken
+https://www.zuhaowan.com/UserClub/Index/vip.html
+https://www.zuhaowan.com/rent/rentorder.html
+https://www.zuhaowan.com/Member/User/identityAuth.html
+https://www.zuhaowan.com/Coupon/featuredShophb
+https://www.zuhaowan.com/Login/verifyGenerate.html?t=1
+https://www.zuhaowan.com/Coupon/index.html
+https://www.zuhaowan.com/Common/naviTopV3/tiYanLogin/tiYanLogin.html
+https://www.zuhaowan.com/sale/saleorder.html
+https://www.zuhaowan.com/Member/DofunBox/buyList.html
+https://www.zuhaowan.com/member/zuke/evaluate.html
+https://www.zuhaowan.com/member/index/modifyphone.html
+https://www.zuhaowan.com/member/Cotenancy/myApplyInfo.html
+https://www.zuhaowan.com/download.html
+https://www.zuhaowan.com/SysMsg/msgList.html
+https://www.zuhaowan.com/Member/Index/cardStatus
+https://www.zuhaowan.com/Coupon/personalCenter
+https://www.zuhaowan.com/Member/User/loginCue.html
+https://www.zuhaowan.com/common/comd
+https://www.zuhaowan.com/funds/depositList.html
+https://www.zuhaowan.com/login/wechatband.html
+https://www.zuhaowan.com/Member/User/alterPwd.html
+https://www.zuhaowan.com/member/haozhu/evaluate.html
+https://www.zuhaowan.com/message/getNum?im_token=
+https://www.zuhaowan.com/cap_union_prehandle
+https://www.zuhaowan.com/Index/getConf?app_id=100100000
+https://www.zuhaowan.com/AjaxReq/commonShow
+https://www.zuhaowan.com/index/imtoken
+https://www.zuhaowan.com/increment/haoCotenancy/qualify
+https://www.zuhaowan.com/funds/index.html
+https://www.zuhaowan.com/serviceInterface/product/myList.html
+https://www.zuhaowan.com/member/user/adSense.html
+https://www.zuhaowan.com/Member/User/bugList.html
+https://www.zuhaowan.com/recommend/inviteAward.html
+https://www.zuhaowan.com/member/zuke/index.html
+https://www.zuhaowan.com/account/accountcollect.html
+https://www.zuhaowan.com/member/video/videoCenter.html
+https://www.zuhaowan.com/member/user/salemessage.html
+https://www.zuhaowan.com/member/index/baseinfo/tab/2.html
+https://www.zuhaowan.com/login/qqlogin/type/10.html
+https://www.zuhaowan.com/login/alipaylogin/type/10.html
+https://www.zuhaowan.com/Member/Index/syncBirthday
+https://www.zuhaowan.com/BankCard/bindcard.html
+https://www.zuhaowan.com/Coupon/claimCoupon
+https://www.zuhaowan.com/Huodong/OrderRebate/getPopInfo?user_init=0&app_id=100100000
+https://www.zuhaowan.com/huodong/tejia/getTargetUser?app_id=100100000
+https://www.zuhaowan.com/shangHu/ordermanagement.html
+https://www.zuhaowan.com/Member/User/jumpToZhuanzu
+https://www.zuhaowan.com/huodong/IntegralBean/index?source=Web个人中心
+https://www.zuhaowan.com/member/user/hongbao.html
+https://www.zuhaowan.com/account/accountsalelist.html
+https://www.zuhaowan.com/account/accountrentlist.html
+https://www.zuhaowan.com/m/User/rentList.html
+https://www.zuhaowan.com/Member/User/jiebangWeiXin.html
+https://www.zuhaowan.com/Coupon/preminumGameList
+https://www.zuhaowan.com/member/index/baseinfo/tab/3.html
+https://www.zuhaowan.com/zuhao
+https://www.zuhaowan.com/huodong/actPop/randHbSwitch?app_id=100100000
+https://www.zuhaowan.com/cap_union_new_getcapbysig
+https://www.zuhaowan.com/funds/recharge.html
+https://www.zuhaowan.com/ShareCard/vipLottery
+https://www.zuhaowan.com/Member/User/credit.html
+https://www.zuhaowan.com/member/index/sale.html
+https://www.zuhaowan.com/member/haozhu/index.html
+https://www.zuhaowan.com/member/user/message.html
+https://www.zuhaowan.com/huodong/share/index.html
+https://www.zuhaowan.com/member/user/visitList.html
+https://www.zuhaowan.com/member/experience/index.html
+https://www.zuhaowan.com/freeplay/hao.html
+https://www.zuhaowan.com/dianpu/
+https://www.zuhaowan.com/member/zuke/beanRecord
+https://www.zuhaowan.com/logout/
+https://www.zuhaowan.com/member/index/
+https://www.zuhaowan.com/user/cannelNotice.html
+https://www.zuhaowan.com/AntiIndulgeAll/realNameActivitySwitchByUid
+https://www.zuhaowan.com/Coupon/premiumShopHbList
+https://www.zuhaowan.com/Login/getTencentCaptchaSwitch?event_type=1
+https://www.zuhaowan.com/Login/sendRegPhoneSms.html
+https://www.zuhaowan.com/member/user/antiIndulgeYoung.html
+https://www.zuhaowan.com/m/
+https://www.zuhaowan.com/AjaxReq/loginNeckOrTopV4
+https://www.zuhaowan.com/AntiIndulgeYoung/checkUserAllowMessage
+https://www.zuhaowan.com/Login/checkUserName.html
+https://www.zuhaowan.com/search/guide_word?styp=guess
+https://www.zuhaowan.com/AntiIndulgeAll/antiIndulgeMessage
+https://www.zuhaowan.com/Common/popHongbaoList?app_id=100100000
+https://www.zuhaowan.com/huodong/newcomerPrivilegeHb/popupWindow?app_id=100100000
+https://www.zuhaowan.com/huodong/A20241220/userRewards
+https://www.zuhaowan.com/huodong/T1001/getActInfo?app_id=100100000
+https://www.zuhaowan.com/Hongbao/getPopoutHb
+https://www.zuhaowan.com/member/anli/winter.html
+https://www.zuhaowan.com/Common/naviTopV3.html
+https://www.zuhaowan.com/guestbook.html
+https://www.zuhaowan.com/rent/leaseorder.html
+https://www.zuhaowan.com/recommend/recommendlist.html
+https://www.zuhaowan.com/rent/complainlist.html
+https://www.zuhaowan.com/sale/buyorder.html
+https://www.zuhaowan.com/Common/noticeRoll.html
+https://www.zuhaowan.com/Index/loudinfo
+https://www.zuhaowan.com/AntiIndulgeAll/checkUserIsAntiIndulge
+https://www.zuhaowan.com/Member/Index/avatarList.html
+https://www.zuhaowan.com/Coupon/openCouponSysNotice
+https://www.zuhaowan.com/Coupon/receiveCouponSysHb
+https://www.zuhaowan.com/Coupon/receiveHb
+https://www.zuhaowan.com/Common/addCountWin
+https://www.zuhaowan.com/huodong/actHb/popTips
+https://www.zuhaowan.com/Login/popupLoginData.html
+https://www.zuhaowan.com/member/index/index.html
+https://www.zuhaowan.com/Index/loudinfo.html?t=8255
+https://www.zuhaowan.com/AntiIndulgeYoung/checkIsShowAntiIndulgeYoung

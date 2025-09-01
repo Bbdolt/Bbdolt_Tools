@@ -1,0 +1,111 @@
+AI分析结果：
+3.5（MEDIUM） /* [-1] 可能存在['潜在通配符滥用']，原因为通配符路径可能暴露未授权资源
+3.5（MEDIUM） /$ [-1] 可能存在['潜在框架漏洞']，原因为特殊字符路径可能暴露框架信息
+2.5（LOW） /List [-1] 可能存在['潜在信息泄露']，原因为可能返回列表数据但无高危参数
+2.5（LOW） /front-evaluation/production/umi.d52af180.js/testFileByExt.txt [514] 可能存在['潜在信息泄露']，原因为检测到JS文件路径但响应体较小
+2.0（LOW） /#? [-1] 可能存在['无效URI结构']，原因为异常字符但无实际参数
+2.0（LOW） /Test [1241] 可能存在['测试接口']，原因为响应体未达风险阈值
+2.0（LOW） /Example [1241] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /SaveTimeVocabulary [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /OperationSpan [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /PortraitMemoryChild [169] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /DigitalSymbolTransform [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /Similarities [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /SaveTimePortraitMemory [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /VerbalPairedAssociates [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /ChildFlanker [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /exception [1241] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /PortraitMemory [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /SaveTimeSymbolSearch [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /PaperFolding [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /ChildSymbolSearch [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /ChildSymmetry [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /Vocabulary [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /SaveTimeSymmetry [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+2.0（LOW） /DigitalSymbol [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+1.0（LOW） /a/b [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+1.0（LOW） /SaveTimePaperFolding [-1] 可能存在['无风险']，原因为功能性路径无敏感参数
+1.0（LOW） /SymbolSearch [-1] 可能存在['无风险']，原因为功能性路径无敏感特征
+1.0（LOW） /CubeRotation [-1] 可能存在['无风险']，原因为功能性路径无敏感参数
+1.0（LOW） /Symmetry [-1] 可能存在['无风险']，原因为功能性路径无敏感特征
+1.0（LOW） /a/i [-1] 可能存在['无风险']，原因为普通路径无敏感参数
+1.0（LOW） /404 [169] 可能存在['无风险或已防护']，原因为无效端点
+1.0（LOW） /404/ [1241] 可能存在['无效端点']，原因为疑似错误页面无敏感特征
+1.0（LOW） /PortraitMemoryChild/ [1241] 可能存在['无风险']，原因为无敏感参数或路径特征
+0.0（LOW） /Flanker [-1] 可能存在['无风险']，原因为无敏感参数或路径特征
+
+排序后的URI列表：
+/*
+/$
+/List
+/front-evaluation/production/umi.d52af180.js/testFileByExt.txt
+/#?
+/Test
+/Example
+/SaveTimeVocabulary
+/OperationSpan
+/PortraitMemoryChild
+/DigitalSymbolTransform
+/Similarities
+/SaveTimePortraitMemory
+/VerbalPairedAssociates
+/ChildFlanker
+/exception
+/PortraitMemory
+/SaveTimeSymbolSearch
+/PaperFolding
+/ChildSymbolSearch
+/ChildSymmetry
+/Vocabulary
+/SaveTimeSymmetry
+/DigitalSymbol
+/a/b
+/SaveTimePaperFolding
+/SymbolSearch
+/CubeRotation
+/Symmetry
+/a/i
+/404
+/404/
+/PortraitMemoryChild/
+/Flanker
+
+URL拼接后结果:
+https://andingchild-1305887643.cos.ap-beijing.myqcloud.com/*
+https://childscale.66nao.com/*
+https://andingchild-1305887643.cos.ap-beijing.myqcloud.com/$
+https://childscale.66nao.com/$
+https://andingchild-1305887643.cos.ap-beijing.myqcloud.com/List
+https://childscale.66nao.com/List
+https://andingchild-1305887643.cos.ap-beijing.myqcloud.com/front-evaluation/production/umi.d52af180.js/testFileByExt.txt
+https://andingchild-1305887643.cos.ap-beijing.myqcloud.com/#?
+https://childscale.66nao.com/#?
+https://childscale.66nao.com/Test
+https://childscale.66nao.com/Example
+https://childscale.66nao.com/SaveTimeVocabulary
+https://childscale.66nao.com/OperationSpan
+https://childscale.66nao.com/PortraitMemoryChild
+https://childscale.66nao.com/DigitalSymbolTransform
+https://childscale.66nao.com/Similarities
+https://childscale.66nao.com/SaveTimePortraitMemory
+https://childscale.66nao.com/VerbalPairedAssociates
+https://childscale.66nao.com/ChildFlanker
+https://childscale.66nao.com/exception
+https://childscale.66nao.com/PortraitMemory
+https://childscale.66nao.com/SaveTimeSymbolSearch
+https://childscale.66nao.com/PaperFolding
+https://childscale.66nao.com/ChildSymbolSearch
+https://childscale.66nao.com/ChildSymmetry
+https://childscale.66nao.com/Vocabulary
+https://childscale.66nao.com/SaveTimeSymmetry
+https://childscale.66nao.com/DigitalSymbol
+https://childscale.66nao.com/a/b
+https://childscale.66nao.com/SaveTimePaperFolding
+https://childscale.66nao.com/SymbolSearch
+https://childscale.66nao.com/CubeRotation
+https://childscale.66nao.com/Symmetry
+https://childscale.66nao.com/a/i
+https://childscale.66nao.com/404
+https://childscale.66nao.com/404/
+https://childscale.66nao.com/PortraitMemoryChild/
+https://childscale.66nao.com/Flanker

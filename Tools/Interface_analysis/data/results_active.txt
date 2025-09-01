@@ -1,0 +1,227 @@
+AI分析结果：
+9.0（CRITICAL） /api/updatePwd [-1] 可能存在['未授权操作', '密码修改漏洞'] -> 密码修改接口，检测到高危操作路径(updatePwd)且无安全限制，存在未授权操作和密码修改漏洞的风险。
+8.5（CRITICAL） /api/common/upload [-1] 可能存在['文件上传漏洞', '恶意文件上传'] -> 文件上传接口，未检测到防护措施，存在恶意文件上传的风险。
+8.5（CRITICAL） /api/album/delAlbum [-1] 可能存在['越权操作', '数据删除'] -> 删除相册接口，路径含del关键词，极高危风险。
+8.0（HIGH） /api/oauth/wxmpCode2Session [-1] 可能存在['认证凭证泄露'] -> 微信小程序认证接口，可能返回认证凭证。
+8.0（HIGH） /api/information/listInfo [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 信息列表接口，路径包含list关键词，可能返回敏感信息。
+8.0（HIGH） /api/active/myActiveList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 活动列表接口，路径包含list关键词，可能返回敏感信息。
+8.0（HIGH） /api/index/myCenterCofigList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 个人中心配置列表接口，路径包含list关键词，可能返回敏感信息。
+8.0（HIGH） /api/index/eduCofigList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 教育配置列表接口，路径包含list关键词，可能返回敏感信息。
+8.0（HIGH） /api/login [-1] 可能存在['认证绕过', '暴力破解'] -> 登录接口，未检测到防护措施，存在认证绕过和暴力破解的风险。
+8.0（HIGH） /api/memberInfo/memberInfo [-1] 可能存在['IDOR越权访问', '敏感信息泄露'] -> 会员信息接口，可能因未授权访问导致越权操作或敏感信息泄露。
+8.0（HIGH） /api/myList/updateMemberInfo [-1] 可能存在['越权操作', '敏感信息泄露'] -> 更新成员信息接口，路径含update和info关键词，高危风险。
+8.0（HIGH） /api/org/delReward [-1] 可能存在['未授权操作', '越权删除'] -> 删除奖励接口，检测到高危操作路径(delReward)且无权限控制，存在未授权操作和越权删除的风险。
+7.8（HIGH） /api/account/accountList [-1] 可能存在['批量数据泄露', '敏感信息泄露'] -> 账户列表接口，路径含list关键词，可能返回大量敏感账户信息。
+7.5（HIGH） /api/help/helpList [-1] 可能存在['批量数据泄露', 'SQL注入'] -> 帮助列表接口，路径含list关键词且可能返回敏感数据集合。
+7.5（HIGH） /api/wxKey [-1] 可能存在['敏感信息泄露'] -> 微信密钥接口，可能返回敏感密钥信息。
+7.5（HIGH） /api/help/helpDelte [-1] 可能存在['未授权删除', '越权操作'] -> 帮助删除接口，可能因未授权访问导致越权删除操作。
+7.5（HIGH） /api/offer/delOffer [-1] 可能存在['未授权删除', '越权操作'] -> 删除报价接口，可能因未授权访问导致越权删除操作。
+7.5（HIGH） /api/schoolMate/schoolMateList [-1] 可能存在['数据泄露', 'SQL注入'] -> 校友列表接口，可能因输入参数处理不当导致数据泄露或SQL注入。
+7.5（HIGH） /api/org/orgList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 组织列表接口，路径含list关键词，可能泄露敏感信息。
+7.5（HIGH） /api/excellent/listInfo [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 优秀列表信息接口，路径含list和info关键词，高危风险。
+7.5（HIGH） /api/information/infoDetail [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 信息详情接口，路径含info和detail关键词，高危风险。
+7.5（HIGH） /api/index/schoolAreaList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 学校区域列表接口，路径含list关键词，高危风险。
+7.5（HIGH） /api/serverInfo/schoolInfo [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 学校信息接口，路径含info关键词，高危风险。
+7.5（HIGH） /api/donation/donationList [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 捐赠列表接口，路径含list关键词，高危风险。
+7.5（HIGH） /api/active/activeDetail [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 活动详情接口，路径含detail关键词，高危风险。
+7.5（HIGH） /api/memberInfo/myFriend [-1] 可能存在['敏感信息泄露', 'IDOR越权访问'] -> 好友信息接口，检测到敏感路径关键词(memberInfo)且无访问控制，存在敏感信息泄露和IDOR越权访问的风险。
+7.2（HIGH） /api/help/helpDetail [-1] 可能存在['IDOR越权访问', '信息泄露'] -> 帮助详情接口，路径含detail关键词且可能暴露敏感内容。
+7.0（HIGH） /api/getRole [-1] 可能存在['身份控制泄露'] -> 获取角色接口，可能返回身份控制信息。
+7.0（HIGH） /api/recharge/rechargeParam [-1] 可能存在['敏感信息泄露'] -> 充值参数接口，可能返回敏感支付信息。
+7.0（HIGH） /api/org/delOrgNews [-1] 可能存在['未授权访问'] -> 组织新闻删除接口，可能缺乏权限控制。
+7.0（HIGH） /api/index/rechargeConfig [-1] 可能存在['敏感信息泄露', '配置篡改'] -> 充值配置接口，可能泄露敏感信息或允许配置篡改。
+7.0（HIGH） /api/memberInfo/exchangeCardCheck [-1] 可能存在['越权访问', '敏感信息泄露'] -> 会员卡兑换检查接口，可能因未授权访问导致越权操作或信息泄露。
+7.0（HIGH） /api/mall/releaseMall [-1] 可能存在['未授权发布', '越权操作'] -> 商城发布接口，可能因未授权访问导致越权发布操作。
+7.0（HIGH） /api/tidings/members [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 成员信息接口，可能泄露用户敏感数据。
+7.0（HIGH） /api/reward/rewardDetail [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 奖励详情接口，路径含detail关键词，可能泄露敏感信息。
+7.0（HIGH） /api/donation/donationInfo [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 捐赠信息接口，路径含info关键词，可能泄露敏感数据。
+7.0（HIGH） /api/myList/schoolCard [-1] 可能存在['敏感信息泄露', '未授权访问'] -> 校园卡信息接口，可能泄露用户敏感数据。
+6.8（MEDIUM） /api/tidings/query [-1] 可能存在['SQL注入', '信息泄露'] -> 消息查询接口，检测到query关键词需防范注入攻击。
+6.5（MEDIUM） /api/recharge/add [-1] 可能存在['金额篡改', '业务逻辑漏洞'] -> 充值接口，涉及资金操作需严格权限控制。
+6.5（MEDIUM） /api/org/orgSignMember [-1] 可能存在['权限控制缺失'] -> 组织成员签名接口，可能涉及权限控制问题。
+6.5（MEDIUM） /api/comment/listComment [-1] 可能存在['数据泄露', 'SQL注入'] -> 评论列表接口，可能因输入参数处理不当导致数据泄露或SQL注入。
+6.5（MEDIUM） /api/offer/offerDetail [-1] 可能存在['数据泄露', 'SQL注入'] -> 报价详情接口，可能因输入参数处理不当导致数据泄露或SQL注入。
+6.5（MEDIUM） /api/index/college [-1] 可能存在['敏感信息泄露'] -> 学院信息接口，可能泄露敏感数据。
+6.5（MEDIUM） /api/org/orgNewsDetail [-1] 可能存在['敏感信息泄露'] -> 组织新闻详情接口，检测到敏感路径关键词(orgNewsDetail)，可能存在敏感信息泄露风险。
+6.0（MEDIUM） /api/reward/delReward [-1] 可能存在['系统操作泄露'] -> 删除奖励接口，可能涉及系统操作。
+6.0（MEDIUM） /api/mall/delMall [-1] 可能存在['未授权删除'] -> 商城删除接口，高危操作需强制鉴权。
+6.0（MEDIUM） /api/org/releaseOrgNews [-1] 可能存在['未授权访问'] -> 组织新闻发布接口，可能缺乏权限控制。
+6.0（MEDIUM） /api/offer/releaseOffer [-1] 可能存在['未授权访问'] -> 报价发布接口，可能缺乏权限控制。
+6.0（MEDIUM） /api/reward/releaseRewark [-1] 可能存在['未授权访问'] -> 奖励发布接口，可能缺乏权限控制。
+6.0（MEDIUM） /api/index/toschoolList [-1] 可能存在['数据泄露', 'SQL注入'] -> 学校列表接口，可能因输入参数处理不当导致数据泄露或SQL注入。
+6.0（MEDIUM） /api/reward/signReward [-1] 可能存在['业务逻辑漏洞'] -> 签到奖励接口，可能存在业务逻辑漏洞。
+5.5（MEDIUM） /api/reward/selletReward [-1] 可能存在['用户信息泄露'] -> 奖励选择接口，可能返回用户信息。
+5.5（MEDIUM） /api/serverInfo/orgBanner [-1] 可能存在['信息泄露'] -> 组织横幅接口，可能泄露组织敏感信息。
+5.0（MEDIUM） /api/memberInfo/exchangeCard [-1] 可能存在['用户信息泄露'] -> 会员信息交换接口，可能返回用户信息。
+5.0（MEDIUM） /api/thump/unThump [-1] 可能存在['逻辑漏洞'] -> 取消点赞接口，可能存在逻辑漏洞。
+5.0（MEDIUM） /api/information/unFollow [-1] 可能存在['逻辑漏洞'] -> 取消关注接口，可能存在逻辑漏洞。
+5.0（MEDIUM） /api/comment/comment [-1] 可能存在['逻辑漏洞'] -> 评论接口，可能存在逻辑漏洞。
+5.0（MEDIUM） /api/index/type [-1] 可能存在['信息泄露'] -> 类型接口，可能泄露系统类型信息。
+5.0（MEDIUM） /api/collect/collect [-1] 可能存在['数据泄露'] -> 收藏接口，检测到敏感路径关键词(collect)，可能存在数据泄露风险。
+4.0（MEDIUM） /api/org/myOrgList [-1] 可能存在['敏感信息泄露'] -> 我的组织列表接口，可能返回敏感信息。
+4.0（MEDIUM） /api/active/activeRegistration [-1] 可能存在['批量注册'] -> 活动报名接口，需防范自动化攻击。
+4.0（LOW） /api/index/faq [-1] 可能存在['信息泄露'] -> 常见问题接口，可能泄露系统常见问题信息。
+4.0（MEDIUM） /api/information/follow [-1] 可能存在['数据泄露'] -> 关注信息接口，检测到敏感路径关键词(follow)，可能存在数据泄露风险。
+3.5（MEDIUM） /api/excellent/excellentDetail [-1] 可能存在['敏感信息泄露'] -> 优秀详情接口，可能返回敏感信息。
+3.5（MEDIUM） /api/org/orgDetail [-1] 可能存在['敏感信息泄露'] -> 组织详情接口，可能返回敏感信息。
+3.5（MEDIUM） /api/reward/rewardList [-1] 可能存在['敏感信息泄露'] -> 奖励列表接口，可能返回敏感信息。
+3.0（MEDIUM） /api/active/activeRelease [-1] 可能存在['敏感信息泄露'] -> 活动发布接口，可能返回敏感信息。
+3.0（MEDIUM） /api/album/albumDetail [-1] 可能存在['敏感信息泄露'] -> 相册详情接口，可能返回敏感信息。
+3.0（MEDIUM） /api/help/helpRelease [-1] 可能存在['非密泄露'] -> 帮助信息发布接口，可能涉及内容管理功能。
+3.0（MEDIUM） /api/collect/unCollect [-1] 可能存在['非授权操作'] -> 收藏管理接口，需验证用户权限。
+3.0（LOW） /api/index/protocol [-1] 可能存在['信息泄露'] -> 协议接口，可能返回公开协议信息。
+3.0（MEDIUM） /api/index/major [-1] 可能存在['非密泄露'] -> 专业信息接口，可能返回非敏感数据，但仍需注意数据泄露风险。
+2.5（LOW） /api/org/getOrgNews [-1] 可能存在['非密泄露'] -> 组织新闻接口，可能返回非敏感信息。
+2.5（LOW） /api/thump/thump [-1] 可能存在[] -> 点赞功能接口，需防范刷量攻击。
+2.0（LOW） /api/index/noticeDetail [-1] 可能存在['非密泄露'] -> 公告详情接口，可能返回非敏感信息。
+2.0（LOW） /api/icon/iconList [-1] 可能存在['非密泄露'] -> 图标列表接口，可能返回非敏感信息。
+2.0（LOW） /api/index/toschool [-1] 可能存在['非密泄露'] -> 到校接口，可能返回非敏感信息。
+2.0（LOW） /profile/upload/emoji/ [-1] 可能存在[] -> 表情上传目录，需检查文件类型限制。
+2.0（LOW） /api/index/notice [-1] 可能存在[] -> 公告接口，通常为公开信息展示。
+1.5（LOW） /api/index/aboutUs [-1] 可能存在[] -> 关于我们接口，通常为静态信息展示。
+1.0（LOW） /schoolmate-gtyz [-1] 可能存在[] -> 静态路径，未检测到明显风险特征。
+1.0（LOW） /static/chat/img/emoji/ [-1] 可能存在[] -> 静态表情资源目录，风险较低。
+0（LOW） /api/donationPay/donationParam [-1] 可能存在[] -> 捐赠参数接口，未检测到明显风险。
+0（LOW） /api/tidings/unreadcount [-1] 可能存在[] -> 未读消息计数接口，未检测到明显风险。
+0（LOW） /api/tidings/addTidings [-1] 可能存在[] -> 添加消息接口，未检测到明显风险。
+0（LOW） /api/index/indexCofigList [-1] 可能存在[] -> 首页配置列表接口，未检测到明显风险。
+0（LOW） /api/album/albumList [-1] 可能存在[] -> 相册列表接口，未检测到明显风险。
+0（LOW） /api/index/registerTip [-1] 可能存在[] -> 注册提示接口，未检测到明显风险。
+0（LOW） /api/album/albumRelease [-1] 可能存在[] -> 相册发布接口，未检测到明显风险。
+0（LOW） /api/myList/myList [-1] 可能存在[] -> 我的列表接口，未检测到明显风险。
+0（LOW） /api/mall/mallDetail [-1] 可能存在[] -> 商城详情接口，未检测到明显风险。
+0（LOW） /api/index/banner [-1] 可能存在[] -> 首页横幅接口，未检测到明显风险。
+0（LOW） /api/index/school [-1] 可能存在[] -> 学校信息接口，未检测到明显风险。
+0（LOW） /api/register [-1] 可能存在[] -> 注册接口，未检测到明显风险。
+0（LOW） /api/sendSMS [-1] 可能存在[] -> 发送短信接口，未检测到明显风险。
+0（LOW） /api/myList/reRegisterMemberInfo [-1] 可能存在[] -> 重新注册会员信息接口，未检测到明显风险。
+0（LOW） /api/org/signOrg [-1] 可能存在[] -> 组织签名接口，未检测到明显风险。
+0（LOW） /api/index/editToschool [-1] 可能存在[] -> 编辑学校信息接口，无响应体数据
+0（LOW） /api/comment/thumpComment [-1] 可能存在[] -> 评论点赞接口，无响应体数据
+0（LOW） /api/org/updateOrg [-1] 可能存在[] -> 组织更新接口，无响应体数据
+0（LOW） /api/memberInfo/exchangeCardList [-1] 可能存在[] -> 会员卡交换列表接口，无响应体数据
+0（LOW） /api/donation/donationInfoNoPay [-1] 可能存在[] -> 未支付捐赠信息接口，无响应体数据
+0（LOW） /api/index/memberConfigList [-1] 可能存在[] -> 会员配置列表接口，无响应体数据
+0（LOW） /api/index/classNameList [-1] 可能存在[] -> 班级名称列表接口，无响应体数据
+0（LOW） /api/org/delOrgSign [-1] 可能存在[] -> 删除组织签名接口，无响应体数据
+0（LOW） /api/index/trade [-1] 可能存在[] -> 交易接口，无响应体数据
+0（LOW） /api/offer/offerList [-1] 可能存在[] -> 报价列表接口，无响应体数据
+0（LOW） /api/mall/mallList [-1] 可能存在[] -> 商城列表接口，无响应体数据
+0（LOW） /api/active/activeList [-1] 可能存在[] -> 活动列表接口，无响应体数据
+0（LOW） /api/comment/delComment [-1] 可能存在[] -> 删除评论接口，无响应体数据
+0（LOW） /api/org/updateReleaseOrgNews [-1] 可能存在[] -> 更新发布组织新闻接口，无响应体数据
+0（LOW） /api/org/updateOrgSign [-1] 可能存在[] -> 更新组织签名接口，无响应体数据
+
+排序后的URI列表：
+/api/updatePwd
+/api/common/upload
+/api/album/delAlbum
+/api/oauth/wxmpCode2Session
+/api/information/listInfo
+/api/active/myActiveList
+/api/index/myCenterCofigList
+/api/index/eduCofigList
+/api/login
+/api/memberInfo/memberInfo
+/api/myList/updateMemberInfo
+/api/org/delReward
+/api/account/accountList
+/api/help/helpList
+/api/wxKey
+/api/help/helpDelte
+/api/offer/delOffer
+/api/schoolMate/schoolMateList
+/api/org/orgList
+/api/excellent/listInfo
+/api/information/infoDetail
+/api/index/schoolAreaList
+/api/serverInfo/schoolInfo
+/api/donation/donationList
+/api/active/activeDetail
+/api/memberInfo/myFriend
+/api/help/helpDetail
+/api/getRole
+/api/recharge/rechargeParam
+/api/org/delOrgNews
+/api/index/rechargeConfig
+/api/memberInfo/exchangeCardCheck
+/api/mall/releaseMall
+/api/tidings/members
+/api/reward/rewardDetail
+/api/donation/donationInfo
+/api/myList/schoolCard
+/api/tidings/query
+/api/recharge/add
+/api/org/orgSignMember
+/api/comment/listComment
+/api/offer/offerDetail
+/api/index/college
+/api/org/orgNewsDetail
+/api/reward/delReward
+/api/mall/delMall
+/api/org/releaseOrgNews
+/api/offer/releaseOffer
+/api/reward/releaseRewark
+/api/index/toschoolList
+/api/reward/signReward
+/api/reward/selletReward
+/api/serverInfo/orgBanner
+/api/memberInfo/exchangeCard
+/api/thump/unThump
+/api/information/unFollow
+/api/comment/comment
+/api/index/type
+/api/collect/collect
+/api/org/myOrgList
+/api/active/activeRegistration
+/api/index/faq
+/api/information/follow
+/api/excellent/excellentDetail
+/api/org/orgDetail
+/api/reward/rewardList
+/api/active/activeRelease
+/api/album/albumDetail
+/api/help/helpRelease
+/api/collect/unCollect
+/api/index/protocol
+/api/index/major
+/api/org/getOrgNews
+/api/thump/thump
+/api/index/noticeDetail
+/api/icon/iconList
+/api/index/toschool
+/profile/upload/emoji/
+/api/index/notice
+/api/index/aboutUs
+/schoolmate-gtyz
+/static/chat/img/emoji/
+/api/donationPay/donationParam
+/api/tidings/unreadcount
+/api/tidings/addTidings
+/api/index/indexCofigList
+/api/album/albumList
+/api/index/registerTip
+/api/album/albumRelease
+/api/myList/myList
+/api/mall/mallDetail
+/api/index/banner
+/api/index/school
+/api/register
+/api/sendSMS
+/api/myList/reRegisterMemberInfo
+/api/org/signOrg
+/api/index/editToschool
+/api/comment/thumpComment
+/api/org/updateOrg
+/api/memberInfo/exchangeCardList
+/api/donation/donationInfoNoPay
+/api/index/memberConfigList
+/api/index/classNameList
+/api/org/delOrgSign
+/api/index/trade
+/api/offer/offerList
+/api/mall/mallList
+/api/active/activeList
+/api/comment/delComment
+/api/org/updateReleaseOrgNews
+/api/org/updateOrgSign

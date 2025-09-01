@@ -1,0 +1,169 @@
+AI分析结果：
+7.0（HIGH） /app-api/school/map/world [1013774] 可能存在['数据泄露', '响应体过大'] -> 世界地图接口，响应体过大，可能存在数据泄露风险。
+6.5（MEDIUM） /app-api/school/map/china [583870] 可能存在['数据泄露', '响应体过大'] -> 中国地图接口，响应体过大，可能存在数据泄露风险。
+5.0（MEDIUM） /app-api/school/schoolmate-class/page [5614] 可能存在['数据泄露'] -> 分页获取班级信息的接口，响应体较大可能泄露数据。
+5.0（MEDIUM） /app-api/school/light-map/list [35334] 可能存在['数据泄露'] -> 灯光地图列表接口，可能存在数据泄露风险。
+4.0（LOW） /app-api/school/rank/invite?pageNo=1&pageSize=100 [14015] 可能存在['数据泄露'] -> 学校邀请排名接口，响应体较大，可能存在数据泄露风险。
+4.0（LOW） /app-api/school/member/user/get [646] 可能存在['非密泄露'] -> 获取用户信息接口，响应体适中，可能存在非密泄露风险。
+4.0（MEDIUM） /app-api/school/schoolmate-class/join/mine/list [2092] 可能存在['数据泄露'] -> 获取个人加入班级列表的接口，响应体较大可能泄露数据。
+4.0（LOW） /app-api/school/schoolmate-class/user/list?id=649 [1375] 可能存在['数据泄露'] -> 班级用户列表接口，可能存在数据泄露风险。
+4.0（LOW） /app-api/school/schoolmate/detail?member_id=1094 [614] 可能存在['反射XSS'] -> 校友详情接口，可能存在反射XSS风险。
+3.5（LOW） /app-api/school/schoolmate/mine [774] 可能存在['非密泄露'] -> 获取个人同学信息的接口，可能泄露非敏感信息。
+3.5（LOW） /app-api/school/schoolmate-class/get?id=649 [598] 可能存在['反射XSS'] -> 获取班级信息接口，可能存在反射XSS风险。
+3.5（LOW） /app-api/school/light-map/rank?type=1 [1809] 可能存在['反射XSS'] -> 灯光地图排名接口，可能存在反射XSS风险。
+3.0（LOW） /app-api/school/homepage/mp [1742] 可能存在['非密泄露'] -> 学校主页接口，响应体大小中等，可能存在非敏感信息泄露。
+3.0（LOW） /app-api/school/banner/list?type=1 [499] 可能存在['非密泄露'] -> 学校横幅列表接口，响应体大小中等，可能存在非敏感信息泄露。
+3.0（LOW） /app-api/school/article/page?isHot=0&pageSize=5&pageNo=1 [1423] 可能存在['非密泄露'] -> 学校文章分页接口，响应体大小中等，可能存在非敏感信息泄露。
+3.0（LOW） /app-api/school/navigation/list [1984] 可能存在['非密泄露'] -> 学校导航列表接口，响应体大小适中，未检测到高风险参数。
+3.0（LOW） /app-api/school/member/auth/weixin-mini-app-code-login [31] 可能存在['无风险或已防护'] -> 微信小程序登录接口，响应体较小，未检测到高风险参数。
+3.0（LOW） /app-api/school/member/auth/weixin-mini-app-login [181] 可能存在['无风险或已防护'] -> 微信小程序登录接口，响应体较小，未检测到高风险参数。
+3.0（LOW） /app-api/school/member/user/openid [31] 可能存在['无风险或已防护'] -> 获取用户openid接口，响应体较小，未检测到高风险参数。
+3.0（LOW） /app-api/school/enrollment/list [196] 可能存在['无风险或已防护'] -> 学校报名列表接口，响应体较小，未检测到高风险参数。
+3.0（LOW） /app-api/infra/file/upload [152] 可能存在['文件上传'] -> 文件上传接口，需注意文件类型和大小限制。
+3.0（LOW） /app-api/school/schoolmate-class/join-apply [665] 可能存在['无风险或已防护'] -> 加入班级申请接口，响应体大小正常，无明显风险特征。
+2.5（LOW） /pages/game/lightMap/index [-1] 可能存在['未知风险'] -> 游戏光地图页面，无响应体信息，风险未知。
+2.5（LOW） /pages/reservation/index [-1] 可能存在['未知风险'] -> 预约页面，无响应体信息，风险未知。
+2.5（LOW） /pages/class/index [-1] 可能存在['未知风险'] -> 班级页面，无响应体信息，风险未知。
+2.5（LOW） /pages/donation/index [-1] 可能存在['未知风险'] -> 捐赠页面，无响应体信息，风险未知。
+2.5（LOW） /pages/advise/index [-1] 可能存在['未知风险'] -> 建议页面，无响应体信息，风险未知。
+2.5（LOW） /pages/news/mate [-1] 可能存在['未知风险'] -> 新闻配对页面，无响应体信息，风险未知。
+2.5（LOW） /app-api/school/system/dict-data/get?dict_type=identity_name [316] 可能存在['非密泄露'] -> 获取字典数据的接口，可能泄露身份名称等非敏感信息。
+2.5（LOW） /app-api/school/recruit/page?pageNo=1&pageSize=10&status=1 [48] 可能存在['无风险或已防护'] -> 招聘信息分页接口，响应体较小且无高危参数。
+2.5（LOW） /app-api/school/recruit/mine/page?pageNo=1&pageSize=100&type=1 [48] 可能存在['无风险或已防护'] -> 我的招聘信息分页接口，响应体较小且无高危参数。
+2.0（LOW） /app-api/school/homepage/visit [31] 可能存在['无效端点'] -> 学校主页访问接口，响应体过小，可能为无效端点。
+2.0（LOW） /pages/news/list [-1] 可能存在['无风险或已防护'] -> 新闻列表页面，未检测到高风险参数或路径特征。
+2.0（LOW） /pages/mateFind/index [-1] 可能存在['无风险或已防护'] -> 伙伴查找页面，未检测到高风险参数或路径特征。
+2.0（LOW） /app-api/school/ma/template/map [150] 可能存在['无风险或已防护'] -> 学校模板地图接口，响应体较小，未检测到高风险参数。
+2.0（LOW） /app-api/school/schoolmate-apply/create [719] 可能存在['无风险'] -> 创建同学申请的接口，响应体适中且无敏感参数。
+2.0（LOW） /app-api/school/schoolmate-class-apply/mine/page?pageNo=1&pageSize=100 [48] 可能存在['无风险'] -> 分页获取个人班级申请的接口，响应体小且无敏感参数。
+2.0（LOW） /app-api/school/card-relation/mine/page?pageNo=1&pageSize=100 [48] 可能存在['无风险'] -> 分页获取个人卡片关系的接口，响应体小且无敏感参数。
+2.0（LOW） /app-api/school/schoolmate-story/page?pageNo=1&pageSize=10 [48] 可能存在['无风险或已防护'] -> 校友故事分页接口，响应体过小，无明显风险特征。
+2.0（LOW） /app-api/school/light-map/mine [31] 可能存在['无风险或已防护'] -> 我的灯光地图接口，响应体过小，无明显风险特征。
+2.0（LOW） /app-api/school/return-reservation-setting/list [29] 可能存在['无风险或已防护'] -> 返回预约设置列表接口，响应体较小且无高危参数。
+2.0（LOW） /app-api/school/recruit-category/list [29] 可能存在['无风险或已防护'] -> 返回招聘类别列表接口，响应体较小且无高危参数。
+1.5（LOW） /app-api/school/navigation-serve/list?status=1 [1980] 可能存在['无风险'] -> 导航服务列表接口，响应体适中且无敏感参数。
+1.5（LOW） /app-api/school/schoolmate-org/page?pageNo=1&pageSize=10 [1342] 可能存在['无风险'] -> 校友组织分页接口，响应体适中且无敏感参数。
+1.0（LOW） /app-api/school/schoolmate-apply/get-last [31] 可能存在['无风险'] -> 获取最后申请记录的接口，响应体小且无敏感参数。
+1.0（LOW） /app-api/school/schoolmate/apply-card [31] 可能存在['无风险'] -> 申请卡片的接口，响应体小且无敏感参数。
+1.0（LOW） /app-api/school/schoolmate/near [48] 可能存在['无风险'] -> 校友附近接口，响应体小且无敏感参数。
+1.0（LOW） /pages/activity/index [-1] 可能存在['无风险'] -> 活动页面接口，无敏感参数且响应体未知。
+1.0（LOW） /pages/mall/index [-1] 可能存在['无风险'] -> 商城页面接口，无敏感参数且响应体未知。
+1.0（LOW） /pages/job/index [-1] 可能存在['无风险'] -> 工作页面接口，无敏感参数且响应体未知。
+1.0（LOW） /app-api/school/schoolmate-org-category/list [154] 可能存在['无风险'] -> 校友组织分类列表接口，响应体小且无敏感参数。
+1.0（LOW） /app-api/school/schoolmate/page?name=王&pageNo=1&pageSize=100 [48] 可能存在['无风险'] -> 校友分页接口，响应体小且无敏感参数。
+1.0（LOW） /app-api/school/donation-project-category/list [29] 可能存在['无风险'] -> 捐赠项目分类列表接口，响应体小且无敏感参数。
+1.0（LOW） /app-api/school/donation-project/page?pageSize=2&pageNo=1&isHot=1 [48] 可能存在['无风险'] -> 捐赠项目分页接口，响应体小且无敏感参数。
+
+排序后的URI列表：
+/app-api/school/map/world
+/app-api/school/map/china
+/app-api/school/schoolmate-class/page
+/app-api/school/light-map/list
+/app-api/school/rank/invite?pageNo=1&pageSize=100
+/app-api/school/member/user/get
+/app-api/school/schoolmate-class/join/mine/list
+/app-api/school/schoolmate-class/user/list?id=649
+/app-api/school/schoolmate/detail?member_id=1094
+/app-api/school/schoolmate/mine
+/app-api/school/schoolmate-class/get?id=649
+/app-api/school/light-map/rank?type=1
+/app-api/school/homepage/mp
+/app-api/school/banner/list?type=1
+/app-api/school/article/page?isHot=0&pageSize=5&pageNo=1
+/app-api/school/navigation/list
+/app-api/school/member/auth/weixin-mini-app-code-login
+/app-api/school/member/auth/weixin-mini-app-login
+/app-api/school/member/user/openid
+/app-api/school/enrollment/list
+/app-api/infra/file/upload
+/app-api/school/schoolmate-class/join-apply
+/pages/game/lightMap/index
+/pages/reservation/index
+/pages/class/index
+/pages/donation/index
+/pages/advise/index
+/pages/news/mate
+/app-api/school/system/dict-data/get?dict_type=identity_name
+/app-api/school/recruit/page?pageNo=1&pageSize=10&status=1
+/app-api/school/recruit/mine/page?pageNo=1&pageSize=100&type=1
+/app-api/school/homepage/visit
+/pages/news/list
+/pages/mateFind/index
+/app-api/school/ma/template/map
+/app-api/school/schoolmate-apply/create
+/app-api/school/schoolmate-class-apply/mine/page?pageNo=1&pageSize=100
+/app-api/school/card-relation/mine/page?pageNo=1&pageSize=100
+/app-api/school/schoolmate-story/page?pageNo=1&pageSize=10
+/app-api/school/light-map/mine
+/app-api/school/return-reservation-setting/list
+/app-api/school/recruit-category/list
+/app-api/school/navigation-serve/list?status=1
+/app-api/school/schoolmate-org/page?pageNo=1&pageSize=10
+/app-api/school/schoolmate-apply/get-last
+/app-api/school/schoolmate/apply-card
+/app-api/school/schoolmate/near
+/pages/activity/index
+/pages/mall/index
+/pages/job/index
+/app-api/school/schoolmate-org-category/list
+/app-api/school/schoolmate/page?name=王&pageNo=1&pageSize=100
+/app-api/school/donation-project-category/list
+/app-api/school/donation-project/page?pageSize=2&pageNo=1&isHot=1
+
+URL拼接后结果:
+https://xyzj.fzjyfz.cn:9001/app-api/school/map/world
+https://xyzj.fzjyfz.cn:9001/app-api/school/map/china
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class/page
+https://xyzj.fzjyfz.cn:9001/app-api/school/light-map/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/rank/invite?pageNo=1&pageSize=100
+https://xyzj.fzjyfz.cn:9001/app-api/school/member/user/get
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class/join/mine/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class/user/list?id=649
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate/detail?member_id=1094
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate/mine
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class/get?id=649
+https://xyzj.fzjyfz.cn:9001/app-api/school/light-map/rank?type=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/homepage/mp
+https://xyzj.fzjyfz.cn:9001/app-api/school/banner/list?type=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/article/page?isHot=0&pageSize=5&pageNo=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/navigation/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/member/auth/weixin-mini-app-code-login
+https://xyzj.fzjyfz.cn:9001/app-api/school/member/auth/weixin-mini-app-login
+https://xyzj.fzjyfz.cn:9001/app-api/school/member/user/openid
+https://xyzj.fzjyfz.cn:9001/app-api/school/enrollment/list
+https://xyzj.fzjyfz.cn:9001/app-api/infra/file/upload
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class/join-apply
+https://xyzj.fzjyfz.cn:9001/pages/game/lightMap/index
+https://xyzj.fzjyfz.cn:9001/pages/reservation/index
+https://xyzj.fzjyfz.cn:9001/pages/class/index
+https://xyzj.fzjyfz.cn:9001/pages/donation/index
+https://xyzj.fzjyfz.cn:9001/pages/advise/index
+https://xyzj.fzjyfz.cn:9001/pages/news/mate
+https://xyzj.fzjyfz.cn:9001/app-api/school/system/dict-data/get?dict_type=identity_name
+https://xyzj.fzjyfz.cn:9001/app-api/school/recruit/page?pageNo=1&pageSize=10&status=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/recruit/mine/page?pageNo=1&pageSize=100&type=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/homepage/visit
+https://xyzj.fzjyfz.cn:9001/pages/news/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/pages/news/list
+https://xyzj.fzjyfz.cn:9001/pages/mateFind/index
+https://xyzj.fzjyfz.cn:9001/app-api/school/pages/mateFind/index
+https://xyzj.fzjyfz.cn:9001/app-api/school/ma/template/map
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-apply/create
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-class-apply/mine/page?pageNo=1&pageSize=100
+https://xyzj.fzjyfz.cn:9001/app-api/school/card-relation/mine/page?pageNo=1&pageSize=100
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-story/page?pageNo=1&pageSize=10
+https://xyzj.fzjyfz.cn:9001/app-api/school/light-map/mine
+https://xyzj.fzjyfz.cn:9001/app-api/school/return-reservation-setting/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/recruit-category/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/navigation-serve/list?status=1
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-org/page?pageNo=1&pageSize=10
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-apply/get-last
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate/apply-card
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate/near
+https://xyzj.fzjyfz.cn:9001/pages/activity/index
+https://xyzj.fzjyfz.cn:9001/pages/mall/index
+https://xyzj.fzjyfz.cn:9001/pages/job/index
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate-org-category/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/schoolmate/page?name=王&pageNo=1&pageSize=100
+https://xyzj.fzjyfz.cn:9001/app-api/school/donation-project-category/list
+https://xyzj.fzjyfz.cn:9001/app-api/school/donation-project/page?pageSize=2&pageNo=1&isHot=1

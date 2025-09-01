@@ -1,0 +1,350 @@
+AI分析结果：
+9.5（CRITICAL） /del [-1] 可能存在['高危删除操作']，原因为删除功能无任何安全措施
+9.2（CRITICAL） /platformmanage [-1] 可能存在['未授权管理后台']，原因为管理路径无鉴权措施
+9.0（CRITICAL） /cronjobs [-1] 可能存在['未授权任务调度']，原因为定时任务管理接口无鉴权
+8.5（HIGH） /ext/system/list [-1] 可能存在['系统信息泄露']，原因为系统列表接口需严格权限控制
+8.5（HIGH） /portal/assetMap/queryAssetView [-1] 可能存在['敏感信息泄露']，原因为资产视图接口需访问控制
+8.5（HIGH） /report/external/addOrUpdateParamMap [-1] 可能存在['参数注入风险', '外部系统交互']，原因为路径暴露参数映射修改功能
+8.5（HIGH） /ext/system/add [-1] 可能存在['未授权系统操作']，原因为系统级操作路径，无权限控制
+8.5（HIGH） /users [-1] 可能存在['未授权访问', '用户信息泄露']，原因为高危用户管理接口无防护
+8.2（HIGH） /applyViewPermission [-1] 可能存在['权限提升风险']，原因为路径直接暴露权限申请功能
+8.0（HIGH） /reset/password/ [-1] 可能存在['潜在未授权密码重置']，原因为检测到敏感操作路径(reset/password)
+8.0（HIGH） /sync/data/import/project [-1] 可能存在['未授权数据导入']，原因为数据导入路径含高危操作语义
+8.0（HIGH） /query/ [-1] 可能存在['SQL注入风险']，原因为查询类接口无参数过滤
+8.0（HIGH） /getExtToken [-1] 可能存在['令牌泄露风险', '未授权访问']，原因为涉及身份令牌的敏感接口
+8.0（HIGH） /portal/external/queryReportParam [-1] 可能存在['外部接口未授权', '报告参数泄露']，原因为外部查询接口含高危操作
+8.0（HIGH） /login [-1] 可能存在['暴力破解风险']，原因为认证接口需防爆破措施
+8.0（HIGH） /configurations [-1] 可能存在['未授权访问', '系统配置泄露']，原因为高危管理接口无防护
+8.0（HIGH） /sources/updateSourceColumn [-1] 可能存在['潜在越权操作']，原因为数据源修改接口无安全限制
+8.0（HIGH） /spreadSheet/report/updateConfig [-1] 可能存在['未授权配置修改']，原因为配置更新接口无权限校验
+7.8（HIGH） /sync/data/import?projectId= [-1] 可能存在['越权操作', 'SQL注入风险']，原因为含高危参数(projectId)且为数据操作接口
+7.8（HIGH） /portal/assetMap/createSubsets [-1] 可能存在['资源创建越权']，原因为含资产创建类高危操作路径
+7.8（HIGH） /projects/getUsers [-1] 可能存在['越权数据访问']，原因为项目用户接口需权限校验
+7.8（HIGH） /projects/reportApprovalControls [-1] 可能存在['未授权访问', '审批功能越权']，原因为路径含高危审批功能关键词
+7.8（HIGH） /portal/getReportPermission [-1] 可能存在['权限越权']，原因为权限控制接口，无身份校验
+7.8（HIGH） /report/external/queryReportParam [-1] 可能存在['未授权访问', '报表参数泄露']，原因为外部报表接口无鉴权
+7.8（HIGH） /etl/process [-1] 可能存在['ETL流程越权']，原因为数据处理接口无权限控制
+7.5（HIGH） /config/visualized/Web.conf [-1] 可能存在['潜在未授权访问', '配置文件泄露']，原因为检测到敏感路径(config)且无安全限制
+7.5（HIGH） /getOauth2Clients [-1] 可能存在['未授权访问']，原因为疑似OAuth2客户端信息接口无鉴权
+7.5（HIGH） /report/updateReportTimeConsumingStatistics [-1] 可能存在['潜在未授权访问', '敏感操作接口']，原因为含敏感操作路径(update)且无鉴权标识
+7.5（HIGH） /query [-1] 可能存在['SQL注入风险']，原因为通用查询接口无参数过滤
+7.5（HIGH） /changepassword [-1] 可能存在['未授权访问', '越权风险']，原因为敏感功能路径无权限控制
+7.5（HIGH） /sync/data/download [-1] 可能存在['潜在未授权访问', '数据泄露风险']，原因为路径含高危关键词(data/download)且无鉴权
+7.5（HIGH） /changepwd [-1] 可能存在['未授权访问', '密码修改功能']，原因为敏感路径无鉴权
+7.5（HIGH） /sync/data/replaceList?projectId= [-1] 可能存在['潜在未授权访问', '参数无校验']，原因为数据操作接口无身份验证参数
+7.5（HIGH） /sync/cancel/import?projectId= [-1] 可能存在['未授权操作', '潜在越权']，原因为含高危操作参数(projectId)且无鉴权
+7.2（HIGH） /process [-1] 可能存在['未授权访问', '系统进程操作']，原因为系统级操作接口无鉴权
+7.0（HIGH） /uploads [-1] 可能存在['潜在文件上传漏洞']，原因为检测到文件操作路径(uploads)
+7.0（HIGH） /report/deleteById/ [-1] 可能存在['潜在未授权删除']，原因为高危操作路径，无高危参数
+7.0（HIGH） /users/getUser [-1] 可能存在['用户信息越权']，原因为用户信息接口无ID校验
+7.0（HIGH） /report/publishToAbd [-1] 可能存在['潜在越权操作']，原因为含发布类敏感操作路径
+7.0（HIGH） /download/imageExport [-1] 可能存在['未授权文件下载']，原因为下载路径含高危参数(imageExport)
+7.0（HIGH） /path/sort/reportCatalog/move [-1] 可能存在['未授权操作']，原因为目录操作接口需严格鉴权
+7.0（HIGH） /updateDownloadStatus [-1] 可能存在['状态篡改风险']，原因为路径含高危状态更新关键词
+7.0（HIGH） /portal/download [-1] 可能存在['潜在目录遍历']，原因为文件下载接口，无路径限制
+7.0（HIGH） /visualizationETL [-1] 可能存在['ETL配置越权']，原因为可视化ETL接口无鉴权
+6.8（MEDIUM） /roles [-1] 可能存在['潜在权限泄露']，原因为角色管理接口，无访问控制
+6.8（MEDIUM） /statistic [-1] 可能存在['数据泄露风险']，原因为统计接口可能暴露敏感数据
+6.8（MEDIUM） /dashboardPortals [-1] 可能存在['仪表盘未授权访问']，原因为门户接口缺乏权限校验
+6.5（MEDIUM） /update [-1] 可能存在['潜在未授权更新']，原因为检测到高危操作路径(update)
+6.5（MEDIUM） /login/externalLogin [-1] 可能存在['SSO配置缺陷']，原因为外部登录端点需验证防护措施
+6.5（MEDIUM） /report/publishAbdPerm [-1] 可能存在['潜在权限提升']，原因为含敏感操作路径(publishAbdPerm)
+6.5（MEDIUM） /share [-1] 可能存在['共享资源泄露']，原因为共享功能接口无访问控制
+6.5（MEDIUM） /report/updateDynamicCV [-1] 可能存在['潜在未授权访问', '数据篡改风险']，原因为含高危操作路径(updateDynamicCV)且无鉴权
+6.5（MEDIUM） /sources [-1] 可能存在['潜在资源泄露']，原因为资源访问接口无限制
+6.5（MEDIUM） /process/inputViewDetail [-1] 可能存在['潜在信息泄露']，原因为流程详情接口无访问控制
+6.2（MEDIUM） /singleReport [-1] 可能存在['潜在信息泄露']，原因为报表接口可能暴露数据
+6.0（MEDIUM） /spreadSheet/getData [-1] 可能存在['潜在信息泄露']，原因为检测到数据接口路径(spreadSheet)
+6.0（MEDIUM） /views/share/getProjectBelowView [-1] 可能存在['潜在越权访问']，原因为共享视图接口含敏感路径
+6.0（MEDIUM） /view/list [-1] 可能存在['批量数据泄露']，原因为列表查询接口无分页限制
+6.0（MEDIUM） /logout?from_url= [-1] 可能存在['开放重定向']，原因为含未校验的重定向参数(from_url)
+6.0（MEDIUM） /users/getWatermarkJs [-1] 可能存在['敏感数据泄露']，原因为用户相关JS接口需防护
+6.0（MEDIUM） /api/v3 [-1] 可能存在['框架漏洞风险']，原因为API路径未明确版本控制
+6.0（MEDIUM） /querys [-1] 可能存在['潜在SQL注入']，原因为数据库操作类路径名，无参数过滤
+6.0（MEDIUM） /check/ [-1] 可能存在['潜在信息泄露']，原因为通用检测接口无防护
+6.0（MEDIUM） /portal/assetMap/details [-1] 可能存在['资产信息暴露']，原因为资产详情接口无防护
+6.0（MEDIUM） /download/reportData [-1] 可能存在['潜在信息泄露', '未验证下载']，原因为下载接口无安全限制
+5.5（MEDIUM） /add [-1] 可能存在['潜在未授权操作']，原因为检测到高危操作路径(add)
+5.5（MEDIUM） /report/exportReportTimeConsumingStatistics [-1] 可能存在['未授权导出']，原因为统计报表导出功能需鉴权
+5.5（MEDIUM） /portal/assetMap/dataAlbumsList [-1] 可能存在['潜在数据泄露']，原因为数据类路径(dataAlbumsList)
+5.5（MEDIUM） /confirminvite/ [-1] 可能存在['邀请机制漏洞']，原因为邀请确认功能可能被滥用
+5.5（MEDIUM） /views/visual/getList [-1] 可能存在['潜在数据泄露']，原因为路径含数据获取功能关键词
+5.5（MEDIUM） /analysis [-1] 可能存在['潜在信息泄露']，原因为数据分析接口，可能暴露敏感信息
+5.0（MEDIUM） /filter/batchCreateFilter [-1] 可能存在['潜在批量操作风险']，原因为批量操作路径，无高危参数
+5.0（MEDIUM） /dashboardPortals/ [-1] 可能存在['潜在信息泄露']，原因为管理类路径，无高危参数
+5.0（MEDIUM） /calculation/field/check [-1] 可能存在['潜在信息泄露']，原因为数据操作路径，无高危参数
+5.0（MEDIUM） /process/dataPreview [-1] 可能存在['潜在信息泄露']，原因为数据操作路径，无高危参数
+5.0（MEDIUM） /queryView/ [-1] 可能存在['潜在信息泄露']，原因为数据操作路径，无高危参数
+5.0（MEDIUM） /projectcenter [-1] 可能存在['潜在信息泄露']，原因为管理类路径名但无高危参数
+5.0（MEDIUM） /download [-1] 可能存在['潜在未授权下载']，原因为下载功能路径需鉴权验证
+5.0（MEDIUM） /portal/assetMap/dataPreview [-1] 可能存在['潜在信息泄露']，原因为数据预览接口可能存在未授权访问
+4.5（LOW） /list [-1] 可能存在[]，原因为无高危特征
+4.5（MEDIUM） /portal/views [-1] 可能存在['潜在视图越权']，原因为门户视图路径需权限校验
+4.5（MEDIUM） /process/fieldType [-1] 可能存在['潜在未授权访问']，原因为涉及数据处理接口，无鉴权标识
+4.0（LOW） /path/sort/viewCatalog/move [-1] 可能存在[]，原因为路径层级复杂但无高危参数
+4.0（MEDIUM） /process/inputViewLists [-1] 可能存在['潜在信息泄露']，原因为流程视图接口需确认权限控制
+4.0（MEDIUM） /forget/password/ [-1] 可能存在['潜在未授权访问']，原因为密码重置接口无鉴权特征
+4.0（MEDIUM） /dashboards [-1] 可能存在['潜在信息泄露']，原因为数据展示类路径但无高危参数
+4.0（LOW） /groups [-1] 可能存在['潜在信息泄露']，原因为数据类路径可能暴露组信息
+4.0（MEDIUM） /displayPreview [-1] 可能存在['潜在XSS']，原因为预览功能需内容安全策略
+4.0（MEDIUM） /report/list [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(report)
+4.0（LOW） /bookmark [-1] 可能存在['潜在越权访问']，原因为用户数据操作接口
+4.0（LOW） /active/ [-1] 可能存在['端点模糊测试']，原因为未明确功能的高危路径
+3.5（LOW） /portal/view [-1] 可能存在[]，原因为无高危特征
+3.5（LOW） /portal/projects [-1] 可能存在[]，原因为常规项目列表接口
+3.5（LOW） /view [-1] 可能存在['潜在信息泄露']，原因为通用视图接口无高危特征
+3.5（MEDIUM） /dif/widgetAnalyse [-1] 可能存在['潜在越权访问']，原因为路径含分析功能关键词(widgetAnalyse)
+3.0（LOW） /mark [-1] 可能存在[]，原因为无高危特征
+3.0（LOW） /organizations [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /view/ [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /page [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /projects/ [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /portal/bookmark [-1] 可能存在[]，原因为普通功能路径无风险特征
+3.0（LOW） /calculation [-1] 可能存在['潜在逻辑漏洞']，原因为计算类接口需验证输入
+3.0（LOW） /external [-1] 可能存在['潜在信息泄露']，原因为路径名无高危特征
+3.0（LOW） /widgets [-1] 可能存在[]，原因为常规组件接口无风险特征
+3.0（LOW） /report [-1] 可能存在['潜在信息泄露']，原因为通用路径名，无高危参数
+3.0（LOW） /projects [-1] 可能存在[]，原因为普通功能路径无特殊风险
+3.0（LOW） /views [-1] 可能存在['潜在信息泄露']，原因为通用路径名，无高危参数
+3.0（LOW） /teams [-1] 可能存在['潜在信息泄露']，原因为普通路径无高危参数
+2.5（LOW） /displays [-1] 可能存在[]，原因为展示类接口无高危参数
+2.5（LOW） /check [-1] 可能存在['无风险']，原因为通用健康检查接口
+2.0（LOW） /report/notSaveInfo [-1] 可能存在[]，原因为非敏感功能路径
+2.0（LOW） /slide/ [-1] 可能存在[]，原因为普通功能路径无风险特征
+2.0（LOW） /display [-1] 可能存在[]，原因为普通功能路径无敏感特征
+2.0（LOW） /star [-1] 可能存在['低风险功能']，原因为非敏感交互路径
+2.0（LOW） /display/ [-1] 可能存在['无风险']，原因为静态资源路径，无敏感特征
+
+排序后的URI列表：
+/del
+/platformmanage
+/cronjobs
+/ext/system/list
+/portal/assetMap/queryAssetView
+/report/external/addOrUpdateParamMap
+/ext/system/add
+/users
+/applyViewPermission
+/reset/password/
+/sync/data/import/project
+/query/
+/getExtToken
+/portal/external/queryReportParam
+/login
+/configurations
+/sources/updateSourceColumn
+/spreadSheet/report/updateConfig
+/sync/data/import?projectId=
+/portal/assetMap/createSubsets
+/projects/getUsers
+/projects/reportApprovalControls
+/portal/getReportPermission
+/report/external/queryReportParam
+/etl/process
+/config/visualized/Web.conf
+/getOauth2Clients
+/report/updateReportTimeConsumingStatistics
+/query
+/changepassword
+/sync/data/download
+/changepwd
+/sync/data/replaceList?projectId=
+/sync/cancel/import?projectId=
+/process
+/uploads
+/report/deleteById/
+/users/getUser
+/report/publishToAbd
+/download/imageExport
+/path/sort/reportCatalog/move
+/updateDownloadStatus
+/portal/download
+/visualizationETL
+/roles
+/statistic
+/dashboardPortals
+/update
+/login/externalLogin
+/report/publishAbdPerm
+/share
+/report/updateDynamicCV
+/sources
+/process/inputViewDetail
+/singleReport
+/spreadSheet/getData
+/views/share/getProjectBelowView
+/view/list
+/logout?from_url=
+/users/getWatermarkJs
+/api/v3
+/querys
+/check/
+/portal/assetMap/details
+/download/reportData
+/add
+/report/exportReportTimeConsumingStatistics
+/portal/assetMap/dataAlbumsList
+/confirminvite/
+/views/visual/getList
+/analysis
+/filter/batchCreateFilter
+/dashboardPortals/
+/calculation/field/check
+/process/dataPreview
+/queryView/
+/projectcenter
+/download
+/portal/assetMap/dataPreview
+/list
+/portal/views
+/process/fieldType
+/path/sort/viewCatalog/move
+/process/inputViewLists
+/forget/password/
+/dashboards
+/groups
+/displayPreview
+/report/list
+/bookmark
+/active/
+/portal/view
+/portal/projects
+/view
+/dif/widgetAnalyse
+/mark
+/organizations
+/view/
+/page
+/projects/
+/portal/bookmark
+/calculation
+/external
+/widgets
+/report
+/projects
+/views
+/teams
+/displays
+/check
+/report/notSaveInfo
+/slide/
+/display
+/star
+/display/
+
+URL拼接后结果:
+https://dmp-di-out-in.myoas.com/del
+https://dmp-di-out-in.myoas.com/platformmanage
+https://dmp-di-out-in.myoas.com/cronjobs
+https://dmp-di-out-in.myoas.com/ext/system/list
+https://dmp-di-out-in.myoas.com/portal/assetMap/queryAssetView
+https://dmp-di-out-in.myoas.com/report/external/addOrUpdateParamMap
+https://dmp-di-out-in.myoas.com/ext/system/add
+https://dmp-di-out-in.myoas.com/users
+https://dmp-di-out-in.myoas.com/applyViewPermission
+https://dmp-di-out-in.myoas.com/reset/password/
+https://dmp-di-out-in.myoas.com/sync/data/import/project
+https://dmp-di-out-in.myoas.com/query/
+https://dmp-di-out-in.myoas.com/getExtToken
+https://dmp-di-out-in.myoas.com/portal/external/queryReportParam
+https://dmp-di-out-in.myoas.com/login
+https://dmp-di-out-in.myoas.com/configurations
+https://dmp-di-out-in.myoas.com/sources/updateSourceColumn
+https://dmp-di-out-in.myoas.com/spreadSheet/report/updateConfig
+https://dmp-di-out-in.myoas.com/sync/data/import?projectId=
+https://dmp-di-out-in.myoas.com/portal/assetMap/createSubsets
+https://dmp-di-out-in.myoas.com/projects/getUsers
+https://dmp-di-out-in.myoas.com/projects/reportApprovalControls
+https://dmp-di-out-in.myoas.com/portal/getReportPermission
+https://dmp-di-out-in.myoas.com/report/external/queryReportParam
+https://dmp-di-out-in.myoas.com/etl/process
+https://dmp-di-out-in.myoas.com/config/visualized/Web.conf
+https://dmp-di-out-in.myoas.com/getOauth2Clients
+https://dmp-di-out-in.myoas.com/report/updateReportTimeConsumingStatistics
+https://dmp-di-out-in.myoas.com/query
+https://dmp-di-out-in.myoas.com/changepassword
+https://dmp-di-out-in.myoas.com/sync/data/download
+https://dmp-di-out-in.myoas.com/changepwd
+https://dmp-di-out-in.myoas.com/sync/data/replaceList?projectId=
+https://dmp-di-out-in.myoas.com/sync/cancel/import?projectId=
+https://dmp-di-out-in.myoas.com/process
+https://dmp-di-out-in.myoas.com/uploads
+https://dmp-di-out-in.myoas.com/report/deleteById/
+https://dmp-di-out-in.myoas.com/users/getUser
+https://dmp-di-out-in.myoas.com/report/publishToAbd
+https://dmp-di-out-in.myoas.com/download/imageExport
+https://dmp-di-out-in.myoas.com/path/sort/reportCatalog/move
+https://dmp-di-out-in.myoas.com/updateDownloadStatus
+https://dmp-di-out-in.myoas.com/portal/download
+https://dmp-di-out-in.myoas.com/visualizationETL
+https://dmp-di-out-in.myoas.com/roles
+https://dmp-di-out-in.myoas.com/statistic
+https://dmp-di-out-in.myoas.com/dashboardPortals
+https://dmp-di-out-in.myoas.com/update
+https://dmp-di-out-in.myoas.com/login/externalLogin
+https://dmp-di-out-in.myoas.com/report/publishAbdPerm
+https://dmp-di-out-in.myoas.com/share
+https://dmp-di-out-in.myoas.com/report/updateDynamicCV
+https://dmp-di-out-in.myoas.com/sources
+https://dmp-di-out-in.myoas.com/process/inputViewDetail
+https://dmp-di-out-in.myoas.com/singleReport
+https://dmp-di-out-in.myoas.com/spreadSheet/getData
+https://dmp-di-out-in.myoas.com/views/share/getProjectBelowView
+https://dmp-di-out-in.myoas.com/view/list
+https://dmp-di-out-in.myoas.com/logout?from_url=
+https://dmp-di-out-in.myoas.com/users/getWatermarkJs
+https://dmp-di-out-in.myoas.com/api/v3
+https://dmp-di-out-in.myoas.com/querys
+https://dmp-di-out-in.myoas.com/check/
+https://dmp-di-out-in.myoas.com/portal/assetMap/details
+https://dmp-di-out-in.myoas.com/download/reportData
+https://dmp-di-out-in.myoas.com/add
+https://dmp-di-out-in.myoas.com/report/exportReportTimeConsumingStatistics
+https://dmp-di-out-in.myoas.com/portal/assetMap/dataAlbumsList
+https://dmp-di-out-in.myoas.com/confirminvite/
+https://dmp-di-out-in.myoas.com/views/visual/getList
+https://dmp-di-out-in.myoas.com/analysis
+https://dmp-di-out-in.myoas.com/filter/batchCreateFilter
+https://dmp-di-out-in.myoas.com/dashboardPortals/
+https://dmp-di-out-in.myoas.com/calculation/field/check
+https://dmp-di-out-in.myoas.com/process/dataPreview
+https://dmp-di-out-in.myoas.com/queryView/
+https://dmp-di-out-in.myoas.com/projectcenter
+https://dmp-di-out-in.myoas.com/download
+https://dmp-di-out-in.myoas.com/portal/assetMap/dataPreview
+https://dmp-di-out-in.myoas.com/list
+https://dmp-di-out-in.myoas.com/portal/views
+https://dmp-di-out-in.myoas.com/process/fieldType
+https://dmp-di-out-in.myoas.com/path/sort/viewCatalog/move
+https://dmp-di-out-in.myoas.com/process/inputViewLists
+https://dmp-di-out-in.myoas.com/forget/password/
+https://dmp-di-out-in.myoas.com/dashboards
+https://dmp-di-out-in.myoas.com/groups
+https://dmp-di-out-in.myoas.com/displayPreview
+https://dmp-di-out-in.myoas.com/report/list
+https://dmp-di-out-in.myoas.com/bookmark
+https://dmp-di-out-in.myoas.com/active/
+https://dmp-di-out-in.myoas.com/portal/view
+https://dmp-di-out-in.myoas.com/portal/projects
+https://dmp-di-out-in.myoas.com/view
+https://dmp-di-out-in.myoas.com/dif/widgetAnalyse
+https://dmp-di-out-in.myoas.com/mark
+https://dmp-di-out-in.myoas.com/organizations
+https://dmp-di-out-in.myoas.com/view/
+https://dmp-di-out-in.myoas.com/page
+https://dmp-di-out-in.myoas.com/projects/
+https://dmp-di-out-in.myoas.com/portal/bookmark
+https://dmp-di-out-in.myoas.com/calculation
+https://dmp-di-out-in.myoas.com/external
+https://dmp-di-out-in.myoas.com/widgets
+https://dmp-di-out-in.myoas.com/report
+https://dmp-di-out-in.myoas.com/projects
+https://dmp-di-out-in.myoas.com/views
+https://dmp-di-out-in.myoas.com/teams
+https://dmp-di-out-in.myoas.com/displays
+https://dmp-di-out-in.myoas.com/check
+https://dmp-di-out-in.myoas.com/report/notSaveInfo
+https://dmp-di-out-in.myoas.com/slide/
+https://dmp-di-out-in.myoas.com/display
+https://dmp-di-out-in.myoas.com/star
+https://dmp-di-out-in.myoas.com/display/

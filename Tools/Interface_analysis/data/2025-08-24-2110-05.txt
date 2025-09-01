@@ -1,0 +1,221 @@
+AI分析结果：
+6.8（MEDIUM） /uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN [35910] 可能存在['潜在信息泄露', '用户数据暴露']，原因为用户表单查询接口，含用户标识参数且响应体较大(35KB)
+6.2（MEDIUM） /uplus-system/app/v1/sys/config/list [16144] 可能存在['系统配置泄露']，原因为系统配置列表接口，含高危路径(sys)且响应体超15KB
+6.2（MEDIUM） /uplus-operateu/app/v1/activity/getActivityPage [9474] 可能存在['批量信息泄露']，原因为活动页面数据接口，响应体接近10KB
+6.0（MEDIUM） /uplus-system/app/v1/permission/getOperationPermission [110] 可能存在['潜在权限泄露']，原因为操作权限获取接口，涉及敏感功能但响应体小
+5.8（MEDIUM） /uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN [35705] 可能存在['批量信息泄露']，原因为注册配置接口，响应体超过35KB触发中危检测
+5.5（MEDIUM） /uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN [29356] 可能存在['潜在信息泄露']，原因为获取消息配置接口，响应体较大(>5KB)
+5.5（MEDIUM） /uplus-system/app/v1/weichat/message/template?code=106301 [-1] 可能存在['潜在模板注入']，原因为微信模板消息接口，含动态参数(code)
+5.5（MEDIUM） /uplus-operateu/app/v1/archive/config/detail?lang=zh_CN [6614] 可能存在['潜在信息泄露']，原因为档案配置详情接口，响应体达中危阈值
+5.2（MEDIUM） /uplus-system/app/v1/permission/mobile/item?id=50&lang=zh_CN [99] 可能存在['潜在越权访问']，原因为权限项详情接口，含高危参数(id)但响应体小
+5.0（MEDIUM） /uplus-operateu/app/v1/web/org/page [35949] 可能存在['潜在信息泄露']，原因为组织分页查询接口，超大响应体触发检测
+5.0（MEDIUM） /uplus-operateu/app/v1/web/mobile/index/article/list/mobile [2683] 可能存在['潜在信息泄露']，原因为移动端文章列表子接口，响应体较大
+4.8（MEDIUM） /uplus-system/app/v1/dictionary/base/getDictionary [4319] 可能存在['潜在信息泄露']，原因为字典数据获取接口，响应体较大可能含敏感数据
+4.5（LOW） /uplus-system/app/v1/user/wechatMobileLogin [291] 可能存在['潜在认证缺陷']，原因为微信移动端登录接口，需验证OAuth安全
+4.5（MEDIUM） /uplus-operateu/app/v1/web/mobile/index/article/list [1644] 可能存在['潜在信息泄露']，原因为移动端文章列表接口，响应体超过1KB
+4.5（LOW） /uplus-system/app/v1/file/info/upload [343] 可能存在['潜在文件上传漏洞']，原因为文件上传接口，响应体较小但涉及高危操作
+4.5（MEDIUM） /uplus-operateu/app/v1/web/service/image/text/page [14806] 可能存在['潜在信息泄露']，原因为图片文本处理接口，响应体较大(14KB)但无高危参数
+4.0（LOW） /uplus-system/app/v1/permission/getServiceSettingPermission [25] 可能存在['潜在权限校验缺失']，原因为获取服务设置权限接口，响应体极小
+4.0（LOW） /uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN [36] 可能存在['短信轰炸风险']，原因为短信验证码接口，需防护频率限制
+4.0（LOW） /uplus-system/app/v1/mobile/group/getMobileSettingGroupList [4656] 可能存在['配置信息泄露']，原因为移动端设置组列表接口，响应体适中
+4.0（LOW） /uplus-system/app/v1/user/authDouble [257] 可能存在['潜在未授权访问']，原因为双因素认证接口，未明确鉴权机制
+4.0（LOW） /uplus-system/app/v1/user/find/config/getList?lang=zh_CN [1642] 可能存在['潜在信息泄露']，原因为用户查找配置接口，响应体中等大小
+4.0（MEDIUM） /app-resource/ [2135] 可能存在['潜在信息泄露']，原因为资源访问接口，响应体较大但未达高危阈值
+3.5（MEDIUM） /uplus-system/app/v1/setting/base/list?lang=zh_CN [7280] 可能存在['潜在信息泄露']，原因为基础设置列表接口，响应体较大
+3.5（LOW） /uplus-operateu/app/v1/service/setting/item/getAppServiceHallSetting [4414] 可能存在['潜在非密信息泄露']，原因为获取服务大厅设置接口，响应体中等大小
+3.5（LOW） /uplus-system/app/v1/login/mode/config/getList?lang=zh_CN [352] 可能存在['潜在配置泄露']，原因为登录模式配置接口，含系统级路径但响应体安全
+3.5（LOW） /views/service/pages/apply-electronic-alumni-card/index [-1] 可能存在['潜在XSS风险']，原因为电子校友卡申请页面，需验证前端防护
+3.5（LOW） /uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN [999] 可能存在['潜在信息泄露']，原因为用户中心基础信息接口，含语言参数但响应体较小
+3.5（LOW） /uplus-system/app/v1/setting/getSettingByKey [86] 可能存在['潜在配置信息泄露']，原因为系统设置查询接口，涉及敏感操作但响应体小
+3.2（LOW） /uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN [2228] 可能存在['潜在信息泄露']，原因为校友认证表单列表接口，响应体中等大小
+3.0（LOW） /uplus-operateu/app/v1/information/classification/page?lang=zh_CN [1488] 可能存在['潜在信息泄露']，原因为信息分类分页接口，含语言参数
+3.0（LOW） /uplus-operateu/app/v1/interconnection/information/app/page [189] 可能存在['潜在信息泄露']，原因为互联信息应用分页接口，响应体小
+3.0（LOW） /uplus-operateu/app/v1/interconnection/protocol/config/detail?lang=zh_CN [522] 可能存在['非密泄露']，原因为协议配置详情接口，响应体较小无敏感参数
+3.0（LOW） /uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN [148] 可能存在['低敏数据泄露']，原因为校友荣誉未读状态接口，无高危特征
+3.0（LOW） /uplus-system/app/v1/user/info/show/config/getList?lang=zh_CN [423] 可能存在[]，原因为用户信息展示配置接口，响应体较小
+3.0（LOW） /uplus-system/app/v1/alumnus/manual/auth/form/insert [25] 可能存在['潜在未授权访问']，原因为校友认证表单提交接口，响应体极小
+2.5（LOW） /uplus-system/app/v1/alumnus/type/pager?lang=zh_CN [1256] 可能存在['无风险']，原因为校友类型分页查询接口
+2.5（LOW） /uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN [470] 可能存在[]，原因为活动标签列表接口，响应体较小且无高危参数
+2.0（LOW） /uplus-system/app/v1/user/getMyCenter?lang=zh_CN [1026] 可能存在['无风险']，原因为用户个人中心信息获取接口
+2.0（LOW） /uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN [722] 可能存在['无风险']，原因为认证配置获取接口
+2.0（LOW） /uplus-system/app/v1/token/refresh?lang=zh_CN [252] 可能存在['无风险或已防护']，原因为token刷新接口，响应体较小无异常
+2.0（LOW） /uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN [344] 可能存在['无风险或已防护']，原因为组织申请说明详情接口，响应体较小无异常
+2.0（LOW） /uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN [70] 可能存在['无风险或已防护']，原因为获取加入微信企业号配置接口，响应体极小无异常
+2.0（LOW） /uplus-system/app/v1/org/recommend?lang=zh_CN [35] 可能存在['无风险或已防护']，原因为组织推荐接口，响应体极小无异常
+2.0（LOW） /uplus-operateu/app/v1/web/org/getSysOrgTab?lang=zh_CN [1442] 可能存在['无风险或已防护']，原因为获取系统组织标签接口，响应体较小无异常
+2.0（LOW） /uplus-operateu/app/v1/web/org/config/getCreateOrgStatement?lang=zh_CN [344] 可能存在['无风险或已防护']，原因为获取创建组织声明接口，响应体较小无异常
+2.0（LOW） /views/service/pages/file-query-index/index [-1] 可能存在['无风险或已防护']，原因为文件查询页面接口，无响应体数据
+2.0（LOW） /views/service/pages/interconnection/index [-1] 可能存在['无风险或已防护']，原因为互联互通页面接口，无响应体数据
+2.0（LOW） /views/service/pages/company-insert/index [-1] 可能存在['无风险或已防护']，原因为公司插入页面接口，无响应体数据
+2.0（LOW） /views/service/pages/company-home/index [-1] 可能存在['无风险']，原因为公司主页视图接口，无敏感参数
+2.0（LOW） /views/service/pages/lifelong-learning/home/home [-1] 可能存在['无风险']，原因为终身学习主页视图接口，无敏感参数
+2.0（LOW） /views/service/pages/book/index [-1] 可能存在['无风险']，原因为书籍页面视图接口，无敏感参数
+2.0（LOW） /pages/index/index [-1] 可能存在['无风险']，原因为首页视图接口，无敏感参数
+2.0（LOW） /views/service/pages/employ-home/index [-1] 可能存在['无风险']，原因为就业主页视图接口，无敏感参数
+2.0（LOW） /uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN [35] 可能存在['无效端点']，原因为未查看请求列表接口，响应体过小可能无效
+2.0（LOW） /views/service/pages/school-back/index [-1] 可能存在['无风险或已防护']，原因为学校后台页面路径，未检测到高危特征
+2.0（LOW） /views/common/pages/webview-activity/index [-1] 可能存在['无风险或已防护']，原因为通用活动页面路径，未检测到高危特征
+2.0（LOW） /views/personal-center/pages/find/index [-1] 可能存在['无风险或已防护']，原因为个人中心发现页面路径，未检测到高危特征
+2.0（LOW） /uplus-operateu/app/v1/enterprise/page [84] 可能存在['无风险或已防护']，原因为企业页面接口，极小响应体且无错误
+2.0（LOW） /uplus-system/app/v1/system/immessage/getFansPage [84] 可能存在[]，原因为粉丝分页接口，响应体极小且无敏感参数
+2.0（LOW） /uplus-system/app/v1/user/message/getNoReadNumber?lang=zh_CN [34] 可能存在[]，原因为未读消息数接口，响应体极小且无敏感参数
+2.0（LOW） /uplus-operateu/app/v1/find/pager [99] 可能存在['无风险或已防护']，原因为分页查询接口，响应体小且无高危参数
+2.0（LOW） //uplus-operateu/app/v1/find/all/pager?offset=0&s=12&limit=15&lang=zh_CN [99] 可能存在['无风险或已防护']，原因为分页查询接口，响应体小且无高危参数
+2.0（LOW） /app-resource [162] 可能存在['无风险或已防护']，原因为资源访问接口，响应体小且无高危参数
+2.0（LOW） /uplus-system/app/v1/user/isEcardApply?lang=zh_CN [120] 可能存在['无风险或已防护']，原因为电子卡申请状态查询接口，响应体小
+2.0（LOW） /uplus-system/app/v1/user/prepareEcard?lang=zh_CN [99] 可能存在['无风险或已防护']，原因为电子卡准备接口，响应体小且无高危参数
+2.0（LOW） /uplus-operateu/app/v1/archive/instruction/detail?lang=zh_CN [189] 可能存在['无风险或已防护']，原因为档案说明详情接口，响应体小且无高危参数
+1.5（LOW） /uplus-system/app/v1/user/getBaseConfig?lang=zh_CN [109] 可能存在['无风险']，原因为用户基础配置获取接口
+1.5（LOW） /uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN [219] 可能存在['无风险']，原因为校友卡展示模板获取接口
+1.5（LOW） /uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN [222] 可能存在['无风险']，原因为分享设置详情接口
+1.0（LOW） /uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN [34] 可能存在['无风险']，原因为生日祝福检查接口
+1.0（LOW） /uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN [55] 可能存在['无风险']，原因为校友认证状态检查接口
+1.0（LOW） /uplus-system/app/v1/user/resource/list?lang=zh_CN [35] 可能存在['无风险']，原因为用户资源列表接口
+
+排序后的URI列表：
+/uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN
+/uplus-system/app/v1/sys/config/list
+/uplus-operateu/app/v1/activity/getActivityPage
+/uplus-system/app/v1/permission/getOperationPermission
+/uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN
+/uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN
+/uplus-system/app/v1/weichat/message/template?code=106301
+/uplus-operateu/app/v1/archive/config/detail?lang=zh_CN
+/uplus-system/app/v1/permission/mobile/item?id=50&lang=zh_CN
+/uplus-operateu/app/v1/web/org/page
+/uplus-operateu/app/v1/web/mobile/index/article/list/mobile
+/uplus-system/app/v1/dictionary/base/getDictionary
+/uplus-system/app/v1/user/wechatMobileLogin
+/uplus-operateu/app/v1/web/mobile/index/article/list
+/uplus-system/app/v1/file/info/upload
+/uplus-operateu/app/v1/web/service/image/text/page
+/uplus-system/app/v1/permission/getServiceSettingPermission
+/uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN
+/uplus-system/app/v1/mobile/group/getMobileSettingGroupList
+/uplus-system/app/v1/user/authDouble
+/uplus-system/app/v1/user/find/config/getList?lang=zh_CN
+/app-resource/
+/uplus-system/app/v1/setting/base/list?lang=zh_CN
+/uplus-operateu/app/v1/service/setting/item/getAppServiceHallSetting
+/uplus-system/app/v1/login/mode/config/getList?lang=zh_CN
+/views/service/pages/apply-electronic-alumni-card/index
+/uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN
+/uplus-system/app/v1/setting/getSettingByKey
+/uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN
+/uplus-operateu/app/v1/information/classification/page?lang=zh_CN
+/uplus-operateu/app/v1/interconnection/information/app/page
+/uplus-operateu/app/v1/interconnection/protocol/config/detail?lang=zh_CN
+/uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN
+/uplus-system/app/v1/user/info/show/config/getList?lang=zh_CN
+/uplus-system/app/v1/alumnus/manual/auth/form/insert
+/uplus-system/app/v1/alumnus/type/pager?lang=zh_CN
+/uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN
+/uplus-system/app/v1/user/getMyCenter?lang=zh_CN
+/uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN
+/uplus-system/app/v1/token/refresh?lang=zh_CN
+/uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN
+/uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN
+/uplus-system/app/v1/org/recommend?lang=zh_CN
+/uplus-operateu/app/v1/web/org/getSysOrgTab?lang=zh_CN
+/uplus-operateu/app/v1/web/org/config/getCreateOrgStatement?lang=zh_CN
+/views/service/pages/file-query-index/index
+/views/service/pages/interconnection/index
+/views/service/pages/company-insert/index
+/views/service/pages/company-home/index
+/views/service/pages/lifelong-learning/home/home
+/views/service/pages/book/index
+/pages/index/index
+/views/service/pages/employ-home/index
+/uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN
+/views/service/pages/school-back/index
+/views/common/pages/webview-activity/index
+/views/personal-center/pages/find/index
+/uplus-operateu/app/v1/enterprise/page
+/uplus-system/app/v1/system/immessage/getFansPage
+/uplus-system/app/v1/user/message/getNoReadNumber?lang=zh_CN
+/uplus-operateu/app/v1/find/pager
+//uplus-operateu/app/v1/find/all/pager?offset=0&s=12&limit=15&lang=zh_CN
+/app-resource
+/uplus-system/app/v1/user/isEcardApply?lang=zh_CN
+/uplus-system/app/v1/user/prepareEcard?lang=zh_CN
+/uplus-operateu/app/v1/archive/instruction/detail?lang=zh_CN
+/uplus-system/app/v1/user/getBaseConfig?lang=zh_CN
+/uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN
+/uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN
+/uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN
+/uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN
+/uplus-system/app/v1/user/resource/list?lang=zh_CN
+
+URL拼接后结果:
+https://xy.csust.edu.cn/uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/sys/config/list
+https://xy.csust.edu.cn/uplus-operateu/app/v1/activity/getActivityPage
+https://xy.csust.edu.cn/uplus-system/app/v1/permission/getOperationPermission
+https://xy.csust.edu.cn/uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/weichat/message/template?code=106301
+https://xy.csust.edu.cn/uplus-operateu/app/v1/archive/config/detail?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/permission/mobile/item?id=50&lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/org/page
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/mobile/index/article/list/mobile
+https://xy.csust.edu.cn/uplus-system/app/v1/dictionary/base/getDictionary
+https://xy.csust.edu.cn/uplus-system/app/v1/user/wechatMobileLogin
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/mobile/index/article/list
+https://xy.csust.edu.cn/uplus-system/app/v1/file/info/upload
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/service/image/text/page
+https://xy.csust.edu.cn/uplus-system/app/v1/permission/getServiceSettingPermission
+https://xy.csust.edu.cn/uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/mobile/group/getMobileSettingGroupList
+https://xy.csust.edu.cn/uplus-system/app/v1/user/authDouble
+https://xy.csust.edu.cn/uplus-system/app/v1/user/find/config/getList?lang=zh_CN
+http://xy.csust.edu.cn/app-resource/
+https://xy.csust.edu.cn/uplus-system/app/v1/setting/base/list?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/service/setting/item/getAppServiceHallSetting
+https://xy.csust.edu.cn/uplus-system/app/v1/login/mode/config/getList?lang=zh_CN
+https://xy.csust.edu.cn/views/service/pages/apply-electronic-alumni-card/index
+https://xy.csust.edu.cn/uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/setting/getSettingByKey
+https://xy.csust.edu.cn/uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/information/classification/page?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/interconnection/information/app/page
+https://xy.csust.edu.cn/uplus-operateu/app/v1/interconnection/protocol/config/detail?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/info/show/config/getList?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/alumnus/manual/auth/form/insert
+https://xy.csust.edu.cn/uplus-system/app/v1/alumnus/type/pager?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/getMyCenter?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/token/refresh?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/org/recommend?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/org/getSysOrgTab?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/web/org/config/getCreateOrgStatement?lang=zh_CN
+https://xy.csust.edu.cn/views/service/pages/file-query-index/index
+https://xy.csust.edu.cn/views/service/pages/interconnection/index
+https://xy.csust.edu.cn/views/service/pages/company-insert/index
+https://xy.csust.edu.cn/views/service/pages/company-home/index
+https://xy.csust.edu.cn/views/service/pages/lifelong-learning/home/home
+https://xy.csust.edu.cn/views/service/pages/book/index
+https://xy.csust.edu.cn/pages/index/index
+https://xy.csust.edu.cn/views/service/pages/employ-home/index
+https://xy.csust.edu.cn/uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN
+https://xy.csust.edu.cn/views/service/pages/school-back/index
+https://xy.csust.edu.cn/views/common/pages/webview-activity/index
+https://xy.csust.edu.cn/views/personal-center/pages/find/index
+https://xy.csust.edu.cn/uplus-operateu/app/v1/enterprise/page
+https://xy.csust.edu.cn/uplus-system/app/v1/system/immessage/getFansPage
+https://xy.csust.edu.cn/uplus-system/app/v1/user/message/getNoReadNumber?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/find/pager
+https://xy.csust.edu.cn/uplus-operateu/app/v1/find/all/pager?offset=0&s=12&limit=15&lang=zh_CN
+http://xy.csust.edu.cn/app-resource
+https://xy.csust.edu.cn/uplus-system/app/v1/user/isEcardApply?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/prepareEcard?lang=zh_CN
+https://xy.csust.edu.cn/uplus-operateu/app/v1/archive/instruction/detail?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/getBaseConfig?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN
+https://xy.csust.edu.cn/uplus-system/app/v1/user/resource/list?lang=zh_CN

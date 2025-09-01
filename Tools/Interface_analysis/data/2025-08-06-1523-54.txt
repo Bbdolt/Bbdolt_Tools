@@ -1,0 +1,590 @@
+AI分析结果：
+9.2（CRITICAL） /newactivity/pc/file/v2/base64Upload [-1] 可能存在['文件上传漏洞']，原因为检测到无限制文件上传接口(base64Upload)
+9.0（CRITICAL） /newactivity/pay/v1/generateSerial [-1] 可能存在['支付序列号生成漏洞']，原因为支付流水号接口无防爆破措施
+8.5（HIGH） /udid/c1 [-1] 可能存在['设备标识泄露']，原因为UDID采集接口无保护
+8.5（HIGH） /newactivity/award/v2/userAward [-1] 可能存在['奖励越权操作']，原因为奖励发放接口存在重复定义
+8.5（HIGH） /pay/order/v6/saveOrder [-1] 可能存在['订单提交注入风险']，原因为支付接口含高危操作参数
+8.5（HIGH） /newactivity/distribute/v2/handleBatchInstall [-1] 可能存在['批量操作漏洞']，原因为批量安装接口含高危动作
+8.5（HIGH） /newactivity/award/v2/resendAward [-1] 可能存在['奖励重复发放漏洞']，原因为奖励重发接口无防重放机制
+8.5（HIGH） /pay/order/activity/newPaymentCenterSaveOrder [-1] 可能存在['未授权支付操作']，原因为支付接口(pay)无鉴权控制
+8.5（HIGH） /newactivity/file/v2/base64Upload [-1] 可能存在['文件上传漏洞', '未授权访问']，原因为Base64文件上传接口无安全限制
+8.3（HIGH） /newactivity/task/v2/setCache [-1] 可能存在['未授权缓存操作']，原因为系统级操作接口缺乏鉴权
+8.0（HIGH） /pay.html [-1] 可能存在['支付页面伪造风险']，原因为静态支付页面需防CSRF/XSS
+8.0（HIGH） /newactivity/pay/v1/getPayDetail [-1] 可能存在['敏感数据泄露']，原因为payDetail涉及高危支付信息
+8.0（HIGH） /pay/order/activity/updateOrderAfterSign [-1] 可能存在['订单越权修改']，原因为支付订单接口含高危操作
+8.0（HIGH） /activity/award/v1/isRiskUser [-1] 可能存在['敏感权限校验泄露']，原因为风险用户接口暴露权限逻辑
+8.0（HIGH） /newactivity/task/v2/batchComplete [-1] 可能存在['批量操作风险']，原因为高危操作(batchComplete)无可见防护
+8.0（HIGH） /newactivity/pay/v2/generateSerial [-1] 可能存在['支付序列号生成漏洞']，原因为支付关键接口无防护特征
+8.0（HIGH） /pay/order/activity/operation/h5SaveOrder [-1] 可能存在['订单越权操作']，原因为支付相关路径含高危操作(h5SaveOrder)
+8.0（HIGH） /newactivity/task/v1/batchComplete [-1] 可能存在['批量操作风险', '潜在越权漏洞']，原因为高危操作路径(batchComplete)无防护标识
+8.0（HIGH） /uc/activity/login [-1] 可能存在['未授权登录 bypass']，原因为登录接口(login)存在框架漏洞特征
+8.0（HIGH） /pay/order/activity/operation/oldSaveOrder [-1] 可能存在['未授权支付操作']，原因为支付接口(oldSaveOrder)无安全限制
+8.0（HIGH） /api/fetchCdnFile [-1] 可能存在['SSRF风险', '未授权文件获取']，原因为高危文件下载功能无安全限制
+8.0（HIGH） /js/v2/checkUpdate [-1] 可能存在['未授权更新检查', '潜在RCE']，原因为更新接口无版本控制特征
+7.8（HIGH） /newactivity/pc/task/v2/handleUserTaskStatus [-1] 可能存在['潜在越权操作']，原因为handle操作需强制身份校验
+7.8（HIGH） /pay/order/v6/oldSaveOrder [-1] 可能存在['订单存储漏洞']，原因为旧版支付接口含高危参数
+7.8（HIGH） /pay/order/v6/unpaidOrder [-1] 可能存在['未授权访问', '敏感数据泄露']，原因为支付订单接口含高危参数(order)
+7.8（HIGH） /activity/pc/v1/transferApply [-1] 可能存在['潜在越权转账']，原因为转账申请接口需严格校验
+7.8（HIGH） /newactivity/award-user/v2/userAward [-1] 可能存在['奖励越权发放']，原因为奖励接口(award)含用户标识参数
+7.8（HIGH） /newactivity/task/v1/handleUserTaskStatus [-1] 可能存在['任务状态越权修改']，原因为用户任务状态操作接口无防护
+7.8（HIGH） /activity/pc/v1/paySerialNumber [-1] 可能存在['支付凭证泄露']，原因为支付流水号接口需强化鉴权
+7.8（HIGH） /activity/award/v1/transferApply [-1] 可能存在['奖励越权操作']，原因为奖励转账接口(award)无校验
+7.8（HIGH） /pay/order/v6/cancelUnpaidOrder [-1] 可能存在['未授权操作', '业务逻辑漏洞']，原因为支付订单取消接口无严格校验
+7.8（HIGH） /offlineAuto?id= [-1] 可能存在['SQL注入风险', '参数未过滤']，原因为高危参数(id)且无过滤特征
+7.5（HIGH） /newactivity/risky/v1/verifyCode [-1] 可能存在['验证码绕过风险']，原因为高危路径(risky)含安全验证功能
+7.5（HIGH） /activity/pc/v1/isRiskUser4Web [-1] 可能存在['潜在权限绕过']，原因为风险用户检测接口需防护
+7.5（HIGH） /newactivity/task/v1/handleInstallApp [-1] 可能存在['潜在未授权访问', '应用安装控制']，原因为管理路径无鉴权且涉及安装操作
+7.5（HIGH） /api-cloud/award/resend [-1] 可能存在['未授权操作']，原因为云API奖励接口无防护
+7.5（HIGH） /pay/order/activity/oldPaymentCenterSaveOrder [-1] 可能存在['未授权支付操作']，原因为支付接口含高危操作路径
+7.5（HIGH） /newactivity/award/v1/resendAward [-1] 可能存在['潜在未授权访问', '奖励操作接口']，原因为高危操作路径(award)且无鉴权特征
+7.5（HIGH） /newactivity/risky/v1/isCreditsRiskUser [-1] 可能存在['潜在越权访问']，原因为高危路径(risky)含用户信用判断接口
+7.5（HIGH） /pay/order/v6/getUnpaidOrderDetail [-1] 可能存在['订单越权访问']，原因为支付订单接口含高危参数(order)
+7.5（HIGH） /newactivity/pc/award/v2/resendAward [-1] 可能存在['潜在未授权操作']，原因为高危操作路径(resendAward)无鉴权标识
+7.5（HIGH） /pay/pc/activity/h5SaveOrder [-1] 可能存在['潜在未授权访问', '订单操作风险']，原因为涉及支付订单操作且无鉴权特征
+7.5（HIGH） /newactivity/v1/storage [-1] 可能存在['未授权存储操作']，原因为存储接口(storage)无访问控制
+7.5（HIGH） /pay/order/activity/operation/newSaveOrder [-1] 可能存在['未授权支付操作']，原因为订单保存接口含高危操作
+7.5（HIGH） /questionnaire/v1/auth/1 [-1] 可能存在['越权风险']，原因为用户标识参数(1)无校验机制
+7.5（HIGH） /questionnaire/v1/auth/2 [-1] 可能存在['越权风险']，原因为用户标识参数(2)无校验机制
+7.5（HIGH） /newactivity/award-user/v2/add-operate [-1] 可能存在['潜在未授权访问', '越权操作']，原因为管理路径特征明显且无鉴权标识
+7.3（HIGH） /activity/award/v1/userAwards [-1] 可能存在['批量奖励数据泄露']，原因为复数形式接口风险更高
+7.2（HIGH） /newactivity/benefit/v1/pay-info [-1] 可能存在['潜在越权访问']，原因为pay-info路径涉及支付敏感信息
+7.2（HIGH） /newactivity/award/v2/transfer [-1] 可能存在['潜在越权操作']，原因为奖励转账接口需严格校验用户权限
+7.2（HIGH） /newactivity/task/v2/complete [-1] 可能存在['潜在越权操作']，原因为任务完成接口可能缺乏用户校验
+7.2（HIGH） /newactivity/share/v1/ticket [-1] 可能存在['票据伪造风险']，原因为分享票据接口无签名校验
+7.2（HIGH） /newactivity/rights/v2/creatRightsRecord [-1] 可能存在['权限提升风险']，原因为权限记录创建接口无校验
+7.2（HIGH） /newactivity/task/v2/mergeInterface [-1] 可能存在['接口合并风险', '潜在逻辑漏洞']，原因为多功能合并接口缺乏安全隔离
+7.2（HIGH） /newactivity/task/v2/same-day/setCache [-1] 可能存在['潜在越权操作']，原因为缓存操作接口(setCache)无用户校验
+7.2（HIGH） /offlineLog [-1] 可能存在['日志文件未授权访问']，原因为敏感路径名(offlineLog)暗示日志操作
+7.0（HIGH） /newactivity/store/v1/getStoreTrendsToken [-1] 可能存在['令牌泄露风险']，原因为商店趋势令牌获取接口
+7.0（HIGH） /newactivity/pay/v1/userHistoryOrderNum [-1] 可能存在['用户数据越权访问']，原因为历史订单接口需用户隔离
+7.0（HIGH） /activity/contact/v3/updateContactDetail [-1] 可能存在['越权数据修改']，原因为联系方式更新接口含用户ID
+7.0（HIGH） /newactivity/award/v1/userAward [-1] 可能存在['奖励数据越权访问']，原因为用户奖励接口含高危参数
+7.0（HIGH） /newactivity/award-user/v1/userInfo [-1] 可能存在['用户信息泄露']，原因为用户信息接口需访问控制
+7.0（HIGH） /questionnaire/v1/withdraw [-1] 可能存在['业务逻辑漏洞']，原因为问卷撤回接口涉及关键操作
+7.0（HIGH） /newactivity/pc/award/v2/transfer [-1] 可能存在['越权转账风险']，原因为资金操作接口(transfer)需严格校验
+6.8（MEDIUM） /newactivity/award/v1/userTaskAward [-1] 可能存在['潜在奖励越权领取']，原因为任务奖励接口需任务绑定校验
+6.8（MEDIUM） /newactivity/callback/v1/callbackPayResult [-1] 可能存在['支付回调篡改']，原因为回调接口含支付状态参数
+6.8（HIGH） /activity/pc/v1/awardNotices4Spring [-1] 可能存在['敏感信息泄露']，原因为奖励通知接口含高危路径(award)
+6.8（MEDIUM） /activity/award/v1/awardNotices4TowNow [-1] 可能存在['奖励通知泄露']，原因为奖励通知接口含敏感时间参数
+6.8（MEDIUM） /activity/award/v1/getPackageLogin4Spring [-1] 可能存在['敏感信息泄露']，原因为涉及登录凭证的奖励接口
+6.8（MEDIUM） /newactivity/v1/participate [-1] 可能存在['潜在批量泄露']，原因为活动参与接口(participate)无限制
+6.8（MEDIUM） /api/checkUpdate [-1] 可能存在['升级劫持风险']，原因为更新接口未校验来源可信度
+6.5（MEDIUM） /activity/award/v1/drawAward4Spring [-1] 可能存在['潜在未授权访问']，原因为award路径可能涉及奖品操作
+6.5（MEDIUM） /newactivity/benefit/v2/pay-info [-1] 可能存在['支付信息泄露']，原因为福利支付信息查询接口
+6.5（MEDIUM） /activity/award/v1/drawAward4TwoNew [-1] 可能存在['潜在业务逻辑漏洞']，原因为抽奖接口可能被重复调用
+6.5（MEDIUM） /newactivity/award/v1/transfer [-1] 可能存在['奖励转账越权']，原因为涉及资产转移需严格鉴权
+6.5（MEDIUM） /activity/paySerialNumber [-1] 可能存在['潜在信息泄露']，原因为支付流水号接口
+6.5（MEDIUM） /activity/pc/v1/saveContactDetailv3 [-1] 可能存在['联系人信息泄露']，原因为敏感信息存储接口(saveContact)
+6.5（MEDIUM） /newactivity/distribute/v2/handleInstallStatus [-1] 可能存在['潜在未授权访问']，原因为管理路径(distribute)无鉴权
+6.5（MEDIUM） /api/shared/cloud-activity/userInfo [-1] 可能存在['潜在信息泄露']，原因为用户信息共享接口需鉴权
+6.5（MEDIUM） /report/pc/v1/get_annual_report [-1] 可能存在['潜在信息泄露']，原因为年度报告接口可能泄露敏感数据
+6.5（MEDIUM） /activity/pc/v1/drawAward4Spring [-1] 可能存在['未授权操作']，原因为奖励操作接口(drawAward)无防护
+6.5（MEDIUM） /npm-monitoring [-1] 可能存在['框架组件暴露']，原因为可能暴露Node包管理监控接口
+6.5（MEDIUM） /$1** [-1] 可能存在['框架漏洞风险']，原因为含特殊字符可能触发框架解析异常
+6.2（MEDIUM） /newactivity/task/v1/task-complete-info [-1] 可能存在['潜在信息泄露']，原因为任务完成信息需访问控制
+6.2（MEDIUM） /newactivity/task/v2/popupCache [-1] 可能存在['缓存操纵风险']，原因为缓存操作接口无显式校验
+6.0（MEDIUM） /api-cloud/task-wall/subscribe [-1] 可能存在['潜在未授权访问']，原因为API订阅接口需鉴权机制
+6.0（MEDIUM） /activity/contact/v2/saveContactDetail [-1] 可能存在['潜在数据篡改']，原因为save操作需严格校验提交者身份
+6.0（MEDIUM） /api-cloud/task-wall/report-event [-1] 可能存在['潜在数据泄露']，原因为数据上报接口无敏感参数
+6.0（MEDIUM） /newactivity/contact/v2/edit [-1] 可能存在['潜在越权修改']，原因为敏感数据修改接口无校验
+6.0（MEDIUM） /newactivity/v1/activity-award [-1] 可能存在['潜在未授权访问']，原因为活动奖励接口可能缺乏鉴权
+6.0（MEDIUM） /newactivity/pc/award-user/v2/userAward [-1] 可能存在['潜在越权访问']，原因为用户奖励接口含用户标识参数
+6.0（MEDIUM） /newactivity/v1/userSpacePackages [-1] 可能存在['用户数据泄露']，原因为用户空间数据接口无防护
+6.0（MEDIUM） /activity/pc/v1/updateContactDetailv3 [-1] 可能存在['潜在越权操作']，原因为联系人信息更新接口
+6.0（MEDIUM） /activity/contact/v3/getContactDetail [-1] 可能存在['联系人信息泄露']，原因为敏感信息查询接口(getContact)
+6.0（MEDIUM） /newactivity/report/v2/getYearReport [-1] 可能存在['报表数据泄露']，原因为年度报表接口含潜在敏感信息
+6.0（MEDIUM） /newactivity/contact/v1/confirm [-1] 可能存在['潜在信息泄露']，原因为联系人确认接口无敏感参数
+6.0（MEDIUM） /newactivity/contact/v2/confirm [-1] 可能存在['潜在信息泄露']，原因为联系人确认接口无敏感参数
+6.0（MEDIUM） /newactivity/task/v2/handleUserTaskStatus [-1] 可能存在['潜在越权操作']，原因为用户任务状态修改接口
+6.0（MEDIUM） /api-cloud/award/query-user-coin [-1] 可能存在['潜在信息泄露']，原因为用户虚拟币查询接口
+6.0（MEDIUM） /newactivity/distribute/v2/getDistributeCacheList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径含高危关键词(cache)
+6.0（MEDIUM） /api/getVersion [-1] 可能存在['信息泄露风险']，原因为版本接口可能暴露系统敏感信息
+5.8（MEDIUM） /benefits/v2/activityInfo [-1] 可能存在['潜在信息泄露']，原因为activityInfo可能返回敏感活动数据
+5.5（MEDIUM） /newactivity/pc/task/v2/complete [-1] 可能存在['潜在越权操作']，原因为任务完成接口需校验用户权限
+5.5（MEDIUM） /activity/task/v1/getUserActivityTasksStatus4TwoNew [-1] 可能存在['用户信息泄露']，原因为用户活动状态查询接口
+5.5（MEDIUM） /activity/pc/v1/getContactDetailv3 [-1] 可能存在['潜在信息泄露']，原因为PC端敏感数据接口
+5.5（MEDIUM） /newactivity/distribute/v2/ab-test [-1] 可能存在['潜在信息泄露']，原因为AB测试接口可能暴露敏感配置
+5.5（MEDIUM） /newactivity/award/v1/drawChanceDetails [-1] 可能存在['潜在信息泄露']，原因为奖励详情接口含敏感路径特征
+5.5（MEDIUM） /newactivity/task/v2/getCache [-1] 可能存在['缓存信息泄露']，原因为缓存获取接口需访问控制
+5.5（MEDIUM） /newactivity/comment/v2/getCommentList [-1] 可能存在['信息泄露风险']，原因为评论数据获取接口无分页限制
+5.5（MEDIUM） /benefits/v2/spaceBenefitsGain [-1] 可能存在['权益领取越权']，原因为权益接口需验证用户身份
+5.5（MEDIUM） /questionnaire/v1/submit [-1] 可能存在['CSRF漏洞', '数据篡改']，原因为提交类接口无防CSRF特征
+5.5（MEDIUM） /newactivity/v1/participateConditionByLogin [-1] 可能存在['逻辑漏洞风险']，原因为活动参与条件接口无防护
+5.5（MEDIUM） /newactivity/task/v2/list [-1] 可能存在['信息泄露']，原因为任务列表接口可能暴露敏感数据
+5.5（MEDIUM） /newactivity/pay/v1/userSucOrderNum [-1] 可能存在['潜在信息泄露']，原因为支付成功订单数统计接口
+5.5（MEDIUM） /newactivity/award/v2/getDrawChance [-1] 可能存在['业务逻辑漏洞']，原因为抽奖机会接口需防刷机制
+5.5（MEDIUM） /storage/emulated/0/DCIM/heytap_cdo_activity [-1] 可能存在['本地文件路径泄露']，原因为暴露移动设备存储路径结构
+5.2（MEDIUM） /newactivity/rank-list/v1/deadline [-1] 可能存在['潜在信息泄露']，原因为rank-list可能含敏感排名数据
+5.2（MEDIUM） /activity/task/v1/getActivityTaskStatus4SpringLogout [-1] 可能存在['潜在状态信息泄露']，原因为任务状态接口含敏感路径
+5.2（MEDIUM） /activity/pc/v1/awardChance [-1] 可能存在['潜在越权操作']，原因为奖励机会接口涉及敏感操作
+5.0（MEDIUM） /newactivity/pc/contact/v2/edit [-1] 可能存在['潜在信息泄露']，原因为含敏感路径(contact/edit)，需验证权限
+5.0（MEDIUM） /api-cloud/pop/do-show-pop [-1] 可能存在['弹窗控制漏洞']，原因为弹窗展示控制接口
+5.0（MEDIUM） /newactivity/comment/v2/save [-1] 可能存在['潜在存储XSS']，原因为数据提交接口无防护
+5.0（MEDIUM） /activity/pc/v1/getActivityTaskStatus4SpringLogout [-1] 可能存在['会话固定风险']，原因为登出状态接口含会话参数
+5.0（MEDIUM） /newactivity/pc/contact/v2/confirm [-1] 可能存在['潜在信息泄露']，原因为联系人确认接口需验证权限
+5.0（MEDIUM） /newactivity/v1/spaceSurplus [-1] 可能存在['资源监控泄露']，原因为空间监控接口应限制访问
+5.0（MEDIUM） /newactivity/award-user/v2/has-operate [-1] 可能存在['用户操作越权']，原因为用户操作接口需验证身份
+5.0（MEDIUM） /api-cloud/award/query-award-record [-1] 可能存在['潜在信息泄露']，原因为奖励记录查询接口
+5.0（MEDIUM） /activity/pc/v1/userAwards [-1] 可能存在['潜在信息泄露']，原因为用户奖励信息接口
+5.0（MEDIUM） /newactivity/v1/awardInfo [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(award)
+5.0（MEDIUM） /newactivity/task/v2/popupTimes [-1] 可能存在['潜在信息泄露']，原因为任务接口(task)无敏感参数
+5.0（MEDIUM） /newactivity/v2/participateConditionByLogin [-1] 可能存在['潜在越权访问']，原因为涉及用户登录状态验证的接口
+5.0（MEDIUM） /activity/award/v1/getPackageLogout [-1] 可能存在['潜在越权操作']，原因为登出奖励包获取接口
+5.0（MEDIUM） /newactivity/task/v2/checkApplicationStatus [-1] 可能存在['信息泄露']，原因为申请状态检查接口可能暴露敏感信息
+5.0（MEDIUM） /api-cloud/task-wall/grant-award [-1] 可能存在['潜在未授权访问']，原因为管理路径(grant-award)无鉴权特征
+4.5（MEDIUM） /newactivity/pc/contact/v2/info [-1] 可能存在['潜在信息泄露']，原因为联系人信息接口需访问控制
+4.5（MEDIUM） /newactivity/v1/info [-1] 可能存在['潜在信息泄露']，原因为info路径可能暴露活动配置
+4.5（MEDIUM） /newactivity/award-user/v1/userAward [-1] 可能存在['潜在越权风险']，原因为含用户标识参数(user)无校验
+4.5（MEDIUM） /newactivity/award/v1/selectChanceDetails [-1] 可能存在['潜在越权访问']，原因为奖励详情接口含高危参数
+4.5（MEDIUM） /newactivity/pc/comment/v2/save [-1] 可能存在['潜在存储型XSS']，原因为评论接口含用户输入点
+4.5（MEDIUM） /newactivity/pc/comment/v2/getCommentList [-1] 可能存在['潜在批量数据泄露']，原因为评论列表接口需分页限制
+4.5（MEDIUM） /newactivity/v1/accumulationCountAndNext [-1] 可能存在['业务逻辑漏洞']，原因为计数接口含业务敏感操作
+4.5（MEDIUM） /newactivity/v1/userCurSpacePackage [-1] 可能存在['潜在信息泄露']，原因为用户空间包信息接口
+4.5（MEDIUM） /activity/award/v1/activityAwards4Spring [-1] 可能存在['潜在信息泄露']，原因为奖励发放接口需验证权限
+4.5（MEDIUM） /newactivity/task/v2/operatePopupTimes [-1] 可能存在['潜在越权操作']，原因为弹窗操作接口涉及用户行为控制
+4.2（MEDIUM） /newactivity/v1/participateCondition [-1] 可能存在['业务逻辑漏洞']，原因为参与条件接口含业务参数
+4.0（MEDIUM） /newactivity/v2/participate [-1] 可能存在['潜在越权参与']，原因为活动参与接口需身份校验
+4.0（LOW） /activity/pc/share/v1/info [-1] 可能存在['分享信息泄露']，原因为PC端分享信息接口
+4.0（MEDIUM） /activity/award/v1/getPackageLogin [-1] 可能存在['潜在未授权访问']，原因为管理路径(award)无鉴权参数
+4.0（LOW） /newactivity/distribute/v2/reportLessThree [-1] 可能存在['低危数据上报']，原因为统计接口风险较低
+4.0（MEDIUM） /newactivity/pc/v2/participate [-1] 可能存在['潜在未授权访问']，原因为活动参与接口无鉴权特征
+4.0（LOW） /login.html [-1] 可能存在['框架默认页面']，原因为静态登录页面无特殊风险
+4.0（MEDIUM） /newactivity/rights/v1/rightsRelease [-1] 可能存在['潜在越权']，原因为含敏感参数(rights)
+4.0（MEDIUM） /newactivity/v1/selectAward [-1] 可能存在['潜在未授权访问']，原因为活动类接口可能缺少鉴权
+4.0（MEDIUM） /newactivity/rights/v2/receiveRights [-1] 可能存在['潜在越权访问']，原因为路径含rights但无鉴权特征
+4.0（MEDIUM） /newactivity/rank-list/v1/pay-info [-1] 可能存在['潜在信息泄露']，原因为路径含敏感关键词(pay-info)
+4.0（MEDIUM） /newactivity/award/v1/getDrawChance [-1] 可能存在['潜在逻辑缺陷']，原因为抽奖机会获取接口
+4.0（MEDIUM） /newactivity/pc/award/v2/getDrawChance [-1] 可能存在['潜在逻辑缺陷']，原因为抽奖机会获取接口
+4.0（MEDIUM） /api-cloud/task-wall/getStoreTrendsToken [-1] 可能存在['潜在令牌泄露']，原因为含敏感关键词(token)的API接口
+4.0（LOW） /activity/pc/share/v1/ticket [-1] 可能存在['凭证分享风险']，原因为票据分享接口需验证有效性
+4.0（MEDIUM） /newactivity/pay/v1/findPackageSpace [-1] 可能存在['潜在信息泄露']，原因为支付包空间查询接口
+4.0（MEDIUM） /newactivity/benefit/v1/space [-1] 可能存在['潜在信息泄露']，原因为权益空间查询接口
+4.0（MEDIUM） /newactivity/award-user/v1/notice [-1] 可能存在['潜在信息泄露']，原因为活动通知接口可能存在未授权访问
+4.0（MEDIUM） /newactivity/pc/v2/participateConditionByLogin [-1] 可能存在['反射XSS风险']，原因为含用户输入参数(login)但无高危特征
+4.0（MEDIUM） /. [-1] 可能存在['目录探测行为']，原因为根目录探测可能为攻击前兆
+3.8（LOW） /activity/task/v1/getActivityTaskStatus4Spring [-1] 可能存在['状态泄露']，原因为任务状态查询接口
+3.5（LOW） /newactivity/pc/v2/info [-1] 可能存在['无风险或已防护']，原因为普通信息接口无高危特征
+3.5（LOW） /newactivity/contact/v1/info [-1] 可能存在['潜在信息泄露']，原因为含敏感路径(contact/info)
+3.5（LOW） /newactivity/v2/info [-1] 可能存在['信息泄露']，原因为活动信息接口无高危参数
+3.5（LOW） /api-cloud/task-wall/query-home [-1] 可能存在['潜在信息泄露']，原因为含敏感路径(api-cloud)
+3.5（LOW） /api-cloud/pop/has-show-pop [-1] 可能存在['潜在信息泄露']，原因为含敏感路径(api-cloud)
+3.5（MEDIUM） /questionnaire/v1/question [-1] 可能存在['潜在信息泄露']，原因为问卷接口可能暴露敏感数据
+3.5（LOW） /newactivity/task/v2/same-day/getCache [-1] 可能存在['缓存泄露']，原因为缓存接口无敏感参数
+3.5（MEDIUM） /newactivity/task/v2/receiveNonExistentRights [-1] 可能存在['潜在逻辑缺陷']，原因为非存在权益领取接口
+3.5（LOW） /result.html?&eventchannel=1&new_open=true&orderId= [-1] 可能存在['反射型XSS']，原因为订单ID参数未过滤(orderId)
+3.5（MEDIUM） /newactivity/pc/v2/participateCondition [-1] 可能存在['潜在信息泄露']，原因为活动参与条件接口无鉴权
+3.5（LOW） /activity/pc/v1/getActivityTaskStatus4Spring [-1] 可能存在['低危信息泄露']，原因为状态查询接口无敏感参数
+3.0（LOW） /activity/award/v1/awardChance [-1] 可能存在['无风险或已防护']，原因为普通活动接口，无高危参数
+3.0（LOW） /activity/award/v1/activityAwards4TwoNew [-1] 可能存在['无风险或已防护']，原因为普通活动接口，无高危参数
+3.0（LOW） /newactivity/v1/extraInfo [-1] 可能存在['潜在信息泄露']，原因为数据接口路径(extraInfo)
+3.0（LOW） /newactivity/v2/participateCondition [-1] 可能存在['潜在信息泄露']，原因为条件查询接口无限制
+3.0（LOW） /newactivity/v2/activityInfoV2 [-1] 可能存在['信息泄露']，原因为活动信息接口无敏感参数
+3.0（LOW） /activity/share/v1/helpForOwner [-1] 可能存在['潜在逻辑缺陷']，原因为所有者帮助接口
+3.0（LOW） /newactivity/task/v2/queryNonExistentRights [-1] 可能存在['信息泄露']，原因为查询不存在权益接口风险较低
+3.0（LOW） /otrack/ [-1] 可能存在[]，原因为疑似跟踪接口但无敏感参数
+3.0（LOW） /lockscreen [-1] 可能存在['潜在未授权访问']，原因为管理功能路径但无鉴权特征
+2.0（LOW） /activity/pc/share/v1/helpForOwner [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /activity/contact/v1/getContactDetail [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /activity/share/v1/info [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /newactivity/pc/task/v2/list [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /questionnaire/v1/draw [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /activity/share/v1/ticket [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /newactivity/contact/v2/info [-1] 可能存在['无风险']，原因为无高危参数或敏感路径
+2.0（LOW） /newactivity/v2/infoV2 [-1] 可能存在['信息泄露']，原因为普通信息查询接口
+2.0（LOW） /url/ [-1] 可能存在[]，原因为无敏感特征路径
+2.0（LOW） /mark [-1] 可能存在[]，原因为无敏感特征且功能未知
+1.0（LOW） /logo [-1] 可能存在['无显著风险']，原因为静态资源路径无参数
+
+排序后的URI列表：
+/newactivity/pc/file/v2/base64Upload
+/newactivity/pay/v1/generateSerial
+/udid/c1
+/newactivity/award/v2/userAward
+/pay/order/v6/saveOrder
+/newactivity/distribute/v2/handleBatchInstall
+/newactivity/award/v2/resendAward
+/pay/order/activity/newPaymentCenterSaveOrder
+/newactivity/file/v2/base64Upload
+/newactivity/task/v2/setCache
+/pay.html
+/newactivity/pay/v1/getPayDetail
+/pay/order/activity/updateOrderAfterSign
+/activity/award/v1/isRiskUser
+/newactivity/task/v2/batchComplete
+/newactivity/pay/v2/generateSerial
+/pay/order/activity/operation/h5SaveOrder
+/newactivity/task/v1/batchComplete
+/uc/activity/login
+/pay/order/activity/operation/oldSaveOrder
+/api/fetchCdnFile
+/js/v2/checkUpdate
+/newactivity/pc/task/v2/handleUserTaskStatus
+/pay/order/v6/oldSaveOrder
+/pay/order/v6/unpaidOrder
+/activity/pc/v1/transferApply
+/newactivity/award-user/v2/userAward
+/newactivity/task/v1/handleUserTaskStatus
+/activity/pc/v1/paySerialNumber
+/activity/award/v1/transferApply
+/pay/order/v6/cancelUnpaidOrder
+/offlineAuto?id=
+/newactivity/risky/v1/verifyCode
+/activity/pc/v1/isRiskUser4Web
+/newactivity/task/v1/handleInstallApp
+/api-cloud/award/resend
+/pay/order/activity/oldPaymentCenterSaveOrder
+/newactivity/award/v1/resendAward
+/newactivity/risky/v1/isCreditsRiskUser
+/pay/order/v6/getUnpaidOrderDetail
+/newactivity/pc/award/v2/resendAward
+/pay/pc/activity/h5SaveOrder
+/newactivity/v1/storage
+/pay/order/activity/operation/newSaveOrder
+/questionnaire/v1/auth/1
+/questionnaire/v1/auth/2
+/newactivity/award-user/v2/add-operate
+/activity/award/v1/userAwards
+/newactivity/benefit/v1/pay-info
+/newactivity/award/v2/transfer
+/newactivity/task/v2/complete
+/newactivity/share/v1/ticket
+/newactivity/rights/v2/creatRightsRecord
+/newactivity/task/v2/mergeInterface
+/newactivity/task/v2/same-day/setCache
+/offlineLog
+/newactivity/store/v1/getStoreTrendsToken
+/newactivity/pay/v1/userHistoryOrderNum
+/activity/contact/v3/updateContactDetail
+/newactivity/award/v1/userAward
+/newactivity/award-user/v1/userInfo
+/questionnaire/v1/withdraw
+/newactivity/pc/award/v2/transfer
+/newactivity/award/v1/userTaskAward
+/newactivity/callback/v1/callbackPayResult
+/activity/pc/v1/awardNotices4Spring
+/activity/award/v1/awardNotices4TowNow
+/activity/award/v1/getPackageLogin4Spring
+/newactivity/v1/participate
+/api/checkUpdate
+/activity/award/v1/drawAward4Spring
+/newactivity/benefit/v2/pay-info
+/activity/award/v1/drawAward4TwoNew
+/newactivity/award/v1/transfer
+/activity/paySerialNumber
+/activity/pc/v1/saveContactDetailv3
+/newactivity/distribute/v2/handleInstallStatus
+/api/shared/cloud-activity/userInfo
+/report/pc/v1/get_annual_report
+/activity/pc/v1/drawAward4Spring
+/npm-monitoring
+/$1**
+/newactivity/task/v1/task-complete-info
+/newactivity/task/v2/popupCache
+/api-cloud/task-wall/subscribe
+/activity/contact/v2/saveContactDetail
+/api-cloud/task-wall/report-event
+/newactivity/contact/v2/edit
+/newactivity/v1/activity-award
+/newactivity/pc/award-user/v2/userAward
+/newactivity/v1/userSpacePackages
+/activity/pc/v1/updateContactDetailv3
+/activity/contact/v3/getContactDetail
+/newactivity/report/v2/getYearReport
+/newactivity/contact/v1/confirm
+/newactivity/contact/v2/confirm
+/newactivity/task/v2/handleUserTaskStatus
+/api-cloud/award/query-user-coin
+/newactivity/distribute/v2/getDistributeCacheList
+/api/getVersion
+/benefits/v2/activityInfo
+/newactivity/pc/task/v2/complete
+/activity/task/v1/getUserActivityTasksStatus4TwoNew
+/activity/pc/v1/getContactDetailv3
+/newactivity/distribute/v2/ab-test
+/newactivity/award/v1/drawChanceDetails
+/newactivity/task/v2/getCache
+/newactivity/comment/v2/getCommentList
+/benefits/v2/spaceBenefitsGain
+/questionnaire/v1/submit
+/newactivity/v1/participateConditionByLogin
+/newactivity/task/v2/list
+/newactivity/pay/v1/userSucOrderNum
+/newactivity/award/v2/getDrawChance
+/storage/emulated/0/DCIM/heytap_cdo_activity
+/newactivity/rank-list/v1/deadline
+/activity/task/v1/getActivityTaskStatus4SpringLogout
+/activity/pc/v1/awardChance
+/newactivity/pc/contact/v2/edit
+/api-cloud/pop/do-show-pop
+/newactivity/comment/v2/save
+/activity/pc/v1/getActivityTaskStatus4SpringLogout
+/newactivity/pc/contact/v2/confirm
+/newactivity/v1/spaceSurplus
+/newactivity/award-user/v2/has-operate
+/api-cloud/award/query-award-record
+/activity/pc/v1/userAwards
+/newactivity/v1/awardInfo
+/newactivity/task/v2/popupTimes
+/newactivity/v2/participateConditionByLogin
+/activity/award/v1/getPackageLogout
+/newactivity/task/v2/checkApplicationStatus
+/api-cloud/task-wall/grant-award
+/newactivity/pc/contact/v2/info
+/newactivity/v1/info
+/newactivity/award-user/v1/userAward
+/newactivity/award/v1/selectChanceDetails
+/newactivity/pc/comment/v2/save
+/newactivity/pc/comment/v2/getCommentList
+/newactivity/v1/accumulationCountAndNext
+/newactivity/v1/userCurSpacePackage
+/activity/award/v1/activityAwards4Spring
+/newactivity/task/v2/operatePopupTimes
+/newactivity/v1/participateCondition
+/newactivity/v2/participate
+/activity/pc/share/v1/info
+/activity/award/v1/getPackageLogin
+/newactivity/distribute/v2/reportLessThree
+/newactivity/pc/v2/participate
+/login.html
+/newactivity/rights/v1/rightsRelease
+/newactivity/v1/selectAward
+/newactivity/rights/v2/receiveRights
+/newactivity/rank-list/v1/pay-info
+/newactivity/award/v1/getDrawChance
+/newactivity/pc/award/v2/getDrawChance
+/api-cloud/task-wall/getStoreTrendsToken
+/activity/pc/share/v1/ticket
+/newactivity/pay/v1/findPackageSpace
+/newactivity/benefit/v1/space
+/newactivity/award-user/v1/notice
+/newactivity/pc/v2/participateConditionByLogin
+/.
+/activity/task/v1/getActivityTaskStatus4Spring
+/newactivity/pc/v2/info
+/newactivity/contact/v1/info
+/newactivity/v2/info
+/api-cloud/task-wall/query-home
+/api-cloud/pop/has-show-pop
+/questionnaire/v1/question
+/newactivity/task/v2/same-day/getCache
+/newactivity/task/v2/receiveNonExistentRights
+/result.html?&eventchannel=1&new_open=true&orderId=
+/newactivity/pc/v2/participateCondition
+/activity/pc/v1/getActivityTaskStatus4Spring
+/activity/award/v1/awardChance
+/activity/award/v1/activityAwards4TwoNew
+/newactivity/v1/extraInfo
+/newactivity/v2/participateCondition
+/newactivity/v2/activityInfoV2
+/activity/share/v1/helpForOwner
+/newactivity/task/v2/queryNonExistentRights
+/otrack/
+/lockscreen
+/activity/pc/share/v1/helpForOwner
+/activity/contact/v1/getContactDetail
+/activity/share/v1/info
+/newactivity/pc/task/v2/list
+/questionnaire/v1/draw
+/activity/share/v1/ticket
+/newactivity/contact/v2/info
+/newactivity/v2/infoV2
+/url/
+/mark
+/logo
+
+URL拼接后结果:
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/file/v2/base64Upload
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v1/generateSerial
+https://activity-cn01a.ocloud.heytapmobi.com/udid/c1
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v2/userAward
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/v6/saveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/distribute/v2/handleBatchInstall
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v2/resendAward
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/newPaymentCenterSaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/file/v2/base64Upload
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/setCache
+https://activity-cn01a.ocloud.heytapmobi.com/pay.html
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v1/getPayDetail
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/updateOrderAfterSign
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/isRiskUser
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/batchComplete
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v2/generateSerial
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/operation/h5SaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v1/batchComplete
+https://activity-cn01a.ocloud.heytapmobi.com/uc/activity/login
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/operation/oldSaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/api/fetchCdnFile
+https://activity-cn01a.ocloud.heytapmobi.com/js/v2/checkUpdate
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/task/v2/handleUserTaskStatus
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/v6/oldSaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/v6/unpaidOrder
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/transferApply
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v2/userAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v1/handleUserTaskStatus
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/paySerialNumber
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/transferApply
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/v6/cancelUnpaidOrder
+https://activity-cn01a.ocloud.heytapmobi.com/offlineAuto?id=
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/risky/v1/verifyCode
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/isRiskUser4Web
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v1/handleInstallApp
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/award/resend
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/oldPaymentCenterSaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/resendAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/risky/v1/isCreditsRiskUser
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/v6/getUnpaidOrderDetail
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/award/v2/resendAward
+https://activity-cn01a.ocloud.heytapmobi.com/pay/pc/activity/h5SaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/storage
+https://activity-cn01a.ocloud.heytapmobi.com/pay/order/activity/operation/newSaveOrder
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/auth/1
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/auth/2
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v2/add-operate
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/userAwards
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/benefit/v1/pay-info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v2/transfer
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/complete
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/share/v1/ticket
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/rights/v2/creatRightsRecord
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/mergeInterface
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/same-day/setCache
+https://activity-cn01a.ocloud.heytapmobi.com/offlineLog
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/store/v1/getStoreTrendsToken
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v1/userHistoryOrderNum
+https://activity-cn01a.ocloud.heytapmobi.com/activity/contact/v3/updateContactDetail
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/userAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v1/userInfo
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/withdraw
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/award/v2/transfer
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/userTaskAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/callback/v1/callbackPayResult
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/awardNotices4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/awardNotices4TowNow
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/getPackageLogin4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/participate
+https://activity-cn01a.ocloud.heytapmobi.com/api/checkUpdate
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/drawAward4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/benefit/v2/pay-info
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/drawAward4TwoNew
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/transfer
+https://activity-cn01a.ocloud.heytapmobi.com/activity/paySerialNumber
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/saveContactDetailv3
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/distribute/v2/handleInstallStatus
+https://activity-cn01a.ocloud.heytapmobi.com/api/shared/cloud-activity/userInfo
+https://activity-cn01a.ocloud.heytapmobi.com/report/pc/v1/get_annual_report
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/drawAward4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/npm-monitoring
+https://activity-cn01a.ocloud.heytapmobi.com/$1**
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v1/task-complete-info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/popupCache
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/task-wall/subscribe
+https://activity-cn01a.ocloud.heytapmobi.com/activity/contact/v2/saveContactDetail
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/task-wall/report-event
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/contact/v2/edit
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/activity-award
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/award-user/v2/userAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/userSpacePackages
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/updateContactDetailv3
+https://activity-cn01a.ocloud.heytapmobi.com/activity/contact/v3/getContactDetail
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/report/v2/getYearReport
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/contact/v1/confirm
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/contact/v2/confirm
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/handleUserTaskStatus
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/award/query-user-coin
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/distribute/v2/getDistributeCacheList
+https://activity-cn01a.ocloud.heytapmobi.com/api/getVersion
+https://activity-cn01a.ocloud.heytapmobi.com/benefits/v2/activityInfo
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/task/v2/complete
+https://activity-cn01a.ocloud.heytapmobi.com/activity/task/v1/getUserActivityTasksStatus4TwoNew
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/getContactDetailv3
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/distribute/v2/ab-test
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/drawChanceDetails
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/getCache
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/comment/v2/getCommentList
+https://activity-cn01a.ocloud.heytapmobi.com/benefits/v2/spaceBenefitsGain
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/submit
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/participateConditionByLogin
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/list
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v1/userSucOrderNum
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v2/getDrawChance
+https://activity-cn01a.ocloud.heytapmobi.com/storage/emulated/0/DCIM/heytap_cdo_activity
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/rank-list/v1/deadline
+https://activity-cn01a.ocloud.heytapmobi.com/activity/task/v1/getActivityTaskStatus4SpringLogout
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/awardChance
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/contact/v2/edit
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/pop/do-show-pop
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/comment/v2/save
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/getActivityTaskStatus4SpringLogout
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/contact/v2/confirm
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/spaceSurplus
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v2/has-operate
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/award/query-award-record
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/userAwards
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/awardInfo
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/popupTimes
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/participateConditionByLogin
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/getPackageLogout
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/checkApplicationStatus
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/task-wall/grant-award
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/contact/v2/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v1/userAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/selectChanceDetails
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/comment/v2/save
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/comment/v2/getCommentList
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/accumulationCountAndNext
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/userCurSpacePackage
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/activityAwards4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/operatePopupTimes
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/participateCondition
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/participate
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/share/v1/info
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/getPackageLogin
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/distribute/v2/reportLessThree
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/v2/participate
+https://activity-cn01a.ocloud.heytapmobi.com/login.html
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/rights/v1/rightsRelease
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/selectAward
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/rights/v2/receiveRights
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/rank-list/v1/pay-info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award/v1/getDrawChance
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/award/v2/getDrawChance
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/task-wall/getStoreTrendsToken
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/share/v1/ticket
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pay/v1/findPackageSpace
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/benefit/v1/space
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/award-user/v1/notice
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/v2/participateConditionByLogin
+https://activity-cn01a.ocloud.heytapmobi.com/js/
+https://activity-cn01a.ocloud.heytapmobi.com/activity/task/v1/getActivityTaskStatus4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/v2/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/contact/v1/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/info
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/task-wall/query-home
+https://activity-cn01a.ocloud.heytapmobi.com/api-cloud/pop/has-show-pop
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/question
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/same-day/getCache
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/receiveNonExistentRights
+https://activity-cn01a.ocloud.heytapmobi.com/result.html?&eventchannel=1&new_open=true&orderId=
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/v2/participateCondition
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/v1/getActivityTaskStatus4Spring
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/awardChance
+https://activity-cn01a.ocloud.heytapmobi.com/activity/award/v1/activityAwards4TwoNew
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v1/extraInfo
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/participateCondition
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/activityInfoV2
+https://activity-cn01a.ocloud.heytapmobi.com/activity/share/v1/helpForOwner
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/task/v2/queryNonExistentRights
+https://activity-cn01a.ocloud.heytapmobi.com/otrack/
+https://activity-cn01a.ocloud.heytapmobi.com/lockscreen
+https://activity-cn01a.ocloud.heytapmobi.com/activity/pc/share/v1/helpForOwner
+https://activity-cn01a.ocloud.heytapmobi.com/activity/contact/v1/getContactDetail
+https://activity-cn01a.ocloud.heytapmobi.com/activity/share/v1/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/pc/task/v2/list
+https://activity-cn01a.ocloud.heytapmobi.com/questionnaire/v1/draw
+https://activity-cn01a.ocloud.heytapmobi.com/activity/share/v1/ticket
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/contact/v2/info
+https://activity-cn01a.ocloud.heytapmobi.com/newactivity/v2/infoV2
+https://activity-cn01a.ocloud.heytapmobi.com/url/
+https://activity-cn01a.ocloud.heytapmobi.com/mark
+https://activity-cn01a.ocloud.heytapmobi.com/logo

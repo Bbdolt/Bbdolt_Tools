@@ -1,0 +1,212 @@
+AI分析结果：
+7.5（HIGH） /console [-1] 可能存在['未授权访问']，原因为疑似管理控制台路径
+7.5（HIGH） /dataCenter [-1] 可能存在['未授权访问']，原因为数据接口路径无鉴权标识
+7.5（HIGH） /console/reservation?menuType=/delivery [-1] 可能存在['潜在框架漏洞', '路径注入风险']，原因为含高危参数(menuType)且路径敏感(console)
+7.5（HIGH） /console/review [-1] 可能存在['未授权访问']，原因为管理路径(console)无鉴权
+6.5（MEDIUM） /schools/fileSchool [-1] 可能存在['文件操作风险']，原因为路径含高危语义(file)
+6.2（MEDIUM） /api-resource/portal/subWeb/getCourse [408287] 可能存在['信息泄露']，原因为敏感路径+大响应体(408KB)
+6.0（MEDIUM） /dev-api [548] 可能存在['潜在信息泄露']，原因为开发API接口，中等风险
+6.0（MEDIUM） /ktapi/ [-1] 可能存在['潜在框架漏洞']，原因为API路径可能暴露框架信息
+6.0（MEDIUM） /api/v2/getconf [812] 可能存在['潜在信息泄露']，原因为敏感路径(api)且响应体>0.5KB
+6.0（MEDIUM） /console/setting [-1] 可能存在['潜在未授权访问']，原因为控制台设置路径，高风险
+6.0（MEDIUM） /api/user/user/login [145] 可能存在['潜在暴力破解']，原因为登录接口无防护措施
+5.8（MEDIUM） /api/user/sys/randomImage/1755017389231 [4251] 可能存在['潜在信息泄露']，原因为敏感路径(sys)且响应体>4KB
+5.8（MEDIUM） /api/user/sys/randomImage/1755017605248 [4343] 可能存在['潜在信息泄露']，原因为敏感路径(sys)且响应体>4KB
+5.5（MEDIUM） /api/v3/get [435] 可能存在['潜在信息泄露']，原因为敏感路径(api)且响应体>0.4KB
+5.0（MEDIUM） /szxyLogin [-1] 可能存在['潜在未授权访问']，原因为疑似登录接口路径
+5.0（MEDIUM） /api [-1] 可能存在['潜在信息泄露']，原因为API接口路径，中等风险
+5.0（MEDIUM） /user/info [-1] 可能存在['潜在信息泄露']，原因为用户信息接口路径含敏感关键词
+5.0（MEDIUM） /api-resource/portal/business/resource/main/queryById? [-1] 可能存在['潜在信息泄露', '潜在越权']，原因为路径含高危操作(queryById)且无鉴权
+5.0（MEDIUM） /api-resource/portal/partner/material/resource/getResourcePreviewInfo? [-1] 可能存在['潜在信息泄露', '潜在越权']，原因为路径含高危操作(getResourcePreviewInfo)
+5.0（MEDIUM） /console/myCourse [-1] 可能存在['潜在未授权访问']，原因为控制台路径，无鉴权
+5.0（MEDIUM） /console/premiumCourses [548] 可能存在['潜在未授权访问']，原因为控制台路径，无鉴权
+4.5（MEDIUM） /api-resource/portal/business/resource/center/popularResource? [-1] 可能存在['潜在信息泄露']，原因为敏感路径(api-resource)且层级较深
+4.2（MEDIUM） /api/user/sys/randomImage/1755017281268 [4231] 可能存在['潜在信息泄露']，原因为API路径，响应体>4KB
+4.0（MEDIUM） /user/sys/randomImage/ [-1] 可能存在['潜在信息泄露']，原因为系统路径，中等风险
+4.0（LOW） /user/login [-1] 可能存在['认证接口']，原因为标准登录接口无异常特征
+4.0（MEDIUM） /eduCloudApi/jyzypt/sgkt/ [-1] 可能存在['潜在API未授权']，原因为多层API路径可能暴露业务接口
+4.0（MEDIUM） /api-resource/portal/subWeb/getSubCatalogs? [-1] 可能存在['潜在信息泄露']，原因为敏感路径(api-resource)但无参数值
+4.0（MEDIUM） /api-resource/portal/subWeb/getSubject? [-1] 可能存在['潜在信息泄露']，原因为敏感路径(api-resource)但无参数值
+3.5（LOW） /delivery/home [-1] 可能存在['普通功能模块']，原因为业务路径无高危特征
+3.5（MEDIUM） /user/user/loginByCaptcha [-1] 可能存在['潜在认证绕过']，原因为认证接口路径但无鉴权特征
+3.5（MEDIUM） /delivery/webrtc/ [-1] 可能存在['潜在协议滥用']，原因为含实时通信协议关键词
+3.5（MEDIUM） /api-resource/portal/subWeb/getSubKPoints? [-1] 可能存在['潜在信息泄露']，原因为API路径包含敏感关键词(portal/subWeb)
+3.5（MEDIUM） /api-knowledge/portal/graphPortal/getKnowledgeGraph [-1] 可能存在['潜在信息泄露']，原因为API路径包含敏感关键词(portal/graphPortal)
+3.5（MEDIUM） /api-resource/portal/subWeb/getTextBook? [-1] 可能存在['潜在信息泄露']，原因为API路径包含敏感关键词(portal/subWeb)
+3.5（MEDIUM） /api-resource/portal/subWeb/getTextBookV? [-1] 可能存在['潜在信息泄露']，原因为API路径包含敏感关键词(portal/subWeb)
+3.5（MEDIUM） /api-resource/portal/subWeb/getGrade? [-1] 可能存在['潜在信息泄露']，原因为API路径包含敏感关键词(portal/subWeb)
+3.5（LOW） /schools/fileSchoolDetaile [-1] 可能存在['潜在信息泄露']，原因为含文件相关路径，无高危参数
+3.5（LOW） /schools/teacherSpace [-1] 可能存在['潜在信息泄露']，原因为教师相关路径，无高危参数
+3.5（LOW） /schools/livesSchoolTeacherSpace [-1] 可能存在['潜在信息泄露']，原因为教师相关路径，无高危参数
+3.5（MEDIUM） /live?courseId= [-1] 可能存在['潜在反射XSS']，原因为参数名(courseId)可能被利用
+3.0（LOW） /schools/livesSchool [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /schools/live [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /schools [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /delivery [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /schools/eliteSchool [-1] 可能存在['普通功能接口']，原因为无敏感参数或路径特征
+3.0（LOW） /meeting [-1] 可能存在['普通功能接口']，原因为无敏感参数或路径特征
+3.0（LOW） /schools/home [-1] 可能存在['普通功能接口']，原因为无敏感参数或路径特征
+3.0（MEDIUM） /teachers/home [-1] 可能存在['潜在越权访问']，原因为用户角色路径但无权限控制特征
+3.0（LOW） /schools/livesSchoolDetail [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /schools/schoolDetail [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /schools/previousDetail [-1] 可能存在['潜在信息泄露']，原因为普通路径，无高危参数
+3.0（LOW） /api/v3/check [310] 可能存在[]，原因为API路径无高危参数
+2.5（LOW） /teachers [-1] 可能存在['潜在信息泄露']，原因为含用户角色关键词但无参数
+2.5（LOW） /aihome/ [548] 可能存在[]，原因为响应体较小无敏感特征
+2.0（LOW） /homepage [-1] 可能存在['静态页面']，原因为常规首页路径无风险
+2.0（LOW） /homepage/home [-1] 可能存在['静态子页面']，原因为嵌套首页路径无风险
+2.0（LOW） /meetingSafe [-1] 可能存在['潜在配置泄露']，原因为含安全相关关键词但无参数
+2.0（LOW） /api/user/sys/randomImage/1755017244698 [0] 可能存在['无效端点']，原因为响应体为空且路径含随机数
+2.0（LOW） /jyzyApi [-1] 可能存在['无明确风险']，原因为无敏感路径或参数特征
+2.0（LOW） /delivery/live [-1] 可能存在['无明确风险']，原因为无敏感路径或参数特征
+2.0（LOW） /homepage/live [-1] 可能存在[]，原因为普通路径无风险特征
+1.0（LOW） /404 [-1] 可能存在['无效端点']，原因为疑似错误页面路径
+1.0（LOW） /page [-1] 可能存在['无风险']，原因为普通页面路径，无敏感特征
+1.0（LOW） /training [-1] 可能存在['无风险']，原因为普通功能路径
+1.0（LOW） /liveBroadcast [-1] 可能存在['无风险']，原因为普通功能路径
+1.0（LOW） /html/ie.html [-1] 可能存在[]，原因为静态资源无风险
+0.0（LOW） /? [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+0.0（LOW） /home [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+0.0（LOW） /index [-1] 可能存在['无风险']，原因为普通路径无敏感特征
+
+排序后的URI列表：
+/console
+/dataCenter
+/console/reservation?menuType=/delivery
+/console/review
+/schools/fileSchool
+/api-resource/portal/subWeb/getCourse
+/dev-api
+/ktapi/
+/api/v2/getconf
+/console/setting
+/api/user/user/login
+/api/user/sys/randomImage/1755017389231
+/api/user/sys/randomImage/1755017605248
+/api/v3/get
+/szxyLogin
+/api
+/user/info
+/api-resource/portal/business/resource/main/queryById?
+/api-resource/portal/partner/material/resource/getResourcePreviewInfo?
+/console/myCourse
+/console/premiumCourses
+/api-resource/portal/business/resource/center/popularResource?
+/api/user/sys/randomImage/1755017281268
+/user/sys/randomImage/
+/user/login
+/eduCloudApi/jyzypt/sgkt/
+/api-resource/portal/subWeb/getSubCatalogs?
+/api-resource/portal/subWeb/getSubject?
+/delivery/home
+/user/user/loginByCaptcha
+/delivery/webrtc/
+/api-resource/portal/subWeb/getSubKPoints?
+/api-knowledge/portal/graphPortal/getKnowledgeGraph
+/api-resource/portal/subWeb/getTextBook?
+/api-resource/portal/subWeb/getTextBookV?
+/api-resource/portal/subWeb/getGrade?
+/schools/fileSchoolDetaile
+/schools/teacherSpace
+/schools/livesSchoolTeacherSpace
+/live?courseId=
+/schools/livesSchool
+/schools/live
+/schools
+/delivery
+/schools/eliteSchool
+/meeting
+/schools/home
+/teachers/home
+/schools/livesSchoolDetail
+/schools/schoolDetail
+/schools/previousDetail
+/api/v3/check
+/teachers
+/aihome/
+/homepage
+/homepage/home
+/meetingSafe
+/api/user/sys/randomImage/1755017244698
+/jyzyApi
+/delivery/live
+/homepage/live
+/404
+/page
+/training
+/liveBroadcast
+/html/ie.html
+/?
+/home
+/index
+
+URL拼接后结果:
+https://y.classtao.cn:9000/console
+https://y.classtao.cn:9000/dataCenter
+https://y.classtao.cn:9000/console/reservation?menuType=/delivery
+https://y.classtao.cn:9000/console/review
+https://y.classtao.cn:9000/schools/fileSchool
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getCourse
+https://y.classtao.cn:9000/dev-api
+https://y.classtao.cn:9000/ktapi/
+https://c.dun.163.com/api/v2/getconf
+https://y.classtao.cn:9000/console/setting
+https://y.classtao.cn:9000/api/user/user/login
+https://y.classtao.cn:9000/api/user/sys/randomImage/1755017389231
+https://y.classtao.cn:9000/api/user/sys/randomImage/1755017605248
+https://c.dun.163.com/api/v3/get
+https://y.classtao.cn:9000/szxyLogin
+https://y.classtao.cn:9000/api
+https://y.classtao.cn:9000/api/user/info
+https://y.classtao.cn:9000/api-resource/portal/business/resource/main/queryById?
+https://y.classtao.cn:9000/api-resource/portal/partner/material/resource/getResourcePreviewInfo?
+https://y.classtao.cn:9000/console/myCourse
+https://y.classtao.cn:9000/console/premiumCourses
+https://y.classtao.cn:9000/api-resource/portal/business/resource/center/popularResource?
+https://y.classtao.cn:9000/api/user/sys/randomImage/1755017281268
+https://y.classtao.cn:9000/api/user/sys/randomImage/
+https://y.classtao.cn:9000/api/user/login
+https://y.classtao.cn:9000/eduCloudApi/jyzypt/sgkt/
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getSubCatalogs?
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getSubject?
+https://y.classtao.cn:9000/delivery/home
+https://y.classtao.cn:9000/api/user/user/loginByCaptcha
+https://y.classtao.cn:9000/delivery/webrtc/
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getSubKPoints?
+https://y.classtao.cn:9000/api-knowledge/portal/graphPortal/getKnowledgeGraph
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getTextBook?
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getTextBookV?
+https://y.classtao.cn:9000/api-resource/portal/subWeb/getGrade?
+https://y.classtao.cn:9000/schools/fileSchoolDetaile
+https://y.classtao.cn:9000/schools/teacherSpace
+https://y.classtao.cn:9000/schools/livesSchoolTeacherSpace
+https://y.classtao.cn:9000/live?courseId=
+https://y.classtao.cn:9000/schools/livesSchool
+https://y.classtao.cn:9000/schools/live
+https://y.classtao.cn:9000/schools
+https://y.classtao.cn:9000/delivery
+https://y.classtao.cn:9000/schools/eliteSchool
+https://y.classtao.cn:9000/meeting
+https://y.classtao.cn:9000/schools/home
+https://y.classtao.cn:9000/teachers/home
+https://y.classtao.cn:9000/schools/livesSchoolDetail
+https://y.classtao.cn:9000/schools/schoolDetail
+https://y.classtao.cn:9000/schools/previousDetail
+https://c.dun.163.com/api/v3/check
+https://y.classtao.cn:9000/teachers
+https://y.classtao.cn:9000/aihome/
+https://y.classtao.cn:9000/homepage
+https://y.classtao.cn:9000/homepage/home
+https://y.classtao.cn:9000/meetingSafe
+https://y.classtao.cn:9000/api/user/sys/randomImage/1755017244698
+https://y.classtao.cn:9000/jyzyApi
+https://y.classtao.cn:9000/delivery/live
+https://y.classtao.cn:9000/homepage/live
+https://y.classtao.cn:9000/404
+https://y.classtao.cn:9000/page
+https://y.classtao.cn:9000/training
+https://y.classtao.cn:9000/liveBroadcast
+https://y.classtao.cn:9000/html/ie.html
+https://y.classtao.cn:9000/
+https://y.classtao.cn:9000/home
+https://y.classtao.cn:9000/index

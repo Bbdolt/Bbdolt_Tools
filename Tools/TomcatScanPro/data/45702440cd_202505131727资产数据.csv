@@ -1,0 +1,728 @@
+﻿host,ip,port,protocol,base_protocol,title,domain,server,link
+seg.nju.edu.cn,202.119.32.33,80,http,tcp,SEG,nju.edu.cn,,http://seg.nju.edu.cn
+https://sgjxgl.scvtc.edu.cn,2001:da8:6013:1::5,443,https,tcp,Apache Tomcat/8.5.60,scvtc.edu.cn,rump/d,https://sgjxgl.scvtc.edu.cn
+https://idp.ylu.edu.cn,210.36.247.112,443,https,tcp,Apache Tomcat/8.5.72,ylu.edu.cn,,https://idp.ylu.edu.cn
+status.szu.edu.cn,2001:da8:2d00:204::a,80,http,tcp,,szu.edu.cn,none,http://status.szu.edu.cn
+face.xynu.edu.cn:8080,210.43.25.108,8080,http,tcp,大门态势,xynu.edu.cn,,http://face.xynu.edu.cn:8080
+crcx.ccufe.edu.cn:8080,42.247.38.136,8080,http,tcp,大门态势,ccufe.edu.cn,,http://crcx.ccufe.edu.cn:8080
+https://status.szu.edu.cn,2001:da8:2d00:204::a,443,https,tcp,,szu.edu.cn,none,https://status.szu.edu.cn
+https://zjcinfo.jit.edu.cn,221.226.37.164,443,https,tcp,Apache Tomcat/9.0.62,jit.edu.cn,rums/b,https://zjcinfo.jit.edu.cn
+https://scholar.scau.edu.cn,2001:da8:2004:1005:192:168:242:8,443,https,tcp,Title,scau.edu.cn,,https://scholar.scau.edu.cn
+https://xhkjzyxy.edu.cn:18088,120.211.98.242,18088,https,tcp,统一身份认证,xhkjzyxy.edu.cn,nginx,https://xhkjzyxy.edu.cn:18088
+https://lqcx.fjut.edu.cn,2001:250:6804:6::52,443,https,tcp,录取查询 - 福建理工大学普通本科招生信息网,fjut.edu.cn,openresty,https://lqcx.fjut.edu.cn
+https://zypt.neusoft.edu.cn,219.216.131.82,443,https,tcp,Coming Soon...,neusoft.edu.cn,nginx/1.26.3,https://zypt.neusoft.edu.cn
+zypt.neusoft.edu.cn,219.216.131.82,80,http,tcp,Coming Soon...,neusoft.edu.cn,nginx/1.26.3,http://zypt.neusoft.edu.cn
+https://sso-lib.ynu.edu.cn:8082,113.55.8.9,8082,https,tcp,开发项目菜单,ynu.edu.cn,,https://sso-lib.ynu.edu.cn:8082
+https://kyxt.hut.edu.cn,218.75.197.123,443,https,tcp,Tomcat,hut.edu.cn,rump/c,https://kyxt.hut.edu.cn
+zbpt.njust.edu.cn,2001:da8:100e:80::178,80,http,tcp," 南京理工大学招投标办公室 - 首页",njust.edu.cn,none,http://zbpt.njust.edu.cn
+https://zbpt.njust.edu.cn,2001:da8:100e:80::178,443,https,tcp," 南京理工大学招投标办公室 - 首页",njust.edu.cn,none,https://zbpt.njust.edu.cn
+pay.zjhu.edu.cn:7828,61.153.52.77,7828,http,tcp,HTTP Status 404 – Not Found,zjhu.edu.cn,,http://pay.zjhu.edu.cn:7828
+jxgltea.hfut.edu.cn:8780,121.251.19.244,8780,http,tcp,Apache Tomcat/8.5.93,hfut.edu.cn,,http://jxgltea.hfut.edu.cn:8780
+kzgl.tjarts.edu.cn,2001:da8:a015:0:202:113:216:7121,80,http,tcp,302 Found,tjarts.edu.cn,none,http://kzgl.tjarts.edu.cn
+https://zcglxt.jzmu.edu.cn,2001:250:700f::1071,443,https,tcp,Apache Tomcat/9.0.102,jzmu.edu.cn,,https://zcglxt.jzmu.edu.cn
+https://bhws.tjfsu.edu.cn,222.30.90.3,443,https,tcp,天津外国语大学滨海外事学院,tjfsu.edu.cn,,https://bhws.tjfsu.edu.cn
+bhws.tjfsu.edu.cn,222.30.90.3,80,http,tcp,天津外国语大学滨海外事学院,tjfsu.edu.cn,,http://bhws.tjfsu.edu.cn
+https://gf.gxmu.edu.cn,210.36.49.12,443,https,tcp,Apache Tomcat/9.0.54,gxmu.edu.cn,,https://gf.gxmu.edu.cn
+jgybm.ustb.edu.cn,115.25.60.240,80,http,tcp,北京科技大学工商管理硕士,ustb.edu.cn,,http://jgybm.ustb.edu.cn
+https://x3if.xjtlu.edu.cn,180.208.58.144,443,https,tcp,登录到后台,xjtlu.edu.cn,nginx/1.26.3,https://x3if.xjtlu.edu.cn
+https://cas.ynczy.edu.cn,112.117.250.150,443,https,tcp,Apache Tomcat,ynczy.edu.cn,Apache-Coyote/1.1,https://cas.ynczy.edu.cn
+xlzx.shzu.edu.cn:8080,2001:250:1804:3::10,8080,http,tcp,Apache Tomcat,shzu.edu.cn,,http://xlzx.shzu.edu.cn:8080
+https://online.xnai.edu.cn,120.35.121.21,443,https,tcp,系统升级中,xnai.edu.cn,nginx,https://online.xnai.edu.cn
+www2.whou.edu.cn,125.221.38.222,80,http,tcp,Apache Tomcat/8.5.100,whou.edu.cn,,http://www2.whou.edu.cn
+https://yx.zcmu.edu.cn,2001:da8:e004:98:f192:f168:ff98:ff61,443,https,tcp,浙江中医药大学,zcmu.edu.cn,none,https://yx.zcmu.edu.cn
+yx.zcmu.edu.cn,2001:da8:e004:98:f192:f168:ff98:ff61,80,http,tcp,,zcmu.edu.cn,none,http://yx.zcmu.edu.cn
+https://imsel.sysu.edu.cn,202.116.65.5,443,https,tcp,,sysu.edu.cn,,https://imsel.sysu.edu.cn
+https://cs-service.nju.edu.cn,219.219.115.180,443,https,tcp,南京大学计算机学院-微服务平台,nju.edu.cn,nginx/1.20.1,https://cs-service.nju.edu.cn
+https://opac.lib.swjtu.edu.cn,202.115.72.51,443,https,tcp,书刊目录查询,swjtu.edu.cn,nginx,https://opac.lib.swjtu.edu.cn
+opac.lib.swjtu.edu.cn,202.115.72.51,80,http,tcp,书刊目录查询,swjtu.edu.cn,nginx,http://opac.lib.swjtu.edu.cn
+https://cas.hhwzy.edu.cn,39.129.161.2,443,https,tcp,HTTP状态 404 - 未找到,hhwzy.edu.cn,rump/d,https://cas.hhwzy.edu.cn
+donate.sysu.edu.cn,202.116.64.125,80,http,tcp,Apache Tomcat/6.0.20 - Error report,sysu.edu.cn,,http://donate.sysu.edu.cn
+https://fast-cnki-net-s.atrust.jzmu.edu.cn,210.30.128.32,443,https,tcp,aTrust 2.0,jzmu.edu.cn,Sangine,https://fast-cnki-net-s.atrust.jzmu.edu.cn
+kaoyi.cqmu.edu.cn,183.64.83.77,80,http,tcp,Apache Tomcat/8.5.73,cqmu.edu.cn,,http://kaoyi.cqmu.edu.cn
+https://mywe.hhu.edu.cn,202.119.114.63,443,https,tcp,Welcome to nginx!,hhu.edu.cn,Server,https://mywe.hhu.edu.cn
+https://archive.neusoft.edu.cn,219.216.131.81,443,https,tcp,毕业生档案服务管理系统,neusoft.edu.cn,nginx/1.26.3,https://archive.neusoft.edu.cn
+archive.neusoft.edu.cn,219.216.131.81,80,http,tcp,毕业生档案服务管理系统,neusoft.edu.cn,nginx/1.26.3,http://archive.neusoft.edu.cn
+fast-cnki-net-s.web.jlju.edu.cn,139.212.140.6,80,http,tcp,aTrust 2.0,jlju.edu.cn,Sangine,http://fast-cnki-net-s.web.jlju.edu.cn
+https://kyxt.nwnu.edu.cn,210.26.98.214,443,https,tcp,Apache Tomcat/9.0.91,nwnu.edu.cn,none,https://kyxt.nwnu.edu.cn
+https://kyxt.ahstu.edu.cn,112.122.143.198,443,https,tcp,Tomcat,ahstu.edu.cn,,https://kyxt.ahstu.edu.cn
+netself.aku.edu.cn,59.74.48.82,80,http,tcp,Apache Tomcat/9.0.102,aku.edu.cn,none,http://netself.aku.edu.cn
+https://mlib.ldxy.edu.cn,59.76.61.4,443,https,tcp,首页,ldxy.edu.cn,,https://mlib.ldxy.edu.cn
+https://ccic.swjtu.edu.cn,2001:da8:6005:b::6,443,https,tcp,,swjtu.edu.cn,rums/b,https://ccic.swjtu.edu.cn
+cs-service.nju.edu.cn,219.219.115.180,80,http,tcp,南京大学计算机学院-微服务平台,nju.edu.cn,nginx/1.20.1,http://cs-service.nju.edu.cn
+https://oa.gdtzy.edu.cn,116.56.184.77,443,https,tcp,Apache Tomcat,gdtzy.edu.cn,Apache-Coyote/1.1,https://oa.gdtzy.edu.cn
+https://ceec.swjtu.edu.cn,2001:da8:6005:b::7,443,https,tcp,西南交通大学土木工程国家级实验教学示范中心,swjtu.edu.cn,rums/b,https://ceec.swjtu.edu.cn
+jxgltea.hfut.edu.cn:8980,121.251.19.244,8980,http,tcp,Apache Tomcat/8.5.93,hfut.edu.cn,,http://jxgltea.hfut.edu.cn:8980
+https://xgapp.tsvcn.edu.cn,124.130.128.100,443,https,tcp,Apache Tomcat/9.0.38,tsvcn.edu.cn,nginx,https://xgapp.tsvcn.edu.cn
+xssqwxzf.kust.edu.cn,222.197.198.203,80,http,tcp,Apache Tomcat/8.5.81,kust.edu.cn,RUMS,http://xssqwxzf.kust.edu.cn
+https://xssqwxzf.kust.edu.cn,222.197.198.203,443,https,tcp,Apache Tomcat/8.5.81,kust.edu.cn,RUMS,https://xssqwxzf.kust.edu.cn
+https://hospserv.pku.edu.cn,162.105.120.172,443,https,tcp,温馨提示,pku.edu.cn,nginx,https://hospserv.pku.edu.cn
+hospserv.pku.edu.cn,162.105.120.172,80,http,tcp,温馨提示,pku.edu.cn,nginx,http://hospserv.pku.edu.cn
+https://dingxiu.nwupl.edu.cn,202.200.171.69,443,https,tcp,,nwupl.edu.cn,nginx/1.22.1,https://dingxiu.nwupl.edu.cn
+ipass.qust.edu.cn,211.87.159.15,80,http,tcp,青岛科技大学统一身份认证系统,qust.edu.cn,none,http://ipass.qust.edu.cn
+https://hsxnfz.wtbu.edu.cn,111.172.107.52,443,https,tcp,武汉工商学院积木式CDIO污水处理工艺设计虚拟仿真实验教学项目,wtbu.edu.cn,waf/2.0.1,https://hsxnfz.wtbu.edu.cn
+https://cgpt8090.kmmu.edu.cn,220.163.113.41,443,https,tcp,Apache Tomcat/7.0.109,kmmu.edu.cn,none,https://cgpt8090.kmmu.edu.cn
+https://yqglsys.kmmu.edu.cn,220.163.113.41,443,https,tcp,Apache Tomcat/7.0.47,kmmu.edu.cn,none,https://yqglsys.kmmu.edu.cn
+hbzyycg.hbucm.edu.cn,218.197.176.6,80,http,tcp,Apache Tomcat/9.0.75,hbucm.edu.cn,none,http://hbzyycg.hbucm.edu.cn
+https://hbzyycg.hbucm.edu.cn,218.197.176.6,443,https,tcp,Apache Tomcat/9.0.75,hbucm.edu.cn,none,https://hbzyycg.hbucm.edu.cn
+https://keyan.lzjtu.edu.cn,60.165.53.36,443,https,tcp,Tomcat,lzjtu.edu.cn,rums/b,https://keyan.lzjtu.edu.cn
+cwsp.bjfu.edu.cn:8082,202.204.122.70,8082,http,tcp,Apache Tomcat/9.0.73,bjfu.edu.cn,,http://cwsp.bjfu.edu.cn:8082
+https://ykth5.swun.edu.cn,211.83.241.167,443,https,tcp,,swun.edu.cn,******,https://ykth5.swun.edu.cn
+data.irr.zufe.edu.cn,202.101.187.75,80,http,tcp,引导页,zufe.edu.cn,,http://data.irr.zufe.edu.cn
+https://onestop.jxufe.edu.cn:8008,210.35.194.6,8008,https,tcp,Apache Tomcat/7.0.109,jxufe.edu.cn,Apache-Coyote/1.1,https://onestop.jxufe.edu.cn:8008
+tzdz.shxy.edu.cn,36.132.217.20,80,http,tcp,欢迎登录绥化学院听障生单招报名考试系统,shxy.edu.cn,Server,http://tzdz.shxy.edu.cn
+hq.sqgxy.edu.cn:89,117.160.162.18,89,http,tcp,,sqgxy.edu.cn,Apache-Coyote/1.1,http://hq.sqgxy.edu.cn:89
+keyan.lzjtu.edu.cn,60.165.53.36,80,http,tcp,Tomcat,lzjtu.edu.cn,rums/b,http://keyan.lzjtu.edu.cn
+https://cwcsp.snnu.edu.cn,219.244.70.35,443,https,tcp,Apache Tomcat/9.0.82,snnu.edu.cn,,https://cwcsp.snnu.edu.cn
+gkd.edu.cn:8082,42.247.44.130,8082,http,tcp,Apache Tomcat/7.0.93,gkd.edu.cn,Apache-Coyote/1.1,http://gkd.edu.cn:8082
+msign.hyit.edu.cn:8080,210.29.152.87,8080,http,tcp,Apache Tomcat/9.0.1,hyit.edu.cn,,http://msign.hyit.edu.cn:8080
+zxsp.cumt.edu.cn:8080,219.219.48.201,8080,http,tcp,Apache Tomcat/9.0.102,cumt.edu.cn,,http://zxsp.cumt.edu.cn:8080
+cwbgpt.hzau.edu.cn:8080,211.69.134.1,8080,http,tcp,Apache Tomcat/9.0.31,hzau.edu.cn,,http://cwbgpt.hzau.edu.cn:8080
+xhjw.cumt.edu.cn,219.219.54.226,80,http,tcp,徐海学院教务管理系统,cumt.edu.cn,,http://xhjw.cumt.edu.cn
+https://xinhua.nxu.edu.cn,120.253.36.33,443,https,tcp,宁夏大学-新华学院,nxu.edu.cn,nginx,https://xinhua.nxu.edu.cn
+tqzs.jsmc.edu.cn,221.231.108.160,80,http,tcp,Apache Tomcat/10.0.17,jsmc.edu.cn,,http://tqzs.jsmc.edu.cn
+xlzx.csmu.edu.cn:18080,58.20.60.36,18080,http,tcp,Apache Tomcat/7.0.64,csmu.edu.cn,*****************,http://xlzx.csmu.edu.cn:18080
+jxjyzx.qlmu.edu.cn,27.195.158.227,80,http,tcp,Apache Tomcat,qlmu.edu.cn,nginx,http://jxjyzx.qlmu.edu.cn
+https://jxjyzx.qlmu.edu.cn,27.195.158.227,443,https,tcp,Apache Tomcat,qlmu.edu.cn,nginx,https://jxjyzx.qlmu.edu.cn
+https://museum.hhu.edu.cn,202.119.112.60,443,https,tcp,,hhu.edu.cn,,https://museum.hhu.edu.cn
+yktyd.wbu.edu.cn:443,183.95.36.17,443,http,tcp,Apache Tomcat/9.0.88,wbu.edu.cn,,http://yktyd.wbu.edu.cn:443
+cwsp.jxufe.edu.cn:8080,210.35.194.13,8080,http,tcp,Apache Tomcat/9.0.31,jxufe.edu.cn,,http://cwsp.jxufe.edu.cn:8080
+https://s.hyit.edu.cn,210.29.152.22,443,https,tcp,Apache Tomcat/8.5.100,hyit.edu.cn,nginx/1.23.3,https://s.hyit.edu.cn
+arch1.hunnu.edu.cn,202.197.120.88,80,http,tcp,用户登录,hunnu.edu.cn,,http://arch1.hunnu.edu.cn
+https://qa.jiangnan.edu.cn,202.195.154.36,443,https,tcp,,jiangnan.edu.cn,none,https://qa.jiangnan.edu.cn
+qa.jiangnan.edu.cn,202.195.154.36,80,http,tcp,系统登录,jiangnan.edu.cn,none,http://qa.jiangnan.edu.cn
+jstl.njrts.edu.cn,210.28.168.21,80,http,tcp,Apache Tomcat - Error report,njrts.edu.cn,none,http://jstl.njrts.edu.cn
+xt.da.cqut.edu.cn,202.202.157.100,80,http,tcp,Apache Tomcat,cqut.edu.cn,rums/b,http://xt.da.cqut.edu.cn
+www.fair.ecnu.edu.cn,202.120.92.20,80,http,tcp,华东师范大学社会与情感能力研究中心,ecnu.edu.cn,nginx/1.12.2,http://www.fair.ecnu.edu.cn
+https://seg.nju.edu.cn,202.119.32.33,443,https,tcp,SEG,nju.edu.cn,,https://seg.nju.edu.cn
+https://donate.sysu.edu.cn,202.116.64.125,443,https,tcp,Apache Tomcat/6.0.20 - Error report,sysu.edu.cn,,https://donate.sysu.edu.cn
+https://yxt.hzpt.edu.cn,113.142.69.133,443,https,tcp,Apache Tomcat/9.0.68,hzpt.edu.cn,,https://yxt.hzpt.edu.cn
+https://arch1.hunnu.edu.cn,202.197.120.88,443,https,tcp,用户登录,hunnu.edu.cn,,https://arch1.hunnu.edu.cn
+yxt.hzpt.edu.cn,183.47.237.5,80,http,tcp,Apache Tomcat/9.0.68,hzpt.edu.cn,,http://yxt.hzpt.edu.cn
+https://yjszs.hpu.edu.cn,218.196.244.135,443,https,tcp,Apache Tomcat/9.0.102,hpu.edu.cn,,https://yjszs.hpu.edu.cn
+gjxyexam.sdfmu.edu.cn,121.249.143.44,80,http,tcp,欢迎使用山东第一医科大学网络题库与考试系统,sdfmu.edu.cn,Apache-Coyote/1.1,http://gjxyexam.sdfmu.edu.cn
+https://i-report.cuhk.edu.cn,116.31.95.13,443,https,tcp,Apache Tomcat/9.0.89,cuhk.edu.cn,,https://i-report.cuhk.edu.cn
+www.tfhk.edu.cn:8080,112.18.236.124,8080,http,tcp,Apache Tomcat/x,tfhk.edu.cn,,http://www.tfhk.edu.cn:8080
+zfbm.nuaa.edu.cn,218.94.136.180,80,http,tcp,Apache Tomcat/9.0.56,nuaa.edu.cn,******,http://zfbm.nuaa.edu.cn
+i-report.cuhk.edu.cn,116.31.95.13,80,http,tcp,Apache Tomcat/9.0.89,cuhk.edu.cn,,http://i-report.cuhk.edu.cn
+https://zwhz.nuaa.edu.cn,218.94.136.180,443,https,tcp,Apache Tomcat/9.0.56,nuaa.edu.cn,none,https://zwhz.nuaa.edu.cn
+paytc.sisu.edu.cn:8080,202.202.192.28,8080,http,tcp,Apache Tomcat/9.0.62,sisu.edu.cn,,http://paytc.sisu.edu.cn:8080
+yyxqsg.ayxy.edu.cn,221.176.148.168,80,http,tcp,Apache Tomcat/8.5.56,ayxy.edu.cn,rump/c,http://yyxqsg.ayxy.edu.cn
+zhdj.hnys.edu.cn,42.247.23.40,80,http,tcp,网页无法访问,hnys.edu.cn,unknown,http://zhdj.hnys.edu.cn
+https://bdyzb.cugb.edu.cn,202.204.101.138,443,https,tcp,Apache Tomcat/8.5.100,cugb.edu.cn,none,https://bdyzb.cugb.edu.cn
+https://sso-lib.ynu.edu.cn:8083,113.55.8.9,8083,https,tcp,Apache Tomcat/8.0.32 - Error report,ynu.edu.cn,Apache-Coyote/1.1,https://sso-lib.ynu.edu.cn:8083
+https://ysjxh.whit.edu.cn,218.22.75.43,443,https,tcp,Apache Tomcat/9.0.80,whit.edu.cn,nginx/1.24.0,https://ysjxh.whit.edu.cn
+https://dorm.haou.edu.cn,211.84.24.24,443,https,tcp,tomcat启动成功,haou.edu.cn,,https://dorm.haou.edu.cn
+dorm.haou.edu.cn,211.84.24.24,80,http,tcp,tomcat启动成功,haou.edu.cn,,http://dorm.haou.edu.cn
+https://xljkpt.zmu.edu.cn,211.83.163.222,443,https,tcp,,zmu.edu.cn,,https://xljkpt.zmu.edu.cn
+opac.zfc.edu.cn,61.164.56.200,80,http,tcp,Apache Tomcat/9.0.46,zfc.edu.cn,none,http://opac.zfc.edu.cn
+https://opac.zfc.edu.cn,61.164.56.200,443,https,tcp,Apache Tomcat/9.0.46,zfc.edu.cn,none,https://opac.zfc.edu.cn
+cwdzsp.whvcse.edu.cn:8080,125.221.38.230,8080,http,tcp,Apache Tomcat/9.0.73,whvcse.edu.cn,,http://cwdzsp.whvcse.edu.cn:8080
+res.whsu.edu.cn:8080,218.197.66.91,8080,http,tcp,Apache Tomcat/8.5.82,whsu.edu.cn,,http://res.whsu.edu.cn:8080
+authserver.whsu.edu.cn:8080,218.197.66.91,8080,http,tcp,Apache Tomcat/8.5.82,whsu.edu.cn,,http://authserver.whsu.edu.cn:8080
+lib.gzky.edu.cn:8888,58.16.16.91,8888,http,tcp,Apache Tomcat/8.5.71,gzky.edu.cn,,http://lib.gzky.edu.cn:8888
+https://pay.hytc.edu.cn,202.195.124.58,443,https,tcp,淮阴师范学院缴费平台,hytc.edu.cn,Web Server/x.x.x,https://pay.hytc.edu.cn
+https://jccwq.sau.edu.cn,202.199.26.245,443,https,tcp,HTTP Status 404 – 未找到,sau.edu.cn,,https://jccwq.sau.edu.cn
+qywx.njxzc.edu.cn:9000,210.29.144.120,9000,http,tcp,Apache Tomcat/8.5.89,njxzc.edu.cn,,http://qywx.njxzc.edu.cn:9000
+gis.lzu.edu.cn,202.201.0.72,80,http,tcp,Apache Tomcat/9.0.37,lzu.edu.cn,,http://gis.lzu.edu.cn
+https://jjh.jxufe.edu.cn,210.35.194.20,443,https,tcp,教育基金捐赠管理系统,jxufe.edu.cn,Apache-Coyote/1.1,https://jjh.jxufe.edu.cn
+https://sbpay.sicfl.edu.cn,219.220.176.116,443,https,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,https://sbpay.sicfl.edu.cn
+sbpay.sicfl.edu.cn,219.220.176.116,80,http,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,http://sbpay.sicfl.edu.cn
+workvx.cpu.edu.cn,222.190.112.232,80,http,tcp,Apache Tomcat/8.5.82,cpu.edu.cn,,http://workvx.cpu.edu.cn
+https://opac-lib.ynu.edu.cn:9191,113.55.8.10,9191,https,tcp,Apache Tomcat/7.0.109,ynu.edu.cn,Apache-Coyote/1.1,https://opac-lib.ynu.edu.cn:9191
+kzgl.tjarts.edu.cn,202.113.216.19,80,http,tcp,302 Found,tjarts.edu.cn,openresty,http://kzgl.tjarts.edu.cn
+zbpt.njust.edu.cn,202.119.80.178,80,http,tcp," 南京理工大学招投标办公室 - 首页",njust.edu.cn,none,http://zbpt.njust.edu.cn
+https://zbpt.njust.edu.cn,202.119.80.178,443,https,tcp," 南京理工大学招投标办公室 - 首页",njust.edu.cn,none,https://zbpt.njust.edu.cn
+https://ca.xaiu.edu.cn:8000,61.185.201.6,8000,https,tcp,Apache Tomcat/8.5.100,xaiu.edu.cn,,https://ca.xaiu.edu.cn:8000
+https://uss.glut.edu.cn,202.193.95.13,443,https,tcp,Dr.COM App Server,glut.edu.cn,,https://uss.glut.edu.cn
+xlcs.tctc.edu.cn,42.247.31.38,80,http,tcp,Apache Tomcat/8.5.79,tctc.edu.cn,,http://xlcs.tctc.edu.cn
+clpt.ldu.edu.cn,202.194.48.2,80,http,tcp,Apache Tomcat/9.0.95,ldu.edu.cn,none,http://clpt.ldu.edu.cn
+uss.glut.edu.cn,202.193.95.13,80,http,tcp,Dr.COM App Server,glut.edu.cn,,http://uss.glut.edu.cn
+https://yjszs.bift.edu.cn,211.71.96.10,443,https,tcp,Apache Tomcat/9.0.102,bift.edu.cn,Server,https://yjszs.bift.edu.cn
+irb.med.tsinghua.edu.cn,2402:f000:1:402:101:6:15:70,80,http,tcp,清华大学科技伦理委员会医学委员会,tsinghua.edu.cn,,http://irb.med.tsinghua.edu.cn
+jxjy.hkc.edu.cn:8182,202.100.206.153,8182,http,tcp,,hkc.edu.cn,Apache-Coyote/1.1,http://jxjy.hkc.edu.cn:8182
+rszp.wnu.edu.cn,218.195.46.47,80,http,tcp,Apache Tomcat/7.0.77,wnu.edu.cn,Apache-Coyote/1.1,http://rszp.wnu.edu.cn
+https://dl.htc.edu.cn,60.174.198.76,443,https,tcp,,htc.edu.cn,,https://dl.htc.edu.cn
+dl.htc.edu.cn,60.174.198.76,80,http,tcp,,htc.edu.cn,,http://dl.htc.edu.cn
+xlzx.hnfnu.edu.cn,211.69.72.23,80,http,tcp,心理平台,hnfnu.edu.cn,,http://xlzx.hnfnu.edu.cn
+sjsb.nudt.edu.cn,202.197.9.67,80,http,tcp,Apache Tomcat/10.1.39,nudt.edu.cn,,http://sjsb.nudt.edu.cn
+https://www2.whou.edu.cn,125.221.38.222,443,https,tcp,Apache Tomcat/8.5.100,whou.edu.cn,,https://www2.whou.edu.cn
+https://clpt.ldu.edu.cn,202.194.48.2,443,https,tcp,Apache Tomcat/9.0.95,ldu.edu.cn,none,https://clpt.ldu.edu.cn
+yjszs.bift.edu.cn,211.71.96.10,80,http,tcp,Apache Tomcat/9.0.102,bift.edu.cn,Server,http://yjszs.bift.edu.cn
+https://sgjxgl.scvtc.edu.cn,125.67.64.235,443,https,tcp,Apache Tomcat/8.5.60,scvtc.edu.cn,rump/d,https://sgjxgl.scvtc.edu.cn
+jxjy.hkc.edu.cn:8087,202.100.206.153,8087,http,tcp,Apache Tomcat,hkc.edu.cn,Apache-Coyote/1.1,http://jxjy.hkc.edu.cn:8087
+https://zccg.jxutcm.edu.cn,117.40.29.89,443,https,tcp,Apache Tomcat/8.5.95,jxutcm.edu.cn,none,https://zccg.jxutcm.edu.cn
+zccg.jxutcm.edu.cn,117.40.29.89,80,http,tcp,Apache Tomcat/8.5.95,jxutcm.edu.cn,none,http://zccg.jxutcm.edu.cn
+oa.wbws.edu.cn:7187,60.171.205.178,7187,http,tcp,Apache Tomcat/8.5.61,wbws.edu.cn,,http://oa.wbws.edu.cn:7187
+https://irb.med.tsinghua.edu.cn,2402:f000:1:402:101:6:15:70,443,https,tcp,清华大学科技伦理委员会医学委员会,tsinghua.edu.cn,,https://irb.med.tsinghua.edu.cn
+ihome.ustb.edu.cn,115.25.60.85,80,http,tcp,登录,ustb.edu.cn,,http://ihome.ustb.edu.cn
+rs.lnvut.edu.cn:8009,60.21.207.250,8009,http,tcp,Apache Tomcat/8.5.87,lnvut.edu.cn,,http://rs.lnvut.edu.cn:8009
+mta.jlnu.edu.cn,218.27.6.106,80,http,tcp,Apache Tomcat/8.0.47,jlnu.edu.cn,YxlinkWAF,http://mta.jlnu.edu.cn
+spxt.cau.edu.cn:8080,211.82.95.32,8080,http,tcp,,cau.edu.cn,,http://spxt.cau.edu.cn:8080
+cwwssp.whsu.edu.cn:8080,218.197.71.248,8080,http,tcp,Apache Tomcat/9.0.62,whsu.edu.cn,,http://cwwssp.whsu.edu.cn:8080
+xlzx.shzu.edu.cn:8080,202.201.165.155,8080,http,tcp,Apache Tomcat,shzu.edu.cn,,http://xlzx.shzu.edu.cn:8080
+zjcinfo.jit.edu.cn,221.226.37.164,80,http,tcp,Apache Tomcat/9.0.62,jit.edu.cn,rums/b,http://zjcinfo.jit.edu.cn
+lib.gzky.edu.cn:8885,58.16.16.91,8885,http,tcp,Apache Tomcat/8.5.71,gzky.edu.cn,,http://lib.gzky.edu.cn:8885
+hqbx.tjus.edu.cn,211.68.236.117,80,http,tcp,Apache Tomcat/7.0.92,tjus.edu.cn,nginx/1.24.0,http://hqbx.tjus.edu.cn
+mlib.ldxk.edu.cn,115.227.57.34,80,http,tcp,Apache Tomcat/8.5.68,ldxk.edu.cn,,http://mlib.ldxk.edu.cn
+https://mlib.ldxk.edu.cn,115.227.57.34,443,https,tcp,Apache Tomcat/8.5.68,ldxk.edu.cn,,https://mlib.ldxk.edu.cn
+wssp.fzu.edu.cn:8080,59.77.226.29,8080,http,tcp,福州大学,fzu.edu.cn,,http://wssp.fzu.edu.cn:8080
+oaapp.ahtcm.edu.cn,210.45.16.63,80,http,tcp,Apache Tomcat/8.5.90,ahtcm.edu.cn,nginx/1.21.0,http://oaapp.ahtcm.edu.cn
+https://epay.ouc.edu.cn:8443,222.195.158.4,8443,https,tcp,Apache Tomcat,ouc.edu.cn,Apache-Coyote/1.1,https://epay.ouc.edu.cn:8443
+https://zpcj.xafy.edu.cn,59.75.8.3,443,https,tcp,Apache Tomcat/9.0.98,xafy.edu.cn,openresty,https://zpcj.xafy.edu.cn
+kywk.hmc.edu.cn,59.79.136.128,80,http,tcp,Apache Tomcat/7.0.103,hmc.edu.cn,Apache-Coyote/1.1,http://kywk.hmc.edu.cn
+rs.cbyz.edu.cn:8090,125.64.49.15,8090,http,tcp,Apache Tomcat/8.5.72,cbyz.edu.cn,,http://rs.cbyz.edu.cn:8090
+https://wf.brs.edu.cn,58.200.85.22,443,https,tcp,王府智慧校园平台		,brs.edu.cn,unknown,https://wf.brs.edu.cn
+wf.brs.edu.cn,58.200.85.22,80,http,tcp,王府智慧校园平台		,brs.edu.cn,unknown,http://wf.brs.edu.cn
+wfw.neuq.edu.cn,202.206.20.200,80,http,tcp,Welcome to nginx!,neuq.edu.cn,wisedu,http://wfw.neuq.edu.cn
+facecheck.cusx.edu.cn:8080,222.199.5.63,8080,http,tcp,Apache Tomcat/8.5.84,cusx.edu.cn,,http://facecheck.cusx.edu.cn:8080
+lib-sjzs.cidp.edu.cn,211.71.235.191,80,http,tcp,Apache Tomcat/9.0.0.M26,cidp.edu.cn,,http://lib-sjzs.cidp.edu.cn
+fast-cnki-net-s.webvpn.zcse.edu.cn:8118,42.247.37.249,8118,http,tcp,aTrust 2.0,zcse.edu.cn,Sangine,http://fast-cnki-net-s.webvpn.zcse.edu.cn:8118
+jcc5.fafu.edu.cn:8082,210.34.84.220,8082,http,tcp,Apache Tomcat/9.0.98,fafu.edu.cn,,http://jcc5.fafu.edu.cn:8082
+https://libifs.ahcme.edu.cn,218.22.71.124,443,https,tcp,跨库检索系统,ahcme.edu.cn,openresty,https://libifs.ahcme.edu.cn
+bitools.qdnpt.edu.cn,119.1.195.134,80,http,tcp,Apache Tomcat/8.5.84,qdnpt.edu.cn,wisedu,http://bitools.qdnpt.edu.cn
+pdfweb.sust.edu.cn,219.144.196.103,80,http,tcp,HTTP状态 404 - 未找到,sust.edu.cn,,http://pdfweb.sust.edu.cn
+idp.hwec.edu.cn,61.163.246.4,80,http,tcp,Apache Tomcat/8.5.50,hwec.edu.cn,nginx,http://idp.hwec.edu.cn
+https://pdfweb.sust.edu.cn,124.114.203.166,443,https,tcp,HTTP状态 404 - 未找到,sust.edu.cn,,https://pdfweb.sust.edu.cn
+https://idp.hwec.edu.cn,61.163.246.4,443,https,tcp,Apache Tomcat/8.5.50,hwec.edu.cn,nginx,https://idp.hwec.edu.cn
+https://hqcw.guet.edu.cn,202.193.64.75,443,https,tcp,Apache Tomcat/9.0.19,guet.edu.cn,,https://hqcw.guet.edu.cn
+hr.bzuu.edu.cn:8081,211.141.201.153,8081,http,tcp,Apache Tomcat/7.0.107,bzuu.edu.cn,Apache-Coyote/1.1,http://hr.bzuu.edu.cn:8081
+oa.jmpec.edu.cn:60000,183.236.253.35,60000,http,tcp,Apache Tomcat/8.5.41,jmpec.edu.cn,,http://oa.jmpec.edu.cn:60000
+stumail.nuist.edu.cn,202.195.224.68,80,http,tcp,Apache Tomcat/7.0.109,nuist.edu.cn,Apache-Coyote/1.1,http://stumail.nuist.edu.cn
+https://cwsp.xcc.edu.cn,121.48.64.204,443,https,tcp,Apache Tomcat/9.0.98,xcc.edu.cn,nginx,https://cwsp.xcc.edu.cn
+cwsp.xcc.edu.cn,223.85.224.204,80,http,tcp,Apache Tomcat/9.0.98,xcc.edu.cn,nginx,http://cwsp.xcc.edu.cn
+https://sub4.dlust.edu.cn,125.222.146.106,443,https,tcp,无标题文档,dlust.edu.cn,,https://sub4.dlust.edu.cn
+sub4.dlust.edu.cn,125.222.146.106,80,http,tcp,无标题文档,dlust.edu.cn,,http://sub4.dlust.edu.cn
+cwsp.cqjzc.edu.cn,61.128.158.235,80,http,tcp,Apache Tomcat/9.0.87,cqjzc.edu.cn,rums/b,http://cwsp.cqjzc.edu.cn
+https://idp.wahvc.edu.cn,60.173.165.14,443,https,tcp,Apache Tomcat/9.0.39,wahvc.edu.cn,nginx,https://idp.wahvc.edu.cn
+https://cwsp.nynu.edu.cn,211.84.144.7,443,https,tcp,Apache Tomcat/9.0.87,nynu.edu.cn,,https://cwsp.nynu.edu.cn
+cgzb.hnust.edu.cn,218.75.230.28,80,http,tcp,Apache Tomcat/7.0.100,hnust.edu.cn,,http://cgzb.hnust.edu.cn
+hqcw.guet.edu.cn,202.193.64.75,80,http,tcp,Apache Tomcat/9.0.19,guet.edu.cn,,http://hqcw.guet.edu.cn
+cwcsp.xzmu.edu.cn:8090,120.95.80.135,8090,http,tcp,Apache Tomcat/9.0.62,xzmu.edu.cn,,http://cwcsp.xzmu.edu.cn:8090
+cwsp.nynu.edu.cn,211.84.144.7,80,http,tcp,Apache Tomcat/9.0.87,nynu.edu.cn,,http://cwsp.nynu.edu.cn
+https://cwsp.cqjzc.edu.cn,61.128.158.235,443,https,tcp,Apache Tomcat/9.0.87,cqjzc.edu.cn,rums/b,https://cwsp.cqjzc.edu.cn
+idp.wahvc.edu.cn,60.173.165.14,80,http,tcp,Apache Tomcat/9.0.39,wahvc.edu.cn,nginx,http://idp.wahvc.edu.cn
+opac.hutb.edu.cn:8088,218.76.42.90,8088,http,tcp,Apache Tomcat/8.5.99,hutb.edu.cn,,http://opac.hutb.edu.cn:8088
+https://stumail.nuist.edu.cn,202.195.224.68,443,https,tcp,Apache Tomcat/7.0.109,nuist.edu.cn,Apache-Coyote/1.1,https://stumail.nuist.edu.cn
+https://sxglxt.wmu.edu.cn,61.153.27.170,443,https,tcp,,wmu.edu.cn,none,https://sxglxt.wmu.edu.cn
+idp.wmu.edu.cn,61.153.27.170,80,http,tcp,欢迎大家使用CARSI服务,wmu.edu.cn,none,http://idp.wmu.edu.cn
+https://idp.wmu.edu.cn,60.12.35.39,443,https,tcp,欢迎大家使用CARSI服务,wmu.edu.cn,none,https://idp.wmu.edu.cn
+txmail.nuist.edu.cn,202.195.224.61,80,http,tcp,Apache Tomcat/7.0.109,nuist.edu.cn,rums/b,http://txmail.nuist.edu.cn
+https://media-service.ccnu.edu.cn,183.168.162.5,443,https,tcp,回访母校 助你升华,ccnu.edu.cn,,https://media-service.ccnu.edu.cn
+cwjf.jnmc.edu.cn:8080,210.44.16.55,8080,http,tcp,Apache Tomcat/9.0.87,jnmc.edu.cn,,http://cwjf.jnmc.edu.cn:8080
+my.lib.swjtu.edu.cn,202.115.72.102,80,http,tcp,我的书斋,swjtu.edu.cn,Apache-Coyote/1.1,http://my.lib.swjtu.edu.cn
+ish.njmu.edu.cn,202.195.186.4,80,http,tcp,Apache Tomcat/9.0.65,njmu.edu.cn,nginx/1.16.1,http://ish.njmu.edu.cn
+https://dpkb.hebuee.edu.cn,183.196.195.75,443,https,tcp,Welcome to nginx!,hebuee.edu.cn,none,https://dpkb.hebuee.edu.cn
+slib.qcuwh.edu.cn:1025,120.202.180.93,1025,http,tcp,Apache Tomcat/8.5.56,qcuwh.edu.cn,,http://slib.qcuwh.edu.cn:1025
+https://hqsh.hdu.edu.cn,218.75.123.164,443,https,tcp,Apache Tomcat/8.5.88,hdu.edu.cn,nginx/1.251,https://hqsh.hdu.edu.cn
+shealth.whu.edu.cn,202.114.96.219,80,http,tcp,Apache Tomcat/8.0.0,whu.edu.cn,none,http://shealth.whu.edu.cn
+paperright.lib.whu.edu.cn,202.114.65.30,80,http,tcp,Apache Tomcat/9.0.76,whu.edu.cn,xxxxx,http://paperright.lib.whu.edu.cn
+archive.nstl.gov.cn.http.hebutlib.proxy.hebut.edu.cn,202.113.113.30,80,http,tcp,302 Found,hebut.edu.cn,,http://archive.nstl.gov.cn.http.hebutlib.proxy.hebut.edu.cn
+https://uap.xttc.edu.cn,123.183.169.54,443,https,tcp,Apache Tomcat/7.0.52 - Error report,xttc.edu.cn,Apache-Coyote/1.1,https://uap.xttc.edu.cn
+https://freshman.dgut.edu.cn,27.39.220.101,443,https,tcp,Apache Tomcat/9.0.76,dgut.edu.cn,Apache,https://freshman.dgut.edu.cn
+freshman.dgut.edu.cn,27.39.220.101,80,http,tcp,Apache Tomcat/9.0.76,dgut.edu.cn,Apache,http://freshman.dgut.edu.cn
+slib.qcuwh.edu.cn,120.202.180.93,80,http,tcp,Apache Tomcat/8.5.56,qcuwh.edu.cn,,http://slib.qcuwh.edu.cn
+https://www.expcenter.chemeng.tsinghua.edu.cn,101.6.15.70,443,https,tcp,清华大学化学工程系化工实验教学中心,tsinghua.edu.cn,,https://www.expcenter.chemeng.tsinghua.edu.cn
+www.expcenter.chemeng.tsinghua.edu.cn,101.6.15.70,80,http,tcp,清华大学化学工程系化工实验教学中心,tsinghua.edu.cn,,http://www.expcenter.chemeng.tsinghua.edu.cn
+jjhglxt.buaa.edu.cn,106.39.41.176,80,http,tcp,教育基金捐赠管理系统,buaa.edu.cn,***,http://jjhglxt.buaa.edu.cn
+clgl.jxufe.edu.cn:8080,59.53.216.156,8080,http,tcp,Apache Tomcat/8.5.88,jxufe.edu.cn,,http://clgl.jxufe.edu.cn:8080
+fy.gdcp.edu.cn:8081,110.64.96.143,8081,http,tcp,Apache Tomcat/8.0.52,gdcp.edu.cn,Apache-Coyote/1.1,http://fy.gdcp.edu.cn:8081
+cwsp.nwsuaf.edu.cn,210.27.83.20,80,http,tcp,Apache Tomcat/9.0.87,nwsuaf.edu.cn,openresty,http://cwsp.nwsuaf.edu.cn
+cgyy.cumtb.edu.cn:8080,202.112.209.53,8080,http,tcp,Apache Tomcat/9.0.35,cumtb.edu.cn,,http://cgyy.cumtb.edu.cn:8080
+https://jjxt.nwpu.edu.cn,202.117.80.233,443,https,tcp,,nwpu.edu.cn,******,https://jjxt.nwpu.edu.cn
+jjxt.nwpu.edu.cn,202.117.80.223,80,http,tcp,,nwpu.edu.cn,******,http://jjxt.nwpu.edu.cn
+cwcwx.hbue.edu.cn:8099,218.197.82.41,8099,http,tcp,Apache Tomcat/9.0.87,hbue.edu.cn,,http://cwcwx.hbue.edu.cn:8099
+https://lr.nanshan.edu.cn,219.218.55.20,443,https,tcp,Apache Tomcat/9.0.86,nanshan.edu.cn,,https://lr.nanshan.edu.cn
+https://xyhglxt.hzxy.edu.cn,222.203.60.51,443,https,tcp,Apache Tomcat/9.0.68,hzxy.edu.cn,,https://xyhglxt.hzxy.edu.cn
+lib2.hblgxy.edu.cn,42.247.18.227,80,http,tcp,Apache Tomcat/8.5.9,hblgxy.edu.cn,,http://lib2.hblgxy.edu.cn
+jccsp.chd.edu.cn:8080,202.117.74.142,8080,http,tcp,Apache Tomcat/9.0.31,chd.edu.cn,,http://jccsp.chd.edu.cn:8080
+shuidian.cdmc.edu.cn:8080,211.81.225.5,8080,http,tcp,Apache Tomcat/7.0.82,cdmc.edu.cn,Apache-Coyote/1.1,http://shuidian.cdmc.edu.cn:8080
+cwsp.cdutcm.edu.cn:8082,210.41.219.2,8082,http,tcp,Apache Tomcat/9.0.73,cdutcm.edu.cn,,http://cwsp.cdutcm.edu.cn:8082
+calis.hbuas.edu.cn:8080,111.177.117.80,8080,http,tcp,Apache Tomcat/9.0.31,hbuas.edu.cn,,http://calis.hbuas.edu.cn:8080
+https://lr.nanshan.edu.cn,2001:250:582d:6001::20,443,https,tcp,Apache Tomcat/9.0.86,nanshan.edu.cn,,https://lr.nanshan.edu.cn
+zc.nit.edu.cn:8081,117.40.44.13,8081,http,tcp,Apache Tomcat/9.0.78,nit.edu.cn,Server Version 11.0,http://zc.nit.edu.cn:8081
+jd710055.xauat.edu.cn,202.200.144.229,80,http,tcp,Apache Tomcat/8.5.12,xauat.edu.cn,,http://jd710055.xauat.edu.cn
+ht.dlust.edu.cn:8081,59.46.212.74,8081,http,tcp,Apache Tomcat/8.0.52,dlust.edu.cn,Apache-Coyote/1.1,http://ht.dlust.edu.cn:8081
+us.wjut.edu.cn,121.251.88.9,80,http,tcp,Apache Tomcat,wjut.edu.cn,YxlinkWAF,http://us.wjut.edu.cn
+https://zcxt.cqtbi.edu.cn:8080,221.7.75.18,8080,https,tcp,Apache Tomcat/7.0.68,cqtbi.edu.cn,Apache-Coyote/1.1,https://zcxt.cqtbi.edu.cn:8080
+xszz.suzhou.edu.cn:8080,222.92.102.160,8080,http,tcp,Apache Tomcat/7.0.96,suzhou.edu.cn,Apache-Coyote/1.1,http://xszz.suzhou.edu.cn:8080
+https://zhjw.xmmc.edu.cn,59.77.112.184,443,https,tcp,系统关闭-暂停访问,xmmc.edu.cn,,https://zhjw.xmmc.edu.cn
+https://xyk2.gpnu.edu.cn,222.16.31.199,443,https,tcp,Apache Tomcat/9.0.89,gpnu.edu.cn,,https://xyk2.gpnu.edu.cn
+epay.ouc.edu.cn:8080,222.195.158.4,8080,http,tcp,Apache Tomcat,ouc.edu.cn,Apache-Coyote/1.1,http://epay.ouc.edu.cn:8080
+skdk.gxtcmu.edu.cn,210.36.98.121,80,http,tcp,Apache Tomcat/7.0.100,gxtcmu.edu.cn,Server,http://skdk.gxtcmu.edu.cn
+https://vss-pay.zust.edu.cn,122.225.231.13,443,https,tcp,HTTP Status 404 – Not Found,zust.edu.cn,openresty,https://vss-pay.zust.edu.cn
+file.bzuu.edu.cn:8081,211.141.201.156,8081,http,tcp,Apache Tomcat/7.0.107,bzuu.edu.cn,Apache-Coyote/1.1,http://file.bzuu.edu.cn:8081
+oafile.jju.edu.cn:8181,58.17.121.163,8181,http,tcp,Apache Tomcat/7.0.77,jju.edu.cn,Apache-Coyote/1.1,http://oafile.jju.edu.cn:8181
+ydtsg.sxpi.edu.cn:9003,123.138.199.31,9003,http,tcp,Apache Tomcat/8.5.41,sxpi.edu.cn,,http://ydtsg.sxpi.edu.cn:9003
+xkgc.hxu.edu.cn,219.246.96.63,80,http,tcp,Apache Tomcat/8.0.20,hxu.edu.cn,Apache-Coyote/1.1,http://xkgc.hxu.edu.cn
+dkjf.cqjy.edu.cn,222.179.151.90,80,http,tcp,Apache Tomcat/8.5.28,cqjy.edu.cn,,http://dkjf.cqjy.edu.cn
+visappservice.shanghaitech.edu.cn:8020,119.78.254.143,8020,http,tcp,Apache Tomcat/8.5.57,shanghaitech.edu.cn,,http://visappservice.shanghaitech.edu.cn:8020
+rzzcyh.crs.jsj.edu.cn:8081,219.232.96.187,8081,http,tcp,Apache Tomcat/8.0.53,jsj.edu.cn,Apache-Coyote/1.1,http://rzzcyh.crs.jsj.edu.cn:8081
+https://ky.stbu.edu.cn,119.6.30.68,443,https,tcp,Apache Tomcat/7.0.105,stbu.edu.cn,nginx,https://ky.stbu.edu.cn
+ydtsg.sxpi.edu.cn:9001,123.138.199.31,9001,http,tcp,Apache Tomcat/8.5.41,sxpi.edu.cn,,http://ydtsg.sxpi.edu.cn:9001
+pay.ccucm.edu.cn,125.223.201.31,80,http,tcp,Apache Tomcat/9.0.72,ccucm.edu.cn,,http://pay.ccucm.edu.cn
+oamobil.dlust.edu.cn:8081,59.46.212.74,8081,http,tcp,Apache Tomcat/8.0.52,dlust.edu.cn,Apache-Coyote/1.1,http://oamobil.dlust.edu.cn:8081
+yxxt.pyvtc.edu.cn:8091,218.28.84.53,8091,http,tcp,Apache Tomcat/8.5.56,pyvtc.edu.cn,,http://yxxt.pyvtc.edu.cn:8091
+yx.sicfl.edu.cn:6001,219.220.176.125,6001,http,tcp,Apache Tomcat,sicfl.edu.cn,Apache-Coyote/1.1,http://yx.sicfl.edu.cn:6001
+mail2.massz.edu.cn,61.191.176.118,80,http,tcp,Apache Tomcat/7.0.82,massz.edu.cn,Apache-Coyote/1.1,http://mail2.massz.edu.cn
+weixin.ouc.edu.cn:8080,211.64.142.133,8080,http,tcp,Apache Tomcat/7.0.65,ouc.edu.cn,Apache-Coyote/1.1,http://weixin.ouc.edu.cn:8080
+ybhqcz.fjny.edu.cn,139.224.237.150,80,http,tcp,Apache Tomcat/8.5.81,fjny.edu.cn,,http://ybhqcz.fjny.edu.cn
+ky.stbu.edu.cn,119.6.30.68,80,http,tcp,Apache Tomcat/7.0.105,stbu.edu.cn,nginx,http://ky.stbu.edu.cn
+ghzf.shufe-zj.edu.cn,122.227.53.243,80,http,tcp,Apache Tomcat/8.5.100,shufe-zj.edu.cn,none,http://ghzf.shufe-zj.edu.cn
+vss-pay.zust.edu.cn,122.225.231.13,80,http,tcp,HTTP Status 404 – Not Found,zust.edu.cn,openresty,http://vss-pay.zust.edu.cn
+xmgl.sicfl.edu.cn:6001,219.220.176.125,6001,http,tcp,Apache Tomcat,sicfl.edu.cn,Apache-Coyote/1.1,http://xmgl.sicfl.edu.cn:6001
+zg.xjnzy.edu.cn:81,117.191.53.208,81,http,tcp,Apache Tomcat/8.5.99,xjnzy.edu.cn,,http://zg.xjnzy.edu.cn:81
+rlsb.pyvtc.edu.cn:8091,218.28.84.53,8091,http,tcp,Apache Tomcat/8.5.56,pyvtc.edu.cn,,http://rlsb.pyvtc.edu.cn:8091
+rzzccx.crs.jsj.edu.cn:8081,202.205.158.117,8081,http,tcp,Apache Tomcat/8.0.53,jsj.edu.cn,Apache-Coyote/1.1,http://rzzccx.crs.jsj.edu.cn:8081
+zhlcx.hxu.edu.cn,219.246.96.62,80,http,tcp,Apache Tomcat/8.0.20,hxu.edu.cn,Apache-Coyote/1.1,http://zhlcx.hxu.edu.cn
+sgxt.pyvtc.edu.cn:8091,218.28.84.53,8091,http,tcp,Apache Tomcat/8.5.56,pyvtc.edu.cn,,http://sgxt.pyvtc.edu.cn:8091
+relax.sxpi.edu.cn:9001,123.138.199.31,9001,http,tcp,Apache Tomcat/8.5.41,sxpi.edu.cn,,http://relax.sxpi.edu.cn:9001
+zfyx.hmlc.edu.cn,58.20.48.163,80,http,tcp,Apache Tomcat/8.5.56,hmlc.edu.cn,none,http://zfyx.hmlc.edu.cn
+keyan.ncc.edu.cn,58.213.152.100,80,http,tcp,,ncc.edu.cn,none,http://keyan.ncc.edu.cn
+budget.sandau.edu.cn:8080,202.121.174.101,8080,http,tcp,Apache Tomcat/8.5.100,sandau.edu.cn,,http://budget.sandau.edu.cn:8080
+relax.sxpi.edu.cn:9003,123.138.199.31,9003,http,tcp,Apache Tomcat/8.5.41,sxpi.edu.cn,,http://relax.sxpi.edu.cn:9003
+jwgl.snsy.edu.cn:8080,202.117.199.11,8080,http,tcp,Apache Tomcat/7.0.109,snsy.edu.cn,none,http://jwgl.snsy.edu.cn:8080
+xm.sicfl.edu.cn:6001,219.220.176.125,6001,http,tcp,Apache Tomcat,sicfl.edu.cn,Apache-Coyote/1.1,http://xm.sicfl.edu.cn:6001
+visapp.shanghaitech.edu.cn:8020,119.78.254.143,8020,http,tcp,Apache Tomcat/8.5.57,shanghaitech.edu.cn,,http://visapp.shanghaitech.edu.cn:8020
+sg.ayxy.edu.cn,218.28.96.51,80,http,tcp,Apache Tomcat/8.5.56,ayxy.edu.cn,rump/d,http://sg.ayxy.edu.cn
+yx.zjyc.edu.cn,42.247.11.23,80,http,tcp,浙江农林大学暨阳学院迎新服务平台,zjyc.edu.cn,,http://yx.zjyc.edu.cn
+idp.guat.edu.cn,202.193.96.25,80,http,tcp,Apache Tomcat/8.5.51,guat.edu.cn,none,http://idp.guat.edu.cn
+cwcwx.hbue.edu.cn:8080,218.197.82.41,8080,http,tcp,Apache Tomcat/9.0.87,hbue.edu.cn,,http://cwcwx.hbue.edu.cn:8080
+lbstu.sicfl.edu.cn:6001,219.220.176.125,6001,http,tcp,Apache Tomcat,sicfl.edu.cn,Apache-Coyote/1.1,http://lbstu.sicfl.edu.cn:6001
+https://keyan.ncc.edu.cn,58.213.152.100,443,https,tcp,,ncc.edu.cn,none,https://keyan.ncc.edu.cn
+www.fz.sicfl.edu.cn,219.220.176.85,80,http,tcp,,sicfl.edu.cn,Apache-Coyote/1.1,http://www.fz.sicfl.edu.cn
+bsdt.whvc.edu.cn,222.194.96.151,80,http,tcp,HTTP状态 404 - 未找到,whvc.edu.cn,nginx/1.18.0,http://bsdt.whvc.edu.cn
+health.lhvtc.edu.cn,222.21.160.66,80,http,tcp,Apache Tomcat,lhvtc.edu.cn,none,http://health.lhvtc.edu.cn
+xlzx.hnvcc.edu.cn,218.77.43.189,80,http,tcp,HTTP状态 404 - 未找到,hnvcc.edu.cn,,http://xlzx.hnvcc.edu.cn
+zcgl.hbiibe.edu.cn,121.22.51.226,80,http,tcp,Apache Tomcat/8.5.61,hbiibe.edu.cn,,http://zcgl.hbiibe.edu.cn
+xlzx.xaepi.edu.cn,202.117.224.198,80,http,tcp,Apache Tomcat,xaepi.edu.cn,,http://xlzx.xaepi.edu.cn
+https://zcgl.hbiibe.edu.cn,121.22.51.226,443,https,tcp,Apache Tomcat/8.5.61,hbiibe.edu.cn,,https://zcgl.hbiibe.edu.cn
+https://reshui.zstp.edu.cn,116.56.192.18,443,https,tcp,Apache Tomcat/9.0.39,zstp.edu.cn,nginx,https://reshui.zstp.edu.cn
+https://zhpj.mju.edu.cn,211.80.210.8,443,https,tcp,系统关闭-暂停访问,mju.edu.cn,unknown,https://zhpj.mju.edu.cn
+jz901.jzp.edu.cn,58.192.231.66,80,http,tcp,Apache Tomcat/8.5.82,jzp.edu.cn,,http://jz901.jzp.edu.cn
+rjds.sict.edu.cn:8080,211.64.112.111,8080,http,tcp,Apache Tomcat/9.0.93,sict.edu.cn,,http://rjds.sict.edu.cn:8080
+tzgg.szitu.edu.cn,219.230.17.1,80,http,tcp,Apache Tomcat/8.0.30,szitu.edu.cn,,http://tzgg.szitu.edu.cn
+jedu.cdp.edu.cn,121.48.28.42,80,http,tcp,Apache Tomcat/8.0.9 - Error report,cdp.edu.cn,Apache-Coyote/1.1,http://jedu.cdp.edu.cn
+zhpj.mju.edu.cn,211.80.210.8,80,http,tcp,系统关闭-暂停访问,mju.edu.cn,unknown,http://zhpj.mju.edu.cn
+fr.sicfl.edu.cn,219.220.176.95,80,http,tcp,Apache Tomcat/8.5.40,sicfl.edu.cn,,http://fr.sicfl.edu.cn
+reshui.zstp.edu.cn,116.56.192.18,80,http,tcp,Apache Tomcat/9.0.39,zstp.edu.cn,nginx,http://reshui.zstp.edu.cn
+https://znab.pyzx.edu.cn,222.16.165.163,443,https,tcp,HTTP状态 404 - 未找到,pyzx.edu.cn,nginx,https://znab.pyzx.edu.cn
+https://zfbjfpt.dlnu.edu.cn,210.30.4.18,443,https,tcp,Apache Tomcat/9.0.29,dlnu.edu.cn,,https://zfbjfpt.dlnu.edu.cn
+https://opac.sicfl.edu.cn,219.220.176.105,443,https,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,https://opac.sicfl.edu.cn
+tsgopenlib.zjitc.edu.cn,218.75.26.89,80,http,tcp,Apache Tomcat/8.5.87,zjitc.edu.cn,,http://tsgopenlib.zjitc.edu.cn
+https://tsgopenlib.zjitc.edu.cn,218.75.26.89,443,https,tcp,Apache Tomcat/8.5.87,zjitc.edu.cn,,https://tsgopenlib.zjitc.edu.cn
+https://arss.fjmu.edu.cn,111.186.241.176,443,https,tcp,Apache Tomcat/8.0.50 - Error report,fjmu.edu.cn,Apache-Coyote/1.1,https://arss.fjmu.edu.cn
+https://jypay.sicfl.edu.cn,219.220.176.105,443,https,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,https://jypay.sicfl.edu.cn
+znab.pyzx.edu.cn,222.16.165.163,80,http,tcp,HTTP状态 404 - 未找到,pyzx.edu.cn,nginx,http://znab.pyzx.edu.cn
+https://sp.cw.cvit.edu.cn,202.98.31.163,443,https,tcp,,cvit.edu.cn,openresty,https://sp.cw.cvit.edu.cn
+sp.cw.cvit.edu.cn,202.98.31.163,80,http,tcp,,cvit.edu.cn,openresty,http://sp.cw.cvit.edu.cn
+isurvey.pku.edu.cn:8080,162.105.134.246,8080,http,tcp,Apache Tomcat/8.5.100,pku.edu.cn,,http://isurvey.pku.edu.cn:8080
+wxgz.tust.edu.cn,111.160.240.120,80,http,tcp,Welcome to nginx!,tust.edu.cn,rums/d,http://wxgz.tust.edu.cn
+https://cwjf.zjhzu.edu.cn,60.188.54.123,443,https,tcp,Apache Tomcat/7.0.73,zjhzu.edu.cn,Apache-Coyote/1.1,https://cwjf.zjhzu.edu.cn
+qyh.cxxy.seu.edu.cn,58.213.157.229,80,http,tcp,Apache Tomcat/7.0.78,seu.edu.cn,Apache-Coyote/1.1,http://qyh.cxxy.seu.edu.cn
+isurvey.lb.pku.edu.cn:8080,162.105.134.246,8080,http,tcp,Apache Tomcat/8.5.100,pku.edu.cn,,http://isurvey.lb.pku.edu.cn:8080
+oa.dmuzs.edu.cn:8080,118.202.255.55,8080,http,tcp,Apache Tomcat/8.5.76,dmuzs.edu.cn,,http://oa.dmuzs.edu.cn:8080
+wls.neuedu.neusoft.edu.cn,219.216.131.82,80,http,tcp,Apache Tomcat/8.5.100,neusoft.edu.cn,nginx/1.26.2,http://wls.neuedu.neusoft.edu.cn
+https://wls.neuedu.neusoft.edu.cn,219.216.131.82,443,https,tcp,Apache Tomcat/8.5.100,neusoft.edu.cn,nginx/1.26.2,https://wls.neuedu.neusoft.edu.cn
+sso.jwc.whut.edu.cn,202.114.50.129,80,http,tcp,Apache Tomcat/6.0.53 - Error report,whut.edu.cn,Server,http://sso.jwc.whut.edu.cn
+https://diankong.neusoft.edu.cn,219.216.131.82,443,https,tcp,Apache Tomcat/8.0.36,neusoft.edu.cn,nginx/1.26.2,https://diankong.neusoft.edu.cn
+diankong.neusoft.edu.cn,219.216.131.82,80,http,tcp,Apache Tomcat/8.0.36,neusoft.edu.cn,nginx/1.26.2,http://diankong.neusoft.edu.cn
+db.jxga.edu.cn,117.40.28.2,80,http,tcp,Apache Tomcat,jxga.edu.cn,Apache-Coyote/1.1,http://db.jxga.edu.cn
+chainfunds.zufe.edu.cn,120.199.62.151,80,http,tcp,Apache Tomcat/8.5.41,zufe.edu.cn,,http://chainfunds.zufe.edu.cn
+online.xnai.edu.cn,120.35.121.21,80,http,tcp,厦门国家会计学院远程教育,xnai.edu.cn,nginx,http://online.xnai.edu.cn
+https://hbzyysp.hbucm.edu.cn,218.197.176.6,443,https,tcp,Apache Tomcat/9.0.62,hbucm.edu.cn,none,https://hbzyysp.hbucm.edu.cn
+hbzyysp.hbucm.edu.cn,218.197.176.6,80,http,tcp,Apache Tomcat/9.0.62,hbucm.edu.cn,none,http://hbzyysp.hbucm.edu.cn
+jccxx.cqust.edu.cn,222.180.188.201,80,http,tcp,Apache Tomcat/9.0.31,cqust.edu.cn,none,http://jccxx.cqust.edu.cn
+https://jccxx.cqust.edu.cn,222.180.188.201,443,https,tcp,Apache Tomcat/9.0.31,cqust.edu.cn,none,https://jccxx.cqust.edu.cn
+ldxx.cqust.edu.cn,222.180.188.205,80,http,tcp,Apache Tomcat/9.0.73,cqust.edu.cn,,http://ldxx.cqust.edu.cn
+https://fcgl.swu.edu.cn,222.198.126.134,443,https,tcp,Apache Tomcat,swu.edu.cn,Apache-Coyote/1.1,https://fcgl.swu.edu.cn
+fcgl.swu.edu.cn,222.198.126.134,80,http,tcp,Apache Tomcat,swu.edu.cn,Apache-Coyote/1.1,http://fcgl.swu.edu.cn
+zp.zjtongji.edu.cn:8080,115.238.80.24,8080,http,tcp,Apache Tomcat/9.0.62,zjtongji.edu.cn,,http://zp.zjtongji.edu.cn:8080
+https://psy.smxpt.edu.cn,125.219.160.247,443,https,tcp,,smxpt.edu.cn,nginx/1.24.0,https://psy.smxpt.edu.cn
+hqbxwxxt.jlau.edu.cn,202.198.0.45,80,http,tcp,Apache Tomcat/9.0.54,jlau.edu.cn,,http://hqbxwxxt.jlau.edu.cn
+zs1.sicfl.edu.cn,219.220.176.85,80,http,tcp,,sicfl.edu.cn,Apache-Coyote/1.1,http://zs1.sicfl.edu.cn
+live.cxxy.seu.edu.cn,58.213.157.229,80,http,tcp,"	教育视频综合服务平台",seu.edu.cn,Apache-Coyote/1.1,http://live.cxxy.seu.edu.cn
+idp-lib.cqnu.edu.cn,123.147.223.6,80,http,tcp,Apache Tomcat/9.0.39,cqnu.edu.cn,******,http://idp-lib.cqnu.edu.cn
+https://znbx.cjlu.edu.cn,202.107.226.162,443,https,tcp,Apache Tomcat/9.0.31,cjlu.edu.cn,,https://znbx.cjlu.edu.cn
+cwcwssb.cqnu.edu.cn,123.147.223.6,80,http,tcp,Apache Tomcat/9.0.56,cqnu.edu.cn,******,http://cwcwssb.cqnu.edu.cn
+akmooc.ahstu.edu.cn,211.70.48.10,80,http,tcp,MOOC实验实训平台,ahstu.edu.cn,,http://akmooc.ahstu.edu.cn
+https://zcgl.gdmu.edu.cn,202.192.112.146,443,https,tcp,Apache Tomcat/9.0.96,gdmu.edu.cn,,https://zcgl.gdmu.edu.cn
+https://zcpt.usx.edu.cn,61.174.215.231,443,https,tcp,Apache Tomcat/8.5.95,usx.edu.cn,nginx,https://zcpt.usx.edu.cn
+https://hqbxwxxt.jlau.edu.cn,202.198.0.45,443,https,tcp,Apache Tomcat/9.0.54,jlau.edu.cn,,https://hqbxwxxt.jlau.edu.cn
+https://s.mmpt.edu.cn,125.90.95.149,443,https,tcp,Apache Tomcat/9.0.62,mmpt.edu.cn,openresty,https://s.mmpt.edu.cn
+https://jedu.dzvc.edu.cn,121.250.88.30,443,https,tcp,Apache Tomcat/7.0.85,dzvc.edu.cn,openresty,https://jedu.dzvc.edu.cn
+wpssso.bupt.edu.cn,114.255.40.166,80,http,tcp,Apache Tomcat/8.5.99,bupt.edu.cn,none,http://wpssso.bupt.edu.cn
+https://i-expenseapp.cuhk.edu.cn:8444,58.250.174.70,8444,https,tcp,Apache Tomcat/9.0.89,cuhk.edu.cn,,https://i-expenseapp.cuhk.edu.cn:8444
+classroom.bupt.edu.cn,211.68.69.240,80,http,tcp,教室VR全景互动系统,bupt.edu.cn,none,http://classroom.bupt.edu.cn
+wx.jwc.whut.edu.cn,202.114.90.167,80,http,tcp,,whut.edu.cn,Server,http://wx.jwc.whut.edu.cn
+https://classroom.bupt.edu.cn,211.68.69.240,443,https,tcp,教室VR全景互动系统,bupt.edu.cn,none,https://classroom.bupt.edu.cn
+bigdata.pku.edu.cn:8080,162.105.134.246,8080,http,tcp,Apache Tomcat/8.5.100,pku.edu.cn,,http://bigdata.pku.edu.cn:8080
+zxzf.tjut.edu.cn:9080,202.113.66.34,9080,http,tcp,Apache Tomcat/9.0.87,tjut.edu.cn,,http://zxzf.tjut.edu.cn:9080
+scr.tjarts.edu.cn,202.113.216.19,80,http,tcp,302 Found,tjarts.edu.cn,openresty,http://scr.tjarts.edu.cn
+https://jcxt.bitzh.edu.cn,112.91.150.239,443,https,tcp,Apache Tomcat/8.5.31,bitzh.edu.cn,,https://jcxt.bitzh.edu.cn
+ss.jlu.edu.cn:8080,59.72.0.165,8080,http,tcp,Apache Tomcat/8.5.82,jlu.edu.cn,,http://ss.jlu.edu.cn:8080
+https://wpssso.bupt.edu.cn,211.68.69.240,443,https,tcp,Apache Tomcat/8.5.99,bupt.edu.cn,none,https://wpssso.bupt.edu.cn
+i.zzcsjr.edu.cn,59.70.13.45,80,http,tcp,郑州财税金融职业学院,zzcsjr.edu.cn,nginx,http://i.zzcsjr.edu.cn
+https://myit.nottingham.edu.cn,4.216.205.136,443,https,tcp,HTTP状态 404 - 未找到,nottingham.edu.cn,,https://myit.nottingham.edu.cn
+myit.nottingham.edu.cn,4.216.205.136,80,http,tcp,Redirecting...,nottingham.edu.cn,,http://myit.nottingham.edu.cn
+gzc112.hebeinu.edu.cn,60.8.4.246,80,http,tcp,Apache Tomcat/8.5.61,hebeinu.edu.cn,,http://gzc112.hebeinu.edu.cn
+sms.shisu.edu.cn,218.193.161.47,80,http,tcp,Apache Tomcat/6.0.35 - Error report,shisu.edu.cn,,http://sms.shisu.edu.cn
+https://jsfzzx.tyut.edu.cn,202.207.240.36,443,https,tcp,Apache Tomcat/8.5.65,tyut.edu.cn,nginx/1.16.1,https://jsfzzx.tyut.edu.cn
+buy.cwu.edu.cn:8080,106.39.32.172,8080,http,tcp,Apache Tomcat/9.0.40,cwu.edu.cn,,http://buy.cwu.edu.cn:8080
+219-242-30-219-8080.webvpn.cwu.edu.cn,106.39.32.209,80,http,tcp,Apache Tomcat/8.0.52,cwu.edu.cn,Apache-Coyote/1.1,http://219-242-30-219-8080.webvpn.cwu.edu.cn
+ygxxgcxy.whu.edu.cn:8080,202.114.121.116,8080,http,tcp,Apache Tomcat/9.0.21,whu.edu.cn,,http://ygxxgcxy.whu.edu.cn:8080
+https://ycrh.cumt.edu.cn:8080,219.219.48.213,8080,https,tcp,Apache Tomcat/9.0.98,cumt.edu.cn,,https://ycrh.cumt.edu.cn:8080
+https://szdxcwsp.szu.edu.cn,210.39.4.1,443,https,tcp,,szu.edu.cn,****,https://szdxcwsp.szu.edu.cn
+szdxcwsp.szu.edu.cn,210.39.4.1,80,http,tcp,,szu.edu.cn,****,http://szdxcwsp.szu.edu.cn
+status.szu.edu.cn,210.39.4.1,80,http,tcp,,szu.edu.cn,****,http://status.szu.edu.cn
+https://status.szu.edu.cn,210.39.4.1,443,https,tcp,,szu.edu.cn,****,https://status.szu.edu.cn
+https://ydny.ytu.edu.cn,202.194.116.74,443,https,tcp,Apache Tomcat/8.5.24,ytu.edu.cn,none,https://ydny.ytu.edu.cn
+ydny.ytu.edu.cn,202.194.116.74,80,http,tcp,Apache Tomcat/8.5.24,ytu.edu.cn,none,http://ydny.ytu.edu.cn
+gjxyexam.sdfmu.edu.cn,2001:250:5839:8000::113,80,http,tcp,欢迎使用山东第一医科大学网络题库与考试系统,sdfmu.edu.cn,Apache-Coyote/1.1,http://gjxyexam.sdfmu.edu.cn
+https://vis.sysysb.ynu.edu.cn,2001:250:2800:0:28:0:13:95,443,https,tcp,Apache Tomcat/8.5.79,ynu.edu.cn,,https://vis.sysysb.ynu.edu.cn
+https://fcgl.zjsru.edu.cn,60.191.53.227,443,https,tcp,Apache Tomcat/8.5.61,zjsru.edu.cn,Tengine,https://fcgl.zjsru.edu.cn
+fcgl.zjsru.edu.cn,60.191.53.227,80,http,tcp,Apache Tomcat/8.5.61,zjsru.edu.cn,Tengine,http://fcgl.zjsru.edu.cn
+https://rwdtpt.scau.edu.cn,222.201.226.101,443,https,tcp,Apache Tomcat/9.0.97,scau.edu.cn,nginx,https://rwdtpt.scau.edu.cn
+rwdtpt.scau.edu.cn,222.201.226.101,80,http,tcp,Apache Tomcat/9.0.97,scau.edu.cn,nginx,http://rwdtpt.scau.edu.cn
+https://m.scbt.edu.cn,42.247.48.65,443,https,tcp,Apache Tomcat/8.0.47,scbt.edu.cn,none,https://m.scbt.edu.cn
+zcgl.scctcm.edu.cn:8081,223.87.157.22,8081,http,tcp,Apache Tomcat/8.5.61,scctcm.edu.cn,,http://zcgl.scctcm.edu.cn:8081
+https://idp.gxgsxy.edu.cn,222.203.216.1,443,https,tcp,Shibboleth IdP,gxgsxy.edu.cn,nginx/1.14.1,https://idp.gxgsxy.edu.cn
+yjsapp.nwnu.edu.cn,210.26.98.214,80,http,tcp,Apache Tomcat/8.5.99,nwnu.edu.cn,none,http://yjsapp.nwnu.edu.cn
+https://yjsapp.nwnu.edu.cn,210.26.98.214,443,https,tcp,Apache Tomcat/8.5.99,nwnu.edu.cn,none,https://yjsapp.nwnu.edu.cn
+https://aihpc.nju.edu.cn,202.119.37.248,443,https,tcp,Apache Tomcat/8.5.47,nju.edu.cn,Apache/2.4.25 (Unix) OpenSSL/1.0.1e-fips,https://aihpc.nju.edu.cn
+aihpc.nju.edu.cn,202.119.37.248,80,http,tcp,Apache Tomcat/8.5.47,nju.edu.cn,Apache/2.4.25 (Unix) OpenSSL/1.0.1e-fips,http://aihpc.nju.edu.cn
+yshyn.sysx.jsou.edu.cn,218.2.200.154,80,http,tcp,Apache Tomcat/8.5.38,jsou.edu.cn,,http://yshyn.sysx.jsou.edu.cn
+https://dk.tyust.edu.cn,210.31.104.45,443,https,tcp,Apache Tomcat/9.0.93,tyust.edu.cn,,https://dk.tyust.edu.cn
+lwtj.cqut.edu.cn,202.202.157.110,80,http,tcp,Apache Tomcat/7.0.100,cqut.edu.cn,******,http://lwtj.cqut.edu.cn
+https://lwtj.cqut.edu.cn,202.202.157.110,443,https,tcp,Apache Tomcat/7.0.100,cqut.edu.cn,******,https://lwtj.cqut.edu.cn
+https://ipass.qust.edu.cn,211.87.159.15,443,https,tcp,,qust.edu.cn,none,https://ipass.qust.edu.cn
+https://ccic.swjtu.edu.cn,180.85.12.6,443,https,tcp,,swjtu.edu.cn,rums/b,https://ccic.swjtu.edu.cn
+newbooks.lib.pku.edu.cn,2001:da8:201:1138::a269:8a7d,80,http,tcp,新书通报--北京大学图书馆,pku.edu.cn,,http://newbooks.lib.pku.edu.cn
+linguist.ccnu.edu.cn,183.168.162.4,80,http,tcp,Apache Tomcat/5.5.26,ccnu.edu.cn,Server,http://linguist.ccnu.edu.cn
+vis.sysysb.ynu.edu.cn,113.55.13.95,80,http,tcp,Apache Tomcat/8.5.79,ynu.edu.cn,,http://vis.sysysb.ynu.edu.cn
+https://newbooks.lib.pku.edu.cn,162.105.138.125,443,https,tcp,新书通报--北京大学图书馆,pku.edu.cn,,https://newbooks.lib.pku.edu.cn
+https://zcc-temp.bistu.edu.cn:8080,211.82.109.112,8080,https,tcp,Apache Tomcat/7.0.65,bistu.edu.cn,Apache-Coyote/1.1,https://zcc-temp.bistu.edu.cn:8080
+tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tbjx.tj.edu.cn:9000
+cwsp.hrbcm.edu.cn:8090,123.166.117.66,8090,http,tcp,Apache Tomcat/9.0.75,hrbcm.edu.cn,,http://cwsp.hrbcm.edu.cn:8090
+tyzx.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tyzx.tbjx.tj.edu.cn:9000
+cwapi.bsuc.edu.cn,116.13.208.227,80,http,tcp,Apache Tomcat/9.0.87,bsuc.edu.cn,,http://cwapi.bsuc.edu.cn
+psy.smxpt.edu.cn,125.219.160.247,80,http,tcp,,smxpt.edu.cn,nginx/1.24.0,http://psy.smxpt.edu.cn
+https://archives.hfcfe.edu.cn,110.41.217.226,443,https,tcp,,hfcfe.edu.cn,CW,https://archives.hfcfe.edu.cn
+https://cl.njpu.edu.cn,218.2.112.242,443,https,tcp,Apache Tomcat/9.0.86,njpu.edu.cn,,https://cl.njpu.edu.cn
+archives.hfcfe.edu.cn,110.41.217.215,80,http,tcp,,hfcfe.edu.cn,CW,http://archives.hfcfe.edu.cn
+https://pface.fzu.edu.cn,59.77.227.7,443,https,tcp,Apache Tomcat/8.5.98,fzu.edu.cn,nginx/1.24.0,https://pface.fzu.edu.cn
+https://fkxt.appcasb.njxzc.edu.cn,210.29.144.93,443,https,tcp,Apache Tomcat/7.0.94,njxzc.edu.cn,,https://fkxt.appcasb.njxzc.edu.cn
+jedu.dzvc.edu.cn,121.250.88.30,80,http,tcp,Apache Tomcat/7.0.85,dzvc.edu.cn,openresty,http://jedu.dzvc.edu.cn
+fkxt.appcasb.njxzc.edu.cn,210.29.144.93,80,http,tcp,Apache Tomcat/7.0.94,njxzc.edu.cn,,http://fkxt.appcasb.njxzc.edu.cn
+https://noa.tzc.edu.cn,122.226.131.210,443,https,tcp,Apache Tomcat - Error report,tzc.edu.cn,Apache-Coyote/1.1,https://noa.tzc.edu.cn
+atmsms.cafuc.edu.cn,218.6.160.249,80,http,tcp,Apache Tomcat/8.5.96,cafuc.edu.cn,rump/d,http://atmsms.cafuc.edu.cn
+https://sd.gwng.edu.cn,58.248.105.17,443,https,tcp,Apache Tomcat/8.5.91,gwng.edu.cn,,https://sd.gwng.edu.cn
+wssp.bupt.edu.cn,114.255.40.166,80,http,tcp,Apache Tomcat/9.0.95,bupt.edu.cn,none,http://wssp.bupt.edu.cn
+https://192-168-17-199.webvpn.sxufe.edu.cn,210.31.113.2,443,https,tcp,HTTP状态 500 - 内部服务器错误,sxufe.edu.cn,,https://192-168-17-199.webvpn.sxufe.edu.cn
+https://health.lhvtc.edu.cn,222.21.160.66,443,https,tcp,Apache Tomcat,lhvtc.edu.cn,none,https://health.lhvtc.edu.cn
+cggl.ynucm.edu.cn,210.40.176.244,80,http,tcp,Apache Tomcat/8.5.61,ynucm.edu.cn,none,http://cggl.ynucm.edu.cn
+sszx.njau.edu.cn,202.195.242.84,80,http,tcp,Apache Tomcat/8.5.100,njau.edu.cn,none,http://sszx.njau.edu.cn
+192-168-17-199.webvpn.sxufe.edu.cn,210.31.113.2,80,http,tcp,HTTP状态 500 - 内部服务器错误,sxufe.edu.cn,,http://192-168-17-199.webvpn.sxufe.edu.cn
+party.czie.edu.cn,58.216.216.183,80,http,tcp,党建云平台,czie.edu.cn,none,http://party.czie.edu.cn
+cwsp.nwafu.edu.cn,113.200.67.197,80,http,tcp,Apache Tomcat/9.0.87,nwafu.edu.cn,openresty,http://cwsp.nwafu.edu.cn
+https://cwsp.nwafu.edu.cn,210.27.83.20,443,https,tcp,Apache Tomcat/9.0.87,nwafu.edu.cn,openresty,https://cwsp.nwafu.edu.cn
+bmdp.njau.edu.cn,202.195.242.84,80,http,tcp,Apache Tomcat/9.0.34,njau.edu.cn,none,http://bmdp.njau.edu.cn
+doortest.njau.edu.cn,202.195.242.84,80,http,tcp,Apache Tomcat/8.5.68,njau.edu.cn,none,http://doortest.njau.edu.cn
+https://myvr.htu.edu.cn,210.42.249.148,443,https,tcp,Apache Tomcat/9.0.82,htu.edu.cn,rums/b,https://myvr.htu.edu.cn
+cdn1.gkd.edu.cn:8082,42.247.44.130,8082,http,tcp,Apache Tomcat/7.0.93,gkd.edu.cn,Apache-Coyote/1.1,http://cdn1.gkd.edu.cn:8082
+mb.gdust.edu.cn:8002,27.37.67.99,8002,http,tcp,Apache Tomcat/8.5.81,gdust.edu.cn,,http://mb.gdust.edu.cn:8002
+pay.bhu.edu.cn:8082,210.47.178.145,8082,http,tcp,Apache Tomcat/8.5.54,bhu.edu.cn,,http://pay.bhu.edu.cn:8082
+cwsp.jnxy.edu.cn:8080,219.218.160.177,8080,http,tcp,Apache Tomcat/9.0.87,jnxy.edu.cn,,http://cwsp.jnxy.edu.cn:8080
+https://party.jxufe.edu.cn:8008,210.35.194.6,8008,https,tcp,Apache Tomcat/7.0.109,jxufe.edu.cn,Apache-Coyote/1.1,https://party.jxufe.edu.cn:8008
+https://lx.jxufe.edu.cn:8008,210.35.194.6,8008,https,tcp,Apache Tomcat/7.0.109,jxufe.edu.cn,Apache-Coyote/1.1,https://lx.jxufe.edu.cn:8008
+https://xylbim.buaa.edu.cn,219.239.227.66,443,https,tcp,403 Forbidden,buaa.edu.cn,none,https://xylbim.buaa.edu.cn
+https://api.nju.edu.cn,219.219.115.212,443,https,tcp,Apache Tomcat/8.5.98,nju.edu.cn,,https://api.nju.edu.cn
+api.nju.edu.cn,219.219.115.212,80,http,tcp,Apache Tomcat/8.5.98,nju.edu.cn,,http://api.nju.edu.cn
+cw.swust.edu.cn:8080,202.115.170.32,8080,http,tcp,Apache Tomcat/9.0.73,swust.edu.cn,,http://cw.swust.edu.cn:8080
+s.mmpt.edu.cn,125.90.95.149,80,http,tcp,Apache Tomcat/9.0.62,mmpt.edu.cn,openresty,http://s.mmpt.edu.cn
+https://trans.jxufe.edu.cn:8008,210.35.194.6,8008,https,tcp,Apache Tomcat/7.0.109,jxufe.edu.cn,Apache-Coyote/1.1,https://trans.jxufe.edu.cn:8008
+sl.cwu.edu.cn:8080,106.39.32.171,8080,http,tcp,Apache Tomcat/8.5.34,cwu.edu.cn,,http://sl.cwu.edu.cn:8080
+car.cwu.edu.cn:8080,106.39.32.171,8080,http,tcp,Apache Tomcat/8.5.34,cwu.edu.cn,,http://car.cwu.edu.cn:8080
+cwwx.gdit.edu.cn:8088,14.119.123.239,8088,http,tcp,Apache Tomcat/9.0.31,gdit.edu.cn,,http://cwwx.gdit.edu.cn:8088
+tsxyxnfz.cqctcm.edu.cn,222.179.43.93,80,http,tcp,Apache Tomcat/10.1.15,cqctcm.edu.cn,,http://tsxyxnfz.cqctcm.edu.cn
+ydzp.sju.edu.cn:8080,222.193.191.2,8080,http,tcp,,sju.edu.cn,******,http://ydzp.sju.edu.cn:8080
+https://yxt.zufe.edu.cn:8443,202.101.187.90,8443,https,tcp,Apache Tomcat/5.5.28,zufe.edu.cn,Apache-Coyote/1.1,https://yxt.zufe.edu.cn:8443
+gateway.htu.edu.cn:8080,210.42.241.151,8080,http,tcp,Apache Tomcat/,htu.edu.cn,,http://gateway.htu.edu.cn:8080
+m.scbt.edu.cn,42.247.48.65,80,http,tcp,Apache Tomcat/8.0.47,scbt.edu.cn,none,http://m.scbt.edu.cn
+jpkc.gkd.edu.cn:8082,42.247.44.130,8082,http,tcp,Apache Tomcat/7.0.93,gkd.edu.cn,Apache-Coyote/1.1,http://jpkc.gkd.edu.cn:8082
+https://jxufesoftware.jxufe.edu.cn:8008,210.35.194.6,8008,https,tcp,Apache Tomcat/7.0.109,jxufe.edu.cn,Apache-Coyote/1.1,https://jxufesoftware.jxufe.edu.cn:8008
+cwsp.lyu.edu.cn:8080,211.64.254.131,8080,http,tcp,Apache Tomcat/9.0.62,lyu.edu.cn,,http://cwsp.lyu.edu.cn:8080
+opaclib.git.edu.cn:8081,117.187.34.135,8081,http,tcp,Apache Tomcat/9.0.88,git.edu.cn,,http://opaclib.git.edu.cn:8081
+opaclib.git.edu.cn,117.187.34.135,80,http,tcp,,git.edu.cn,,http://opaclib.git.edu.cn
+cwfw.suibe.edu.cn:8080,116.246.2.35,8080,http,tcp,Apache Tomcat,suibe.edu.cn,rums/b,http://cwfw.suibe.edu.cn:8080
+jsjx.nhic.edu.cn:8080,121.201.110.58,8080,http,tcp,Apache Tomcat/8.5.78,nhic.edu.cn,,http://jsjx.nhic.edu.cn:8080
+opac.hbmu.edu.cn:8081,218.197.51.33,8081,http,tcp,Apache Tomcat/8.5.100,hbmu.edu.cn,,http://opac.hbmu.edu.cn:8081
+cwgl.jlau.edu.cn:8081,202.198.0.45,8081,http,tcp,Apache Tomcat/9.0.31,jlau.edu.cn,,http://cwgl.jlau.edu.cn:8081
+pay.gzhxtc.edu.cn:8010,58.62.133.100,8010,http,tcp,Apache Tomcat/8.5.41,gzhxtc.edu.cn,,http://pay.gzhxtc.edu.cn:8010
+pay8.bhu.edu.cn:8082,210.47.178.145,8082,http,tcp,Apache Tomcat/8.5.54,bhu.edu.cn,,http://pay8.bhu.edu.cn:8082
+cwcw.sta.edu.cn:8080,117.131.12.73,8080,http,tcp,HTTP状态 404 - 未找到,sta.edu.cn,,http://cwcw.sta.edu.cn:8080
+m.gdust.edu.cn:8002,27.37.67.99,8002,http,tcp,Apache Tomcat/8.5.81,gdust.edu.cn,,http://m.gdust.edu.cn:8002
+https://idp.guat.edu.cn,202.193.96.25,443,https,tcp,Apache Tomcat/8.5.51,guat.edu.cn,none,https://idp.guat.edu.cn
+smp.whsu.edu.cn:8080,218.197.66.91,8080,http,tcp,Apache Tomcat/8.5.82,whsu.edu.cn,,http://smp.whsu.edu.cn:8080
+ding.sju.edu.cn:8080,222.193.191.2,8080,http,tcp,,sju.edu.cn,******,http://ding.sju.edu.cn:8080
+ehall.htu.edu.cn:8080,117.158.94.221,8080,http,tcp,Apache Tomcat/,htu.edu.cn,,http://ehall.htu.edu.cn:8080
+lx.htu.edu.cn:8080,117.158.94.221,8080,http,tcp,Apache Tomcat/,htu.edu.cn,,http://lx.htu.edu.cn:8080
+bi.htu.edu.cn:8080,117.158.94.221,8080,http,tcp,Apache Tomcat/,htu.edu.cn,,http://bi.htu.edu.cn:8080
+cwcslpt.xidian.edu.cn:8080,202.117.115.89,8080,http,tcp,Apache Tomcat/9.0.86,xidian.edu.cn,,http://cwcslpt.xidian.edu.cn:8080
+res.nufe.edu.cn:8080,210.28.80.99,8080,http,tcp,Apache Tomcat/7.0.104,nufe.edu.cn,Apache-Coyote/1.1,http://res.nufe.edu.cn:8080
+apis.nufe.edu.cn:8080,210.28.80.99,8080,http,tcp,Apache Tomcat/7.0.104,nufe.edu.cn,Apache-Coyote/1.1,http://apis.nufe.edu.cn:8080
+mdm.nufe.edu.cn:8080,210.28.80.99,8080,http,tcp,Apache Tomcat/7.0.104,nufe.edu.cn,Apache-Coyote/1.1,http://mdm.nufe.edu.cn:8080
+bpm.sdada.edu.cn:8080,124.128.249.200,8080,http,tcp,Apache Tomcat,sdada.edu.cn,nginx,http://bpm.sdada.edu.cn:8080
+imp.nufe.edu.cn:8080,210.28.80.99,8080,http,tcp,Apache Tomcat/7.0.104,nufe.edu.cn,Apache-Coyote/1.1,http://imp.nufe.edu.cn:8080
+ehallapp.whsu.edu.cn:8080,218.197.66.91,8080,http,tcp,Apache Tomcat/8.5.82,whsu.edu.cn,,http://ehallapp.whsu.edu.cn:8080
+https://fr.sicfl.edu.cn,219.220.176.95,443,https,tcp,Apache Tomcat/8.5.40,sicfl.edu.cn,,https://fr.sicfl.edu.cn
+imgapp.xpu.edu.cn:8080,202.200.206.121,8080,http,tcp,Apache Tomcat/8.5.78,xpu.edu.cn,,http://imgapp.xpu.edu.cn:8080
+query.ynutcm.edu.cn:8081,210.40.176.216,8081,http,tcp,Apache Tomcat/8.5.99,ynutcm.edu.cn,,http://query.ynutcm.edu.cn:8081
+daxt.hyit.edu.cn:8080,210.29.152.24,8080,http,tcp,Apache Tomcat/8.5.88,hyit.edu.cn,,http://daxt.hyit.edu.cn:8080
+i.htu.edu.cn:8080,210.42.241.151,8080,http,tcp,Apache Tomcat/,htu.edu.cn,,http://i.htu.edu.cn:8080
+smp.sdada.edu.cn:8080,124.128.249.200,8080,http,tcp,Apache Tomcat,sdada.edu.cn,nginx,http://smp.sdada.edu.cn:8080
+apis.whsu.edu.cn:8080,218.197.66.91,8080,http,tcp,Apache Tomcat/8.5.82,whsu.edu.cn,,http://apis.whsu.edu.cn:8080
+sjbd.sju.edu.cn:8080,222.193.191.2,8080,http,tcp,,sju.edu.cn,******,http://sjbd.sju.edu.cn:8080
+app.xpu.edu.cn:8080,202.200.206.121,8080,http,tcp,Apache Tomcat/8.5.78,xpu.edu.cn,,http://app.xpu.edu.cn:8080
+mdm.sdada.edu.cn:8080,124.128.249.200,8080,http,tcp,Apache Tomcat,sdada.edu.cn,nginx,http://mdm.sdada.edu.cn:8080
+resource.sdada.edu.cn:8080,124.128.249.200,8080,http,tcp,Apache Tomcat,sdada.edu.cn,nginx,http://resource.sdada.edu.cn:8080
+libtc.gdou.edu.cn:8899,210.38.138.8,8899,http,tcp,Apache Tomcat/8.5.81,gdou.edu.cn,,http://libtc.gdou.edu.cn:8899
+apis.sdada.edu.cn:8080,124.128.249.200,8080,http,tcp,Apache Tomcat,sdada.edu.cn,nginx,http://apis.sdada.edu.cn:8080
+https://oa.xhsysu.edu.cn,42.247.26.52,443,https,tcp,500 Internal Server Error,xhsysu.edu.cn,,https://oa.xhsysu.edu.cn
+https://yx.zcmu.edu.cn,61.175.198.185,443,https,tcp,浙江中医药大学,zcmu.edu.cn,none,https://yx.zcmu.edu.cn
+zcxt.qhu.edu.cn,210.27.177.252,80,http,tcp,Apache Tomcat/7.0.109,qhu.edu.cn,nginx/1.27.1,http://zcxt.qhu.edu.cn
+https://zcxt.qhu.edu.cn,210.27.177.252,443,https,tcp,Apache Tomcat/7.0.109,qhu.edu.cn,nginx/1.27.1,https://zcxt.qhu.edu.cn
+book.lib.kmust.edu.cn:8090,222.197.202.32,8090,http,tcp,Apache Tomcat/7.0.40,kmust.edu.cn,Apache-Coyote/1.1,http://book.lib.kmust.edu.cn:8090
+10-200-17-56.wvpn.huat.edu.cn,61.183.20.22,80,http,tcp,Apache Tomcat/10.1.9,huat.edu.cn,,http://10-200-17-56.wvpn.huat.edu.cn
+https://10-200-17-56.wvpn.huat.edu.cn,61.183.20.22,443,https,tcp,Apache Tomcat/10.1.9,huat.edu.cn,,https://10-200-17-56.wvpn.huat.edu.cn
+https://fcapp.ksu.edu.cn,218.195.192.69,443,https,tcp,Apache Tomcat/8.5.61,ksu.edu.cn,none,https://fcapp.ksu.edu.cn
+fcapp.ksu.edu.cn,218.195.192.69,80,http,tcp,Apache Tomcat/8.5.61,ksu.edu.cn,none,http://fcapp.ksu.edu.cn
+https://xnscs.bupt.edu.cn,211.68.69.240,443,https,tcp,,bupt.edu.cn,none,https://xnscs.bupt.edu.cn
+xnscs.bupt.edu.cn,211.68.69.240,80,http,tcp,,bupt.edu.cn,none,http://xnscs.bupt.edu.cn
+https://bwc.cau.edu.cn,202.205.93.174,443,https,tcp,HTTP状态 404 - 未找到,cau.edu.cn,nginx,https://bwc.cau.edu.cn
+https://fzghc.cau.edu.cn,202.205.93.174,443,https,tcp,HTTP状态 404 - 未找到,cau.edu.cn,nginx,https://fzghc.cau.edu.cn
+https://clpt1.cau.edu.cn,202.205.93.174,443,https,tcp,HTTP状态 404 - 未找到,cau.edu.cn,nginx,https://clpt1.cau.edu.cn
+https://tyg.cau.edu.cn,202.205.93.174,443,https,tcp,HTTP状态 404 - 未找到,cau.edu.cn,nginx,https://tyg.cau.edu.cn
+https://ncoa.cau.edu.cn,202.205.93.174,443,https,tcp,HTTP状态 404 - 未找到,cau.edu.cn,nginx,https://ncoa.cau.edu.cn
+eqtl-prediction.cdut.edu.cn,202.115.137.88,80,http,tcp,,cdut.edu.cn,******,http://eqtl-prediction.cdut.edu.cn
+https://eqtl-prediction.cdut.edu.cn,202.115.137.88,443,https,tcp,,cdut.edu.cn,******,https://eqtl-prediction.cdut.edu.cn
+show.nit.edu.cn:9090,218.87.41.20,9090,http,tcp,Apache Tomcat/8.0.52,nit.edu.cn,Apache-Coyote/1.1,http://show.nit.edu.cn:9090
+xxds.nit.edu.cn:9090,218.87.41.20,9090,http,tcp,Apache Tomcat/8.0.52,nit.edu.cn,Apache-Coyote/1.1,http://xxds.nit.edu.cn:9090
+zcdpc.nit.edu.cn:9090,218.87.41.20,9090,http,tcp,Apache Tomcat/8.0.52,nit.edu.cn,Apache-Coyote/1.1,http://zcdpc.nit.edu.cn:9090
+wssp.ynou.edu.cn,182.245.146.12,80,http,tcp,Apache Tomcat/9.0.87,ynou.edu.cn,rums/d,http://wssp.ynou.edu.cn
+https://wssp.ynou.edu.cn,182.245.146.12,443,https,tcp,Apache Tomcat/9.0.87,ynou.edu.cn,rums/d,https://wssp.ynou.edu.cn
+yktmobilefacesrv.fjnu.edu.cn,121.14.7.16,80,http,tcp,404 Not Found,fjnu.edu.cn,openresty,http://yktmobilefacesrv.fjnu.edu.cn
+https://yktmobilefacesrv.fjnu.edu.cn,121.14.7.13,443,https,tcp,404 Not Found,fjnu.edu.cn,openresty,https://yktmobilefacesrv.fjnu.edu.cn
+https://ecard.jhun.edu.cn,210.42.72.105,443,https,tcp,Apache Tomcat/9.0.65,jhun.edu.cn,none,https://ecard.jhun.edu.cn
+ecard.jhun.edu.cn,210.42.72.105,80,http,tcp,Apache Tomcat/9.0.65,jhun.edu.cn,none,http://ecard.jhun.edu.cn
+cas.aku.edu.cn,59.74.48.82,80,http,tcp,Apache Tomcat,aku.edu.cn,none,http://cas.aku.edu.cn
+https://openapi-zbhr.bjfu.edu.cn,202.204.123.27,443,https,tcp,Apache Tomcat/8.5.31,bjfu.edu.cn,nginx/1.18.0 (Ubuntu),https://openapi-zbhr.bjfu.edu.cn
+tjfx.swmu.edu.cn:8080,125.68.187.192,8080,http,tcp,Apache Tomcat,swmu.edu.cn,,http://tjfx.swmu.edu.cn:8080
+matu.uestc.edu.cn,121.48.165.91,80,http,tcp,aptat,uestc.edu.cn,Apache-Coyote/1.1,http://matu.uestc.edu.cn
+yx.zcmu.edu.cn,61.175.198.185,80,http,tcp,,zcmu.edu.cn,none,http://yx.zcmu.edu.cn
+cs-service.nju.edu.cn:8080,219.219.115.180,8080,http,tcp,HTTP Status 404 – Not Found,nju.edu.cn,,http://cs-service.nju.edu.cn:8080
+https://vis.sysysb.ynu.edu.cn,113.55.13.95,443,https,tcp,Apache Tomcat/8.5.79,ynu.edu.cn,,https://vis.sysysb.ynu.edu.cn
+https://zfbm.nuaa.edu.cn,218.94.136.180,443,https,tcp,Apache Tomcat/9.0.56,nuaa.edu.cn,none,https://zfbm.nuaa.edu.cn
+uccsimsrv1.ucc.bjtu.edu.cn,202.205.99.183,80,http,tcp,Apache Tomcat/8.5.82,bjtu.edu.cn,,http://uccsimsrv1.ucc.bjtu.edu.cn
+cw.qhit.edu.cn:8080,42.247.97.200,8080,http,tcp,Apache Tomcat/9.0.87,qhit.edu.cn,,http://cw.qhit.edu.cn:8080
+jwky.btmc.edu.cn:8080,222.199.64.205,8080,http,tcp,Apache Tomcat/8.5.82,btmc.edu.cn,nginx,http://jwky.btmc.edu.cn:8080
+https://cwxtcl.cqcet.edu.cn,125.84.158.253,443,https,tcp,Apache Tomcat/9.0.95,cqcet.edu.cn,rump/d,https://cwxtcl.cqcet.edu.cn
+xlgl.wahvc.edu.cn,60.173.165.14,80,http,tcp,Apache Tomcat/8.5.34,wahvc.edu.cn,nginx,http://xlgl.wahvc.edu.cn
+https://xlgl.wahvc.edu.cn,60.173.165.14,443,https,tcp,Apache Tomcat/8.5.34,wahvc.edu.cn,nginx,https://xlgl.wahvc.edu.cn
+https://newbooks.lib.pku.edu.cn,2001:da8:201:1138::a269:8a7d,443,https,tcp,新书通报--北京大学图书馆,pku.edu.cn,,https://newbooks.lib.pku.edu.cn
+cwyc.gxtcmu.edu.cn:8008,210.36.98.102,8008,http,tcp,Apache Tomcat/8.5.43,gxtcmu.edu.cn,,http://cwyc.gxtcmu.edu.cn:8008
+qwyx.mdjnu.edu.cn:8999,218.9.55.111,8999,http,tcp,Apache Tomcat/8.5.100,mdjnu.edu.cn,,http://qwyx.mdjnu.edu.cn:8999
+mjxt.cfec.edu.cn:8080,113.204.227.38,8080,http,tcp,Apache Tomcat/8.5.41,cfec.edu.cn,,http://mjxt.cfec.edu.cn:8080
+hsxnfz.wtbu.edu.cn,111.172.107.52,80,http,tcp,武汉工商学院积木式CDIO污水处理工艺设计虚拟仿真实验教学项目,wtbu.edu.cn,nginx/1.26.1,http://hsxnfz.wtbu.edu.cn
+wssp.scfai.edu.cn:8082,210.41.61.12,8082,http,tcp,Apache Tomcat/9.0.31,scfai.edu.cn,,http://wssp.scfai.edu.cn:8082
+chailv.scfai.edu.cn:8082,210.41.61.101,8082,http,tcp,Apache Tomcat/9.0.31,scfai.edu.cn,,http://chailv.scfai.edu.cn:8082
+https://zsj.cupk.edu.cn,42.247.21.39,443,https,tcp,Apache Tomcat/6.0.53 - Error report,cupk.edu.cn,Apache-Coyote/1.1,https://zsj.cupk.edu.cn
+zsj.cupk.edu.cn,42.247.21.39,80,http,tcp,Apache Tomcat/6.0.53 - Error report,cupk.edu.cn,Apache-Coyote/1.1,http://zsj.cupk.edu.cn
+yktyd.wbu.edu.cn,183.95.36.17,80,http,tcp,Apache Tomcat/9.0.88,wbu.edu.cn,,http://yktyd.wbu.edu.cn
+vpn.cua.edu.cn:8081,112.26.138.211,8081,http,tcp,Apache Tomcat/9.0.31,cua.edu.cn,,http://vpn.cua.edu.cn:8081
+oa.cua.edu.cn:8081,112.26.138.211,8081,http,tcp,Apache Tomcat/9.0.31,cua.edu.cn,,http://oa.cua.edu.cn:8081
+https://idp.cuz.edu.cn,115.236.69.26,443,https,tcp,Apache Tomcat/8.5.63,cuz.edu.cn,Server Version 11.0,https://idp.cuz.edu.cn
+idp.cuz.edu.cn,115.236.69.26,80,http,tcp,Apache Tomcat/8.5.63,cuz.edu.cn,,http://idp.cuz.edu.cn
+https://jdycas.zbu.edu.cn,218.29.107.106,443,https,tcp,Apache Tomcat/7.0.72,zbu.edu.cn,rump/d,https://jdycas.zbu.edu.cn
+jdycas.zbu.edu.cn,218.29.107.106,80,http,tcp,Apache Tomcat/7.0.72,zbu.edu.cn,rump/d,http://jdycas.zbu.edu.cn
+https://wx.gkd.edu.cn,42.247.44.135,443,https,tcp,Apache Tomcat/9.0.41,gkd.edu.cn,,https://wx.gkd.edu.cn
+wx.gkd.edu.cn,42.247.44.135,80,http,tcp,Apache Tomcat/9.0.41,gkd.edu.cn,,http://wx.gkd.edu.cn
+zcgl.shcac.edu.cn:8888,101.35.130.114,8888,http,tcp,Apache Tomcat/8.5.99,shcac.edu.cn,,http://zcgl.shcac.edu.cn:8888
+wcsys.scfai.edu.cn:8082,210.41.61.141,8082,http,tcp,Apache Tomcat/8.5.32,scfai.edu.cn,,http://wcsys.scfai.edu.cn:8082
+dingxiu.nwupl.edu.cn,202.200.171.69,80,http,tcp,,nwupl.edu.cn,nginx/1.22.1,http://dingxiu.nwupl.edu.cn
+oa.shmy.edu.cn:8060,58.34.71.43,8060,http,tcp,Apache Tomcat/8.5.61,shmy.edu.cn,,http://oa.shmy.edu.cn:8060
+moa.wxu.edu.cn:8081,218.90.158.146,8081,http,tcp,Apache Tomcat/7.0.55,wxu.edu.cn,Apache-Coyote/1.1,http://moa.wxu.edu.cn:8081
+www.wfitdb.wfit.edu.cn,42.247.13.28,80,http,tcp,Apache Tomcat/8.5.57,wfit.edu.cn,nginx,http://www.wfitdb.wfit.edu.cn
+xyhglxt.hzxy.edu.cn,222.203.60.51,80,http,tcp,Apache Tomcat/9.0.68,hzxy.edu.cn,,http://xyhglxt.hzxy.edu.cn
+clshxt.wit.edu.cn,218.199.183.187,80,http,tcp,Apache Tomcat/8.0.36,wit.edu.cn,nginx/1.16.1,http://clshxt.wit.edu.cn
+https://kdsjgx.usth.edu.cn,222.171.146.19,443,https,tcp,Apache Tomcat/9.0.88,usth.edu.cn,,https://kdsjgx.usth.edu.cn
+cwsp.lsnu.edu.cn,210.41.168.8,80,http,tcp,Apache Tomcat/9.0.93,lsnu.edu.cn,nginx,http://cwsp.lsnu.edu.cn
+hqbx.jit.edu.cn,180.101.238.239,80,http,tcp,Apache Tomcat/7.0.92,jit.edu.cn,wisedu,http://hqbx.jit.edu.cn
+jhcwcwsbz.cdutcm.edu.cn:8082,210.41.219.2,8082,http,tcp,Apache Tomcat/9.0.73,cdutcm.edu.cn,,http://jhcwcwsbz.cdutcm.edu.cn:8082
+gfdxcykt.gdfz.edu.cn,121.37.247.159,80,http,tcp,Apache Tomcat/9.0.70,gdfz.edu.cn,nginx/1.24.0,http://gfdxcykt.gdfz.edu.cn
+https://bwgpc.qdbhu.edu.cn,121.251.210.10,443,https,tcp,,qdbhu.edu.cn,,https://bwgpc.qdbhu.edu.cn
+bwgpc.qdbhu.edu.cn,121.251.210.10,80,http,tcp,,qdbhu.edu.cn,,http://bwgpc.qdbhu.edu.cn
+search.shmeea.edu.cn,180.169.96.99,80,http,tcp,Apache Tomcat,shmeea.edu.cn,,http://search.shmeea.edu.cn
+tjdjg.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tjdjg.tbjx.tj.edu.cn:9000
+wsbx.scfai.edu.cn:8082,210.41.61.141,8082,http,tcp,Apache Tomcat/8.5.32,scfai.edu.cn,,http://wsbx.scfai.edu.cn:8082
+tk.dmuzs.edu.cn:8080,118.202.255.55,8080,http,tcp,Apache Tomcat/8.5.76,dmuzs.edu.cn,,http://tk.dmuzs.edu.cn:8080
+xalxx.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://xalxx.tbjx.tj.edu.cn:9000
+commonbaserest.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://commonbaserest.tbjx.tj.edu.cn:9000
+idp.xyu.edu.cn,2001:da8:5056:1502::204,80,http,tcp,Apache Tomcat/8.5.84,xyu.edu.cn,rums/b,http://idp.xyu.edu.cn
+rszjps.nufe.edu.cn:8080,210.28.80.99,8080,http,tcp,Apache Tomcat/7.0.104,nufe.edu.cn,Apache-Coyote/1.1,http://rszjps.nufe.edu.cn:8080
+commonold.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://commonold.tbjx.tj.edu.cn:9000
+wxpt.ahjzu.edu.cn,219.231.15.51,80,http,tcp,Apache Tomcat/8.0.53,ahjzu.edu.cn,Apache-Coyote/1.1,http://wxpt.ahjzu.edu.cn
+jhcwcapp.zjhu.edu.cn,61.153.52.77,80,http,tcp,HTTP Status 404 – Not Found,zjhu.edu.cn,nginx/1.17.4,http://jhcwcapp.zjhu.edu.cn
+wsqp.uzz.edu.cn:8080,210.44.232.76,8080,http,tcp,Apache Tomcat/9.0.87,uzz.edu.cn,,http://wsqp.uzz.edu.cn:8080
+https://1ktbu.xzhmu.edu.cn,49.81.52.25,443,https,tcp,Apache Tomcat/8.5.90,xzhmu.edu.cn,,https://1ktbu.xzhmu.edu.cn
+fzsx.nwupl.edu.cn,202.200.173.4,80,http,tcp,陕西政治政府建设评估数据系统平台,nwupl.edu.cn,,http://fzsx.nwupl.edu.cn
+libwx.njau.edu.cn,202.195.243.77,80,http,tcp,南农图书馆微信平台V2.0,njau.edu.cn,,http://libwx.njau.edu.cn
+https://wxpay.dhu.edu.cn,219.228.76.73,443,https,tcp,Apache Tomcat/9.0.87,dhu.edu.cn,,https://wxpay.dhu.edu.cn
+gf.gxmu.edu.cn,210.36.49.12,80,http,tcp,Apache Tomcat/9.0.54,gxmu.edu.cn,,http://gf.gxmu.edu.cn
+ebss.lzu.edu.cn,202.201.13.70,80,http,tcp,兰州大学循证社会科学研究中心 - Powered by WizSite+,lzu.edu.cn,nginx,http://ebss.lzu.edu.cn
+cwcappro.xust.edu.cn,202.200.48.247,80,http,tcp,Apache Tomcat/9.0.62,xust.edu.cn,,http://cwcappro.xust.edu.cn
+financeweixin.zmu.edu.cn:8080,211.83.163.164,8080,http,tcp,Apache Tomcat/9.0.75,zmu.edu.cn,,http://financeweixin.zmu.edu.cn:8080
+https://lfzf.zsc.edu.cn,210.38.224.96,443,https,tcp,HTTP状态 404 - 未找到,zsc.edu.cn,nginx,https://lfzf.zsc.edu.cn
+guozi.lzjtu.edu.cn,202.201.18.22,80,http,tcp,Apache Tomcat/8.5.95,lzjtu.edu.cn,****,http://guozi.lzjtu.edu.cn
+cwyc.gxtcmu.edu.cn:8080,210.36.98.102,8080,http,tcp,Apache Tomcat/7.0.85,gxtcmu.edu.cn,Server,http://cwyc.gxtcmu.edu.cn:8080
+cwsp.qtc.edu.cn:9999,222.195.192.231,9999,http,tcp,Apache Tomcat/9.0.62,qtc.edu.cn,,http://cwsp.qtc.edu.cn:9999
+bst.mju.edu.cn,211.80.209.35,80,http,tcp,实践教学管理平台,mju.edu.cn,Apache-Coyote/1.1,http://bst.mju.edu.cn
+da.hlju.edu.cn:8084,125.223.1.125,8084,http,tcp,Apache Tomcat,hlju.edu.cn,,http://da.hlju.edu.cn:8084
+cwsppt.dlnu.edu.cn:8002,210.30.4.15,8002,http,tcp,HTTP状态 404 - 未找到,dlnu.edu.cn,,http://cwsppt.dlnu.edu.cn:8002
+cardwx.gdufe.edu.cn,202.116.48.60,80,http,tcp,Apache Tomcat/9.0.74,gdufe.edu.cn,,http://cardwx.gdufe.edu.cn
+clsf.lzu.edu.cn,202.201.13.23,80,http,tcp,Apache Tomcat/8.5.35,lzu.edu.cn,,http://clsf.lzu.edu.cn
+1ktbu.xzhmu.edu.cn,49.81.52.25,80,http,tcp,Apache Tomcat/8.5.90,xzhmu.edu.cn,,http://1ktbu.xzhmu.edu.cn
+https://freshman.neusoft.edu.cn,219.216.131.82,443,https,tcp,自助迎新管理系统,neusoft.edu.cn,nginx/1.26.2,https://freshman.neusoft.edu.cn
+www.whbc2000.edu.cn:8080,42.247.43.4,8080,http,tcp,Apache Tomcat/7.0.100,whbc2000.edu.cn,Apache-Coyote/1.1,http://www.whbc2000.edu.cn:8080
+https://kyxt.scitc.edu.cn,61.157.243.90,443,https,tcp,Tomcat,scitc.edu.cn,,https://kyxt.scitc.edu.cn
+ws.qhu.edu.cn,210.27.176.114,80,http,tcp,Apache Tomcat/7.0.54 - Error report,qhu.edu.cn,Apache-Coyote/1.1,http://ws.qhu.edu.cn
+pay.suse.edu.cn:8099,210.41.127.105,8099,http,tcp,Apache Tomcat/8.5.55,suse.edu.cn,,http://pay.suse.edu.cn:8099
+vrlab.qhu.edu.cn:8080,210.27.177.149,8080,http,tcp,Apache Tomcat/8.5.91,qhu.edu.cn,,http://vrlab.qhu.edu.cn:8080
+xslx.tjarts.edu.cn,202.113.216.19,80,http,tcp,302 Found,tjarts.edu.cn,openresty,http://xslx.tjarts.edu.cn
+it.sdslvc.edu.cn,61.136.155.10,80,http,tcp,,sdslvc.edu.cn,Apache-Coyote/1.1,http://it.sdslvc.edu.cn
+vodzjkc.sdvcst.edu.cn:8090,222.207.204.14,8090,http,tcp,Apache Tomcat/8.5.61,sdvcst.edu.cn,,http://vodzjkc.sdvcst.edu.cn:8090
+sf.jzp.edu.cn,58.192.231.66,80,http,tcp,Apache Tomcat/8.5.82,jzp.edu.cn,,http://sf.jzp.edu.cn
+monitor.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://monitor.tbjx.tj.edu.cn:9000
+kyxt.scitc.edu.cn,61.157.243.90,80,http,tcp,Tomcat,scitc.edu.cn,,http://kyxt.scitc.edu.cn
+fenxi.sou.edu.cn,180.166.194.15,80,http,tcp,Apache Tomcat/7.0.69 - Error report,sou.edu.cn,Apache-Coyote/1.1,http://fenxi.sou.edu.cn
+v.jwzhifu.zust.edu.cn,122.225.231.11,80,http,tcp,学生自助服务系统——智能后台管理     广州正脉教育技术有限公司,zust.edu.cn,,http://v.jwzhifu.zust.edu.cn
+cg.cwu.edu.cn:8080,106.39.32.172,8080,http,tcp,Apache Tomcat/9.0.40,cwu.edu.cn,,http://cg.cwu.edu.cn:8080
+https://ndls.sandau.edu.cn,180.168.212.145,443,https,tcp,Apache Tomcat/8.5.16,sandau.edu.cn,,https://ndls.sandau.edu.cn
+ndls.sandau.edu.cn,180.168.212.145,80,http,tcp,Apache Tomcat/8.5.16,sandau.edu.cn,,http://ndls.sandau.edu.cn
+sxkdk.hfnu.edu.cn,139.9.123.145,80,http,tcp,Apache Tomcat/7.0.100,hfnu.edu.cn,Apache-Coyote/1.1,http://sxkdk.hfnu.edu.cn
+lzcw.shxj.edu.cn:8080,58.198.24.74,8080,http,tcp,Apache Tomcat/8.5.96,shxj.edu.cn,,http://lzcw.shxj.edu.cn:8080
+h5.jxvct.edu.cn:8200,111.75.195.242,8200,http,tcp,Apache Tomcat/9.0.46,jxvct.edu.cn,,http://h5.jxvct.edu.cn:8200
+https://pay.sicfl.edu.cn,219.220.176.121,443,https,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,https://pay.sicfl.edu.cn
+file.whu.edu.cn,202.114.96.104,80,http,tcp,Apache Tomcat,whu.edu.cn,nginx,http://file.whu.edu.cn
+gn.qhu.edu.cn,210.27.176.114,80,http,tcp,Apache Tomcat/7.0.54 - Error report,qhu.edu.cn,Apache-Coyote/1.1,http://gn.qhu.edu.cn
+cwcwx.fjtcm.edu.cn:8080,210.34.73.50,8080,http,tcp,Apache Tomcat/9.0.87,fjtcm.edu.cn,,http://cwcwx.fjtcm.edu.cn:8080
+dianzifapiao.xafy.edu.cn:8080,59.75.8.156,8080,http,tcp,Apache Tomcat,xafy.edu.cn,Apache-Coyote/1.1,http://dianzifapiao.xafy.edu.cn:8080
+fk.nut.edu.cn,222.204.120.231,80,http,tcp,Apache Tomcat/9.0.0.M21,nut.edu.cn,,http://fk.nut.edu.cn
+yiban.glmc.edu.cn,116.1.3.181,80,http,tcp,Apache Tomcat/9.0.56,glmc.edu.cn,nginx,http://yiban.glmc.edu.cn
+https://xyytc.xisu.edu.cn,59.74.70.68,443,https,tcp,Apache Tomcat/9.0.82,xisu.edu.cn,nginx,https://xyytc.xisu.edu.cn
+wx.zjtongji.edu.cn:8080,115.236.75.26,8080,http,tcp,Apache Tomcat/9.0.62,zjtongji.edu.cn,,http://wx.zjtongji.edu.cn:8080
+ucapp.xpu.edu.cn:8080,202.200.206.121,8080,http,tcp,Apache Tomcat/8.5.78,xpu.edu.cn,,http://ucapp.xpu.edu.cn:8080
+xyytc.xisu.edu.cn,59.74.70.68,80,http,tcp,Apache Tomcat/9.0.82,xisu.edu.cn,nginx,http://xyytc.xisu.edu.cn
+https://tfapp.tfswufe.edu.cn,220.166.50.38,443,https,tcp,Welcome to nginx!,tfswufe.edu.cn,nginx,https://tfapp.tfswufe.edu.cn
+sp.dufe.edu.cn,202.199.162.139,80,http,tcp,,dufe.edu.cn,,http://sp.dufe.edu.cn
+https://yiban.glmc.edu.cn,116.1.3.181,443,https,tcp,Apache Tomcat/9.0.56,glmc.edu.cn,nginx,https://yiban.glmc.edu.cn
+xnlogin.lzu.edu.cn:8080,202.201.1.45,8080,http,tcp,Apache Tomcat/8.5.31,lzu.edu.cn,,http://xnlogin.lzu.edu.cn:8080
+wxsso.hngm.edu.cn,218.28.183.28,80,http,tcp,Apache Tomcat/8.5.73,hngm.edu.cn,,http://wxsso.hngm.edu.cn
+wxpay.dhu.edu.cn,219.228.76.73,80,http,tcp,Apache Tomcat/9.0.87,dhu.edu.cn,,http://wxpay.dhu.edu.cn
+tsg.ynczy.edu.cn:8094,112.117.250.139,8094,http,tcp,Apache Tomcat/8.5.83,ynczy.edu.cn,,http://tsg.ynczy.edu.cn:8094
+xfz.ahcbxy.edu.cn:8088,117.71.50.6,8088,http,tcp,Apache Tomcat/9.0.40,ahcbxy.edu.cn,,http://xfz.ahcbxy.edu.cn:8088
+tk.sntcm.edu.cn:8080,218.195.64.160,8080,http,tcp,,sntcm.edu.cn,,http://tk.sntcm.edu.cn:8080
+sclub.ahcbxy.edu.cn:8088,117.71.50.6,8088,http,tcp,Apache Tomcat/9.0.40,ahcbxy.edu.cn,,http://sclub.ahcbxy.edu.cn:8088
+https://sicflfzpay.sicfl.edu.cn,219.220.176.108,443,https,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,https://sicflfzpay.sicfl.edu.cn
+jedu.trzy.edu.cn,222.87.39.73,80,http,tcp,Apache Tomcat/7.0.85,trzy.edu.cn,Apache-Coyote/1.1,http://jedu.trzy.edu.cn
+sicflfzpay.sicfl.edu.cn,219.220.176.108,80,http,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,http://sicflfzpay.sicfl.edu.cn
+pay2.ptu.edu.cn,202.101.111.193,80,http,tcp,Apache Tomcat/9.0.73,ptu.edu.cn,,http://pay2.ptu.edu.cn
+js.sou.edu.cn:8080,202.121.80.42,8080,http,tcp,Apache Tomcat/8.5.61,sou.edu.cn,******,http://js.sou.edu.cn:8080
+https://mailtest.nuist.edu.cn,202.195.224.68,443,https,tcp,Apache Tomcat/7.0.109,nuist.edu.cn,Apache-Coyote/1.1,https://mailtest.nuist.edu.cn
+https://hpc-messenger.sjtu.edu.cn,202.120.35.193,443,https,tcp,Apache Tomcat/8.5.51,sjtu.edu.cn,,https://hpc-messenger.sjtu.edu.cn
+ef.cuit.edu.cn,210.41.224.215,80,http,tcp,Apache Tomcat/9.0.14,cuit.edu.cn,nginx/1.15.6,http://ef.cuit.edu.cn
+fee.ykt.hceb.edu.cn,202.100.206.41,80,http,tcp,Apache Tomcat/7.0.82,hceb.edu.cn,Apache-Coyote/1.1,http://fee.ykt.hceb.edu.cn
+ky.tgc.edu.cn:8080,125.221.10.3,8080,http,tcp,Apache Tomcat/8.5.56,tgc.edu.cn,,http://ky.tgc.edu.cn:8080
+https://wxgc.pdsu.edu.cn,211.69.31.82,443,https,tcp,学工移动端,pdsu.edu.cn,nginx,https://wxgc.pdsu.edu.cn
+cosc.intl.zju.edu.cn,210.32.159.78,80,http,tcp,Apache Tomcat/8.5.63,zju.edu.cn,,http://cosc.intl.zju.edu.cn
+cpgl.ahcbxy.edu.cn:8088,117.71.50.6,8088,http,tcp,Apache Tomcat/9.0.40,ahcbxy.edu.cn,,http://cpgl.ahcbxy.edu.cn:8088
+cwyth.shcac.edu.cn:8888,42.192.198.247,8888,http,tcp,Apache Tomcat/8.5.99,shcac.edu.cn,,http://cwyth.shcac.edu.cn:8888
+kyxt.hut.edu.cn,218.75.197.123,80,http,tcp,Tomcat,hut.edu.cn,rump/d,http://kyxt.hut.edu.cn
+wb.liaodongu.edu.cn,59.73.168.7,80,http,tcp,Apache Tomcat/9.0.73,liaodongu.edu.cn,,http://wb.liaodongu.edu.cn
+https://shuidian.sfc.edu.cn,183.221.105.48,443,https,tcp,Apache Tomcat/8.5.97,sfc.edu.cn,,https://shuidian.sfc.edu.cn
+https://gzlgxyxtw.git.edu.cn,117.187.34.228,443,https,tcp,跳转中……,git.edu.cn,nginx/1.15.11,https://gzlgxyxtw.git.edu.cn
+ygpt.hufe.edu.cn:8080,59.71.96.26,8080,http,tcp,Apache Tomcat,hufe.edu.cn,Apache-Coyote/1.1,http://ygpt.hufe.edu.cn:8080
+ceping.hufe.edu.cn:8080,59.71.96.26,8080,http,tcp,Apache Tomcat,hufe.edu.cn,Apache-Coyote/1.1,http://ceping.hufe.edu.cn:8080
+xlcp.syty.edu.cn,210.30.157.113,80,http,tcp,Apache Tomcat/8.5.79,syty.edu.cn,,http://xlcp.syty.edu.cn
+shixi.xiyi.edu.cn,59.75.113.37,80,http,tcp,Apache Tomcat/8.5.81,xiyi.edu.cn,,http://shixi.xiyi.edu.cn
+wxcw.sta.edu.cn:8080,218.242.233.172,8080,http,tcp,Apache Tomcat/8.5.61,sta.edu.cn,,http://wxcw.sta.edu.cn:8080
+jcc.lncc.edu.cn,202.199.187.119,80,http,tcp,Apache Tomcat/8.5.99,lncc.edu.cn,,http://jcc.lncc.edu.cn
+https://cwcwssb.cqnu.edu.cn,202.202.208.198,443,https,tcp,Apache Tomcat/9.0.56,cqnu.edu.cn,rums/b,https://cwcwssb.cqnu.edu.cn
+mhsso.hngm.edu.cn,218.28.183.28,80,http,tcp,Apache Tomcat/8.5.73,hngm.edu.cn,,http://mhsso.hngm.edu.cn
+jwxyxx2wm.nit.edu.cn:8080,117.40.44.26,8080,http,tcp,Apache Tomcat/8.5.24,nit.edu.cn,,http://jwxyxx2wm.nit.edu.cn:8080
+hpc-messenger.sjtu.edu.cn,202.120.35.193,80,http,tcp,Apache Tomcat/8.5.51,sjtu.edu.cn,,http://hpc-messenger.sjtu.edu.cn
+https://fee.sjtu.edu.cn,202.120.35.205,443,https,tcp,Apache Tomcat/8.5.63,sjtu.edu.cn,,https://fee.sjtu.edu.cn
+yysz.csust.edu.cn,222.247.225.206,80,http,tcp,沙盘,csust.edu.cn,Apache-Coyote/1.1,http://yysz.csust.edu.cn
+pay.zjhu.edu.cn,61.153.52.77,80,http,tcp,HTTP Status 404 – Not Found,zjhu.edu.cn,nginx/1.17.4,http://pay.zjhu.edu.cn
+pay.sicfl.edu.cn,219.220.176.121,80,http,tcp,Apache Tomcat/8.0.52,sicfl.edu.cn,Apache-Coyote/1.1,http://pay.sicfl.edu.cn
+mailtest.nuist.edu.cn,202.195.224.68,80,http,tcp,Apache Tomcat/7.0.109,nuist.edu.cn,Apache-Coyote/1.1,http://mailtest.nuist.edu.cn
+jfpt.cjgz.edu.cn:8081,222.168.23.199,8081,http,tcp,Apache Tomcat/9.0.75,cjgz.edu.cn,,http://jfpt.cjgz.edu.cn:8081
+freshman.neusoft.edu.cn,219.216.131.82,80,http,tcp,自助迎新管理系统,neusoft.edu.cn,nginx/1.26.1,http://freshman.neusoft.edu.cn
+cgyy.cumtb.edu.cn,202.112.209.53,80,http,tcp,Apache Tomcat/9.0.35,cumtb.edu.cn,nginx/1.15.0,http://cgyy.cumtb.edu.cn
+cnki1.lib.whu.edu.cn,202.114.65.37,80,http,tcp,,whu.edu.cn,Apache-Coyote/1.1,http://cnki1.lib.whu.edu.cn
+cwxx.fvti.edu.cn:8080,59.79.196.34,8080,http,tcp,Apache Tomcat/9.0.73,fvti.edu.cn,,http://cwxx.fvti.edu.cn:8080
+cwoa.cwu.edu.cn:8080,114.247.92.215,8080,http,tcp,Apache Tomcat/9.0.31,cwu.edu.cn,,http://cwoa.cwu.edu.cn:8080
+yjswx.cqmu.edu.cn:8087,183.64.83.154,8087,http,tcp,Apache Tomcat/8.5.37,cqmu.edu.cn,,http://yjswx.cqmu.edu.cn:8087
+kdsjgx.usth.edu.cn:8080,222.171.146.19,8080,http,tcp,Apache Tomcat/9.0.88,usth.edu.cn,,http://kdsjgx.usth.edu.cn:8080
+cwxx.ndnu.edu.cn:8080,210.34.24.51,8080,http,tcp,Apache Tomcat/9.0.62,ndnu.edu.cn,,http://cwxx.ndnu.edu.cn:8080
+cwwx.tjut.edu.cn:9080,202.113.66.34,9080,http,tcp,Apache Tomcat/9.0.73,tjut.edu.cn,,http://cwwx.tjut.edu.cn:9080
+wssp.yangtzeu.edu.cn:8080,58.54.247.89,8080,http,tcp,Apache Tomcat/9.0.62,yangtzeu.edu.cn,,http://wssp.yangtzeu.edu.cn:8080
+zhclpt.xauat.edu.cn:8089,202.200.144.219,8089,http,tcp,Apache Tomcat/9.0.86,xauat.edu.cn,Server,http://zhclpt.xauat.edu.cn:8089
+sysjcxx.bjtu.edu.cn,59.64.3.178,80,http,tcp,北京交通大学实验室综合管理平台,bjtu.edu.cn,,http://sysjcxx.bjtu.edu.cn
+tourlab.ncu.edu.cn,222.204.6.4,80,http,tcp,Apache Tomcat/8.5.83,ncu.edu.cn,,http://tourlab.ncu.edu.cn
+flyread.sxpi.edu.cn:9001,123.138.199.31,9001,http,tcp,Apache Tomcat/8.5.41,sxpi.edu.cn,,http://flyread.sxpi.edu.cn:9001
+zhht.ahcbxy.edu.cn:8088,117.71.50.6,8088,http,tcp,Apache Tomcat/9.0.40,ahcbxy.edu.cn,,http://zhht.ahcbxy.edu.cn:8088
+yjsyx.wzu.edu.cn,218.75.16.103,80,http,tcp,登录页面,wzu.edu.cn,none,http://yjsyx.wzu.edu.cn
+https://data.cpu.edu.cn,222.190.112.232,443,https,tcp,Apache Tomcat/8.5.14,cpu.edu.cn,,https://data.cpu.edu.cn
+jiuye.ncec.edu.cn:8080,183.134.242.164,8080,http,tcp,Apache Tomcat/8.5.92,ncec.edu.cn,,http://jiuye.ncec.edu.cn:8080
+dwglapp.jxutcm.edu.cn,117.40.29.89,80,http,tcp,Apache Tomcat/7.0.68,jxutcm.edu.cn,none,http://dwglapp.jxutcm.edu.cn
+lib-opac.huh.edu.cn,218.24.88.60,80,http,tcp,Apache Tomcat/9.0.45,huh.edu.cn,*****,http://lib-opac.huh.edu.cn
+libreserve.sdust.edu.cn:6161,219.218.128.224,6161,http,tcp,Apache Tomcat/9.0.52,sdust.edu.cn,,http://libreserve.sdust.edu.cn:6161
+shuanggao.abc.edu.cn,218.22.71.228,80,http,tcp,Apache Tomcat/8.5.63,abc.edu.cn,none,http://shuanggao.abc.edu.cn
+https://doortest.njau.edu.cn,202.195.242.84,443,https,tcp,Apache Tomcat/8.5.68,njau.edu.cn,none,https://doortest.njau.edu.cn
+https://ecard.swun.edu.cn,211.83.241.167,443,https,tcp,,swun.edu.cn,******,https://ecard.swun.edu.cn
+cgpt8090.kmmu.edu.cn,220.163.113.41,80,http,tcp,Apache Tomcat/7.0.109,kmmu.edu.cn,none,http://cgpt8090.kmmu.edu.cn
+zhjd.njucm.edu.cn:8080,202.195.209.104,8080,http,tcp,Apache Tomcat/8.5.88,njucm.edu.cn,,http://zhjd.njucm.edu.cn:8080
+zc.hip.edu.cn:8090,111.40.23.113,8090,http,tcp,Apache Tomcat/8.5.61,hip.edu.cn,,http://zc.hip.edu.cn:8090
+kaoyi.dmu.edu.cn,210.47.245.124,80,http,tcp,Apache Tomcat/8.5.76,dmu.edu.cn,,http://kaoyi.dmu.edu.cn
+cjy.gxmu.edu.cn,210.36.48.150,80,http,tcp,Apache Tomcat/9.0.12,gxmu.edu.cn,,http://cjy.gxmu.edu.cn
+https://shuidian.cdmc.edu.cn,211.81.225.5,443,https,tcp,Apache Tomcat/8.0.47,cdmc.edu.cn,Apache-Coyote/1.1,https://shuidian.cdmc.edu.cn
+zs.cqcst.edu.cn:88,222.179.90.227,88,http,tcp,HTTP Status 404 – Not Found,cqcst.edu.cn,,http://zs.cqcst.edu.cn:88
+zhaoban.xpu.edu.cn:8080,202.200.200.36,8080,http,tcp,Apache Tomcat/7.0.52,xpu.edu.cn,Apache-Coyote/1.1,http://zhaoban.xpu.edu.cn:8080
+sso-5.gdsyzx.edu.cn:8080,113.108.158.130,8080,http,tcp,Apache Tomcat/8.5.100,gdsyzx.edu.cn,,http://sso-5.gdsyzx.edu.cn:8080
+https://zcgl.jxvc.edu.cn,218.95.46.70,443,https,tcp,Apache Tomcat/8.5.100,jxvc.edu.cn,,https://zcgl.jxvc.edu.cn
+https://jy.shjgu.edu.cn:8088,42.247.10.106,8088,https,tcp,Apache Tomcat/8.5.35,shjgu.edu.cn,,https://jy.shjgu.edu.cn:8088
+https://mooc.qhavtc.edu.cn,219.247.208.16,443,https,tcp,Shibboleth IdP,qhavtc.edu.cn,,https://mooc.qhavtc.edu.cn
+https://fam.cmu.edu.cn,202.118.47.4,443,https,tcp,,cmu.edu.cn,,https://fam.cmu.edu.cn
+portal.hnvcc.edu.cn,218.77.43.189,80,http,tcp,HTTP状态 404 - 未找到,hnvcc.edu.cn,,http://portal.hnvcc.edu.cn
+jqzcgl.zmuzh.edu.cn,221.4.209.19,80,http,tcp,Apache Tomcat/7.0.105,zmuzh.edu.cn,rums/d,http://jqzcgl.zmuzh.edu.cn
+https://jqzcgl.zmuzh.edu.cn,221.4.209.19,443,https,tcp,Apache Tomcat/7.0.105,zmuzh.edu.cn,rums/d,https://jqzcgl.zmuzh.edu.cn
+https://nrpspjw.qhou.edu.cn:8060,110.167.234.55,8060,https,tcp,Apache Tomcat/7.0.47,qhou.edu.cn,Apache-Coyote/1.1,https://nrpspjw.qhou.edu.cn:8060
+electronboard.ahpu.edu.cn:9999,211.86.232.16,9999,http,tcp,学生考勤查看,ahpu.edu.cn,,http://electronboard.ahpu.edu.cn:9999
+webcas.sdaeu.edu.cn:8081,211.64.116.228,8081,http,tcp,HTTP状态 404 - 未找到,sdaeu.edu.cn,Apache-Coyote/1.1,http://webcas.sdaeu.edu.cn:8081
+www.ecixn.yulinu.edu.cn,59.75.96.66,80,http,tcp,榆林学院,yulinu.edu.cn,Apache-Coyote/1.1,http://www.ecixn.yulinu.edu.cn
+https://wwwapi.gxlgxy.edu.cn,42.247.76.16,443,https,tcp,Apache Tomcat/7.0.109,gxlgxy.edu.cn,rump/c,https://wwwapi.gxlgxy.edu.cn
+wwwapi.gxlgxy.edu.cn,42.247.76.16,80,http,tcp,Apache Tomcat/7.0.109,gxlgxy.edu.cn,rump/c,http://wwwapi.gxlgxy.edu.cn
+https://uis.uzz.edu.cn,2001:da8:701b:127:210:44:232:36,443,https,tcp,Apache Tomcat,uzz.edu.cn,Apache-Coyote/1.1,https://uis.uzz.edu.cn
+xinhua.nxu.edu.cn,2001:250:1c00:96::237,80,http,tcp,宁夏大学-新华学院,nxu.edu.cn,nginx/1.22.0,http://xinhua.nxu.edu.cn
+xg.hbhgkj.edu.cn,113.56.75.205,80,http,tcp,Apache Tomcat/9.0.80,hbhgkj.edu.cn,rump/d,http://xg.hbhgkj.edu.cn
+bctsjyxx.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://bctsjyxx.tbjx.tj.edu.cn:9000
+tgsyxxzxq.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tgsyxxzxq.tbjx.tj.edu.cn:9000
+bhdgxyxx.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://bhdgxyxx.tbjx.tj.edu.cn:9000
+youjiao.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://youjiao.tbjx.tj.edu.cn:9000
+tjhebei.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tjhebei.tbjx.tj.edu.cn:9000
+tjhexi.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://tjhexi.tbjx.tj.edu.cn:9000
+hgez.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://hgez.tbjx.tj.edu.cn:9000
+hgsz.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://hgsz.tbjx.tj.edu.cn:9000
+hglz.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://hglz.tbjx.tj.edu.cn:9000
+qfzx.tbjx.tj.edu.cn:9000,111.164.113.39,9000,http,tcp,Apache Tomcat/7.0.57,tj.edu.cn,Apache-Coyote/1.1,http://qfzx.tbjx.tj.edu.cn:9000
+dorm.jiangnan.edu.cn,202.195.145.121,80,http,tcp,登录,jiangnan.edu.cn,Apache-Coyote/1.1,http://dorm.jiangnan.edu.cn

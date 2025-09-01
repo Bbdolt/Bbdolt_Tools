@@ -1,0 +1,31 @@
+{
+    "theme": "浅色",
+    "current_directory": "E:/Github_Project/Bbdolt_Tools",
+    "http_port": 9015,
+    "packerfuzzer": "E:/Github_Project/Bbdolt_Tools/Tools/webpackscan",
+    "deep_scan_packerfuzzer": true,
+    "python": "E:/anaconda3/envs/python311/python.exe",
+    "TomcatScanPro": "E:/Github_Project/Bbdolt_Tools/Tools/TomcatScanPro",
+    "Regular_Expression_Extraction": "E:/Github_Project/Bbdolt_Tools/Tools/Regular_Expression_Extraction",
+    "Venom-JWT": "",
+    "notepad": "notepad++",
+    "deep_scan": [
+        "-f",
+        "1",
+        "-t",
+        "adv",
+        "-s",
+        "Scan_Task_777",
+        "-r",
+        "html"
+    ],
+    "easy_scan": [
+        "-f",
+        "1",
+        "-s",
+        "Scan_Task_777",
+        "-r",
+        "html"
+    ],
+    "ai_analysis_next": true
+}

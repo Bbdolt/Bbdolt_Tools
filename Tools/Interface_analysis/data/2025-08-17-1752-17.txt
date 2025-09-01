@@ -1,0 +1,509 @@
+AI分析结果：
+8.0（HIGH） /uplus-system/app/v1/user/passLogin [-1] 可能存在['未授权访问']，原因为登录接口无防护
+8.0（HIGH） /uplus-system/api/v1/token/refresh [-1] 可能存在['令牌刷新漏洞']，原因为关键身份认证接口无防护
+7.8（HIGH） /uplus-foundation/app/v1/donateu/items/getCardBlance?stuWorkNo= [-1] 可能存在['未授权访问', '潜在越权']，原因为用户标识无校验
+7.5（HIGH） /uplus-system/app/v1/user/middle/auth [-1] 可能存在['未授权访问风险']，原因为认证中间件路径需强制防护
+7.5（HIGH） /app/v1/user/middle/auth [-1] 可能存在['未授权访问']，原因为管理路径无鉴权
+7.5（HIGH） /uplus-system/app/v1/user/baseInfo [-1] 可能存在['未授权访问', '潜在越权']，原因为用户信息接口无防护
+7.5（HIGH） /uplus-foundation/app/v1/cpu/sign/agreement/signature [-1] 可能存在['未授权签名操作']，原因为签名接口需防未授权访问
+7.5（HIGH） /uplus-foundation/app/v1/donateu/items/payback [-1] 可能存在['潜在未授权操作']，原因为金融操作接口无安全限制
+7.5（HIGH） /uplus-system/app/v1/user/getAuthToken?billType=2&code= [-1] 可能存在['未授权访问风险', '敏感参数暴露']，原因为身份令牌接口需强制鉴权
+7.0（HIGH） /uplus-system/api/v1/file/upload [-1] 可能存在['潜在未授权上传']，原因为文件上传接口无鉴权
+7.0（HIGH） /uplus-foundation/app/v1/donateu/items/checkPermission [-1] 可能存在['未授权访问']，原因为权限检查接口无防护
+7.0（HIGH） /uplus-foundation/app/v1/donateu/together/delete [-1] 可能存在['潜在未授权操作']，原因为高危删除操作接口无防护
+6.8（MEDIUM） /uplus-operateu/app/v1/web/mobile/index/article/list/mobile [281253] 可能存在['批量数据泄露']，原因为超大响应体(281KB)触发检测
+6.8（MEDIUM） /uplus-foundation/app/v1/cpu/sign/agreement/getMySign [-1] 可能存在['签名信息泄露']，原因为签名获取接口需严格鉴权
+6.5（MEDIUM） /pages/index/index?url= [-1] 可能存在['潜在开放重定向']，原因为高危参数(url)无校验
+6.5（MEDIUM） /uplus-foundation/app/v1/donateu/receipt/lastUserInfo [-1] 可能存在['潜在信息泄露']，原因为敏感路径无防护
+6.5（MEDIUM） /uplus-foundation/app/v1/donateu/certificate/insert [-1] 可能存在['潜在未授权操作']，原因为写入操作接口无鉴权标识
+6.0（MEDIUM） /uplus-system/app/v1/token/refresh?lang=zh_CN [255] 可能存在['潜在令牌滥用']，原因为含高危身份控制参数(token)
+6.0（MEDIUM） /donate-h5/ [22836] 可能存在['潜在信息泄露']，原因为超大响应体(>20KB)触发检测
+6.0（MEDIUM） /uplus-system/app/v1/user/getAuthUrl?billType=2&url= [-1] 可能存在['潜在开放重定向']，原因为高危参数(url)无校验
+6.0（MEDIUM） /uplus-foundation/app/v1/donateu/user/center/updateUser [-1] 可能存在['潜在越权更新']，原因为用户更新接口需严格校验身份
+6.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/success [-1] 可能存在['潜在信息泄露']，原因为敏感路径无防护
+6.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/donate4ali [-1] 可能存在['潜在信息泄露']，原因为敏感路径无防护
+6.0（MEDIUM） /pages/modules/common/webview/index?url= [-1] 可能存在['开放重定向风险']，原因为URL参数无过滤可能被滥用
+6.0（MEDIUM） /login [-1] 可能存在['潜在暴力破解风险']，原因为登录接口需防护机制
+5.8（MEDIUM） /uplus-foundation/app/v1/donateu/index/baseConfig?language=zh_CN [14495] 可能存在['配置信息泄露']，原因为基础配置接口返回14KB数据
+5.7（MEDIUM） /uplus-operateu/app/v1/web/mobile/index/article/list [272375] 可能存在['潜在信息泄露']，原因为响应体超过50KB触发中危检测
+5.5（MEDIUM） /uplus-system/app/v1/setting/base/list?lang=zh_CN [7214] 可能存在['配置信息泄露']，原因为系统设置接口含敏感数据
+5.5（MEDIUM） /uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN [47458] 可能存在['潜在信息泄露']，原因为响应体接近50KB触发检测
+5.5（MEDIUM） /uplus-system/app/v1/user/getSmsCode [-1] 可能存在['潜在未授权访问']，原因为用户标识无校验
+5.5（MEDIUM） /uplus-foundation/app/v1/donateu/together/insertTogether [-1] 可能存在['潜在CSRF']，原因为数据写入接口无防护
+5.5（MEDIUM） /uplus-foundation/app/v1/donateu/receipt/insert [-1] 可能存在['潜在CSRF']，原因为数据写入接口无防护
+5.5（MEDIUM） /uplus-foundation/app/v1/donateu/certificate/detail [-1] 可能存在['证书信息泄露']，原因为证书详情接口需验证权限
+5.0（MEDIUM） /uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN [17698] 可能存在['潜在信息泄露']，原因为非高危参数名(lang)，超大响应体触发检测
+5.0（MEDIUM） /uplus-operateu/app/v1/activity/getActivityPage [9279] 可能存在['潜在信息泄露']，原因为响应体较大(>5KB)，但无高危参数
+5.0（MEDIUM） /uplus-system/app/v1/user/mobileLogin [-1] 可能存在['潜在信息泄露']，原因为涉及用户登录接口
+5.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/itemsList [6419] 可能存在['潜在信息泄露']，原因为响应体大于5KB
+5.0（MEDIUM） /config/uplus/seat/ [-1] 可能存在['潜在信息泄露']，原因为配置类路径需鉴权保护
+5.0（MEDIUM） /uplus-system/api/v1/setting/system/list [-1] 可能存在['潜在信息泄露']，原因为敏感路径(system/list)但无高危参数
+5.0（MEDIUM） /uplus-system/app/v1/user/wechatMobileLogin [294] 可能存在['潜在信息泄露']，原因为敏感路径(user/wechatMobileLogin)但无高危参数
+4.5（MEDIUM） /uplus-system/app/v1/sys/config/list [16172] 可能存在['潜在信息泄露']，原因为敏感路径(sys/config)，响应体中危
+4.5（LOW） /uplus-system/api/v1/dictionary/area/getAreaDictionaryByParentId [-1] 可能存在['潜在信息泄露']，原因为敏感数据接口无限制
+4.5（MEDIUM） /views/authorize/pages/login/index?redirect_url= [-1] 可能存在['开放重定向风险']，原因为含redirect_url参数但无校验
+4.5（MEDIUM） /uplus-foundation/app/v1/donateu/items/insertLeaveword [-1] 可能存在['潜在XSS注入']，原因为留言接口无输入过滤
+4.5（MEDIUM） /uplus-foundation/app/v1/donateu/user/center/awardList?language=zh_CN [2016] 可能存在['潜在信息泄露']，原因为非高危参数名，响应体中等
+4.5（MEDIUM） /uplus-foundation/app/v1/donateu/user/center/donateRecordList [-1] 可能存在['潜在信息泄露']，原因为用户数据接口需验证权限
+4.2（MEDIUM） /uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN [998] 可能存在['潜在信息泄露']，原因为用户中心接口含敏感路径
+4.2（MEDIUM） /uplus-foundation/app/v1/donateu/receipt/stay/page [-1] 可能存在['潜在批量数据泄露']，原因为分页接口需防越权访问
+4.0（MEDIUM） /uplus-system/app/v1/alumnus/type/pager?lang=zh_CN [1253] 可能存在['潜在信息泄露']，原因为数据分页接口含敏感路径
+4.0（LOW） /uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN [36] 可能存在['潜在短信轰炸']，原因为含高危操作但响应体极小
+4.0（LOW） /uplus-system/app/v1/permission/mobile/item?id=34&lang=zh_CN [99] 可能存在['潜在越权访问']，原因为含高危参数(id)但响应体小
+4.0（MEDIUM） /uplus-system/api/v1/setting/base/list [-1] 可能存在['潜在信息泄露']，原因为系统配置类路径
+4.0（MEDIUM） /uplus-foundation/app/v1/cpu/sign/agreement/generation [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权
+4.0（LOW） /uplus-foundation/app/v1/donateu/user/center/awardDetail [-1] 可能存在['潜在越权访问']，原因为用户中心路径无鉴权
+4.0（LOW） /uplus-foundation/app/v1/donateu/user/center/my [490] 可能存在['潜在信息泄露']，原因为用户数据接口响应正常
+4.0（MEDIUM） /views/common/pages/webview-activity/index?url= [-1] 可能存在['潜在反射XSS']，原因为含URL参数但无值
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/user/center/togetherStatistics [-1] 可能存在['用户数据越权']，原因为用户统计接口无身份校验
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/hhu/sign/agreement/generation [-1] 可能存在['潜在越权操作']，原因为协议生成接口需严格鉴权
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/receipt/detail [-1] 可能存在['潜在敏感信息泄露']，原因为凭据详情接口需鉴权
+4.0（MEDIUM） /uplus-operateu/api/v1/web/mobile/get/article/details [-1] 可能存在['潜在信息泄露']，原因为API路径可能暴露敏感数据
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/getSeatShowData [-1] 可能存在['潜在信息泄露']，原因为数据接口路径无防护特征
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/leavewordList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径无防护特征
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/together/launchDetail [-1] 可能存在['潜在信息泄露']，原因为数据接口路径无防护特征
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/together/togetherDetail [-1] 可能存在['潜在信息泄露']，原因为数据接口路径无防护特征
+4.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/cancel [-1] 可能存在['潜在越权操作']，原因为操作类接口需校验用户权限
+4.0（MEDIUM） /uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN [2559] 可能存在['潜在信息泄露']，原因为含用户标识参数且响应体较大
+4.0（MEDIUM） /uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN [2228] 可能存在['潜在信息泄露']，原因为含认证参数且响应体较大
+3.5（LOW） /uplus-system/app/v1/mobile/group/getMobileSettingGroupList [2068] 可能存在['潜在信息泄露']，原因为非高危参数名，响应体中危
+3.5（LOW） /uplus-system/app/v1/user/authDouble [260] 可能存在['潜在信息泄露']，原因为认证接口但响应体较小
+3.5（LOW） /uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN [744] 可能存在['非密信息泄露']，原因为含身份验证参数但响应体小
+3.5（LOW） /uplus-system/app/v1/login/mode/config/getList?lang=zh_CN [645] 可能存在['非密信息泄露']，原因为含登录配置参数但响应体小
+3.5（MEDIUM） /uplus-foundation/app/v1/cpu/sign/agreement/project/getList [-1] 可能存在['潜在信息泄露']，原因为管理路径无鉴权
+3.5（MEDIUM） /uplus-system/api/v1/area/groupList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径
+3.5（MEDIUM） /uplus-foundation/app/v1/donateu/user/center/launchList [-1] 可能存在['潜在信息泄露']，原因为用户中心路径
+3.5（LOW） /pages/modules/common/donate-pay/index?d= [-1] 可能存在['潜在反射XSS']，原因为含未过滤参数(d)但无高危值
+3.5（LOW） /uplus-foundation/app/v1/donateu/index/articleDetail [-1] 可能存在['潜在越权访问']，原因为详情接口无ID校验机制
+3.5（LOW） /uplus-system/api/v1/area/getAreaList4sort [-1] 可能存在['潜在信息泄露']，原因为数据接口但无敏感参数
+3.5（LOW） /uplus-foundation/app/v1/donateu/certificate/page [-1] 可能存在['潜在信息泄露']，原因为证书页面需验证访问权限
+3.5（LOW） /uplus-foundation/app/v1/donateu/index/getSettingValue [-1] 可能存在['非密配置读取']，原因为配置读取接口需限制访问
+3.2（LOW） /uplus-system/app/v1/file/info/upload [342] 可能存在['潜在未授权访问']，原因为管理路径无鉴权但响应体较小
+3.0（LOW） /uplus-system/app/v1/ai/assistant/session/getAiConfig?lang=zh_CN [89] 可能存在['无风险或已防护']，原因为AI配置接口响应体安全
+3.0（LOW） /uplus-operateu/app/v1/operateu/periodical/getPagePeriodical [9618] 可能存在[]，原因为无高危参数且响应体适中
+3.0（LOW） /uplus-operateu/app/v1/enterprise/page [5306] 可能存在[]，原因为无高危参数且响应体适中
+3.0（LOW） /uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN [336] 可能存在[]，原因为无高危参数且响应体小
+3.0（LOW） /uplus-system/app/v1/digitalmap/org/getOrgLatlng?lang=zh_CN [3115] 可能存在[]，原因为中等响应体但无高危参数
+3.0（LOW） /uplus-system/app/v1/dictionary/base/getDictionary [2965] 可能存在[]，原因为中等响应体但无高危参数
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/naming/activity/getSeatDetail [-1] 可能存在['潜在信息泄露']，原因为敏感路径(app/v1)但无高危参数
+3.0（MEDIUM） /views/application/pages/donate/pay/index?d= [-1] 可能存在['潜在信息泄露']，原因为敏感路径(application/pages)但无高危参数
+3.0（MEDIUM） /uplus-operateu/api/v1/web/mobile/index/article/list/mobile [-1] 可能存在['潜在信息泄露']，原因为敏感路径(api/v1)但无高危参数
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/nameplateExample [-1] 可能存在['潜在信息泄露']，原因为敏感路径(app/v1)但无高危参数
+3.0（MEDIUM） /app/v1/donateu/index/baseConfig [-1] 可能存在['潜在信息泄露']，原因为敏感路径(app/v1)但无高危参数
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/donateBookList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/receipt/page [-1] 可能存在['潜在信息泄露']，原因为数据接口路径
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/items/areaList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径
+3.0（MEDIUM） /uplus-foundation/app/v1/donateu/index/articleList [-1] 可能存在['潜在信息泄露']，原因为数据接口路径
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/formDetail [-1] 可能存在['潜在信息泄露']，原因为管理路径但无鉴权特征
+3.0（LOW） /views/common/pages/web-view/index?itemId= [-1] 可能存在['潜在反射XSS']，原因为含基础参数(itemId)
+3.0（LOW） /uplus-foundation/app/v1/donateu/hhu/sign/agreement/signature [-1] 可能存在['潜在未授权访问']，原因为签名接口路径无鉴权特征
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/seatList [-1] 可能存在['潜在未授权访问']，原因为资源列表接口无防护
+3.0（LOW） /app/v1/donateu/items/itemsDetail [-1] 可能存在['潜在IDOR']，原因为详情接口需验证对象权限
+3.0（LOW） /uplus-system/app/v1/user/getWechatShare [-1] 可能存在['潜在SSRF']，原因为第三方分享功能需限制域名
+3.0（LOW） /views/navigation/pages/index/index?index=home [-1] 可能存在['无风险']，原因为普通页面路径
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/donate [-1] 可能存在['无风险或已防护']，原因为普通功能路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/bookList [-1] 可能存在['无风险或已防护']，原因为列表查询接口无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/progressList [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/user/center/namingList [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/getBookShowData [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/togetherList [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/subItemsStatistics [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/certificate/stay/page [-1] 可能存在['无风险或已防护']，原因为普通API路径，无高危参数
+3.0（LOW） /uplus-foundation/app/v1/donateu/items/itemsDetail [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /uplus-foundation/app/v1/donateu/index/menuConfig [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /mine [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /alipay [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /subject [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /nameplate-detail [-1] 可能存在['无风险或已防护']，原因为无高危参数或敏感路径
+3.0（LOW） /uplus-operateu/app/v1/web/article/categoryPage?websiteId=1&lang=zh_CN [543] 可能存在['无风险或已防护']，原因为无高危参数且响应体适中
+3.0（LOW） /contract-cpu/signature [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+3.0（LOW） /contract-cpu [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+3.0（LOW） /contract-cpu/myList [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+3.0（LOW） /contract-cpu/account [-1] 可能存在['潜在未授权访问']，原因为管理路径无鉴权特征
+3.0（LOW） /uplus-foundation/app/v1/donateu/index/getTypeListHasDonateCount [-1] 可能存在['潜在信息泄露']，原因为数据接口路径特征
+3.0（LOW） /uplus-system/app/v1/weichat/message/template?code=106301 [-1] 可能存在['潜在信息泄露']，原因为含模板参数但无高危特征
+3.0（LOW） /uplus-system/app/v1/user/logout [250] 可能存在['潜在越权访问']，原因为关键操作接口无防护特征
+2.5（LOW） /uplus-system/app/v1/user/getMyCenter?lang=zh_CN [779] 可能存在['无风险']，原因为非高危参数名(lang)，响应体小
+2.5（LOW） /uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN [399] 可能存在['无风险']，原因为非高危参数名(lang)，响应体小
+2.5（LOW） /uplus-system/app/v1/weichat/mp/user/getInfo?lang=zh_CN [53] 可能存在['无风险或已防护']，原因为微信用户信息接口响应过小
+2.5（LOW） /uplus-foundation/app/v1/donateu/items/bookCategoryList [-1] 可能存在['潜在信息泄露']，原因为数据类接口无访问控制
+2.0（LOW） /uplus-system/app/v1/user/getBaseConfig?lang=zh_CN [244] 可能存在['无风险']，原因为非高危参数名(lang)，响应体小
+2.0（LOW） /uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN [208] 可能存在['无风险']，原因为非高危参数名(lang)，响应体小
+2.0（LOW） /uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN [147] 可能存在['无风险']，原因为非高危参数名(lang)，响应体小
+2.0（LOW） /views/service/pages/school-back/index [-1] 可能存在['无风险或已防护']，原因为静态页面路径，无敏感参数
+2.0（LOW） /views/service/pages/apply-electronic-alumni-card/index [-1] 可能存在['无风险或已防护']，原因为静态页面路径，无敏感参数
+2.0（LOW） /uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN [35] 可能存在['无风险或已防护']，原因为认证状态接口响应过小
+2.0（LOW） /uplus-foundation/app/v1/donateu/receipt/config/detail [317] 可能存在['无风险或已防护']，原因为无高危参数且响应体较小
+2.0（LOW） /uplus-foundation/app/v1/donateu/certificate/config/detail [-1] 可能存在['无风险或已防护']，原因为无高危参数且响应体未知
+2.0（LOW） /uplus-foundation/app/v1/donateu/naming/activity/getSeatStatusList [-1] 可能存在['无风险或已防护']，原因为无高危参数且响应体未知
+2.0（LOW） /uplus-foundation/app/v1/donateu/items/getNameplateDetailConfig [-1] 可能存在['无风险或已防护']，原因为无高危参数且响应体未知
+2.0（LOW） /uplus-foundation/app/v1/donateu/items/itemsSubPrice [-1] 可能存在['无风险或已防护']，原因为无高危参数且响应体未知
+2.0（LOW） /uplus-foundation/app/v1/donateu/user/center/itemsDonateGroup [-1] 可能存在['无风险或已防护']，原因为无高危参数且响应体未知
+2.0（LOW） /uplus-foundation/app/v1/donateu/items/typeList?language=zh_CN [402] 可能存在[]，原因为常规参数无敏感特征
+2.0（LOW） /uplus-foundation/app/v1/donateu/items/instructionList [-1] 可能存在[]，原因为静态数据接口无风险特征
+2.0（LOW） /uplus-foundation/app/v1/donateu/user/center/joinList [-1] 可能存在['无风险']，原因为普通用户功能路径，无高危参数
+2.0（LOW） /uplus-foundation/app/v1/donateu/items/donateSeatList [-1] 可能存在['无风险']，原因为普通列表查询接口
+2.0（LOW） /uplus-foundation/app/v1/donateu/index/donateRecordPage [-1] 可能存在['无风险']，原因为普通记录查询页面
+2.0（LOW） /uplus-foundation/app/v1/donateu/index/total [-1] 可能存在['无风险或已防护']，原因为统计接口无高危特征
+2.0（LOW） /donate-h5/config/index.json [56] 可能存在['无风险或已防护']，原因为响应体过小且无高危参数
+2.0（LOW） /donate-h5/config/ahu/index.json [135] 可能存在['潜在信息泄露']，原因为响应体过小无风险
+1.5（LOW） /uplus-system/app/v1/user/resource/list?lang=zh_CN [35] 可能存在[]，原因为极小响应体且无错误信息
+1.0（LOW） /uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN [25] 可能存在['无风险']，原因为非高危参数名(lang)，响应体极小
+1.0（LOW） /uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN [34] 可能存在['无风险']，原因为非高危参数名(lang)，响应体极小
+1.0（LOW） /uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN [70] 可能存在[]，原因为响应体极小且无高危参数
+1.0（LOW） /uplus-system/app/v1/org/recommend?lang=zh_CN [35] 可能存在[]，原因为响应体极小且无高危参数
+1.0（LOW） /uplus-system/app/v1/org/config/getButtonList?lang=zh_CN [35] 可能存在[]，原因为响应体极小且无高危参数
+1.0（LOW） /uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN [35] 可能存在[]，原因为响应体极小且无高危参数
+1.0（LOW） /uplus-operateu/app/v1/web/mobile/get/article/addViewCount [25] 可能存在[]，原因为响应体极小且无高危参数
+0.0（LOW） /# [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+0.0（LOW） /g [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+0.0（LOW） /errorCorrectLevel: [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+0.0（LOW） /a/b [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+0.0（LOW） /a/i [-1] 可能存在['无风险']，原因为无参数且无敏感路径
+
+排序后的URI列表：
+/uplus-system/app/v1/user/passLogin
+/uplus-system/api/v1/token/refresh
+/uplus-foundation/app/v1/donateu/items/getCardBlance?stuWorkNo=
+/uplus-system/app/v1/user/middle/auth
+/app/v1/user/middle/auth
+/uplus-system/app/v1/user/baseInfo
+/uplus-foundation/app/v1/cpu/sign/agreement/signature
+/uplus-foundation/app/v1/donateu/items/payback
+/uplus-system/app/v1/user/getAuthToken?billType=2&code=
+/uplus-system/api/v1/file/upload
+/uplus-foundation/app/v1/donateu/items/checkPermission
+/uplus-foundation/app/v1/donateu/together/delete
+/uplus-operateu/app/v1/web/mobile/index/article/list/mobile
+/uplus-foundation/app/v1/cpu/sign/agreement/getMySign
+/pages/index/index?url=
+/uplus-foundation/app/v1/donateu/receipt/lastUserInfo
+/uplus-foundation/app/v1/donateu/certificate/insert
+/uplus-system/app/v1/token/refresh?lang=zh_CN
+/donate-h5/
+/uplus-system/app/v1/user/getAuthUrl?billType=2&url=
+/uplus-foundation/app/v1/donateu/user/center/updateUser
+/uplus-foundation/app/v1/donateu/items/success
+/uplus-foundation/app/v1/donateu/items/donate4ali
+/pages/modules/common/webview/index?url=
+/login
+/uplus-foundation/app/v1/donateu/index/baseConfig?language=zh_CN
+/uplus-operateu/app/v1/web/mobile/index/article/list
+/uplus-system/app/v1/setting/base/list?lang=zh_CN
+/uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN
+/uplus-system/app/v1/user/getSmsCode
+/uplus-foundation/app/v1/donateu/together/insertTogether
+/uplus-foundation/app/v1/donateu/receipt/insert
+/uplus-foundation/app/v1/donateu/certificate/detail
+/uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN
+/uplus-operateu/app/v1/activity/getActivityPage
+/uplus-system/app/v1/user/mobileLogin
+/uplus-foundation/app/v1/donateu/items/itemsList
+/config/uplus/seat/
+/uplus-system/api/v1/setting/system/list
+/uplus-system/app/v1/user/wechatMobileLogin
+/uplus-system/app/v1/sys/config/list
+/uplus-system/api/v1/dictionary/area/getAreaDictionaryByParentId
+/views/authorize/pages/login/index?redirect_url=
+/uplus-foundation/app/v1/donateu/items/insertLeaveword
+/uplus-foundation/app/v1/donateu/user/center/awardList?language=zh_CN
+/uplus-foundation/app/v1/donateu/user/center/donateRecordList
+/uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN
+/uplus-foundation/app/v1/donateu/receipt/stay/page
+/uplus-system/app/v1/alumnus/type/pager?lang=zh_CN
+/uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN
+/uplus-system/app/v1/permission/mobile/item?id=34&lang=zh_CN
+/uplus-system/api/v1/setting/base/list
+/uplus-foundation/app/v1/cpu/sign/agreement/generation
+/uplus-foundation/app/v1/donateu/user/center/awardDetail
+/uplus-foundation/app/v1/donateu/user/center/my
+/views/common/pages/webview-activity/index?url=
+/uplus-foundation/app/v1/donateu/user/center/togetherStatistics
+/uplus-foundation/app/v1/donateu/hhu/sign/agreement/generation
+/uplus-foundation/app/v1/donateu/receipt/detail
+/uplus-operateu/api/v1/web/mobile/get/article/details
+/uplus-foundation/app/v1/donateu/items/getSeatShowData
+/uplus-foundation/app/v1/donateu/items/leavewordList
+/uplus-foundation/app/v1/donateu/together/launchDetail
+/uplus-foundation/app/v1/donateu/together/togetherDetail
+/uplus-foundation/app/v1/donateu/items/cancel
+/uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN
+/uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN
+/uplus-system/app/v1/mobile/group/getMobileSettingGroupList
+/uplus-system/app/v1/user/authDouble
+/uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN
+/uplus-system/app/v1/login/mode/config/getList?lang=zh_CN
+/uplus-foundation/app/v1/cpu/sign/agreement/project/getList
+/uplus-system/api/v1/area/groupList
+/uplus-foundation/app/v1/donateu/user/center/launchList
+/pages/modules/common/donate-pay/index?d=
+/uplus-foundation/app/v1/donateu/index/articleDetail
+/uplus-system/api/v1/area/getAreaList4sort
+/uplus-foundation/app/v1/donateu/certificate/page
+/uplus-foundation/app/v1/donateu/index/getSettingValue
+/uplus-system/app/v1/file/info/upload
+/uplus-system/app/v1/ai/assistant/session/getAiConfig?lang=zh_CN
+/uplus-operateu/app/v1/operateu/periodical/getPagePeriodical
+/uplus-operateu/app/v1/enterprise/page
+/uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN
+/uplus-system/app/v1/digitalmap/org/getOrgLatlng?lang=zh_CN
+/uplus-system/app/v1/dictionary/base/getDictionary
+/uplus-foundation/app/v1/donateu/naming/activity/getSeatDetail
+/views/application/pages/donate/pay/index?d=
+/uplus-operateu/api/v1/web/mobile/index/article/list/mobile
+/uplus-foundation/app/v1/donateu/items/nameplateExample
+/app/v1/donateu/index/baseConfig
+/uplus-foundation/app/v1/donateu/items/donateBookList
+/uplus-foundation/app/v1/donateu/receipt/page
+/uplus-foundation/app/v1/donateu/items/areaList
+/uplus-foundation/app/v1/donateu/index/articleList
+/uplus-foundation/app/v1/donateu/items/formDetail
+/views/common/pages/web-view/index?itemId=
+/uplus-foundation/app/v1/donateu/hhu/sign/agreement/signature
+/uplus-foundation/app/v1/donateu/items/seatList
+/app/v1/donateu/items/itemsDetail
+/uplus-system/app/v1/user/getWechatShare
+/views/navigation/pages/index/index?index=home
+/uplus-foundation/app/v1/donateu/items/donate
+/uplus-foundation/app/v1/donateu/items/bookList
+/uplus-foundation/app/v1/donateu/items/progressList
+/uplus-foundation/app/v1/donateu/user/center/namingList
+/uplus-foundation/app/v1/donateu/items/getBookShowData
+/uplus-foundation/app/v1/donateu/items/togetherList
+/uplus-foundation/app/v1/donateu/items/subItemsStatistics
+/uplus-foundation/app/v1/donateu/certificate/stay/page
+/uplus-foundation/app/v1/donateu/items/itemsDetail
+/uplus-foundation/app/v1/donateu/index/menuConfig
+/mine
+/alipay
+/subject
+/nameplate-detail
+/uplus-operateu/app/v1/web/article/categoryPage?websiteId=1&lang=zh_CN
+/contract-cpu/signature
+/contract-cpu
+/contract-cpu/myList
+/contract-cpu/account
+/uplus-foundation/app/v1/donateu/index/getTypeListHasDonateCount
+/uplus-system/app/v1/weichat/message/template?code=106301
+/uplus-system/app/v1/user/logout
+/uplus-system/app/v1/user/getMyCenter?lang=zh_CN
+/uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN
+/uplus-system/app/v1/weichat/mp/user/getInfo?lang=zh_CN
+/uplus-foundation/app/v1/donateu/items/bookCategoryList
+/uplus-system/app/v1/user/getBaseConfig?lang=zh_CN
+/uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN
+/uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN
+/views/service/pages/school-back/index
+/views/service/pages/apply-electronic-alumni-card/index
+/uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN
+/uplus-foundation/app/v1/donateu/receipt/config/detail
+/uplus-foundation/app/v1/donateu/certificate/config/detail
+/uplus-foundation/app/v1/donateu/naming/activity/getSeatStatusList
+/uplus-foundation/app/v1/donateu/items/getNameplateDetailConfig
+/uplus-foundation/app/v1/donateu/items/itemsSubPrice
+/uplus-foundation/app/v1/donateu/user/center/itemsDonateGroup
+/uplus-foundation/app/v1/donateu/items/typeList?language=zh_CN
+/uplus-foundation/app/v1/donateu/items/instructionList
+/uplus-foundation/app/v1/donateu/user/center/joinList
+/uplus-foundation/app/v1/donateu/items/donateSeatList
+/uplus-foundation/app/v1/donateu/index/donateRecordPage
+/uplus-foundation/app/v1/donateu/index/total
+/donate-h5/config/index.json
+/donate-h5/config/ahu/index.json
+/uplus-system/app/v1/user/resource/list?lang=zh_CN
+/uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN
+/uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN
+/uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN
+/uplus-system/app/v1/org/recommend?lang=zh_CN
+/uplus-system/app/v1/org/config/getButtonList?lang=zh_CN
+/uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN
+/uplus-operateu/app/v1/web/mobile/get/article/addViewCount
+/#
+/g
+/errorCorrectLevel:
+/a/b
+/a/i
+
+URL拼接后结果:
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/passLogin
+https://xyh.ahu.edu.cn/uplus-system/api/v1/token/refresh
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/getCardBlance?stuWorkNo=
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/middle/auth
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/middle/auth
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/baseInfo
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/cpu/sign/agreement/signature
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/payback
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getAuthToken?billType=2&code=
+https://xyh.ahu.edu.cn/uplus-system/api/v1/file/upload
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/checkPermission
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/together/delete
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/mobile/index/article/list/mobile
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/cpu/sign/agreement/getMySign
+https://xyh.ahu.edu.cn/pages/index/index?url=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/lastUserInfo
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/certificate/insert
+https://xyh.ahu.edu.cn/uplus-system/app/v1/token/refresh?lang=zh_CN
+https://xyh.ahu.edu.cn/donate-h5/
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getAuthUrl?billType=2&url=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/updateUser
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/success
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/donate4ali
+https://xyh.ahu.edu.cn/pages/modules/common/webview/index?url=
+https://xyh.ahu.edu.cn/login
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/baseConfig?language=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/mobile/index/article/list
+https://xyh.ahu.edu.cn/uplus-system/app/v1/setting/base/list?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getRegisterConfig?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getSmsCode
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/together/insertTogether
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/insert
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/certificate/detail
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/message/config/getPage?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/activity/getActivityPage
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/mobileLogin
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/itemsList
+https://xyh.ahu.edu.cn/config/uplus/seat/
+https://xyh.ahu.edu.cn/uplus-system/api/v1/setting/system/list
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/wechatMobileLogin
+https://xyh.ahu.edu.cn/uplus-system/app/v1/sys/config/list
+https://xyh.ahu.edu.cn/uplus-system/api/v1/dictionary/area/getAreaDictionaryByParentId
+https://xyh.ahu.edu.cn/views/authorize/pages/login/index?redirect_url=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/insertLeaveword
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/awardList?language=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/donateRecordList
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getMyCenterBase?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/stay/page
+https://xyh.ahu.edu.cn/uplus-system/app/v1/alumnus/type/pager?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v2/user/getSmsVerificationCode?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/permission/mobile/item?id=34&lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/api/v1/setting/base/list
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/cpu/sign/agreement/generation
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/awardDetail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/my
+https://xyh.ahu.edu.cn/views/common/pages/webview-activity/index?url=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/togetherStatistics
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/hhu/sign/agreement/generation
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/detail
+https://xyh.ahu.edu.cn/uplus-operateu/api/v1/web/mobile/get/article/details
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/getSeatShowData
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/leavewordList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/together/launchDetail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/together/togetherDetail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/cancel
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/form/getUserFormById?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/alumnus/manual/auth/form/list?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/mobile/group/getMobileSettingGroupList
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/authDouble
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/auth/getAuthConfig?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/login/mode/config/getList?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/cpu/sign/agreement/project/getList
+https://xyh.ahu.edu.cn/uplus-system/api/v1/area/groupList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/launchList
+https://xyh.ahu.edu.cn/pages/modules/common/donate-pay/index?d=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/articleDetail
+https://xyh.ahu.edu.cn/uplus-system/api/v1/area/getAreaList4sort
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/certificate/page
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/getSettingValue
+https://xyh.ahu.edu.cn/uplus-system/app/v1/file/info/upload
+https://xyh.ahu.edu.cn/uplus-system/app/v1/ai/assistant/session/getAiConfig?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/operateu/periodical/getPagePeriodical
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/enterprise/page
+https://xyh.ahu.edu.cn/uplus-system/app/v1/share/setting/detail?type=2&lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/digitalmap/org/getOrgLatlng?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/dictionary/base/getDictionary
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/naming/activity/getSeatDetail
+https://xyh.ahu.edu.cn/views/application/pages/donate/pay/index?d=
+https://xyh.ahu.edu.cn/uplus-operateu/api/v1/web/mobile/index/article/list/mobile
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/nameplateExample
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/baseConfig
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/donateBookList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/page
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/areaList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/articleList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/formDetail
+https://xyh.ahu.edu.cn/views/common/pages/web-view/index?itemId=
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/hhu/sign/agreement/signature
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/seatList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/itemsDetail
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getWechatShare
+https://xyh.ahu.edu.cn/views/navigation/pages/index/index?index=home
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/donate
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/bookList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/progressList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/namingList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/getBookShowData
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/togetherList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/subItemsStatistics
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/certificate/stay/page
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/itemsDetail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/menuConfig
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/mine
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/mine
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/alipay
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/alipay
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/subject
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/subject
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/nameplate-detail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/nameplate-detail
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/article/categoryPage?websiteId=1&lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/contract-cpu/signature
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/contract-cpu/signature
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/contract-cpu
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/contract-cpu
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/contract-cpu/myList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/contract-cpu/myList
+https://xyh.ahu.edu.cn/contract-cpu/account
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/getTypeListHasDonateCount
+https://xyh.ahu.edu.cn/uplus-system/app/v1/weichat/message/template?code=106301
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/logout
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getMyCenter?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/org/apply/instructions/detail?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/weichat/mp/user/getInfo?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/bookCategoryList
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/getBaseConfig?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/alumni/card/show/config/getCardShowTemplate?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/alumnus/honor/unread?lang=zh_CN
+https://xyh.ahu.edu.cn/views/service/pages/school-back/index
+https://xyh.ahu.edu.cn/uplus-system/views/service/pages/school-back/index
+https://xyh.ahu.edu.cn/views/service/pages/apply-electronic-alumni-card/index
+https://xyh.ahu.edu.cn/uplus-system/views/service/pages/apply-electronic-alumni-card/index
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/auth/getAlumnusAuthWayStatus?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/receipt/config/detail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/certificate/config/detail
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/naming/activity/getSeatStatusList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/getNameplateDetailConfig
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/itemsSubPrice
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/itemsDonateGroup
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/typeList?language=zh_CN
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/instructionList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/user/center/joinList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/items/donateSeatList
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/donateRecordPage
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/donateu/index/total
+https://xyh.ahu.edu.cn/donate-h5/config/index.json
+https://xyh.ahu.edu.cn/uplus-foundation/donate-h5/config/index.json
+https://xyh.ahu.edu.cn/donate-h5/config/ahu/index.json
+https://xyh.ahu.edu.cn/uplus-foundation/donate-h5/config/ahu/index.json
+https://xyh.ahu.edu.cn/uplus-system/app/v1/user/resource/list?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/visiting/card/request/getNotViewRequestList?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/birthday/common/bless/checkBirthday?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/org/getJoinWxCpConfig?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/org/recommend?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-system/app/v1/org/config/getButtonList?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/activity/getLabelList?lang=zh_CN
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/web/mobile/get/article/addViewCount
+https://xyh.ahu.edu.cn/uplus-system/app/v1/#
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/#
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/#
+https://xyh.ahu.edu.cn/uplus-system/app/v1/g
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/g
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/g
+https://xyh.ahu.edu.cn/uplus-system/app/v1/errorCorrectLevel:
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/errorCorrectLevel:
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/errorCorrectLevel:
+https://xyh.ahu.edu.cn/uplus-system/app/v1/a/b
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/a/b
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/a/b
+https://xyh.ahu.edu.cn/uplus-system/app/v1/a/i
+https://xyh.ahu.edu.cn/uplus-operateu/app/v1/a/i
+https://xyh.ahu.edu.cn/uplus-foundation/app/v1/a/i
